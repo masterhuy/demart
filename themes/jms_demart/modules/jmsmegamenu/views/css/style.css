@@ -1,0 +1,153 @@
+.jms-megamenu.navbar {
+  padding:0px;
+  width:100%;
+  position: static;
+}
+.jms-megamenu .row {
+  padding:0px;
+}
+.jms-megamenu a{
+    transition: none;
+}
+.jms-megamenu > ul > li {
+  padding:0 12px;
+  margin: 0px;
+}
+.jms-megamenu a {
+  text-decoration:none;
+}
+.jms-megamenu .nav > li.item-fullwidth{
+    position: static;
+}
+.jms-megamenu .nav > li {
+    display: inline-block;
+    float: inherit;
+    vertical-align: top;
+    position:relative;
+}
+.jms-megamenu .nav > li.sub-home .mod-content .text{
+    display: inline-block;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.8px;
+    margin-top: 9px;
+}
+.jms-megamenu .nav > li.sub-home .mod-content .image{
+    display: block;
+}
+.jms-megamenu .nav > li.sub-home .mod-content .image img{
+    width: 100%;
+}
+.jms-megamenu .nav > li.sub-home .mod-content a:hover .text{
+    color: #ff794f;
+}
+.jms-megamenu .nav > li.sub-home .col-sm-3 ul li:not(:last-child){
+    margin-bottom: 29px;
+}
+.jms-megamenu .nav > li > a {
+    font-size: 1.125rem;
+    padding: 0px;
+    position: relative;
+    color: #000;
+}
+.jms-megamenu .nav > li.open > a,
+.jms-megamenu .nav > li > a:hover {
+    color: #000;
+}
+.jms-megamenu .nav > li:hover,
+.jms-megamenu .nav > li.open {
+    background: none;
+}
+.jms-megamenu .dropdown-menu {
+    background: #fff;
+    border-radius: 0;
+    display: block;
+    left: -16px;
+    margin-top: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 999;
+}
+.jms-megamenu .open > .dropdown-menu {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+.jms-megamenu .mega-nav,
+.jms-megamenu .dropdown-menu .mega-nav {
+    list-style: outside none none;
+    margin: 0;
+    padding:0px;
+    min-height: 20px;
+    display: block;
+}
+.jms-megamenu .caret {
+    margin-left: 5px;
+}
+.jms-megamenu .mega-nav > .mega > .dropdown-menu {
+    left: 100%;
+    margin: 0;
+    top: 0;
+}
+.mega-nav > .mega {
+    position: relative;
+}
+.jms-megamenu .menu-align-justify > .dropdown-menu {
+    left: 0;
+    margin-left: 0;
+}
+.jms-megamenu .menu-align-center > .dropdown-menu {
+    left: 50%;
+    right: 0;
+    margin: auto;
+    transform: translateX(-50%);
+    padding: 50px 0 40px;
+}
+.jms-megamenu .mega-nav > .mega.menu-align-left > .dropdown-menu {
+    left: 100%;
+}
+.jms-megamenu .mega-nav > .mega.menu-align-right > .dropdown-menu {
+    left: auto;
+    right: 100%;
+}
+.jms-megamenu .menu-align-justify {
+    position: static;
+}
+.jms-megamenu .menu-align-justify > .dropdown-menu {
+    left: 0;
+    margin-left: 0;
+}   
+.jms-megamenu .dropdown-menu {
+    background: #fff;
+    padding: 20px 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+.jms-megamenu .dropdown-menu.fullwidth{
+    width: 100%;
+    left: 0;
+    transform: none;
+}
+.jms-megamenu .item-fullwidth .dropdown-menu > .mega-dropdown-inner > .row ~ .row{
+    margin-top: 29px;
+}
+.jms-megamenu .nav > .menu-item .mega-nav li > a {
+    border-bottom: medium none;
+    display: block;
+    position: relative;
+    letter-spacing: 0.3px;
+    padding: 0 28px;
+}
+.jms-megamenu .nav > .menu-item.item-fullwidth .mega-nav li > a{
+    padding: 0;
+}
+.jms-megamenu .nav > .menu-item .mega-nav li {
+    position: relative;
+}
+.jms-megamenu .nav > .menu-item .mega-nav li.mega > a::before{
+    content: url("../images/right.png");
+    position: absolute;
+    right: 30px;
+}

@@ -1,0 +1,14 @@
+@mixin hoverBannerEffect($x1, $x2){
+	.jms-banner{
+		> a{
+			display: block;
+			overflow: hidden;
+			&:hover img{
+				transform: scale(#{$x1});
+			}
+			img{
+				transition: #{$x2}ms all;
+			}
+		}
+	}
+}
