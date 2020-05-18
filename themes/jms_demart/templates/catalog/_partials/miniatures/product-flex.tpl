@@ -55,7 +55,11 @@
         
         <div class="title-price align-items-center">
     		{block name='product_name'}
-                <h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:50:'...'}</a></h3>
+                <h3 class="product-title" itemprop="name">
+                    <a class="product-link" href="{$product.canonical_url}" title="{$product.name}">
+                        {$product.name|truncate:50:'...'}
+                    </a>
+                </h3>
             {/block}
         </div>
         <div class="product-action">

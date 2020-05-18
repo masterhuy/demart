@@ -214,6 +214,15 @@ class JmsAddonBlog extends JmsAddonBase
             ORDER BY hss.created DESC
             LIMIT 0,'.$addon->fields[2]->value;
         $posts = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
+
+        $sql = '
+            SELECT * 
+            FROM '._DB_PREFIX_.'jmsblog_categories hss
+            LEFT JOIN '._DB_PREFIX_.'jmsblog_categories_lang hssl ON (hssl.`category_id` = hss.`category_id`)
+            WHERE hss.`active` = 1 AND hss.`parent` = 0 AND hssl.`id_lang` = '.(int)$id_lang.
+            ' GROUP BY hss.`category_id`
+            ORDER BY hss.`ordering` LIMIT 5';
+        $categories =  Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
         if(!isset($posts) || count($posts) == 0) return;
         for ($i = 0; $i < count($posts); $i++) {
             $posts[$i]['introtext'] = JmsBlogHelper::genIntrotext($posts[$i]['introtext'], $addon->fields[9]->value);
@@ -225,6 +234,7 @@ class JmsAddonBlog extends JmsAddonBase
             array(
                 'link' => $this->context->link,
                 'posts' => $posts,
+                'categories' => $categories,
                 'addon_title' => $addon_title,
                 'addon_desc' => $addon_desc,
                 'items_show' => $addon->fields[3]->value,

@@ -29,6 +29,7 @@
 			<div class="addon-title">
 				<h3>{l s='Daily deals' d='Shop.Theme.Catalog'}</h3>
 			</div>
+			<div class="line-custom"></div>
 			<div class="flashsales-countdown">{$expiretime|escape:'htmlall':'UTF-8'}</div>
 		</div>
 		<div class="flashsales-carousel">	

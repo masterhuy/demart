@@ -79,12 +79,77 @@ backToTop = () => {
 }
 
 customCarousel = () => {
+    if($(".flashsales-carousel").length) {
+        var flashsaleCarousel = $('.flashsales-carousel');			
+        var rtl = false;
+        if ($("body").hasClass("rtl")) rtl = true;	flashsaleCarousel.owlCarousel({
+            responsiveClass:true,
+            responsive:{
+                0: {
+                    items: 2
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            },
+            rtl: rtl,
+            margin: 20,
+            nav: false,
+            dots: false,
+            loop: true,
+            navigationText: ["", ""],
+            slideSpeed: 200
+        });
+    }
+
+    if($(".flashsales-tab-carousel").length) {
+        var flashsaleTabCarousel = $('.flashsales-tab-carousel');			
+        var rtl = false;
+        if ($("body").hasClass("rtl")) rtl = true;	
+            flashsaleTabCarousel.owlCarousel({
+            responsiveClass:true,
+            responsive:{
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                },
+                1200: {
+                    items: 3
+                }
+            },
+            rtl: rtl,
+            margin: 20,
+            nav: true,
+            dots: false,
+            loop: true,
+            navigationText: ["", ""],
+            slideSpeed: 200
+        });
+    }
+
     $('.our-category-carousel .container > .row').addClass('sub-category-carousel');
     if($(".sub-category-carousel").length) {
         var subCategoryCarousel = $('.sub-category-carousel');			
         var rtl = false;
         if ($("body").hasClass("rtl")) rtl = true;	
-        subCategoryCarousel.owlCarousel({
+            subCategoryCarousel.owlCarousel({
             responsiveClass:true,
             responsive:{
                 320: {
@@ -109,7 +174,7 @@ customCarousel = () => {
             dots: false,
             loop: true,
             navigationText: ["", ""],
-            slideSpeed: 800
+            slideSpeed: 200
         });
     }
     
@@ -117,7 +182,7 @@ customCarousel = () => {
         var h2CategoryCarousel = $('.h2-category-carousel');			
         var rtl = false;
         if ($("body").hasClass("rtl")) rtl = true;	
-        h2CategoryCarousel.owlCarousel({
+            h2CategoryCarousel.owlCarousel({
             responsiveClass:true,
             responsive:{
                 320: {
@@ -142,7 +207,40 @@ customCarousel = () => {
             dots: false,
             loop: true,
             navigationText: ["", ""],
-            slideSpeed: 800
+            slideSpeed: 200
+        });
+    }
+
+    if($(".h4-category-carousel").length) {
+        var h2CategoryCarousel = $('.h4-category-carousel');			
+        var rtl = false;
+        if ($("body").hasClass("rtl")) rtl = true;	
+         h2CategoryCarousel.owlCarousel({
+            responsiveClass:true,
+            responsive:{
+                320: {
+                    items: 2
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            },
+            rtl: rtl,
+            margin: 0,
+            nav: true,
+            dots: false,
+            loop: true,
+            navigationText: ["", ""],
+            slideSpeed: 200
         });
     }
 
@@ -175,7 +273,7 @@ customCarousel = () => {
             dots: false,
             loop: true,
             navigationText: ["", ""],
-            slideSpeed: 800
+            slideSpeed: 200
         });
     }
 
@@ -183,7 +281,7 @@ customCarousel = () => {
 		var hotdealCarousel = $(".hotdeal-carousel");
 		var rtl = false;
 		if ($("body").hasClass("rtl")) rtl = true;
-		hotdealCarousel.owlCarousel({
+		    hotdealCarousel.owlCarousel({
 			responsiveClass:true,
 			responsive:{
 				1199:{
@@ -208,20 +306,25 @@ customCarousel = () => {
 			dots: h_pag,
 			loop:true,
 			autoplay: h_auto_play_carousel,
-			slideSpeed: 800,
+			slideSpeed: 200,
 		});
 	}
 
     if($(".h1-topseller .product-carousel").length) {
         var rtl = false;
         var customProductCarousel = $('.h1-topseller .product-carousel');
-        customProductCarousel.owlCarousel({
+        (customProductCarousel.attr("data-nav") == "true") ? nav = 1 : nav = 0;
+        (customProductCarousel.attr("data-dots") == "true") ? dots = 1 : dots = 0;
+        (customProductCarousel.attr("data-auto") == "true") ? autoplay = 1 : autoplay = 0;
+
+        if ($("body").hasClass("rtl")) rtl = true;
+            customProductCarousel.owlCarousel({
             rtl: rtl,
             loop: true,
             margin: 10,
-            nav: true,
-            dots: false,
-            autoplay: false,
+            nav: nav,
+            dots: dots,
+            autoplay: autoplay,
             responsive: {
                 0: {
                     items: 2
@@ -242,13 +345,18 @@ customCarousel = () => {
     if($(".h2-products .product-carousel").length) {
         var rtl = false;
         var customProductCarousel_2 = $('.h2-products .product-carousel');
-        customProductCarousel_2.owlCarousel({
+        (customProductCarousel_2.attr("data-nav") == "true") ? nav = 1 : nav = 0;
+        (customProductCarousel_2.attr("data-dots") == "true") ? dots = 1 : dots = 0;
+        (customProductCarousel_2.attr("data-auto") == "true") ? autoplay = 1 : autoplay = 0;
+
+        if ($("body").hasClass("rtl")) rtl = true;	
+            customProductCarousel_2.owlCarousel({
             rtl: rtl,
             loop: true,
             margin: 1,
-            nav: false,
-            dots: false,
-            autoplay: false,
+            nav: nav,
+            dots: dots,
+            autoplay: autoplay,
             responsive: {
                 0: {
                     items: 2
@@ -269,13 +377,18 @@ customCarousel = () => {
     if($(".blog-carousel").length) {
         var rtl = false;
         var blogCarousel = $('.blog-carousel');
-        blogCarousel.owlCarousel({
+        (blogCarousel.attr("data-nav") == "true") ? nav = 1 : nav = 0;
+        (blogCarousel.attr("data-dots") == "true") ? dots = 1 : dots = 0;
+        (blogCarousel.attr("data-auto") == "true") ? autoplay = 1 : autoplay = 0;
+
+        if ($("body").hasClass("rtl")) rtl = true;	
+            blogCarousel.owlCarousel({
             rtl: rtl,
             loop: true,
             margin: 20,
-            nav: false,
-            dots: false,
-            autoplay: false,
+            nav: nav,
+            dots: dots,
+            autoplay: autoplay,
             responsive: {
                 0: {
                     items: 2
@@ -293,44 +406,15 @@ customCarousel = () => {
         });
     }
 
-    if($(".flashsales-carousel").length) {
-        var flashsaleCarousel = $('.flashsales-carousel');			
-        var rtl = false;
-        if ($("body").hasClass("rtl")) rtl = true;	
-            flashsaleCarousel.owlCarousel({
-            responsiveClass:true,
-            responsive:{
-                0: {
-                    items: 2
-                },
-                576: {
-                    items: 2
-                },
-                768: {
-                    items: 2
-                },
-                992: {
-                    items: 3
-                },
-                1200: {
-                    items: 4
-                }
-            },
-            rtl: rtl,
-            margin: 20,
-            nav: false,
-            dots: false,
-            loop: true,
-            navigationText: ["", ""],
-            slideSpeed: 800
-        });
-    }
-
     if($(".product-carousel-mr-30").length) {
 		var productCarouselMr30 = $(".product-carousel-mr-30");
-		var rtl = false;
+        var rtl = false;
+        (productCarouselMr30.attr("data-nav") == "true") ? nav = 1 : nav = 0;
+        (productCarouselMr30.attr("data-dots") == "true") ? dots = 1 : dots = 0;
+        (productCarouselMr30.attr("data-auto") == "true") ? autoplay = 1 : autoplay = 0;
+
 		if ($("body").hasClass("rtl")) rtl = true;
-		productCarouselMr30.owlCarousel({
+		    productCarouselMr30.owlCarousel({
             responsiveClass:true,
             responsive: {
                 0: {
@@ -348,13 +432,82 @@ customCarousel = () => {
             },
 			rtl: rtl,
 			margin: 20,
-			nav: true,
-			dots: false,
-			autoplay: false,
+			nav: nav,
+			dots: dots,
+			autoplay: autoplay,
 			loop: true,
-			slideSpeed: 800,
+			slideSpeed: 200,
 		});
-	}
+    }
+
+    if($(".product-flexbox .megatab-carousel").length) {
+		var megatabCarousel = $(".product-flexbox .megatab-carousel");
+        var rtl = false;
+        (megatabCarousel.attr("data-nav") == "true") ? nav = 1 : nav = 0;
+        (megatabCarousel.attr("data-dots") == "true") ? dots = 1 : dots = 0;
+        (megatabCarousel.attr("data-auto") == "true") ? autoplay = 1 : autoplay = 0;
+
+		if ($("body").hasClass("rtl")) rtl = true;
+		    megatabCarousel.owlCarousel({
+            responsiveClass:true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                576: {
+                    items: megatabCarousel.attr("data-sm")
+                },
+                768: {
+                    items: megatabCarousel.attr("data-md")
+                },
+                992: {
+                    items: megatabCarousel.attr("data-lg")
+                }
+            },
+			rtl: rtl,
+			margin: 20,
+			nav: nav,
+			dots: dots,
+			autoplay: autoplay,
+			loop: true,
+			slideSpeed: 200,
+		});
+    }
+
+    if($(".categorytab-carousel-2").length) {
+        var categorytabCarousel = $('.categorytab-carousel-2');
+        var rtl = false;
+        (categorytabCarousel.attr("data-nav") == "true") ? nav = 1 : nav = 0;
+        (categorytabCarousel.attr("data-dots") == "true") ? dots = 1 : dots = 0;
+        (categorytabCarousel.attr("data-auto") == "true") ? autoplay = 1 : autoplay = 0;
+
+        if ($("body").hasClass("rtl")) rtl = true;	
+            categorytabCarousel.owlCarousel({
+            responsiveClass:true,
+            responsive:{
+                0: {
+                    items: 2
+                },
+                576: {
+                    items: categorytabCarousel.attr("data-sm")
+                },
+                768: {
+                    items: categorytabCarousel.attr("data-md")
+                },
+                992: {
+                    items: categorytabCarousel.attr("data-lg")
+                }
+            },
+            rtl: rtl,
+            margin: 10,
+            nav: nav,
+            dots: dots,
+            loop: true,
+            autoplay: autoplay,
+            navigationText: ["", ""],
+            slideSpeed: 200
+        });
+    }
 }
 
 hoverShowSublink = () => {

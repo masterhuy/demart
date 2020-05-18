@@ -24,36 +24,36 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="jmsflashsales-tab">
-	<div class="tabpanel">
-		<div class="addon-title">
-			<h3>{l s='HOT SELLING' d='Shop.Theme.Catalog'}</h3>
+	<div class="tabpanel row align-items-center">
+		<div class="addon-title col-auto">
+			<h3>{l s='Flash Sale' d='Shop.Theme.Catalog'}</h3>
 		</div>
-		<ul class="nav">
+		<ul class="nav col">
 			{foreach from = $categories item = category key = k}
 				{$cat_products = $products[$k]}
 				{if !empty($cat_products)}
-				<li class="nav-item {if $k == 0}active{/if}">
-					<a href="#category-{$k}" data-toggle="tab">
-						{$category.title|escape:'htmlall':'UTF-8'}
-					</a>
-				</li>	
+					<li class="nav-item">
+						<a class="{if $k == 0}active{/if}" href="#category-{$k}" data-toggle="tab">
+							{$category.title|escape:'htmlall':'UTF-8'}
+						</a>
+					</li>	
 				{/if}	
 			{/foreach}
 		</ul>
-		<div class="flashsales-countdown">{$expiretime|escape:'htmlall':'UTF-8'}</div>
+		<div class="flashsales-countdown col-auto">{$expiretime|escape:'htmlall':'UTF-8'}</div>
 	</div>
 	<div class="tab-content">
 		{foreach from=$products item=cat_products key=k}
 			{if !empty($cat_products)}
-			<div class="tab-pane {if $k == 0}active{/if}" id="category-{$k}">	
-				<div class="flashsales-tab-carousel">
-					{foreach from = $cat_products item = product}	
-						<div class="item ajax_block_product">		
-							{include file="catalog/_partials/miniatures/product.tpl" product=$product}
-						</div>	
-					{/foreach}
-				</div>	
-			</div>
+				<div class="tab-pane {if $k == 0}active{/if}" id="category-{$k}">	
+					<div class="flashsales-tab-carousel">
+						{foreach from = $cat_products item = product}	
+							<div class="item ajax_block_product">		
+								{include file="catalog/_partials/miniatures/product-flex.tpl" product=$product}
+							</div>	
+						{/foreach}
+					</div>	
+				</div>
 			{/if}	
 		{/foreach}
 	</div>

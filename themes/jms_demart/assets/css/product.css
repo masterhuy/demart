@@ -950,6 +950,12 @@ section.featured-products {
 .quickview-modal .modal-header {
 	padding: 1.467rem 0px;
 }
+#onsale .product-flags .product-flag.on-sale{
+    display: none;
+}
+#onsale .product-flags .on-sale ~ .discount {
+    display: block;
+}
 .product-flags{
     margin-bottom: 0;
 }
@@ -976,7 +982,8 @@ section.featured-products {
     top: 0;
     left: -6px;
 }
-.product-flags .product-flag.on-sale::before {
+.product-flags .product-flag.on-sale::before,
+.product-flags .product-flag.discount::before {
     content: "";
     position: absolute;
     width: 0;
@@ -991,6 +998,9 @@ section.featured-products {
     background: #f63622;
     color: #fff;
     left: 8px;
+}
+.product-flags .on-sale ~ .discount{
+    display: none;
 }
 .product-flags .discount span:first-child{
     font-size: 15px;

@@ -67,22 +67,16 @@
 									{/if}
 								</a>
 							{/block}
-							{block name='product_flags'}
-								<ul class="product-flags">
-									{foreach from=$product.flags item=flag}
-										<li class="product-flag {$flag.type}">
-											{if $flag.label == 'On sale!'}
-												{l s='Sale' d='Shop.Theme.Catalog'}
-											{else if $flag.type == 'discount'}
-												<span>{l s='Off' d='Shop.Theme.Catalog'}</span>
-												<span>{$flag.label}</span>
-											{else}
-												{$flag.label}
-											{/if}
-										</li>
-									{/foreach}
-								</ul>
-							{/block}
+							<div class="product-flags">
+								{if $product.discount_type === 'percentage'}
+									<div class="discount-percentage discount">
+										<span>{l s='Off' d='Shop.Theme.Actions'}</span>
+										<span>{$product.discount_percentage_absolute}</span>
+									</div>
+								{elseif $product.discount_type === 'amount'}
+									<span class="discount-amount discount">{$product.discount_amount_to_display}</span>
+								{/if}
+							</div>
 						</div>
 						<div class="product-info">
 							{block name='product_reviews'}

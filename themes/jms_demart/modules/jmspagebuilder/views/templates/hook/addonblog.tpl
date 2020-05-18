@@ -27,8 +27,18 @@
 {if $addon_title}
 	<div class="addon-title title-blog">
 		<h3>{$addon_title nofilter}</h3>
+		<div class="line-custom"></div>
+		{if isset($categories) AND $categories}
+			<div class="category-link">
+				{foreach from=$categories item=category}
+					{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}
+					<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title}</a>
+				{/foreach}
+			</div>
+		{/if}
 	</div>
 {/if}
+
 {if $addon_desc}
 	<p class="addon-desc">{$addon_desc nofilter}</p>
 {/if}

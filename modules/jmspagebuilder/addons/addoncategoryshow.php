@@ -86,9 +86,18 @@ class JmsAddonCategoryshow extends JmsAddonBase
             LEFT JOIN '._DB_PREFIX_.'category_lang hss ON (hs.id_category = hss.id_category)
             WHERE hs.id_parent = '.$id_category.' AND hss.id_lang = '.(int)$id_lang.' ORDER BY `name` ASC '.$limit;
         $childs = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
+
+        $query2 = '
+            SELECT COUNT(ac.`id_product`) as totalProducts
+            FROM `'._DB_PREFIX_.'category_product` ac
+            LEFT JOIN `'._DB_PREFIX_.'product` p ON p.`id_product` = ac.`id_product`
+            WHERE ac.`id_category` = '.$id_category.' AND p.`active` = 1';
+        $counts = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query2);
+
         $this->context->smarty->assign(
             array(
                 'category' => (array)$category,
+                'counts' => $counts,
                 'childs' => $childs,
                 'show_img' => $show_img,
                 'image_url' => $this->root_url.'img/c/'

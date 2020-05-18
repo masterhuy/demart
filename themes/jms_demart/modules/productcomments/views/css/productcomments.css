@@ -252,6 +252,11 @@
   min-width: 70px;
 }
 
+.product-list-reviews.empty .grade-stars.small-stars {
+  background: url(../img/star-empty-full.png) no-repeat 0 0 transparent;
+  background-position: center;
+}
+
 .grade-stars .star-content {
   position: absolute;
   top: 3px;
@@ -451,13 +456,12 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: calc(100% - 32px);
-  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
   padding: 4px 0;
-  visibility: hidden;
   position: absolute;
-  top: -10px;
+  top: -6px;
   left: 16px;
+  height: 28px;
 }
 
 .product-list-reviews .grade-stars .star-content {

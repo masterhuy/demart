@@ -43,15 +43,15 @@
           $('.grade-stars', productReview).rating({ grade: jsonData.average_grade, starWidth: 16 });
           $('.comments-nb', productReview).html('('+jsonData.comments_nb+')');
           productReview.closest('.thumbnail-container').addClass('has-reviews');
-          productReview.css('visibility', 'visible');
+          productReview.removeClass('empty');
         }
       }
     });
   });
 </script>
 
-<div id="product-list-reviews-{$product.id}" class="product-list-reviews">
-  <div class="grade-stars small-stars">zz</div>
+<div id="product-list-reviews-{$product.id}" class="product-list-reviews empty">
+  <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
 

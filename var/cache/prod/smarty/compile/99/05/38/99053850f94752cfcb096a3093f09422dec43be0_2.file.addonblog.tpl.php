@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 04:56:53
+/* Smarty version 3.1.33, created on 2020-05-18 11:13:04
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonblog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eba1e8553baf7_58601011',
+  'unifunc' => 'content_5ec25fb0ef3c18_47405011',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '99053850f94752cfcb096a3093f09422dec43be0' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addonblog.tpl',
-      1 => 1588904537,
+      1 => 1589507347,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eba1e8553baf7_58601011 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec25fb0ef3c18_47405011 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_demart\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),1=>array('file'=>'D:\\xamppp\\htdocs\\jms_demart\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 
@@ -28,9 +28,28 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_dema
 	<div class="addon-title title-blog">
 		<h3><?php echo $_smarty_tpl->tpl_vars['addon_title']->value;?>
 </h3>
+		<div class="line-custom"></div>
+		<?php if (isset($_smarty_tpl->tpl_vars['categories']->value) && $_smarty_tpl->tpl_vars['categories']->value) {?>
+			<div class="category-link">
+				<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'category');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['category']->value) {
+?>
+					<?php $_smarty_tpl->_assignInScope('catparams', array('category_id'=>$_smarty_tpl->tpl_vars['category']->value['category_id'],'slug'=>$_smarty_tpl->tpl_vars['category']->value['alias']));?>
+					<a href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-category',$_smarty_tpl->tpl_vars['catparams']->value), ENT_QUOTES, 'UTF-8');?>
+"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['title'], ENT_QUOTES, 'UTF-8');?>
+</a>
+				<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+			</div>
+		<?php }?>
 	</div>
-<?php }
-if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
+<?php }?>
+
+<?php if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
 	<p class="addon-desc"><?php echo $_smarty_tpl->tpl_vars['addon_desc']->value;?>
 </p>
 <?php }

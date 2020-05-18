@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 04:56:52
+/* Smarty version 3.1.33, created on 2020-05-18 11:25:01
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\miniatures\product.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eba1e84904568_95234393',
+  'unifunc' => 'content_5ec2627d3d0127_10983942',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eba1e84904568_95234393 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec2627d3d0127_10983942 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_GET['productbox_type']) && $_GET['productbox_type'] != '') {?>
     <?php $_smarty_tpl->_assignInScope('productbox', "catalog/_partials/miniatures/".((string)$_GET['productbox_type']).".tpl");
 } else { ?>

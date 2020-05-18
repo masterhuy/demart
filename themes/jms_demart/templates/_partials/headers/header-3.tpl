@@ -67,7 +67,7 @@
                             {widget name="jmsmegamenu" hook='VerMenu'}
                         </div>
                     </div>
-                    {include 'module:jmsadvsearch/views/templates/hook/jmsadvsearch.tpl'}
+                    {* {include 'module:jmsadvsearch/views/templates/hook/jmsadvsearch.tpl'} *}
                 </div>
             </div>
             <div class="layout-column col-auto header-right">

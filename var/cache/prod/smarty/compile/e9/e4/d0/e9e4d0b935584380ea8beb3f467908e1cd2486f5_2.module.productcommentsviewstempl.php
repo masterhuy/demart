@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 04:56:52
+/* Smarty version 3.1.33, created on 2020-05-18 11:25:01
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eba1e84a19b26_81602470',
+  'unifunc' => 'content_5ec2627d5b4795_67330202',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9e4d0b935584380ea8beb3f467908e1cd2486f5' => 
     array (
       0 => 'module:productcommentsviewstempl',
-      1 => 1589254472,
+      1 => 1589269111,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eba1e84a19b26_81602470 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec2627d5b4795_67330202 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
   document.addEventListener("DOMContentLoaded", function() {
@@ -44,7 +44,7 @@ echo '<script'; ?>
           $('.grade-stars', productReview).rating({ grade: jsonData.average_grade, starWidth: 16 });
           $('.comments-nb', productReview).html('('+jsonData.comments_nb+')');
           productReview.closest('.thumbnail-container').addClass('has-reviews');
-          productReview.css('visibility', 'visible');
+          productReview.removeClass('empty');
         }
       }
     });
@@ -53,8 +53,8 @@ echo '<script'; ?>
 >
 
 <div id="product-list-reviews-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
-" class="product-list-reviews">
-  <div class="grade-stars small-stars">zz</div>
+" class="product-list-reviews empty">
+  <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
 

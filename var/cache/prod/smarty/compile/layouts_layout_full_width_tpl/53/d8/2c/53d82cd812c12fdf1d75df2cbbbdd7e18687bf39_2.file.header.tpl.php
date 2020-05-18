@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 04:56:53
+/* Smarty version 3.1.33, created on 2020-05-18 11:27:51
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eba1e856e95f6_23949303',
+  'unifunc' => 'content_5ec26327185048_92758488',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -32,7 +32,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/headers/header-mobile-4.tpl' => 1,
   ),
 ),false)) {
-function content_5eba1e856e95f6_23949303 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec26327185048_92758488 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <?php if (isset($_GET['header_layout']) && $_GET['header_layout'] != '') {?>
       <?php $_smarty_tpl->_assignInScope('header_layout', $_GET['header_layout']);?>
  <?php } else { ?>

@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Understand technical SEO terms and how to monitor your backlinks</title>
+    <link>https://www.prestashop.com/en/blog/understand-SEO-backlinks</link>
+    <description>Are you sure you are getting the most out of your link building efforts?</description>
+     <pubDate>Thu, 14 May 2020 13:46:57 +0200</pubDate>
+ <dc:creator>bulldesign</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/understand-SEO-backlinks</guid>
+  </item>
+  <item>
     <title>Increase conversion rates through better shopping basket management</title>
     <link>https://www.prestashop.com/en/blog/cart-conversion-2020</link>
     <description>Contrary to the old saying, when it comes to online shopping, it&#039;s best for customers to put as many eggs as possible in</description>
@@ -76,14 +84,6 @@
      <pubDate>Tue, 14 Apr 2020 15:05:32 +0200</pubDate>
  <dc:creator>Aurélien Bellanger</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-training-ecommerce</guid>
-  </item>
-  <item>
-    <title>The main payment methods in Brazil that will boost your ecommerce conversion rates</title>
-    <link>https://www.prestashop.com/en/blog/payment-methods-brazil</link>
-    <description>Brazilian consumers are very keen to do online shopping: with more than 23 million cross-border digital buyers in the country, Brazil is the largest ecommerce market in Latin America.</description>
-     <pubDate>Mon, 06 Apr 2020 19:54:50 +0200</pubDate>
- <dc:creator>paulamartins</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/payment-methods-brazil</guid>
   </item>
   </channel>
 </rss>
