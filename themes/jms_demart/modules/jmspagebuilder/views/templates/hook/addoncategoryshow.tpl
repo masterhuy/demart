@@ -37,6 +37,13 @@
 			<a href="{$categoryLink nofilter}" title="{$categoryname nofilter}">
 				{$categoryname nofilter}
 			</a>
+			{foreach from=$counts item=count}
+				{if $count.totalProducts > 0}
+					<p class="count">
+						{l s='Included' d='Modules.JmsPagebuilder'} {$count.totalProducts nofilter} {l s='items for your living room' d='Modules.JmsPagebuilder'}
+					</p>
+				{/if}
+			{/foreach}
 		</h3>
 		{if !empty(childs)}
 			<ul class="child-categories">
@@ -48,13 +55,6 @@
 				{/foreach}
 			</ul>
 		{/if}
-		{foreach from=$counts item=count}
-			{if $count.totalProducts > 0}
-				<p class="count-1">
-					{l s='Included' d='Modules.JmsPagebuilder'} {$count.totalProducts nofilter} {l s='items for your living room' d='Modules.JmsPagebuilder'}
-				</p>
-			{/if}
-		{/foreach}
 		<div class="btn-bottom">
 			<a class="btn btn-default shopping-now" href="{$categoryLink nofilter}">{l s='Shopping Now' d='Modules.JmsPagebuilder'}</a>
 			<a class="btn btn-default shopping-all" href="{$categoryLink nofilter}">{l s='Shopping All' d='Modules.JmsPagebuilder'}</a>

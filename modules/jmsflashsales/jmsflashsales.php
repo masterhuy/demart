@@ -997,6 +997,7 @@ class JmsFlashSales extends Module
         return $products_for_template;
 
 	}
+
 	public function hookFooter($params)
 	{								
 		$categories = $this->getCategories();		
@@ -1017,6 +1018,28 @@ class JmsFlashSales extends Module
 		));		
 		return $this->display(__FILE__, 'jmsflashsales-tab.tpl');
 	}
+
+	public function hookTop($params)
+	{								
+		$categories = $this->getCategories();		
+		$products = array();
+		foreach ($categories as $key => $category)
+		{
+			$products[$key] = $this->getProducts($category['category_id']);
+		}
+		
+		$this->smarty->assign(array(
+			'categories' => $categories,		
+			'products' => $products,
+			'items_show' => Configuration::get('JMS_FLASHSALES_ITEMS_SHOW'),
+			'items' => Configuration::get('JMS_FLASHSALES_TOTAL'),
+			'auto' => Configuration::get('JMS_FLASHSALES_AUTO'),
+			'expiretime' => Configuration::get('JMS_FLASHSALES_EXPIRETIME'),
+			'image_baseurl' => $this->_path.'views/img/',
+		));		
+		return $this->display(__FILE__, 'jmsflashsales-tab2.tpl');
+	}
+
 	public function returnSearch($result)
 	{
 

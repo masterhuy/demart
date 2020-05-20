@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-18 11:27:51
+/* Smarty version 3.1.33, created on 2020-05-20 03:06:13
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\header-5.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec263271cb558_18626903',
+  'unifunc' => 'content_5ec49095956103_23630423',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fbb4467e4ccb3e83f4d6d4288df8f1b66b69a250' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\headers\\header-5.tpl',
-      1 => 1587454765,
+      1 => 1589882067,
       2 => 'file',
     ),
   ),
@@ -28,8 +28,21 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5ec263271cb558_18626903 (Smarty_Internal_Template $_smarty_tpl) {
-?><div id="header-top" class="header-top<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) {?> header-sticky<?php }
+function content_5ec49095956103_23630423 (Smarty_Internal_Template $_smarty_tpl) {
+if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_topbar'] == 1)) {?>
+<div id="header-topbar" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class'], ENT_QUOTES, 'UTF-8');
+}?>">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="layout-column col">
+                <?php echo $_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_content'];?>
+
+            </div>
+        </div>
+    </div>
+</div>
+<?php }?>
+<div id="header-top" class="header-top<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) {?> header-sticky<?php }
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) && ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'] != '')) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'], ENT_QUOTES, 'UTF-8');
 }?>">
  	<div class="container">

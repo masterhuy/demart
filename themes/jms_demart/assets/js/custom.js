@@ -144,6 +144,39 @@ customCarousel = () => {
         });
     }
 
+    if($(".flashsales-tab-carousel2").length) {
+        var flashsaleTabCarousel2 = $('.flashsales-tab-carousel2');			
+        var rtl = false;
+        if ($("body").hasClass("rtl")) rtl = true;	
+            flashsaleTabCarousel2.owlCarousel({
+            responsiveClass:true,
+            responsive:{
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            },
+            rtl: rtl,
+            margin: 20,
+            nav: true,
+            dots: false,
+            loop: true,
+            navigationText: ["", ""],
+            slideSpeed: 200
+        });
+    }
+
     $('.our-category-carousel .container > .row').addClass('sub-category-carousel');
     if($(".sub-category-carousel").length) {
         var subCategoryCarousel = $('.sub-category-carousel');			
@@ -337,6 +370,38 @@ customCarousel = () => {
                 },
                 992: {
                     items: customProductCarousel.attr("data-lg")
+                }
+            }
+        });
+    }
+
+    if($(".h5-banner-product .product-carousel").length) {
+        var rtl = false;
+        var h5customProductCarousel = $('.h5-banner-product .product-carousel');
+        (h5customProductCarousel.attr("data-nav") == "true") ? nav = 1 : nav = 0;
+        (h5customProductCarousel.attr("data-dots") == "true") ? dots = 1 : dots = 0;
+        (h5customProductCarousel.attr("data-auto") == "true") ? autoplay = 1 : autoplay = 0;
+
+        if ($("body").hasClass("rtl")) rtl = true;
+            h5customProductCarousel.owlCarousel({
+            rtl: rtl,
+            loop: true,
+            margin: 10,
+            nav: nav,
+            dots: dots,
+            autoplay: autoplay,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                576: {
+                    items: h5customProductCarousel.attr("data-sm")
+                },
+                768: {
+                    items: h5customProductCarousel.attr("data-md")
+                },
+                992: {
+                    items: h5customProductCarousel.attr("data-lg")
                 }
             }
         });

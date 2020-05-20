@@ -32,19 +32,20 @@
 			{/if}
 		</div>
 	{/if}
+	<div class="line-custom"></div>
 	<div class="tabs-navigation">
 		<ul class="nav nav-tabs">
 		{$cf = 0}
 			{if $config.show_featured eq '1'}
-				<li class="nav-item"><a data-toggle="tab" href="#featured" class="nav-link active">{l s='Featured' d='Modules.JmsPagebuilder'}</a></li>
+				<li class="nav-item"><a data-toggle="tab" href="#featured" class="nav-link active">{l s='Featured Products' d='Modules.JmsPagebuilder'}</a></li>
 			{$cf = $cf + 1}
 			{/if}
 			{if $config.show_new eq '1'}
-				<li class="nav-item"><a data-toggle="tab" href="#latest" class="nav-link{if $cf eq 0} active{/if}">{l s='Latest' d='Modules.JmsPagebuilder'}</a></li>
+				<li class="nav-item"><a data-toggle="tab" href="#latest" class="nav-link{if $cf eq 0} active{/if}">{l s='New Arrivals' d='Modules.JmsPagebuilder'}</a></li>
 				{$cf = $cf + 1}
 			{/if}
 			{if $config.show_topseller eq '1'}
-				<li class="nav-item"><a data-toggle="tab" href="#topseller" class="nav-link{if $cf eq 0} active{/if}">{l s='Bestseller' d='Modules.JmsPagebuilder'}</a></li>
+				<li class="nav-item"><a data-toggle="tab" href="#topseller" class="nav-link{if $cf eq 0} active{/if}">{l s='Best Seller' d='Modules.JmsPagebuilder'}</a></li>
 				{$cf = $cf + 1}
 			{/if}
 			{if $config.show_special eq '1'}

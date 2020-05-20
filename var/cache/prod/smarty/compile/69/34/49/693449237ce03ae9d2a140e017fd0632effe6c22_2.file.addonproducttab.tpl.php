@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-18 11:13:04
+/* Smarty version 3.1.33, created on 2020-05-20 10:40:20
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonproducttab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec25fb02baab5_81441156',
+  'unifunc' => 'content_5ec4fb04501591_58027719',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '693449237ce03ae9d2a140e017fd0632effe6c22' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addonproducttab.tpl',
-      1 => 1588931410,
+      1 => 1589948795,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 5,
   ),
 ),false)) {
-function content_5ec25fb02baab5_81441156 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec4fb04501591_58027719 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-producttab">
 	<?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 		<div class="addon-tab-title">
@@ -33,21 +33,22 @@ function content_5ec25fb02baab5_81441156 (Smarty_Internal_Template $_smarty_tpl)
 			<?php }?>
 		</div>
 	<?php }?>
+	<div class="line-custom"></div>
 	<div class="tabs-navigation">
 		<ul class="nav nav-tabs">
 		<?php $_smarty_tpl->_assignInScope('cf', 0);?>
 			<?php if ($_smarty_tpl->tpl_vars['config']->value['show_featured'] == '1') {?>
-				<li class="nav-item"><a data-toggle="tab" href="#featured" class="nav-link active"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Featured','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+				<li class="nav-item"><a data-toggle="tab" href="#featured" class="nav-link active"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Featured Products','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
 </a></li>
 			<?php $_smarty_tpl->_assignInScope('cf', $_smarty_tpl->tpl_vars['cf']->value+1);?>
 			<?php }?>
 			<?php if ($_smarty_tpl->tpl_vars['config']->value['show_new'] == '1') {?>
-				<li class="nav-item"><a data-toggle="tab" href="#latest" class="nav-link<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?> active<?php }?>"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Latest','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+				<li class="nav-item"><a data-toggle="tab" href="#latest" class="nav-link<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?> active<?php }?>"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'New Arrivals','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
 </a></li>
 				<?php $_smarty_tpl->_assignInScope('cf', $_smarty_tpl->tpl_vars['cf']->value+1);?>
 			<?php }?>
 			<?php if ($_smarty_tpl->tpl_vars['config']->value['show_topseller'] == '1') {?>
-				<li class="nav-item"><a data-toggle="tab" href="#topseller" class="nav-link<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?> active<?php }?>"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Bestseller','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+				<li class="nav-item"><a data-toggle="tab" href="#topseller" class="nav-link<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?> active<?php }?>"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Best Seller','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
 </a></li>
 				<?php $_smarty_tpl->_assignInScope('cf', $_smarty_tpl->tpl_vars['cf']->value+1);?>
 			<?php }?>

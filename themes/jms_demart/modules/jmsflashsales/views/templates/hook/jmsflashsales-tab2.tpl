@@ -23,43 +23,39 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="jmsflashsales-tab2">
-	<div class="tabpanel">
-		<div class="addon-title">
-			<h3 class="pull-left">{l s='WEEK DEALS LIMITED' d='Shop.Theme.Catalog'}</h3>
-			<div class="flashsales-countdown pull-right">{$expiretime|escape:'htmlall':'UTF-8'}</div>
-			<div class="clearfix"></div>
+<div class="jmsflashsales-tab2 row">
+	<div class="tabpanel col-3">
+		<div class="addon-title ">
+			<h3>{l s='Week Deals Limited, Hurry Up!' d='Shop.Theme.Catalog'}</h3>
 		</div>
-	</div>
-	<div class="main">
+        <div class="discount">{l s='Discount' d='Shop.Theme.Catalog'}</div>
 		<ul class="nav">
 			{foreach from = $categories item = category key = k}
 				{$cat_products = $products[$k]}
 				{if !empty($cat_products)}
-				<li class="nav-item {if $k == 0}active{/if}">
-					<a href="#category-{$k}" data-toggle="tab">
-						{$category.title|escape:'htmlall':'UTF-8'}
-					</a>
-				</li>	
+					<li class="nav-item {if $k != 4}hidden{/if}">
+						<a class="{if $k == 4}active{/if}" href="#category-{$k}" data-toggle="tab">
+							{$category.title|escape:'htmlall':'UTF-8'}
+						</a>
+					</li>	
 				{/if}	
 			{/foreach}
 		</ul>
-		<div class="tab-content">
-			{foreach from=$products item=cat_products key=k}
-				{if !empty($cat_products)}
-				<div class="tab-pane fade {if $k == 0}in active{/if}" id="category-{$k}">	
+		<div class="flashsales-countdown">{$expiretime|escape:'htmlall':'UTF-8'}</div>
+	</div>
+	<div class="tab-content col-9">
+		{foreach from=$products item=cat_products key=k}
+			{if !empty($cat_products)}
+				<div class="tab-pane {if $k == 0}active{/if}" id="category-{$k}">	
 					<div class="flashsales-tab-carousel2">
-						{foreach from = $cat_products item = product key=k}	
+						{foreach from = $cat_products item = product}	
 							<div class="item ajax_block_product">		
-								{include file="catalog/_partials/miniatures/product_flashsale_tab2.tpl" product=$product}
+								{include file="catalog/_partials/miniatures/product.tpl" product=$product}
 							</div>	
 						{/foreach}
 					</div>	
 				</div>
-				{/if}	
-			{/foreach}
-		</div>
-		<div class="clearfix"></div>
+			{/if}	
+		{/foreach}
 	</div>
-	
 </div>

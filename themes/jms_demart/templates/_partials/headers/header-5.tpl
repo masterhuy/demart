@@ -22,6 +22,17 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+{if ($jmsSetting.header_topbar == 1)}
+<div id="header-topbar" class="{if $jmsSetting.topbar_class} {$jmsSetting.topbar_class}{/if}">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="layout-column col">
+                {$jmsSetting.topbar_content nofilter}
+            </div>
+        </div>
+    </div>
+</div>
+{/if}
 <div id="header-top" class="header-top{if $jmsSetting.header_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
  	<div class="container">
  		<div class="row align-items-center">
