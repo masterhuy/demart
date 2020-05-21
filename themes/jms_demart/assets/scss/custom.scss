@@ -4131,10 +4131,30 @@ header .row {
 		color: #092333;
 	}
 	.addon-title{
-		text-transform: capitalize;
+		h3{
+			text-transform: capitalize;
+		}
+	}
+}
+.h6-producttab{
+	.addon-producttab{
+		margin-bottom: 5px;
+	}
+	.product-miniature::before{
+		content: "";
+		position: absolute;
+		width: 1px;
+		height: 343px;
+		background-color: #ebebeb;
+		right: -13px;
+		top: 7px;
+	}
+	.owl-item.active + .active + .active + .active + .active + .active + .active .product-miniature::before{
+		display: none;
 	}
 }
 .h6-banner{
+	margin-top: -10px;
 	.banner-left{
 		.text-1, .text-2{
 			font-family: Work Sans;
@@ -4189,13 +4209,171 @@ header .row {
 	}
 }
 .h6-flashsale{
-	padding: 50px 0;
+	padding: 40px 0 0;
+	.row > .layout-column{
+		flex: 0 0 70.2%;
+		max-width: 70.2%;
+	}
 	.jmsflashsales-tab2{
+		margin: 0 -25px;
+		.addon-title{
+			margin-bottom: 31px;
+			h3{
+				line-height: 1.35;
+			}
+		}
 		.discount{
 			font-size: 24px;
 			font-family: Work Sans;
 			font-weight: 300;
 			color: #000;
+			letter-spacing: -0.2px;
+			line-height: 1.3;
+		}
+		.tabpanel{
+			margin-top: 13px;
+			flex: 0 0 24.5%;
+			max-width: 24.5%;
+			padding: 0 25px;
+			label{
+				font-size: 24px;
+				font-family: Work Sans;
+				font-weight: 300;
+				color: #000;
+				letter-spacing: -0.35px;
+				margin-top: 23px;
+				margin-bottom: 2px;
+			}
+		}
+		.tab-content{
+			flex: 0 0 75.5%;
+			max-width: 75.5%;
+			padding: 0 25px;
+		}
+		.nav li{
+			width: 100%;
+			line-height: 1;
+			a{
+				font-size: 150px;
+				font-weight: 200;
+				font-family: Work Sans;
+				color: #000;
+				position: relative;
+				line-height: 0.75;
+				text-align: center;
+				display: block;
+				z-index: 1;
+				&::before{
+					content: "";
+					width: 100%;
+					height: 52px;
+					left: 0;
+					bottom: 2px;
+					position: absolute;
+					background-color: $color6;
+					z-index: -1;
+				}
+				span{
+					font-size: 60px;
+					font-weight: 300;
+				}
+			}
+		}
+		.countdown-section {
+			background: #092333;
+			width: 60px;
+			display: inline-flex;
+			height: 60px;
+			border-radius: 50%;
+			color: #fff;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			line-height: 1.2;
+			&:not(:last-child){
+				margin-right: 7px;
+			}
+			.countdown-amount {
+				font-weight: 800;
+				font-size: 17px;
+			}
+		}
+		.owl-stage-outer{
+			padding-bottom: 60px;
+		}
+	}
+}
+.h6-banner-product{
+	.row{
+		margin-left: -17.5px;
+		margin-right: -17.5px;
+	}
+	.layout-column{
+		padding-left: 17.5px;
+		padding-right: 17.5px;
+		&.product{
+			flex: 0 0 64%;
+			max-width: 64%;
+			.content-carousel{
+				.owl-stage-outer{
+					padding: 0 1px;
+					margin: 0 -1px;
+				}
+			}
+			.product-carousel{
+				margin-top: 4px;
+				.product-miniature::before{
+					content: "";
+					position: absolute;
+					width: 1px;
+					height: 372px;
+					background-color: #ebebeb;
+					right: -13px;
+					top: 7px;
+				}
+				.owl-item.active + .active + .active + .active .product-miniature::before{
+					display: none;
+				}
+			}
+			.content-item{
+				border: 1px solid #ebebeb;
+				text-align: center;
+				position: relative;
+				p{
+					margin-bottom: 0;
+				}
+				a{
+					display: block;
+					span{
+						position: absolute;
+						bottom: 12px;
+						width: 100%;
+						left: 0;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		&.banner{
+			flex: 0 0 36%;
+			max-width: 36%;
+			.banner-content{
+				position: absolute;
+				left: 50px;
+				bottom: 40px;
+				p{
+					margin-bottom: 0;
+				}
+				.text{
+					font-size: 42px;
+					color: #fff;
+					font-family: Work Sans;
+					font-weight: 600;
+					line-height: 1.15;
+					letter-spacing: 0;
+					margin-top: 30px;
+				}
+			}
 		}
 	}
 }
@@ -4970,7 +5148,7 @@ footer .row{
 
 /******** line *******/
 .jms-row.line{
-	.container{
+	.container-fluid{
 		position: relative;
 		&::before{
 			content: "";

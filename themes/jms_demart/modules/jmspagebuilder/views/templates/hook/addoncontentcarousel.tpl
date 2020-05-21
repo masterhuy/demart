@@ -31,7 +31,7 @@
 	{/if}
 	</div>
 {/if}
-<div class="content-carousel{if isset($box_class) && $box_class} {$box_class nofilter}{/if} owl-carousel" data-items="{if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}5{/if}" data-lg="{if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}5{/if}" data-md="{if $items_show_md}{$items_show_md|escape:'htmlall':'UTF-8'}{else}4{/if}" data-sm="{if $items_show_sm}{$items_show_sm|escape:'htmlall':'UTF-8'}{else}3{/if}" data-xs="{if $items_show_xs}{$items_show_xs|escape:'htmlall':'UTF-8'}{else}2{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}">
+<div class="content-carousel{if isset($box_class) && $box_class} {$box_class nofilter}{/if}" data-items="{if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}5{/if}" data-lg="{if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}5{/if}" data-md="{if $items_show_md}{$items_show_md|escape:'htmlall':'UTF-8'}{else}4{/if}" data-sm="{if $items_show_sm}{$items_show_sm|escape:'htmlall':'UTF-8'}{else}3{/if}" data-xs="{if $items_show_xs}{$items_show_xs|escape:'htmlall':'UTF-8'}{else}2{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}">
 	{foreach from=$contents item=content}
 		{if $content.image || $content.content}
 			<div class="content-item">

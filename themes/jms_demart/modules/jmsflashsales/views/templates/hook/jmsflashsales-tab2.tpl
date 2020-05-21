@@ -35,12 +35,13 @@
 				{if !empty($cat_products)}
 					<li class="nav-item {if $k != 4}hidden{/if}">
 						<a class="{if $k == 4}active{/if}" href="#category-{$k}" data-toggle="tab">
-							{$category.title|escape:'htmlall':'UTF-8'}
+							{$category.title|escape:'htmlall':'UTF-8'}<span>%</span>
 						</a>
 					</li>	
 				{/if}	
 			{/foreach}
 		</ul>
+		<label>{l s='End in offers:' d='Shop.Theme.Catalog'}</label>
 		<div class="flashsales-countdown">{$expiretime|escape:'htmlall':'UTF-8'}</div>
 	</div>
 	<div class="tab-content col-9">
