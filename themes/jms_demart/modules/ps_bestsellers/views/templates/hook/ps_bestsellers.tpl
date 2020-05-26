@@ -28,7 +28,7 @@
 	</div>
 	<div class="products">
 		{foreach from=$products item="product"}
-			{include file="catalog/_partials/miniatures/product-5.tpl" product=$product}
+			{include file="catalog/_partials/miniatures/product-flex.tpl" product=$product}
 		{/foreach}
 	</div>
 </section>

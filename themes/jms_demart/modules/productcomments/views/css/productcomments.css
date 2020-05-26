@@ -26,38 +26,6 @@
 /**
  *  Product comments CSS
  */
-
-.btn-comment,
-.btn-comment-inverse {
-  height: 36px;
-  border-radius: 2px;
-  background-color: #6B868F;
-  color: #FFFFFF;
-  font-size: 14px;
-  box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);
-  padding: 8px;
-}
-.btn-comment .material-icons,
-.btn-comment-inverse .material-icons{
-  font-size: 20px;
-  margin-right: 7px;
-}
-
-.btn-comment:hover {
-  background-color: #3C4D52;
-}
-
-.btn-comment-inverse {
-  background-color: #FFFFFF;
-  color: #363A41;
-  border: 1px solid #979797;
-}
-.btn-comment-inverse:hover {
-  background-color: #6B868F;
-  border: 1px solid #6B868F;
-  color: #FFFFFF;
-}
-
 .btn-comment-big {
   padding: 13px 16px;
   height: 45px;
@@ -72,6 +40,10 @@
   color: #232323;
 }
 
+.link-comment.user-reviews{
+  display: none;
+}
+
 .link-comment:hover, .link-comment:active {
   text-decoration: underline;
   color: #232323;
@@ -81,25 +53,50 @@
  * Additional product infos
  */
 
+ .product-comments-additional-info .empty-stars{
+  display: inline-block;
+  margin-right: 30px;
+  height: 20px;
+  min-width: 70px;
+  background: url(../img/star-empty-full.png) no-repeat 0 0 transparent;
+  background-position: center;
+}
+
+.product-comments-additional-info .post-product-comment{
+  background: transparent !important;
+  color: #444;
+  box-shadow: none;
+  padding: 0;
+}
+
 .product-comments-additional-info {
-  margin: 20px 0;
-  font-weight: 300;
+  margin: 15px 0 4px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  font-size: 14px;
 }
 
 .product-comments-additional-info .link-comment.post-product-comment {
-  border-left: 1px solid #979797;
-  padding-left: 12px;
-  margin-left: 12px;
+  letter-spacing: 0;
 }
 
 .product-comments-additional-info .comments-note {
-  margin-right: 30px;
-  margin-bottom: 20px;
+  margin-right: 22px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #f63622;
+  font-weight: 500;
+  position: relative;
+}
+.product-comments-additional-info .comments-note .grade-stars {
+  margin-right: 4px;
+  height: 20px;
+  width: 70px;
+  overflow: hidden;
+}
+.product-comments-additional-info .comments-note .grade-stars .star-content{
+  top: 7px;
 }
 
 /**
@@ -107,21 +104,24 @@
  */
 .product-comment-modal .modal-header {
   border: none;
-  padding: 30px 30px 15px;
+  padding: 20px 30px 0;
 }
 
 .product-comment-modal .modal-body {
-  padding: 15px 30px 30px;
+  padding: 30px;
 }
 
 .product-comment-modal .modal-header h2 {
   float: left;
   font-size: 20px;
+  font-family: Work Sans;
+  letter-spacing: -0.3px;
+  margin-bottom: 0;
 }
 
 .product-comment-modal .modal-dialog {
   width: calc(100% - 30px);
-  max-width: 774px;
+  max-width: 500px;
 }
 
 .product-comment-modal .modal-dialog h3 {
@@ -134,13 +134,11 @@
 
 .product-comment-modal .modal-dialog .product-cover,
 .product-comment-modal .modal-dialog .product-cover img {
-  width: 99px;
-  height: 99px;
+  
 }
 
 .product-comment-modal label.form-label {
-  font-size: 16px;
-  margin: 10px 0;
+
 }
 
 .product-comment-modal input {
@@ -157,17 +155,13 @@
   margin-bottom: 10px;
   padding: 10px 10px;
 }
-
-.product-comment-modal .btn-comment,
-.product-comment-modal .btn-comment-inverse {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: bold;
-}
-
 .product-comment-modal .required {
   font-size: 12px;
   margin-left: 5px;
+  top: 0;
+}
+.product-comment-modal sup{
+  color: #f63622;
 }
 
 .product-comment-modal .post-comment-buttons {
@@ -179,11 +173,13 @@
 .product-comment-modal .post-comment-buttons .btn-comment {
   margin-left: 15px;
 }
-
+#post-product-comment-modal{
+  z-index: 9999;
+}
 #product-comment-posted-modal .post-comment-buttons,
 #product-comment-post-error .post-comment-buttons,
 #update-comment-usefulness-post-error .post-comment-buttons {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .modal-header .material-icons {
@@ -214,14 +210,14 @@
 .star-content div.star-on,
 .star-content div.star-hover {
   display: block;
-  width: 20px;
-  height: 20px;
-  background: url(../img/stars.png) no-repeat 0 0 transparent;
+  width: 14px;
+  height: 14px;
+  background: url(../img/small_stars.png) no-repeat 0 0 transparent;
   flex: auto;
 }
 .star-content div.star-on,
 .star-content div.star-hover {
-  background-position: -24px 0;
+  background-position: -14px 0;
 }
 
 .small-stars .star-content div.star,
@@ -241,15 +237,16 @@
   cursor: pointer;
 }
 
-.grade-stars {
+.product-list-reviews .grade-stars {
   position: relative;
   height: 20px;
-  min-width: 120px;
+  min-width: 70px;
   display: inline-block;
 }
 
-.grade-stars.small-stars {
+.product-list-reviews .grade-stars.small-stars {
   min-width: 70px;
+  overflow: hidden;
 }
 
 .product-list-reviews.empty .grade-stars.small-stars {
@@ -257,14 +254,17 @@
   background-position: center;
 }
 
-.grade-stars .star-content {
-  position: absolute;
-  top: 3px;
-  left: 0;
+.product-list-reviews.empty .grade-stars.small-stars *{
+  display: none;
+}
+
+.grade-stars .star-content.star-empty {
+  
 }
 
 .criterion-rating .grade-stars .star-content {
-  top: 0;
+  top: 6px;
+  left: 0 !important;
 }
 
 #post-product-comment-modal .star-content div.star a {
@@ -279,9 +279,13 @@
 }
 
 #post-product-comment-modal .criterion-rating label {
-  color: #363A41;
-  font-size: 14px;
-  font-weight: bold;
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+#post-product-comment-modal .criterion-rating .grade-stars{
+  width: 70px;
+  height: 20px;
+  position: relative;
 }
 
 #post-product-comment-form input.error,
@@ -300,14 +304,16 @@
  */
 
 #product-comments-list-header {
-  padding: 20px 15px;
+  padding: 20px 10px;
   color: #232323;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-
+.post-product-comment{
+  float: right;
+}
 #product-comments-list-header .comments-nb {
   padding-left: 0;
   padding-top: 3px;
@@ -338,12 +344,7 @@
 }
 
 .product-comment-list-item .comment-infos {
-  height: 19px;
-  color: #6B868F;
-  font-size: 14px;
-  letter-spacing: -0.28px;
-  line-height: 19px;
-  min-height: 100px;
+
 }
 
 .product-comment-list-item .comment-infos .grade-stars {
@@ -352,32 +353,23 @@
 
 .product-comment-list-item .comment-content h4 {
   height: 22px;
-  color: #363A41;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: -0.32px;
+  letter-spacing: -0.3px;
   line-height: 22px;
 }
 
 .product-comment-list-item .comment-content p {
-  color: #363A42;
-  font-size: 14px;
-  letter-spacing: -0.28px;
-  line-height: 19px;
-  word-break: break-word;
+  
 }
-
+.product-comment-list-item .comment-buttons a:not(:last-child){
+  margin-right: 5px;
+}
 .product-comment-list-item .comment-content .comment-buttons a {
-  color: #6B868F;
-  font-size: 14px;
-  letter-spacing: -0.28px;
-  line-height: 19px;
-  margin-right: 8px;
-}
-
-.product-comment-list-item .comment-content .comment-buttons a .material-icons {
-  font-size: 18px;
   cursor: pointer;
+}
+.product-comment-list-item .comment-content .comment-buttons a i{
+  color: #000;
 }
 
 /*
@@ -464,7 +456,9 @@
   height: 28px;
 }
 
-.product-list-reviews .grade-stars .star-content {
+.grade-stars .star-content {
+  position: absolute;
+  left: 0;
   top: 4px;
 }
 

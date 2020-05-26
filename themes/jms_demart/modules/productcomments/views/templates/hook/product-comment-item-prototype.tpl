@@ -24,33 +24,33 @@
  *}
 
 <div class="product-comment-list-item row" data-product-comment-id="@COMMENT_ID@" data-product-id="@PRODUCT_ID@">
-  <div class="col-md-3 col-sm-3 comment-infos">
-    <div class="grade-stars"></div>
-    <div class="comment-date">
-      @COMMENT_DATE@
+    <div class="col-2 comment-infos">
+        <div class="grade-stars"></div>
+        <div class="comment-date">
+            @COMMENT_DATE@
+        </div>
+        <div class="comment-author">
+            {l s='By %1$s' sprintf=['@CUSTOMER_NAME@'] d='Modules.Productcomments.Shop'}
+        </div>
     </div>
-    <div class="comment-author">
-      {l s='By %1$s' sprintf=['@CUSTOMER_NAME@'] d='Modules.Productcomments.Shop'}
-    </div>
-  </div>
 
-  <div class="col-md-9 col-sm-9 comment-content">
-    <h4>@COMMENT_TITLE@</h4>
-    <p>@COMMENT_COMMENT@</p>
-    <div class="comment-buttons btn-group">
-      {if $usefulness_enabled}
-        <a class="useful-review">
-          <i class="material-icons thumb_up">thumb_up</i>
-          <span class="useful-review-value">@COMMENT_USEFUL_ADVICES@</span>
-        </a>
-        <a class="not-useful-review">
-          <i class="material-icons thumb_down">thumb_down</i>
-          <span class="not-useful-review-value">@COMMENT_NOT_USEFUL_ADVICES@</span>
-        </a>
-      {/if}
-      <a class="report-abuse" title="{l s='Report abuse' d='Modules.Productcomments.Shop'}">
-        <i class="material-icons outlined_flag">flag</i>
-      </a>
+    <div class="col-10 comment-content">
+        <h4>@COMMENT_TITLE@</h4>
+        <p>@COMMENT_COMMENT@</p>
+        <div class="comment-buttons btn-group">
+            {if $usefulness_enabled}
+                <a class="useful-review">
+                    <i class="lnr lnr-thumbs-up"></i>
+                    <span class="useful-review-value">@COMMENT_USEFUL_ADVICES@</span>
+                </a>
+                <a class="not-useful-review">
+                    <i class="lnr lnr-thumbs-down"></i>
+                    <span class="not-useful-review-value">@COMMENT_NOT_USEFUL_ADVICES@</span>
+                </a>
+            {/if}
+            <a class="report-abuse" title="{l s='Report abuse' d='Modules.Productcomments.Shop'}">
+                <i class="lnr lnr-flag"></i>
+            </a>
+        </div>
     </div>
-  </div>
 </div>

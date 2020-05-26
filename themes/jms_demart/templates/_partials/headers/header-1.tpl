@@ -87,7 +87,7 @@
                 <a data-toggle="collapse" data-target="#ver-menu" class="vermenu-btn collapsed align-items-center" aria-expanded="false">
                     <img src="{$urls.theme_assets}img/icons/icon-vermenu.png" /> {$jmsSetting.vermenu_button_text nofilter}
                 </a>
-                <div id="ver-menu" class="navbar collapse show{if $jmsSetting.vermenu_class} {$jmsSetting.vermenu_class}{/if}">
+                <div id="ver-menu" class="navbar collapse {if $jmsSetting.vermenu_class} {$jmsSetting.vermenu_class}{/if}">
                     {widget name="jmsmegamenu" hook='VerMenu'}
                 </div>
             </div>

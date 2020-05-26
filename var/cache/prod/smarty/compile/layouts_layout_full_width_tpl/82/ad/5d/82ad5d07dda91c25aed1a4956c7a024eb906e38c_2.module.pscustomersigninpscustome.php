@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-20 10:53:18
+/* Smarty version 3.1.33, created on 2020-05-26 11:02:19
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec4fe0e121285_37208715',
+  'unifunc' => 'content_5ecce92bb853a5_28039368',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec4fe0e121285_37208715 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ecce92bb853a5_28039368 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="_desktop_user_info">
 	<div class="user-info btn-group">
 		<a href="#" class="account" data-toggle="dropdown" data-display="static">

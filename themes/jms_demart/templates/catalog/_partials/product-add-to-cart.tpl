@@ -28,7 +28,7 @@
             <div class="product-quantity">
                 <div class="customs">
                     <div class="title">
-                        {l s='Quantity' d='Shop.Theme.Actions'}:
+                        {l s='Qty' d='Shop.Theme.Actions'}:
                     </div>
                     <div class="qty">
                       <input
@@ -69,7 +69,7 @@
                     {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon}
                 {/if}
                 <a href="#" class="addToWishlist" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
-                    <i class="fal fa-heart" aria-hidden="true"></i>
+                    <i class="lnr lnr-heart" aria-hidden="true"></i>
                     <span>{l s='Add to wishlist'}</span>
                 </a>
             {/if}

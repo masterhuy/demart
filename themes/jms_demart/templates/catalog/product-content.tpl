@@ -42,13 +42,18 @@
                 <h1 itemprop="name" class="product-name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
         {/block}
+
+        {block name='product_additional_info'}
+            {include file='catalog/_partials/product-additional-info.tpl'}
+        {/block}
+
         {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
         {/block}
 
         <div class="product-information">
             {block name='product_description_short'}
-                <div id="product-description-short-{$product.id}" class="product-desc">{$product.description_short|truncate:400:"..." nofilter}</div>
+                <div id="product-description-short-{$product.id}" class="product-desc">{$product.description_short|truncate:450:"..." nofilter}</div>
             {/block}
 
             {if isset($product.specific_prices.to) && $product.specific_prices.to > 0}
@@ -148,7 +153,7 @@
             </div>
             {if $jmsSetting.product_page_sharing}
                 <!-- Go to www.addthis.com/dashboard to customize your tools --> 
-                <div class="addthis_inline_share_toolbox_zpv1"></div>
+                <div class="addthis_inline_share_toolbox_fx4m"></div>
             {/if}
         </div>
     </div>

@@ -80,6 +80,7 @@ class ProductComments extends Module
 
         if (parent::install() == false ||
             !$this->registerHook('displayFooterProduct') || //Product page footer
+            !$this->registerHook('displayProductExtraContent') ||
             !$this->registerHook('header') || //Adds css and javascript on front
             !$this->registerHook('displayProductListReviews') || //Product list miniature
             !$this->registerHook('displayProductAdditionalInfo') || //Display info in checkout column
@@ -115,6 +116,7 @@ class ProductComments extends Module
             !$this->unregisterHook('displayProductAdditionalInfo') ||
             !$this->unregisterHook('header') ||
             !$this->unregisterHook('displayFooterProduct') ||
+            !$this->unregisterHook('displayProductExtraContent') ||
             !$this->unregisterHook('displayProductListReviews')) {
             return false;
         }
@@ -858,6 +860,11 @@ class ProductComments extends Module
      * @throws SmartyException
      */
     public function hookDisplayFooterProduct($params)
+    {
+        return $this->renderProductCommentsList($params['product']) . $this->renderProductCommentModal($params['product']);
+    }
+
+    public function displayProductExtraContent($params)
     {
         return $this->renderProductCommentsList($params['product']) . $this->renderProductCommentModal($params['product']);
     }

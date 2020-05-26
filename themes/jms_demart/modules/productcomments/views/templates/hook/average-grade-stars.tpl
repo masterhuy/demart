@@ -22,10 +22,8 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
 {if $nb_comments != 0}
   <div class="comments-note">
-    <span>{l s='Grade' d='Modules.Productcomments.Shop'}</span>
-    <div class="grade-stars" data-grade="{$grade}"></div>
+    <div class="grade-stars" data-grade="{$grade}"></div> <span class="count">({$nb_comments})<span>
   </div>
 {/if}

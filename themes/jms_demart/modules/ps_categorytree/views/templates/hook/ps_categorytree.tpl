@@ -35,6 +35,7 @@
                         {if $node.children}
                             <span class="navbar-toggler collapse-icons collapsed" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
                                 <i class="fal fa-plus" aria-hidden="true"></i>
+                                <i class="fal fa-minus" aria-hidden="true"></i>
                             </span>
                         {/if}
                         {if $node.children}
@@ -47,6 +48,7 @@
                             {if $node.children}
                                 <span class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
                                     <i class="fal fa-plus" aria-hidden="true"></i>
+                                    <i class="fal fa-minus" aria-hidden="true"></i>
                                 </span>
                             {/if}
                         </a>
@@ -67,7 +69,7 @@
 	{if $page.page_name != 'index'}
 		<div class="title-block">
 			<h3 class="d-flex cursor-pointer" data-toggle="collapse" data-target="#category-sub-menu">
-                {l s='Categories' d='Shop.Theme.CategoryTree'}
+                {l s='Category tree links' d='Shop.Theme.CategoryTree'}
             </h3>
 		</div>
 	{/if}

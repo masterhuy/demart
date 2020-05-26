@@ -96,6 +96,44 @@
         <div class="product-short-desc">
     		{$product.description_short|truncate:300:'...' nofilter}
     	</div>
+        <ul class="product-buttons">
+            {if !$configuration.is_catalog && $jmsSetting.productbox_addtocart}
+                <li>
+                    <div class="product-cart">
+                        {if $product.quantity >= 1}
+                            <a href="#" class="btn btn-default ajax-add-to-cart product-btn{if $product.quantity < 1} disabled{/if} cart-button" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+                                {l s='Add to cart' d='Shop.Theme.Actions'}
+                            </a>
+                        {else}
+                            <a href="#" class="btn-default product-btn disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
+                                {l s='Sold Out' d='Shop.Theme.Actions'}
+                            </a>
+                        {/if}
+                    </div>
+                </li>
+            {/if}
+            {if $jmsSetting.productbox_wishlist}
+                {assign var="str_at" value=$jmsSetting.wishlist_icon|strpos:"_"}
+                {if $str_at && $jmsSetting.wishlist_icon_thickness}
+                {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon|substr:0:($str_at)}
+                {assign var="wishlist_icon" value=$wishlist_icon|cat:$jmsSetting.wishlist_icon_thickness}
+                {else}
+                {assign var="wishlist_icon" value=$jmsSetting.wishlist_icon}
+                {/if}
+                <li>
+                    <a href="#" class="d-flex addToWishlist" title="{l s='Add to Wislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}">
+                        <i class="lnr lnr-heart"></i>
+                    </a>
+                </li>
+            {/if}
+            {if $jmsSetting.productbox_quickview}
+                <li>
+                    <a href="#" class="d-flex quick-view" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}">
+                        <i class="lnr lnr-eye"></i>
+                    </a>
+                </li>
+            {/if}
+        </ul>
 	</div>
     <ul class="product-buttons">
         {if !$configuration.is_catalog && $jmsSetting.productbox_addtocart}

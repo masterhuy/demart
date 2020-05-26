@@ -92,13 +92,13 @@ customCarousel = () => {
                     items: 2
                 },
                 768: {
-                    items: 2
-                },
-                992: {
                     items: 3
                 },
-                1200: {
+                992: {
                     items: 4
+                },
+                1200: {
+                    items: 5
                 }
             },
             rtl: rtl,
@@ -177,7 +177,7 @@ customCarousel = () => {
         });
     }
 
-    $('.our-category-carousel .container > .row').addClass('sub-category-carousel');
+    $('.h1-our-category .container > .row').addClass('sub-category-carousel');
     if($(".sub-category-carousel").length) {
         var subCategoryCarousel = $('.sub-category-carousel');			
         var rtl = false;
@@ -291,18 +291,18 @@ customCarousel = () => {
                     items: 2
                 },
                 768: {
-                    items: 2
-                },
-                992: {
                     items: 3
                 },
-                1200: {
+                992: {
                     items: 4
+                },
+                1200: {
+                    items: 5
                 }
             },
             rtl: rtl,
             margin: 0,
-            nav: false,
+            nav: true,
             dots: false,
             loop: true,
             navigationText: ["", ""],
@@ -673,7 +673,7 @@ customCarousel = () => {
 }
 
 hoverShowSublink = () => {
-    $(".our-category-carousel .layout-column").hover(function(){
+    $(".h1-our-category .layout-column").hover(function(){
         $(this).addClass("open-sublink");
         }, function(){
         $(this).removeClass("open-sublink");
@@ -694,6 +694,10 @@ $(document).ready(function(){
     setTimeout(() => {
         $('.preloader').fadeOut();
     }, 3000);	
+
+    if ($("body").hasClass("page-index")){
+        $('.header-1 #ver-menu').addClass('show');
+    }
 
     $("#header-sidebar, #sidebar-btn").on("click", function(e) {
         e.preventDefault();
@@ -723,6 +727,14 @@ $(document).ready(function(){
         $(".megatab-carousel").css("z-index", "9");
         }, function(){
         $(".megatab-carousel").css("z-index", "1");
+    });
+
+    $('.panel-default').on('show.bs.collapse', function (e) {
+        $('.panel-default .collapse').not(e.target).collapse('hide');
+    });
+
+    $('.link-comment.post-product-comment').click(function(){
+        $('#review').collapse('show');
     });
 
     $(window).resize(function(){

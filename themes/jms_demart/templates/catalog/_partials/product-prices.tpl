@@ -35,7 +35,7 @@
 
         {block name='product_price'}
             <div
-                class="product-price h5 {if $product.has_discount}has-discount{/if}"
+                class="product-price {if $product.has_discount}has-discount{/if}"
                 itemprop="offers"
                 itemscope
                 itemtype="https://schema.org/Offer"

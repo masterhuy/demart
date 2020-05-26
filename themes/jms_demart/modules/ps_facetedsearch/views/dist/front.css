@@ -58,26 +58,26 @@
 
 
 #search_filters .ui-slider-horizontal .ui-slider-handle {
-  margin-left: -1px;
+  margin-left: -3.5px;
   cursor: pointer; }
 
 #search_filters .ui-widget-header {
   background: transparent; }
 
 #search_filters .ui-slider .ui-slider-handle {
-  top: -6px;
-  background: #fff;
+  top: -7px;
+  background: #14c2ee;
   width: 17px;
   height: 17px;
   border-radius: 50%;
-  border: 4px solid #ff794f;
+  border: 0;
 }
 #search_filters .ui-slider-horizontal {
-  height: 5px;
-  border-radius: 0;
-  border: 0;
-  background: #ccc;
-  margin-top: 15px;
+  height: 9px;
+  border-radius: 10px;
+  border: 3px solid #e1e1e1;
+  background: #fff;
+  margin-top: 10px;
   width: calc(100% - 15px);
 }
 
