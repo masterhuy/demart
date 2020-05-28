@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-26 10:19:59
+/* Smarty version 3.1.33, created on 2020-05-28 09:00:05
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\footers\footer-1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eccdf3fbaa9b1_15061715',
+  'unifunc' => 'content_5ecf6f859906f8_54545812',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/footers/copyright-1.tpl' => 1,
   ),
 ),false)) {
-function content_5eccdf3fbaa9b1_15061715 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ecf6f859906f8_54545812 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:_partials/footers/footer-main-1.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender('file:_partials/footers/copyright-1.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }

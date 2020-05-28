@@ -39,18 +39,49 @@
 		{assign var="show_view" value=$post.views + 1}	
 		{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 		<article class="item-post clearfix">
+			<a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}" class="post-img">
+				{if $post.image}
+					<img src="{$image_baseurl nofilter}thumb_{$post.image nofilter}" class="img-responsive" />
+				{else}	
+					<img src="{$image_baseurl nofilter}no-img.jpg" class="img-responsive" />
+				{/if}
+				<p class="post-created">{$post.created|escape:'htmlall':'UTF-8'|date_format:"%B %e, %Y"}</p>
+				<h6>{$post.title nofilter}</h6>
+			</a>
+		</article>
+	{/foreach}				
+</div>
+{/if}
+
+{if $widget_setting.JBW_SB_SHOW_RECENT}
+<aside class="blog-widget widget-recent-post">
+	<h3 class="widget-title">
+		<span>{l s='Recent Posts' d='Modules.JmsBlogwidget'}</span>
+	</h3>				
+	{foreach from=$latestpost key=k item=post}
+		{assign var="show_view" value=$post.views + 1}
+		{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
+		<article class="item-post clearfix">
+			<div class="post-thumb">
 				<a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}" class="post-img">
 					{if $post.image}
 						<img src="{$image_baseurl nofilter}thumb_{$post.image nofilter}" class="img-responsive" />
 					{else}	
 						<img src="{$image_baseurl nofilter}no-img.jpg" class="img-responsive" />
 					{/if}
-					<p class="post-created">{$post.created|escape:'htmlall':'UTF-8'|date_format:"%B %e, %Y"}</p>
-					<h6>{$post.title nofilter}</h6>
 				</a>
+			</div>
+			<div class="content">
+				<a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}" class="post-title">
+					{$post.title|truncate:35:'...' nofilter}
+				</a>
+				<p class="post-created">
+					{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"} 
+				</p>
+			</div>
 		</article>
 	{/foreach}				
-</div>
+</aside>
 {/if}
 
 {if $widget_setting.JBW_SB_SHOW_ARCHIVES}
@@ -69,41 +100,12 @@
 </aside>
 {/if}
 
-{if $widget_setting.JBW_SB_SHOW_RECENT}
-<aside class="blog-widget widget-recent-post">
-	<h3 class="widget-title"><span>{l s='Recent Posts' d='Modules.JmsBlogwidget'}</span></h3>				
-		{foreach from=$latestpost key=k item=post}
-			{assign var="show_view" value=$post.views + 1}
-			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
-			<article class="item-post clearfix">
-				<div class="post-thumb">
-					<a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}" class="post-img">
-						{if $post.image}
-							<img src="{$image_baseurl nofilter}thumb_{$post.image nofilter}" class="img-responsive" />
-						{else}	
-							<img src="{$image_baseurl nofilter}no-img.jpg" class="img-responsive" />
-						{/if}
-					</a>
-				</div>
-				<div class="content">
-					<a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}" class="post-title">
-						{$post.title|truncate:35:'...' nofilter}
-					</a>
-					<p class="post-created">
-						{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"} 
-					</p>
-				</div>
-			</article>
-		{/foreach}				
-</aside>
-{/if}
-
 {if $widget_setting.JBW_SB_SHOW_LATESTCOMMENT}
 <aside class="blog-widget widget-lastest-comment">
 	<h3 class="widget-title"><span>{l s='Recent Comments' d='Modules.JmsBlogwidget'}</span></h3>
 	{foreach from=$latestcomment key=k item=comment}
 		<article class="comment-item">
-			<p>{$comment.customer_name nofilter} on {$comment.comment|truncate:45:'...' nofilter}</p>
+			<p>{$comment.customer_name nofilter} on {$comment.comment|truncate:30:'...' nofilter}</p>
 		</article>
 	{/foreach}	
 </aside>

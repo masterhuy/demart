@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-26 11:02:41
+/* Smarty version 3.1.33, created on 2020-05-28 11:29:10
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonproductcarousel-flex.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecce94128d3b2_78309766',
+  'unifunc' => 'content_5ecf92760b4100_48813615',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1c10481eb9ecea4d385ad86ebf975237d5457c84' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addonproductcarousel-flex.tpl',
-      1 => 1589181431,
+      1 => 1590661565,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product-flex.tpl' => 1,
   ),
 ),false)) {
-function content_5ecce94128d3b2_78309766 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ecf92760b4100_48813615 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 <div class="addon-title">
 	<h3><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_title']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
@@ -32,7 +32,7 @@ if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 	<?php }?>
 </div>
 <?php }?>
-<div class="product-carousel owl-carousel" data-items="<?php if ($_smarty_tpl->tpl_vars['cols']->value) {
+<div class="product-carousel-flex" data-items="<?php if ($_smarty_tpl->tpl_vars['cols']->value) {
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['cols']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
 } else { ?>4<?php }?>" data-lg="<?php if ($_smarty_tpl->tpl_vars['cols']->value) {
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['cols']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');

@@ -52,6 +52,10 @@
 
 							</div>
 						{/if}
+						<div class="created">
+							<span class="day">{$post.created|escape:'html':'UTF-8'|date_format:'%e'}</span>
+							<span class="month">{$post.created|escape:'html':'UTF-8'|date_format:'%b'}</span>
+						</div>
 						{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 						{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}
 						<ul class="post-meta">
@@ -60,23 +64,19 @@
 									<span>
 										{l s='In' d='Modules.JmsBlog'}
 										<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
-											{$post.category_name|escape:'html':'UTF-8'}
+											{$post.category_name|escape:'html':'UTF-8'} /
 										</a>
 									</span>
 								</li>
 							{/if}
-							<li class="created">
-								<span class="day">{$post.created|escape:'html':'UTF-8'|date_format:'%e'}</span>
-								<span class="month">{$post.created|escape:'html':'UTF-8'|date_format:'%b'}</span>
-							</li>
 							{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
 								<li>
-									<span>{$post.views|escape:'html':'UTF-8'} {l s='view(s)' d='Modules.JmsBlog'},</span>
+									<span>{$post.views|escape:'html':'UTF-8'} {l s='View(s)' d='Modules.JmsBlog'} -</span>
 								</li>
 							{/if}
 							{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
 								<li>
-									<span>{$comments|@count}{l s=' comments' d='Modules.JmsBlog'}</span>
+									<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
 								</li>
 							{/if}
 						</ul>

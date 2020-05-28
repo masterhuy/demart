@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-14 11:25:14
+/* Smarty version 3.1.33, created on 2020-05-27 11:01:34
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmsblogwidget\views\templates\hook\sidebar-widget.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ebd1c8a348dc2_48458986',
+  'unifunc' => 'content_5ece3a7e8afe51_72753669',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '29a6b1a5489d8b384c6b9fb7d0d1765990cbbdce' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmsblogwidget\\views\\templates\\hook\\sidebar-widget.tpl',
-      1 => 1583204034,
+      1 => 1590566775,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ebd1c8a348dc2_48458986 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ece3a7e8afe51_72753669 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_demart\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_CATEGORYMENU']) {?>
 <aside class="blog-widget widget-categories">
@@ -43,6 +43,44 @@ foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars[
 		<?php $_smarty_tpl->_assignInScope('show_view', $_smarty_tpl->tpl_vars['post']->value['views']+1);?>	
 		<?php $_smarty_tpl->_assignInScope('params', array('post_id'=>$_smarty_tpl->tpl_vars['post']->value['post_id'],'category_slug'=>$_smarty_tpl->tpl_vars['post']->value['category_alias'],'slug'=>$_smarty_tpl->tpl_vars['post']->value['alias']));?>
 		<article class="item-post clearfix">
+			<a href="<?php echo jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value);?>
+" class="post-img">
+				<?php if ($_smarty_tpl->tpl_vars['post']->value['image']) {?>
+					<img src="<?php echo $_smarty_tpl->tpl_vars['image_baseurl']->value;?>
+thumb_<?php echo $_smarty_tpl->tpl_vars['post']->value['image'];?>
+" class="img-responsive" />
+				<?php } else { ?>	
+					<img src="<?php echo $_smarty_tpl->tpl_vars['image_baseurl']->value;?>
+no-img.jpg" class="img-responsive" />
+				<?php }?>
+				<p class="post-created"><?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'htmlall','UTF-8' )),"%B %e, %Y"), ENT_QUOTES, 'UTF-8');?>
+</p>
+				<h6><?php echo $_smarty_tpl->tpl_vars['post']->value['title'];?>
+</h6>
+			</a>
+		</article>
+	<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>				
+</div>
+<?php }?>
+
+<?php if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_RECENT']) {?>
+<aside class="blog-widget widget-recent-post">
+	<h3 class="widget-title">
+		<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Recent Posts','d'=>'Modules.JmsBlogwidget'),$_smarty_tpl ) );?>
+</span>
+	</h3>				
+	<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['latestpost']->value, 'post', false, 'k');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['post']->value) {
+?>
+		<?php $_smarty_tpl->_assignInScope('show_view', $_smarty_tpl->tpl_vars['post']->value['views']+1);?>
+		<?php $_smarty_tpl->_assignInScope('params', array('post_id'=>$_smarty_tpl->tpl_vars['post']->value['post_id'],'category_slug'=>$_smarty_tpl->tpl_vars['post']->value['category_alias'],'slug'=>$_smarty_tpl->tpl_vars['post']->value['alias']));?>
+		<article class="item-post clearfix">
+			<div class="post-thumb">
 				<a href="<?php echo jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value);?>
 " class="post-img">
 					<?php if ($_smarty_tpl->tpl_vars['post']->value['image']) {?>
@@ -53,17 +91,25 @@ thumb_<?php echo $_smarty_tpl->tpl_vars['post']->value['image'];?>
 						<img src="<?php echo $_smarty_tpl->tpl_vars['image_baseurl']->value;?>
 no-img.jpg" class="img-responsive" />
 					<?php }?>
-					<p class="post-created"><?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'htmlall','UTF-8' )),"%B %e, %Y"), ENT_QUOTES, 'UTF-8');?>
-</p>
-					<h6><?php echo $_smarty_tpl->tpl_vars['post']->value['title'];?>
-</h6>
 				</a>
+			</div>
+			<div class="content">
+				<a href="<?php echo jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value);?>
+" class="post-title">
+					<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['title'],35,'...' ));?>
+
+				</a>
+				<p class="post-created">
+					<?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'html','UTF-8' )),"%B %e, %Y"), ENT_QUOTES, 'UTF-8');?>
+ 
+				</p>
+			</div>
 		</article>
 	<?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>				
-</div>
+</aside>
 <?php }?>
 
 <?php if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_ARCHIVES']) {?>
@@ -92,50 +138,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </aside>
 <?php }?>
 
-<?php if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_RECENT']) {?>
-<aside class="blog-widget widget-recent-post">
-	<h3 class="widget-title"><span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Recent Posts','d'=>'Modules.JmsBlogwidget'),$_smarty_tpl ) );?>
-</span></h3>				
-		<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['latestpost']->value, 'post', false, 'k');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['post']->value) {
-?>
-			<?php $_smarty_tpl->_assignInScope('show_view', $_smarty_tpl->tpl_vars['post']->value['views']+1);?>
-			<?php $_smarty_tpl->_assignInScope('params', array('post_id'=>$_smarty_tpl->tpl_vars['post']->value['post_id'],'category_slug'=>$_smarty_tpl->tpl_vars['post']->value['category_alias'],'slug'=>$_smarty_tpl->tpl_vars['post']->value['alias']));?>
-			<article class="item-post clearfix">
-				<div class="post-thumb">
-					<a href="<?php echo jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value);?>
-" class="post-img">
-						<?php if ($_smarty_tpl->tpl_vars['post']->value['image']) {?>
-							<img src="<?php echo $_smarty_tpl->tpl_vars['image_baseurl']->value;?>
-thumb_<?php echo $_smarty_tpl->tpl_vars['post']->value['image'];?>
-" class="img-responsive" />
-						<?php } else { ?>	
-							<img src="<?php echo $_smarty_tpl->tpl_vars['image_baseurl']->value;?>
-no-img.jpg" class="img-responsive" />
-						<?php }?>
-					</a>
-				</div>
-				<div class="content">
-					<a href="<?php echo jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value);?>
-" class="post-title">
-						<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['title'],35,'...' ));?>
-
-					</a>
-					<p class="post-created">
-						<?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'html','UTF-8' )),"%B %e, %Y"), ENT_QUOTES, 'UTF-8');?>
- 
-					</p>
-				</div>
-			</article>
-		<?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>				
-</aside>
-<?php }?>
-
 <?php if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_LATESTCOMMENT']) {?>
 <aside class="blog-widget widget-lastest-comment">
 	<h3 class="widget-title"><span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Recent Comments','d'=>'Modules.JmsBlogwidget'),$_smarty_tpl ) );?>
@@ -147,7 +149,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars[
 ?>
 		<article class="comment-item">
 			<p><?php echo $_smarty_tpl->tpl_vars['comment']->value['customer_name'];?>
- on <?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['comment']->value['comment'],45,'...' ));?>
+ on <?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['comment']->value['comment'],30,'...' ));?>
 </p>
 		</article>
 	<?php

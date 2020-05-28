@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-26 09:13:06
+/* Smarty version 3.1.33, created on 2020-05-28 08:33:39
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecccf920ce297_30910423',
+  'unifunc' => 'content_5ecf69534a7ab2_86541894',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'edcb0114684a4bb6be1ba88437b7bfde204517e6' => 
     array (
       0 => 'module:productcommentsviewstempl',
-      1 => 1585128490,
+      1 => 1590640563,
       2 => 'module',
     ),
   ),
@@ -20,28 +20,27 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ecccf920ce297_30910423 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ecf69534a7ab2_86541894 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['nb_comments']->value != 0) {?>
-  <?php echo '<script'; ?>
+    <?php echo '<script'; ?>
  type="text/javascript">
-    const $ = jQuery;
-    $('#product-quickview-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
+        const $ = jQuery;
+        $('#product-quickview-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
 ').insertAfter($('.quickview #product-description-short'));
-    $('#product-quickview-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
+        $('#product-quickview-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
  .grade-stars').rating({ grade: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['average_grade']->value, ENT_QUOTES, 'UTF-8');?>
  });
-    $('#product-quickview-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
+        $('#product-quickview-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
  .comments-nb').html('(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['nb_comments']->value, ENT_QUOTES, 'UTF-8');?>
 )');
-  <?php echo '</script'; ?>
+    <?php echo '</script'; ?>
 >
 
-  <div id="product-quickview-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
+    <div id="product-quickview-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
 " class="product-quickview-review">
-    <div class="grade-stars"></div>
-    <div class="comments-nb"></div>
-  </div>
-</div>
+        <div class="grade-stars"></div>
+        <div class="comments-nb"></div>
+    </div>
 <?php }
 }
 }

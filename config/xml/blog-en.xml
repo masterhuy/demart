@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Shipping During COVID-19</title>
+    <link>https://www.prestashop.com/en/blog/shipping-during-coronavirus</link>
+    <description>COVID-19 has caused both shipping volume and delivery times to increase dramatically.</description>
+     <pubDate>Wed, 27 May 2020 18:03:27 +0200</pubDate>
+ <dc:creator>James Messer</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/shipping-during-coronavirus</guid>
+  </item>
+  <item>
     <title>Understand technical SEO terms and how to monitor your backlinks</title>
     <link>https://www.prestashop.com/en/blog/understand-SEO-backlinks</link>
     <description>Are you sure you are getting the most out of your link building efforts?</description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 15 Apr 2020 10:30:49 +0200</pubDate>
  <dc:creator>Eva Lacalle</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/how-to-migrate-prestashop-to-a-new-server</guid>
-  </item>
-  <item>
-    <title>How to become an e-commerce expert?</title>
-    <link>https://www.prestashop.com/en/blog/prestashop-training-ecommerce</link>
-    <description>Almost 300,000 online shops are now PrestaShops.</description>
-     <pubDate>Tue, 14 Apr 2020 15:05:32 +0200</pubDate>
- <dc:creator>Aurélien Bellanger</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-training-ecommerce</guid>
   </item>
   </channel>
 </rss>

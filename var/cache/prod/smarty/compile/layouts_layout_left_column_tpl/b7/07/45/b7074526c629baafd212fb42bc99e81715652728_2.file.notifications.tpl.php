@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-26 10:19:59
+/* Smarty version 3.1.33, created on 2020-05-28 09:00:04
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\notifications.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eccdf3f1e2b26_01346001',
+  'unifunc' => 'content_5ecf6f84ebc829_65462910',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eccdf3f1e2b26_01346001 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ecf6f84ebc829_65462910 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <aside id="notifications">
     <?php if ($_smarty_tpl->tpl_vars['notifications']->value['error']) {?>

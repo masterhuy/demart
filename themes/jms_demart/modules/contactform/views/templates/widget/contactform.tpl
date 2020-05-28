@@ -15,6 +15,7 @@
                     <div class="addon-title">
                         <h3>{l s='Get In Touch' d='Shop.Theme.Global'}</h3>
                     </div>
+                    <p class="desc">{l s='Pellentesque habitant morbi tristique senectus netus as malesuada fames turpis egestas lorem. Curabitur nulla mattis maximus neque lacinia aliquet felis. Class aptent taciti sociosqu litora torquent' d='Shop.Theme.Global'}</p>
                 </div>
                 <div class="form-group col-md-6 col-sx-12">
                     <select name="id_contact" class="form-control form-control-select">

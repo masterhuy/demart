@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-26 11:02:41
+/* Smarty version 3.1.33, created on 2020-05-28 11:29:10
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\header-3.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecce941c70a09_48225075',
+  'unifunc' => 'content_5ecf9276918813_06302563',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9657d360b1c1a229d5c302a9961980d9d9e3eb04' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\headers\\header-3.tpl',
-      1 => 1589509569,
+      1 => 1590659871,
       2 => 'file',
     ),
   ),
@@ -21,13 +21,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:ps_languageselector/ps_languageselector-dropdown.tpl' => 1,
     'module:ps_currencyselector/ps_currencyselector-dropdown.tpl' => 1,
     'file:_partials/headers/logo.tpl' => 1,
+    'module:jmsadvsearch/views/templates/hook/jmsadvsearch.tpl' => 1,
     'module:ps_customersignin/ps_customersignin-dropdown.tpl' => 1,
     'file:_partials/headers/wishlist.tpl' => 1,
     'module:ps_shoppingcart/ps_shoppingcart-dropdown.tpl' => 1,
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5ecce941c70a09_48225075 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ecf9276918813_06302563 (Smarty_Internal_Template $_smarty_tpl) {
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_topbar'] == 1)) {?>
 <div id="header-topbar" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class'], ENT_QUOTES, 'UTF-8');
 }?>">
@@ -108,7 +109,9 @@ img/icons/icon-vermenu.png" />
 
                         </div>
                     </div>
-                                    </div>
+                    <?php $_smarty_tpl->_subTemplateRender('module:jmsadvsearch/views/templates/hook/jmsadvsearch.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+                </div>
             </div>
             <div class="layout-column col-auto header-right">
                 <div class="row no-margin">

@@ -55,14 +55,15 @@
 	padding-top:0;
 }
 .widget-title, .title_block {
-	font-size: 18px;
-	padding-bottom: 15px;
+	font-size: 20px;
+	padding-bottom: 14px;
 	margin-bottom: 0;
 	position: relative;
 	letter-spacing: 0;
 	color: #000;
-	font-weight: 600;
-	text-transform: uppercase;
+	font-weight: 500;
+	text-transform: capitalize;
+	font-family: Work Sans;
 }
 .widget-tabs h6 {
     font-size: 15px;
@@ -86,6 +87,9 @@
     font-size: 11px;
     margin-bottom: 0;
 }
+.blog-widget ~ .customs-html-left{
+	margin-bottom: 0;
+}
 .blog-widget .post-thumb a:hover img{
 	transform: none;
 }
@@ -93,14 +97,12 @@
 	margin-bottom: 7px;
 }
 .blog-widget {
-	margin-bottom: 2.467rem;
+	margin-bottom: 36px;
 }
-.blog-widget .comment-item p{
+.blog-widget .comment-item p {
 	position: relative;
 	padding-bottom: 0;
-	line-height: 2;
 	margin-bottom: 0;
-	font-size: 15px;
 }
 .blog-widget .haschild > a i{
 	font-size: 12px;
@@ -128,7 +130,7 @@
 	margin-bottom: 3.2rem;
 }
 .blog-widget.widget-recent-post .widget-title {
-	padding-bottom: 1.333rem;
+	padding-bottom: 21px;
 }
 .blog-widget .comment-item .comment-info {
 	float:left;
@@ -155,17 +157,22 @@
 .blog-widget .item-post .post-created {
 	margin-bottom: 0;
 	font-size: 13px;
-	color: #888;
-	font-style: italic;
+	color: #444;
 }
 .blog-widget .item-post .post-title {
 	font-size: 16px;
-	color: #000;
+	color: #111;
 	display: block;
-	margin-bottom: 3px;
+	margin-bottom: 6px;
+	font-family: Work Sans;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 1.65;
 }
 .blog-widget .item-post:not(:last-child) {
-	margin-bottom: 22px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 19px;
 }
 .blog-widget:last-child{
 	border-bottom:0;
@@ -225,10 +232,9 @@
 }
 .blog-widget li a {
 	display: inline-block;
-	line-height: 30px;
+	line-height: 28px;
 	position: relative;
-	letter-spacing: 0.1px;
-	font-size: 14px;
+	letter-spacing: 0;
 }
 .blog-widget li a::before{
 	content: "";
@@ -263,30 +269,6 @@
 #module-jmsblog-category #footer{
 	margin-top: 0;
 }
-#module-jmsblog-category #left-column,
-#module-jmsblog-category #right-column{
-	margin-bottom: 80px
-}
-
-.cat-post-list .post-meta .created {
-	margin: 0;
-	position: absolute;
-	top: 12px;
-	background: #fff;
-	left: 12px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 3px 11px 7px 8px;
-	font-style: initial;
-}
 .cat-post-list .blog-post{
 	position: relative;
 }
@@ -296,39 +278,12 @@
 .cat-post-list .post-thumb a:hover img{
 	transform: none;
 }
-.cat-post-list .post-thumb .readmore{
-	opacity: 0;
-	visibility: hidden;
+.cat-post-list .readmore{
 	display: inline-block;
 	width: auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 7px 25px;
-	transition: all 400ms;
-	-webkit-transition: all 400ms;
-	-moz-transition: all 400ms;
-	-ms-transition: all 400ms;
-	-o-transition: all 400ms;
-	z-index: 10;
-}
-.cat-post-list .blog-post:hover .post-thumb .readmore{
-	opacity: 1;
-	visibility: visible;
-}
-.cat-post-list .created .day {
-	font-size: 28px;
-	font-weight: 700;
-	color: #000;
-}
-.cat-post-list .created .month {
-	font-size: 15px;
-	color: #010101;
-}
-.cat-post-list.more-columns {
-	margin-left: -15px;
-	margin-right: -15px;
+	padding: 2px 18px;
+	color: #fff;
+	margin-top: 8px;
 }
 .cat-post-list.more-columns.tag,
 .cat-post-list.more-columns.archive{
@@ -343,7 +298,7 @@
 	padding-bottom: 0;
 }
 .cat-post-list.more-columns .item:not(:last-child){
-	margin-bottom: 3rem;
+	margin-bottom: 50px;
 }
 .cat-post-list.more-columns .item:hover .group{
 	opacity: 1;
@@ -369,7 +324,7 @@
 }
 .cat-post-list.more-columns .post-info,
 .cat-post-list.more-columns .category-info {
-	margin-top: 18px;
+	margin-top: 13px;
 	padding-top: 0;
 	text-align: center;
 }
@@ -377,16 +332,11 @@
 	font-size: 18px;
 	padding-bottom: 0;
 	line-height: 1.5;
-	margin-bottom: 10px;
+	margin-bottom: 13px;
+	padding: 0 10px;
 }
 .cat-post-list .post-info {
 	margin-top: 31px;
-}
-.cat-post-list .post-intro p,
-.cat-post-list .cat-intro p {
-	line-height: 1.85;
-	margin-bottom: 1.133rem;
-	font-size: 15px;
 }
 .cat-post-list .post-intro {
 	margin-top: 0;
@@ -395,22 +345,17 @@
 .cat-post-list.more-columns .post-intro {
 	margin-bottom: 14px;
 	padding: 0 40px;
-	text-align: justify;
-	text-align-last: center;
 }
 .cat-post-list.more-columns .col-6 .post-intro{
 	padding: 0;
 }
-.cat-post-list .item .category-title a, .cat-post-list .item .post-title a, 
-#module-jmsblog-archive .post-title a {
-	font-size: 1.733rem;
+.cat-post-list .item .category-title a, .cat-post-list .item .post-title a, #module-jmsblog-archive .post-title a {
+	font-size: 20px;
 	display: block;
-	letter-spacing: 0.5px;
+	letter-spacing: 0;
 	color: #000;
-	font-weight: 500;
-}
-.cat-post-list .post-meta .category-name {
-	display: none;
+	font-weight: 600;
+	font-family: Work Sans;
 }
 .cat-post-list .post-meta li {
   display: inline-block;
@@ -418,15 +363,13 @@
 	margin-right:5px;
 }
 .cat-post-list .post-meta {
-	margin-bottom: 0;
-}
-.cat-post-list.more-columns .post-meta {
-	font-size: 13px;
-	font-style: italic;
-	color: #888;
+	margin-bottom: 6px;
 }
 .cat-post-list .post-meta li:last-child {
 	margin-right:0;
+}
+.cat-post-list .post-meta .category-name {
+	transform: skewX(-5deg);
 }
 .post-intro {
 	margin:10px 0;
@@ -441,14 +384,17 @@
 .single-blog .blog-post{
 	position: relative;
 }
-.single-blog .post-meta .created {
+.single-blog .created,
+.cat-post-list .created {
 	position: absolute;
-	top: 12px;
-	background: #fff;
-	left: 12px;
+	top: 8px;
+	left: 8px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
@@ -456,17 +402,24 @@
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 3px 11px 7px 8px;
-	font-style: initial;
+	padding: 0;
+	line-height: 1.1;
+	letter-spacing: 0;
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	background-color: #14c2ee;
 }
-.single-blog .created .day {
-	font-size: 28px;
+.single-blog .created .day,
+.cat-post-list .created .day {
+	font-size: 20px;
 	font-weight: 700;
-	color: #000;
+	color: #fff;
 }
-.single-blog .created .month {
+.single-blog .created .month,
+.cat-post-list .created .month {
 	font-size: 15px;
-	color: #010101;
+	color: #fff;
 }
 .single-blog #myCarousel{
 	margin-bottom: 22px;
@@ -483,47 +436,46 @@
 	bottom: -5px;
 }
 .single-blog .title {
-	font-size: 2rem;
+	font-size: 30px;
 	padding: 0;
-	line-height: 1.1;
-	letter-spacing: 0.1px;
+	letter-spacing: 0;
 	text-align: center;
-	font-weight: 500;
-	margin-bottom: 1.733rem;
-	color: #000;
+	font-weight: 600;
+	margin-bottom: 29px;
+	color: #111;
+	font-family: Work Sans;
 }
-.single-blog .post-fulltext{
+.single-blog .post-fulltext {
 	text-align: justify;
 	text-align-last: center;
-	letter-spacing: 0.1px;
-	line-height: 1.82;
-	font-size: 15px;
+}
+.single-blog .post-fulltext p{
+	margin-bottom: 18px;
+	padding: 0 30px;
 }
 .single-blog .post-fulltext .row{
-	margin-top: 2.8rem;
-	margin-bottom: 2.8rem;
+	margin-top: 42px;
+	margin-bottom: 26px;
 }
 .single-blog .post-fulltext .testimonial {
 	text-align: left;
 	text-align-last: left;
 	background: #f7f7f7;
-	padding: 26px 20px 27px 41px;
+	padding: 26px 40px 27px;
 	border-left: 3px solid #14c2ee;
 	margin-top: 42px;
 	margin-bottom: 42px;
 }
 .single-blog .post-fulltext .testimonial-comment {
-	font-size: 14px;
-	font-style: italic;
-	letter-spacing: -0.05px;
-	line-height: 2;
 	margin-bottom: 16px;
+	transform: skewX(-5deg);
 }
 .single-blog .post-fulltext .testimonial-author .name {
 	font-size: 16px;
 	color: #000;
 	font-weight: 600;
 	letter-spacing: -0.1px;
+	font-family: Work Sans;
 }
 .single-blog .post-fulltext .testimonial-author .career {
 	font-size: 14px;
@@ -532,13 +484,13 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 24px 0 19px;
-	font-size: 13px;
-	color: #888;
-	font-style: italic;
+	margin: 20px 0 10px;
+}
+.single-blog .post-meta .category-name{
+	transform: skewX(-5deg);
 }
 .single-blog .post-meta li {
-	padding: 0 10px 0 0;
+	padding: 0 5px 0 0;
 	position: relative;
 }
 .single-blog .post-meta li:last-child {
@@ -562,8 +514,8 @@
 #comments #accordion {
 	margin-top: 7.467rem;
 }
-#comments .addon-title{
-	margin-bottom: 30px;
+#comments .addon-title {
+	margin-bottom: 27px;
 }
 #comments .form-group {
 	margin-bottom: 20px;
@@ -579,11 +531,10 @@
 	font-size: 13px;
 }
 #comments #new_comment_form_footer {
-	margin-top: 50px;
+	margin-top: 36px;
 }
 #comments #submitComment {
-	width: 186px;
-	height: 46px;
+	width: 110px;
 }
 #post-comments .post-comment:not(:last-child) {
 	border-bottom: 1px solid #ebebeb;
@@ -592,21 +543,22 @@
 	padding-top: 0;
 }
 #module-jmsblog-post #comments .addon-title h3 {
-	font-size: 18px;
+	font-size: 24px;
 	color: #000;
-	letter-spacing: 0;
+	letter-spacing: -0.3px;
 	padding-bottom: 0;
+	text-transform: capitalize;
 }
 #module-jmsblog-post #footer,
 #module-jmsblog-categories #footer,
 #module-jmsblog-category #footer {
-	margin-top: 8rem;
+	margin-top: 80px;
 }
 .customs-html-left p{
 	margin-bottom: 0;
 }
 .commentForm {
-	margin-top: 5.533rem;
+	margin-top: 39px;
 	display: inline-block;
 	width: 100%;
 	margin-bottom: 0;
@@ -645,27 +597,8 @@
 	-ms-transition: all 800ms;
 	-o-transition: all 800ms;
 }
-.cat-post-list .post-thumb a:hover img{
+.cat-post-list .post-thumb:hover a img{
 	transform: scale(1.15);
-}
-.cat-post-list .post-thumb a.link::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.4);
-	opacity: 0;
-	transition: all 400ms;
-	-webkit-transition: all 400ms;
-	-moz-transition: all 400ms;
-	-ms-transition: all 400ms;
-	-o-transition: all 400ms;
-	z-index: 9;
-}
-.cat-post-list .blog-post:hover .post-thumb a.link::before{
-	opacity: 1;
 }
 .categories-list .category-info .post-title{
 	padding:0;
@@ -723,13 +656,14 @@ h4.heading {
 	display: flex;
 }
 #post-comments .post-info .title{
-	margin-bottom: 8px;
-	font-size: 15px;
+	margin-bottom: 3px;
+	margin-top: -7px;
 }
 #post-comments .post-info .title span{
 	font-size: 16px;
 	color: #000;
 	font-weight: 600;
+	font-family: Work Sans;
 }
 #post-comments .post-comment-info .user-image {
 	margin-right: 20px;
@@ -737,9 +671,3 @@ h4.heading {
 	min-width: 100px;
 	width: 100px;
 }
-.post-comment-content {
-	font-size: 15px;
-	letter-spacing: -0.09px;
-	line-height: 1.8;
-}
-

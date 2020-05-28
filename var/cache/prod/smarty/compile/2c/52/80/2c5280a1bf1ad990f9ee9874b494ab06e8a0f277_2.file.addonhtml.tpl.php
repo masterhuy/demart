@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-26 11:10:10
+/* Smarty version 3.1.33, created on 2020-05-28 11:29:09
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonhtml.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecceb02998c16_45875318',
+  'unifunc' => 'content_5ecf9275d85507_55015720',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ecceb02998c16_45875318 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ecf9275d85507_55015720 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 <div class="addon-title">
 	<h3><?php echo $_smarty_tpl->tpl_vars['addon_title']->value;?>

@@ -25,7 +25,7 @@ stickySidebar = () => {
         let sidebar = new StickySidebar('#wrapper .sidebar-column', {
             containerSelector: '#wrapper > .row',
             innerWrapperSelector: '#wrapper .sidebar-column .sidebar-inner',
-            topSpacing: 100
+            topSpacing: 20
         });
     }
 }
@@ -341,7 +341,39 @@ customCarousel = () => {
 			autoplay: h_auto_play_carousel,
 			slideSpeed: 200,
 		});
-	}
+    }
+    
+    if($(".product-carousel-flex").length) {
+        var rtl = false;
+        var productCarouselFlex = $('.product-carousel-flex');
+        (productCarouselFlex.attr("data-nav") == "true") ? nav = 1 : nav = 0;
+        (productCarouselFlex.attr("data-dots") == "true") ? dots = 1 : dots = 0;
+        (productCarouselFlex.attr("data-auto") == "true") ? autoplay = 1 : autoplay = 0;
+
+        if ($("body").hasClass("rtl")) rtl = true;
+            productCarouselFlex.owlCarousel({
+            rtl: rtl,
+            loop: true,
+            margin: 20,
+            nav: nav,
+            dots: dots,
+            autoplay: autoplay,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                576: {
+                    items: productCarouselFlex.attr("data-sm")
+                },
+                768: {
+                    items: productCarouselFlex.attr("data-md")
+                },
+                992: {
+                    items: productCarouselFlex.attr("data-lg")
+                }
+            }
+        });
+    }
 
     if($(".h1-topseller .product-carousel").length) {
         var rtl = false;
@@ -739,7 +771,6 @@ $(document).ready(function(){
 
     $(window).resize(function(){
         jsPromoBar();
-        stickySidebar();
         changeShopGrid();
     });
 

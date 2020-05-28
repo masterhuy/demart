@@ -4720,10 +4720,10 @@
             "thumbs-left" != jmsSetting.product_content_layout && "thumbs-right" != jmsSetting.product_content_layout || (e = !0, t = 4, i = "progressive"), "thumbs-left" == jmsSetting.product_content_layout && (o = [{
                 // breakpoint: 769,
                 settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 5,
-                    vertical: !1,
-                    verticalSwiping: !1
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    vertical: true,
+                    verticalSwiping: true
                 }
             }]), "thumbs-left" != jmsSetting.product_content_layout && "thumbs-right" != jmsSetting.product_content_layout && "thumbs-bottom" != jmsSetting.product_content_layout || (0, n.default)(".js-qv-product-images").slick({
                 slidesToShow: t,

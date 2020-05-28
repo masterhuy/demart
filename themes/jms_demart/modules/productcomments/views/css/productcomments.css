@@ -330,7 +330,7 @@
 
 .product-comment-list-item {
   padding: 26px 0;
-  margin: 0 0 20px;
+  margin: 0 ;
   background-color: #FFFFFF;
   text-align: left;
 }
@@ -377,13 +377,19 @@
 */
 
 .product-quickview-review {
+  margin-top: 13px;
   display: flex;
   flex-direction: row;
 }
-
+.product-quickview-review .comments-nb{
+  font-size: 14px;
+  color: #f63622;
+  font-weight: 500;
+  margin-left: 3px;
+}
 .product-quickview-review .grade-stars .star-content {
-  margin: 0 0 0 0;
-  top: 0;
+  margin: 0;
+  top: 7px;
 }
 
 /*

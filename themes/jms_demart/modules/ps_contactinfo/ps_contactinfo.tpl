@@ -24,8 +24,13 @@
 *}
 <div class="block-contact wrapper">
     <div class="block-content">
+        <div class="addon-title">
+            <h3>{l s='Our Store' d='Shop.Theme.Global'}</h3>
+        </div>
+
         {if $contact_infos.phone}
             <div class="phone section">
+                <label>{l s='Hotline' d='Shop.Theme.Global'}:</label>
                 {* [1][/1] is for a HTML tag. *}
                 {l s='[1]%phone%[/1]'
                     sprintf=[
@@ -39,14 +44,14 @@
 
         <div class="address section">
             <div class="info-address">
-                <label>{l s='Add' d='Shop.Theme.Global'}:</label>
+                {l s='Address' d='Shop.Theme.Global'}:
                 <span>{$contact_infos.address.address1 nofilter}</span>
             </div>
         </div>
 
         {if $contact_infos.email}
             <div class="email section">
-                {l s='Email' d='Shop.Theme.Global'}:
+                <label>{l s='Email' d='Shop.Theme.Global'}:</label>
                 {* [1][/1] is for a HTML tag. *}                    
                     {l
                         s='[1]%email%[/1]'

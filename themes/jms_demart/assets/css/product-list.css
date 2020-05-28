@@ -172,6 +172,12 @@
 	margin-bottom: 10px;
 }
 /*customs checkbox*/
+#category .breadcrumb ul {
+	padding: 71px 0;
+}
+#category .breadcrumb .title-meta{
+	display: block;
+}
 #category #content-wrapper{
 	overflow: visible;
 }
