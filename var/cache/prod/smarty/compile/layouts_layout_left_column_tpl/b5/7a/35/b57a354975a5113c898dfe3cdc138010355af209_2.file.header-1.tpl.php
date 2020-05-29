@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-28 09:00:04
+/* Smarty version 3.1.33, created on 2020-05-29 10:04:34
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\header-1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecf6f84784bf5_95835691',
+  'unifunc' => 'content_5ed0d022e42276_85594827',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b57a354975a5113c898dfe3cdc138010355af209' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\headers\\header-1.tpl',
-      1 => 1590371497,
+      1 => 1590740954,
       2 => 'file',
     ),
   ),
@@ -28,7 +28,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5ecf6f84784bf5_95835691 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed0d022e42276_85594827 (Smarty_Internal_Template $_smarty_tpl) {
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_topbar'] == 1)) {?>
 <div id="header-topbar" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class'], ENT_QUOTES, 'UTF-8');
 }?>">
@@ -41,10 +41,11 @@ if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_topbar'] == 1)) {?>
             <div class="layout-column col-auto header-right">
                 <div class="row no-margin">
                     <div>
-                        <a class="link-cms" href="#">Return</a>
+                        <a class="link-cms" href="index.php?id_cms=16&controller=cms">Return</a>
                     </div>
                     <div>
-                        <a class="link-cms" href="#">Track Your Order</a>
+                        <a class="link-cms" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['history'], ENT_QUOTES, 'UTF-8');?>
+">Track Your Order</a>
                     </div>
                     <?php $_block_plugin1 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
 if (!is_callable(array($_block_plugin1, 'smartyWidgetBlock'))) {
@@ -182,16 +183,16 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
                 <div class="block-our-brand"><button class="our-brand collapsed" data-toggle="collapse" data-target="#our-brand" aria-expanded="false"> Our brands <i class="lnr lnr-chevron-down"></i> </button>
                     <div id="our-brand" class="collapse">
                         <ul>
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">Dell Inc</a></li>
-                            <li><a href="#">Asus</a></li>
-                            <li><a href="#">Sony</a></li>
-                            <li><a href="#">Zara</a></li>
-                            <li><a href="#">Givenchy</a></li>
-                            <li><a href="#">Cartier</a></li>
-                            <li><a href="#">Steelcase</a></li>
-                            <li><a href="#">Lesro</a></li>
-                            <li><a href="#">Hermes</a></li>
+                            <li><a href="index.php?id_category=62&controller=category">Apple</a></li>
+                            <li><a href="index.php?id_category=64&controller=category">Dell Inc</a></li>
+                            <li><a href="index.php?id_category=66&controller=category">Asus</a></li>
+                            <li><a href="index.php?id_category=63&controller=category">Sony</a></li>
+                            <li><a href="index.php?id_category=61&controller=category">Zara</a></li>
+                            <li><a href="index.php?id_category=62&controller=category">Givenchy</a></li>
+                            <li><a href="index.php?id_category=63&controller=category">Cartier</a></li>
+                            <li><a href="index.php?id_category=64&controller=category">Steelcase</a></li>
+                            <li><a href="index.php?id_category=65&controller=category">Lesro</a></li>
+                            <li><a href="index.php?id_category=66&controller=category">Hermes</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-28 09:06:17
+/* Smarty version 3.1.33, created on 2020-05-29 11:15:21
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addoncontentcarousel.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecf70f97766d2_12596250',
+  'unifunc' => 'content_5ed0e0b98f10e4_87878435',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ecf70f97766d2_12596250 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed0e0b98f10e4_87878435 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 	<div class="addon-title">
 		<h3><?php echo $_smarty_tpl->tpl_vars['addon_title']->value;?>

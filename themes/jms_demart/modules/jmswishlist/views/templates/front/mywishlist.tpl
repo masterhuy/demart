@@ -44,7 +44,7 @@
 				<div class="row align-items-center">
 					<div class="col"><span>{l s='Wishlist Name' d='Shop.Theme'}</span></div>
 					<div class="col-8"><input type="text" id="name" name="name" class="inputTxt form-control" value="{if isset($smarty.post.name) and $errors|@count > 0}{$smarty.post.name|escape:'html':'UTF-8'}{/if}" /></div>
-					<div class="col text-right"><button type="submit" name="submitWishlist" id="submitWishlist" class="btn btn-default form-control" value="{l s='Save' d='Shop.Theme'}" class="exclusive" />{l s='Add' d='Shop.Theme'}</button></div>
+					<div class="col text-right"><button type="submit" name="submitWishlist" id="submitWishlist" class="btn btn-default" value="{l s='Save' d='Shop.Theme'}" class="exclusive" />{l s='Add' d='Shop.Theme'}</button></div>
 				</div>
 			</form>
 			{if $wishlists}

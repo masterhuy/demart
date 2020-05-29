@@ -34,7 +34,7 @@
       <div class="col">
           <a id="identity-link" href="{$urls.pages.identity}">
             <span class="link-item">
-              <i class="fal fa-user"></i>
+              <i class="lnr lnr-user"></i>
               {l s='Information' d='Shop.Theme.Customeraccount'}
             </span>
           </a>
@@ -43,7 +43,7 @@
       <div class="col">
           <a id="addresses-link" href="{$urls.pages.addresses}">
             <span class="link-item">
-              <i class="far fa-address-card"></i>
+              <i class="lnr lnr-home"></i>
               {l s='Addresses' d='Shop.Theme.Customeraccount'}
             </span>
           </a>
@@ -52,7 +52,7 @@
       <div class="col">
           <a id="address-link" href="{$urls.pages.address}">
             <span class="link-item">
-              <i class="fa fa-address-card"></i>
+              <i class="lnr lnr-home"></i>
               {l s='Add first address' d='Shop.Theme.Customeraccount'}
             </span>
           </a>
@@ -63,7 +63,7 @@
       <div class="col">
           <a id="history-link" href="{$urls.pages.history}">
             <span class="link-item">
-              <i class="fal fa-calendar-alt"></i>
+              <i class="lnr lnr-history"></i>
               {l s='Order history and details' d='Shop.Theme.Customeraccount'}
             </span>
           </a>
@@ -74,7 +74,7 @@
       <div class="col">
           <a id="order-slips-link" href="{$urls.pages.order_slip}">
             <span class="link-item">
-              <i class="fal fa-list-alt"></i>
+              <i class="lnr lnr-license"></i>
               {l s='Credit slips' d='Shop.Theme.Customeraccount'}
             </span>
           </a>
@@ -85,7 +85,7 @@
       <div class="col">
           <a id="discounts-link" href="{$urls.pages.discount}">
             <span class="link-item">
-              <i class="fal fa-tags"></i>
+              <i class="lnr lnr-tag"></i>
               {l s='Vouchers' d='Shop.Theme.Customeraccount'}
             </span>
           </a>
@@ -96,7 +96,7 @@
       <div class="col">
           <a id="returns-link" href="{$urls.pages.order_follow}">
             <span class="link-item">
-              <i class="fal fa-box-open"></i>
+              <i class="lnr lnr-undo"></i>
               {l s='Merchandise returns' d='Shop.Theme.Customeraccount'}
             </span>
           </a>

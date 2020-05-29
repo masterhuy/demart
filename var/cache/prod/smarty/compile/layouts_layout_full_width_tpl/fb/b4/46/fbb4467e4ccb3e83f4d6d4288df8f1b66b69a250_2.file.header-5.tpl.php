@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-26 11:01:30
+/* Smarty version 3.1.33, created on 2020-05-29 11:17:02
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\header-5.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecce8facce249_68354057',
+  'unifunc' => 'content_5ed0e11e0b6928_61527451',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fbb4467e4ccb3e83f4d6d4288df8f1b66b69a250' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\headers\\header-5.tpl',
-      1 => 1589882067,
+      1 => 1590742855,
       2 => 'file',
     ),
   ),
@@ -28,7 +28,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5ecce8facce249_68354057 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed0e11e0b6928_61527451 (Smarty_Internal_Template $_smarty_tpl) {
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_topbar'] == 1)) {?>
 <div id="header-topbar" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class'], ENT_QUOTES, 'UTF-8');
 }?>">
@@ -114,7 +114,8 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
             <div class="layout-column col-auto header-right">
                 <div class="row no-margin align-items-center">
                     <div>
-                        <a class="link-cms" href="#">Track Your Order</a>
+                        <a class="link-cms" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['history'], ENT_QUOTES, 'UTF-8');?>
+">Track Your Order</a>
                     </div>
                     <?php $_block_plugin3 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
 if (!is_callable(array($_block_plugin3, 'smartyWidgetBlock'))) {

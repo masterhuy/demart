@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-27 11:01:34
+/* Smarty version 3.1.33, created on 2020-05-29 10:04:35
   from 'module:psbestsellersviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ece3a7e9e8654_79863741',
+  'unifunc' => 'content_5ed0d023a42e19_98058778',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product-flex.tpl' => 1,
   ),
 ),false)) {
-function content_5ece3a7e9e8654_79863741 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed0d023a42e19_98058778 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="topseller-block">
 	<div class="title-block">
 		<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Top Sellers','d'=>'Modules.Bestsellers.Shop'),$_smarty_tpl ) );?>

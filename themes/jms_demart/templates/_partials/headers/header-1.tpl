@@ -32,10 +32,10 @@
             <div class="layout-column col-auto header-right">
                 <div class="row no-margin">
                     <div>
-                        <a class="link-cms" href="#">Return</a>
+                        <a class="link-cms" href="index.php?id_cms=16&controller=cms">Return</a>
                     </div>
                     <div>
-                        <a class="link-cms" href="#">Track Your Order</a>
+                        <a class="link-cms" href="{$urls.pages.history}">Track Your Order</a>
                     </div>
                     {widget_block name="ps_languageselector"}
                         {include 'module:ps_languageselector/ps_languageselector-dropdown.tpl'}
@@ -102,16 +102,16 @@
                 <div class="block-our-brand"><button class="our-brand collapsed" data-toggle="collapse" data-target="#our-brand" aria-expanded="false"> Our brands <i class="lnr lnr-chevron-down"></i> </button>
                     <div id="our-brand" class="collapse">
                         <ul>
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">Dell Inc</a></li>
-                            <li><a href="#">Asus</a></li>
-                            <li><a href="#">Sony</a></li>
-                            <li><a href="#">Zara</a></li>
-                            <li><a href="#">Givenchy</a></li>
-                            <li><a href="#">Cartier</a></li>
-                            <li><a href="#">Steelcase</a></li>
-                            <li><a href="#">Lesro</a></li>
-                            <li><a href="#">Hermes</a></li>
+                            <li><a href="index.php?id_category=62&controller=category">Apple</a></li>
+                            <li><a href="index.php?id_category=64&controller=category">Dell Inc</a></li>
+                            <li><a href="index.php?id_category=66&controller=category">Asus</a></li>
+                            <li><a href="index.php?id_category=63&controller=category">Sony</a></li>
+                            <li><a href="index.php?id_category=61&controller=category">Zara</a></li>
+                            <li><a href="index.php?id_category=62&controller=category">Givenchy</a></li>
+                            <li><a href="index.php?id_category=63&controller=category">Cartier</a></li>
+                            <li><a href="index.php?id_category=64&controller=category">Steelcase</a></li>
+                            <li><a href="index.php?id_category=65&controller=category">Lesro</a></li>
+                            <li><a href="index.php?id_category=66&controller=category">Hermes</a></li>
                         </ul>
                     </div>
                 </div>

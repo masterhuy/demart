@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-26 11:02:19
+/* Smarty version 3.1.33, created on 2020-05-29 11:18:32
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecce92bb853a5_28039368',
+  'unifunc' => 'content_5ed0e1783c3ba1_79020100',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '82ad5d07dda91c25aed1a4956c7a024eb906e38c' => 
     array (
       0 => 'module:pscustomersigninpscustome',
-      1 => 1587437106,
+      1 => 1590722179,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ecce92bb853a5_28039368 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed0e1783c3ba1_79020100 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="_desktop_user_info">
 	<div class="user-info btn-group">
 		<a href="#" class="account" data-toggle="dropdown" data-display="static">
@@ -46,7 +46,7 @@ if ($_smarty_tpl->tpl_vars['jmsSetting']->value['customersignin_class']) {?> <?p
 					<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['customersignin_logged_links'] && in_array('checkout',$_smarty_tpl->tpl_vars['jmsSetting']->value['customersignin_logged_links'])) {?>
 						<li><a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('order',true), ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Checkout','d'=>'Shop.Theme.Customeraccount'),$_smarty_tpl ) );?>
-" class="account" rel="nofollow"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Checkout','d'=>'Shop.Theme.Customeraccount'),$_smarty_tpl ) );?>
+" rel="nofollow"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Checkout','d'=>'Shop.Theme.Customeraccount'),$_smarty_tpl ) );?>
  </a></li>
 					<?php }?>
 					<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['customersignin_logged_links'] && in_array('logout',$_smarty_tpl->tpl_vars['jmsSetting']->value['customersignin_logged_links'])) {?>

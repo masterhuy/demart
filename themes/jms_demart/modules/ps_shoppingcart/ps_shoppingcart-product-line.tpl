@@ -15,7 +15,7 @@
 			<span>x</span>
 			<span class="quantity">{$product.quantity}</span>
 			<a class="remove-from-cart remove_link" rel="nofollow" href="{$product.remove_from_cart_url}" data-link-action="remove-from-cart" title="{l s='Remove from cart' d='Shop.Theme.Actions'}" >
-				<img src="{$urls.theme_assets}img/icons/trash.png" />
+				<i class="lnr lnr-trash"></i>
 			</a>
 		</div>
 	</div>

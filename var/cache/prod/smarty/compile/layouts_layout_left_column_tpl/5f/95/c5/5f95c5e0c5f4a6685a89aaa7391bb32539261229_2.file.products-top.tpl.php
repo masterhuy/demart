@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-27 04:10:55
+/* Smarty version 3.1.33, created on 2020-05-29 10:04:35
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\products-top.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecdda3f9f80b8_77748564',
+  'unifunc' => 'content_5ed0d023b73953_54537067',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/sort-orders.tpl' => 1,
   ),
 ),false)) {
-function content_5ecdda3f9f80b8_77748564 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed0d023b73953_54537067 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -39,12 +39,12 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 		<div class="col-12 col-sm-12 col-md-9 col-lg-9 col-right">
 			<div class="sort-by">
 				<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6579047115ecdda3f9f80b8_21117984', 'pagination');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19810761825ed0d023b6bc54_65388764', 'pagination');
 ?>
 
 				<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['shop_sortby'] == 1) {?>
 					<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9921694995ecdda3f9f80b7_73462227', 'sort_by');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15353891745ed0d023b6fad6_04644070', 'sort_by');
 ?>
 
 				<?php }?>
@@ -62,12 +62,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9921694995ecdda3f9
 </div>
 <?php }
 /* {block 'pagination'} */
-class Block_6579047115ecdda3f9f80b8_21117984 extends Smarty_Internal_Block
+class Block_19810761825ed0d023b6bc54_65388764 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'pagination' => 
   array (
-    0 => 'Block_6579047115ecdda3f9f80b8_21117984',
+    0 => 'Block_19810761825ed0d023b6bc54_65388764',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -80,12 +80,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'pagination'} */
 /* {block 'sort_by'} */
-class Block_9921694995ecdda3f9f80b7_73462227 extends Smarty_Internal_Block
+class Block_15353891745ed0d023b6fad6_04644070 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'sort_by' => 
   array (
-    0 => 'Block_9921694995ecdda3f9f80b7_73462227',
+    0 => 'Block_15353891745ed0d023b6fad6_04644070',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

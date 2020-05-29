@@ -73,7 +73,7 @@
             <div class="layout-column col-auto header-right">
                 <div class="row no-margin align-items-center">
                     <div>
-                        <a class="link-cms" href="#">Track Your Order</a>
+                        <a class="link-cms" href="{$urls.pages.history}">Track Your Order</a>
                     </div>
                     {widget_block name="ps_languageselector"}
                         {include 'module:ps_languageselector/ps_languageselector-dropdown.tpl'}

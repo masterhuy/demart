@@ -43,7 +43,7 @@
           <li><a href="{$urls.pages.history}">{l s='My Order' d='Shop.Theme.Actions'}</a></li>
           {/if}
           {if $jmsSetting.customersignin_logged_links && 'checkout'|in_array:$jmsSetting.customersignin_logged_links}
-					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.Customeraccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.Customeraccount'} </a></li>
+					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.Customeraccount'}" rel="nofollow">{l s='Checkout' d='Shop.Theme.Customeraccount'} </a></li>
           {/if}
           {if $jmsSetting.customersignin_logged_links && 'logout'|in_array:$jmsSetting.customersignin_logged_links}
           <li><a class="logout" href="{$logout_url}" rel="nofollow" >{l s='Log out' d='Shop.Theme.Actions'}</a></li>
@@ -54,7 +54,7 @@
 			<div id="login" class="dropdown-menu user-info-sidebar user-info-content{if $jmsSetting.customersignin_class} {$jmsSetting.customersignin_class}{/if}">
 				<ul>
           {if $jmsSetting.customersignin_logged_links && 'register'|in_array:$jmsSetting.customersignin_notlogged_links}
-					<li><a href="{$urls.pages.register}" title="{l s='Register' d='Shop.Theme.Customeraccount'}" class="account" rel="nofollow">{l s='Register' d='Shop.Theme.Customeraccount'} </a></li>
+					<li><a href="{$urls.pages.register}" title="{l s='Register' d='Shop.Theme.Customeraccount'}" rel="nofollow">{l s='Register' d='Shop.Theme.Customeraccount'} </a></li>
           {/if}
           {if $jmsSetting.customersignin_logged_links && 'login'|in_array:$jmsSetting.customersignin_notlogged_links}
 					<li><a class="login" href="{$my_account_url}" title="{l s='Login' d='Shop.Theme.Customeraccount'}" rel="nofollow" >{l s='Log In' d='Shop.Theme.Actions'}</a></li>

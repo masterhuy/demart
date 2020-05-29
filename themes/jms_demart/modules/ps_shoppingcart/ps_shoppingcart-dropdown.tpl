@@ -46,10 +46,10 @@
 			</div>
 			<div class="cart-button">
 				{if $jmsSetting.cart_links && 'checkout'|in_array:$jmsSetting.cart_links}
-					<a href="{url entity=order}" class="btn-default checkout-btn w-100 text-center">{l s='Checkout' d='Shop.Theme.Actions'}</a>
+					<a href="{url entity=order}" class="btn btn-default checkout-btn text-center">{l s='Checkout' d='Shop.Theme.Actions'}</a>
 				{/if}
 				{if $jmsSetting.cart_links && 'cart'|in_array:$jmsSetting.cart_links}
-					<a class="btn cart-btn" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
+					<a class="btn btn-default cart-btn" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
 						{l s='Cart' d='Shop.Theme.Actions'}
 					</a>
 				{/if}

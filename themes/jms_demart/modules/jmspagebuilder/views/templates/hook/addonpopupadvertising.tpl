@@ -28,7 +28,7 @@
 		<div class="text-top">{l s="Hello! Welcome to Demart - Wish you happy shopping " d='Shop.Theme.Global'}</div>
 		<div class="main-content">
 			<div class="logo">
-				{include file='_partials/headers/logo-advertising.tpl'}
+				{include file='_partials/headers/logo.tpl'}
 			</div>
 			{if $popup_title}
 				<h2>

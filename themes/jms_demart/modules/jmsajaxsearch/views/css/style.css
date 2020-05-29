@@ -34,7 +34,7 @@
   color: #fff;
 }
 #jms_ajax_search .search-box input{
-  font-size: 14px;
+  min-width: 400px;
   border: 1px solid #ebebeb;
 }
 .search-form .button-search {
@@ -127,11 +127,12 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
   position: absolute;
   width: 100%;
+  min-width: 400px;
   padding: 30px;
   overflow-y: auto;
-  z-index: 2001;
   left: 0;
   top: 100%;
+  z-index: 2001;
 }
 #search-form-full .search-result-content {
   position:relative;

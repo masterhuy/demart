@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-22 04:55:05
+/* Smarty version 3.1.33, created on 2020-05-29 11:18:38
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec74d19ca5db7_67819270',
+  'unifunc' => 'content_5ed0e17e835835_41562425',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4cdfb4ec01c7f108b4781d3aa4b0a15e221a8ad0' => 
     array (
       0 => 'module:psshoppingcartpsshoppingc',
-      1 => 1583804878,
+      1 => 1590738050,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec74d19ca5db7_67819270 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed0e17e835835_41562425 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="d-flex align-items-center">
 	<?php if ($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['cart_default']['url']) {?>
 		<a class="cart-product-image layout-column" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['url'], ENT_QUOTES, 'UTF-8');?>
@@ -49,8 +49,7 @@ function content_5ec74d19ca5db7_67819270 (Smarty_Internal_Template $_smarty_tpl)
 			<a class="remove-from-cart remove_link" rel="nofollow" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['remove_from_cart_url'], ENT_QUOTES, 'UTF-8');?>
 " data-link-action="remove-from-cart" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Remove from cart','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 " >
-				<img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
-img/icons/trash.png" />
+				<i class="lnr lnr-trash"></i>
 			</a>
 		</div>
 	</div>

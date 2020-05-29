@@ -152,7 +152,7 @@
 
 			// controls
 			if (options.controls) {
-				slider.append('<div class="control"><a href="#" class="prev"><i class="fa fa-angle-left"></i></a><a href="#" class="next" ><i class="fa fa-angle-right"></i></a></div>');
+				slider.append('<div class="control"><a href="#" class="prev"><i class="lnr lnr-chevron-left"></i></a><a href="#" class="next" ><i class="lnr lnr-chevron-right"></i></a></div>');
 
 				slider.find('.next').bind('click', function() {
 					return nextBtnPressed();

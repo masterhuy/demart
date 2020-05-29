@@ -42,30 +42,19 @@
 
 /** CONTROLS **/
 .fraction-slider .prev, .fraction-slider .next {
-	height: 1.667rem;
-	width: 3.467rem;
-	position: absolute;
-	text-align: center;
-	text-transform: uppercase;
-	bottom: 0.8667rem;
-	left: 50%;
-	transform: translateX(-50%);
-	background-size: cover;
 	opacity: 0;
 	visibility: hidden;
-	z-index: 991;
-}
-.fraction-slider .prev i,
-.fraction-slider .next i{
-	position:relative;
 	font-size: 30px;
-	top: calc(50% - 16px);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 999;
 }
 .fraction-slider .prev{
-	left: calc(50% - 2.2rem);
+	left: 50px;
 }
 .fraction-slider .next{
-	left: calc(50% + 2.2rem);
+	right: 50px;
 }
 .fraction-slider:hover .prev{
 	visibility: visible;

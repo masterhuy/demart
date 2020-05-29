@@ -41,10 +41,10 @@
                     <div class="row no-margin align-items-center">
                         {$jmsSetting.topbar_content nofilter}
                         <div>
-                            <a class="link-cms" href="#">Return</a>
+                            <a class="link-cms" href="index.php?id_cms=16&controller=cms">Return</a>
                         </div>
                         <div>
-                            <a class="link-cms" href="#">Track Your Order</a>
+                            <a class="link-cms" href="{$urls.pages.history}">Track Your Order</a>
                         </div>
                         {if ($jmsSetting.customersignin == 1)}
                             {widget_block name="ps_customersignin"}

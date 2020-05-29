@@ -37,7 +37,7 @@
 						<li><a href="{$urls.pages.history}">{l s='My Order' d='Shop.Theme.Actions'}</a></li>
 					{/if}
 					{if $jmsSetting.customersignin_logged_links && 'checkout'|in_array:$jmsSetting.customersignin_logged_links}
-						<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.Customeraccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.Customeraccount'} </a></li>
+						<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.Customeraccount'}" rel="nofollow">{l s='Checkout' d='Shop.Theme.Customeraccount'} </a></li>
 					{/if}
 					{if $jmsSetting.customersignin_logged_links && 'logout'|in_array:$jmsSetting.customersignin_logged_links}
 						<li><a class="logout" href="{$logout_url}" rel="nofollow" >{l s='Log out' d='Shop.Theme.Actions'}</a></li>

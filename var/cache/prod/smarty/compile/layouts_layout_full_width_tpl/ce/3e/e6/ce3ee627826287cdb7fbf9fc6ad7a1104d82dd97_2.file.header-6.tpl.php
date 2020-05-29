@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-26 11:01:48
+/* Smarty version 3.1.33, created on 2020-05-29 11:15:22
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\header-6.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecce90c37b672_42836685',
+  'unifunc' => 'content_5ed0e0ba3c0ee5_92729530',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ce3ee627826287cdb7fbf9fc6ad7a1104d82dd97' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\headers\\header-6.tpl',
-      1 => 1587527485,
+      1 => 1590742975,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5ecce90c37b672_42836685 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed0e0ba3c0ee5_92729530 (Smarty_Internal_Template $_smarty_tpl) {
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_topbar'] == 1)) {?>
     <div id="header-topbar" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class'], ENT_QUOTES, 'UTF-8');
 }?>">
@@ -75,10 +75,11 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
                         <?php echo $_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_content'];?>
 
                         <div>
-                            <a class="link-cms" href="#">Return</a>
+                            <a class="link-cms" href="index.php?id_cms=16&controller=cms">Return</a>
                         </div>
                         <div>
-                            <a class="link-cms" href="#">Track Your Order</a>
+                            <a class="link-cms" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['history'], ENT_QUOTES, 'UTF-8');?>
+">Track Your Order</a>
                         </div>
                         <?php if (($_smarty_tpl->tpl_vars['jmsSetting']->value['customersignin'] == 1)) {?>
                             <?php $_block_plugin3 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;

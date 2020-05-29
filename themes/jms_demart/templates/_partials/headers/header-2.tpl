@@ -32,10 +32,10 @@
             <div class="layout-column col-auto header-right">
                 <div class="row no-margin">
                     <div>
-                        <a class="link-cms" href="#">Return</a>
+                        <a class="link-cms" href="index.php?id_cms=16&controller=cms">Return</a>
                     </div>
                     <div>
-                        <a class="link-cms" href="#">Track Your Order</a>
+                        <a class="link-cms" href="{$urls.pages.history}">Track Your Order</a>
                     </div>
                     {widget_block name="ps_languageselector"}
                         {include 'module:ps_languageselector/ps_languageselector-dropdown.tpl'}

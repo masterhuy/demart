@@ -36,10 +36,13 @@
     </section>
     <footer class="form-footer clearfix">
         <input type="hidden" name="submitCreate" value="1">
-        {block "form_buttons"}
-            <button class="btn-default btn-fullwidth" data-link-action="save-customer" type="submit">
-                {l s='Save' d='Shop.Theme.Actions'}
-            </button>
-        {/block}
+        <div class="col-12 col-lg-2"></div>
+        <div class="col-12 col-lg-10 float-right">
+            {block "form_buttons"}
+                <button class="btn-default" data-link-action="save-customer" type="submit">
+                    {l s='Save' d='Shop.Theme.Actions'}
+                </button>
+            {/block}
+        </div>
     </footer>
 </form>

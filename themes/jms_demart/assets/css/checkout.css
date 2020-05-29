@@ -56,10 +56,6 @@
 }
 .form-control-comment {
 	display: block;
-    font-size: 14px;
-    opacity: .8;
-    padding-top: .4rem;
-    padding-bottom: .4rem;
 }
 #customer-form .custom-checkbox {
     display: -webkit-box;
@@ -79,10 +75,12 @@
     position: relative;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.09);
     text-align: center;
+    margin-top: 5px;
 }
 .custom-checkbox label {
     text-align: left;
     display: inline;
+    margin-bottom: 0;
 }
 #customer-form .custom-checkbox em {
     font-size: .8rem;

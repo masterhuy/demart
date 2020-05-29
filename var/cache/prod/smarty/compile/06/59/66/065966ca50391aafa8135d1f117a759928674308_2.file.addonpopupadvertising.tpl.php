@@ -1,35 +1,35 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-28 11:29:08
+/* Smarty version 3.1.33, created on 2020-05-29 11:18:30
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonpopupadvertising.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecf9274c2d677_11853205',
+  'unifunc' => 'content_5ed0e1762c5952_59988013',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '065966ca50391aafa8135d1f117a759928674308' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addonpopupadvertising.tpl',
-      1 => 1588576737,
+      1 => 1590726390,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
-    'file:_partials/headers/logo-advertising.tpl' => 1,
+    'file:_partials/headers/logo.tpl' => 1,
     'file:_partials/socials.tpl' => 1,
   ),
 ),false)) {
-function content_5ecf9274c2d677_11853205 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed0e1762c5952_59988013 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-popup-overlay" style="display:none;">
 	<div class="jms-popup">
 		<div class="text-top"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>"Hello! Welcome to Demart - Wish you happy shopping ",'d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </div>
 		<div class="main-content">
 			<div class="logo">
-				<?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/logo-advertising.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+				<?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/logo.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 			</div>
 			<?php if ($_smarty_tpl->tpl_vars['popup_title']->value) {?>
