@@ -32,6 +32,7 @@
 			{/if}
 		</div>
 	{/if}
+	<div class="line-custom"></div>
   	<div class="tabs-navigation">
 		<ul class="nav nav-tabs" role="tablist">
 			{foreach from = $categories key = k item = category}

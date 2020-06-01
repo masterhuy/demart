@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-18 08:33:10
+/* Smarty version 3.1.33, created on 2020-06-01 07:58:09
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addoncontentcarousel.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec23a36719eb0_29548176',
+  'unifunc' => 'content_5ed4a7015fc369_37240055',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9accca7a09a81f45133f7f4d1d29bea84037562' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addoncontentcarousel.tpl',
-      1 => 1588758965,
+      1 => 1590035399,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec23a36719eb0_29548176 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed4a7015fc369_37240055 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 	<div class="addon-title">
 		<h3><?php echo $_smarty_tpl->tpl_vars['addon_title']->value;?>
@@ -32,7 +32,7 @@ if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 	</div>
 <?php }?>
 <div class="content-carousel<?php if (isset($_smarty_tpl->tpl_vars['box_class']->value) && $_smarty_tpl->tpl_vars['box_class']->value) {?> <?php echo $_smarty_tpl->tpl_vars['box_class']->value;
-}?> owl-carousel" data-items="<?php if ($_smarty_tpl->tpl_vars['items_show']->value) {
+}?>" data-items="<?php if ($_smarty_tpl->tpl_vars['items_show']->value) {
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['items_show']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
 } else { ?>5<?php }?>" data-lg="<?php if ($_smarty_tpl->tpl_vars['items_show']->value) {
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['items_show']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');

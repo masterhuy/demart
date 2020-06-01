@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-15 03:53:09
+/* Smarty version 3.1.33, created on 2020-06-01 05:58:20
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addoncategorytab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ebe0415be9c50_79470721',
+  'unifunc' => 'content_5ed48aecf0d6b3_39435787',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '75351df1d88a583a6a01a207e1f4ef1bb0274bca' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addoncategorytab.tpl',
-      1 => 1589448409,
+      1 => 1589518205,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5ebe0415be9c50_79470721 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed48aecf0d6b3_39435787 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-tab">
 	<?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 		<div class="addon-tab-title">
@@ -33,6 +33,7 @@ function content_5ebe0415be9c50_79470721 (Smarty_Internal_Template $_smarty_tpl)
 			<?php }?>
 		</div>
 	<?php }?>
+	<div class="line-custom"></div>
 	<div class="tabs-navigation">
 		<ul class="nav nav-tabs">
 			<?php

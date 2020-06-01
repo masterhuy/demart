@@ -95,7 +95,6 @@
 #checkout #checkout-personal-information-step, #checkout #checkout-addresses-step, #checkout #checkout-delivery-step, #checkout #checkout-payment-step {
 	border: 1px solid #e5e5e5;
 	width: 100%;
-	font-size: 15px;
 }
 #checkout-addresses-step .address-item label{
 	line-height:30px;
@@ -184,7 +183,7 @@ body#checkout section.checkout-step .step-title {
 	margin: 0;
 	padding: 15px;
 	color: #000;
-	font-size: 17px;
+	font-size: 15px;
 }
 body#checkout section.checkout-step h2 {
 	font-size:1.1rem;
@@ -234,6 +233,7 @@ body#checkout section.checkout-step.-reachable.-complete h1 .step-edit {
 	display: block;
 	float: right;
 	margin-right: 0.125rem;
+	letter-spacing: 0;
 	text-transform:capitalize;
 }
 #delivery textarea {

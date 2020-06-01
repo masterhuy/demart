@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-29 09:37:35
+/* Smarty version 3.1.33, created on 2020-06-01 11:17:32
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addoncategoryshow.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed0c9cf483795_31233723',
+  'unifunc' => 'content_5ed4d5bc2404c9_34801479',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7acde95424f5aa92df70376c775165b1ec523164' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addoncategoryshow.tpl',
-      1 => 1589854611,
+      1 => 1590978775,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed0c9cf483795_31233723 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed4d5bc2404c9_34801479 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['category']->value)) {?>
 	<?php $_smarty_tpl->_assignInScope('categoryLink', $_smarty_tpl->tpl_vars['link']->value->getcategoryLink($_smarty_tpl->tpl_vars['category']->value['id_category'],$_smarty_tpl->tpl_vars['category']->value['link_rewrite']));?>
 	<?php $_smarty_tpl->_assignInScope('categoryname', $_smarty_tpl->tpl_vars['category']->value['name'][$_smarty_tpl->tpl_vars['language']->value['id']]);?>
@@ -55,6 +55,17 @@ foreach ($_from as $_smarty_tpl->tpl_vars['count']->value) {
  <?php echo $_smarty_tpl->tpl_vars['count']->value['totalProducts'];?>
  <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'items for your living room','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
 
+					</p>
+					<p class="count-2">
+						<?php echo $_smarty_tpl->tpl_vars['count']->value['totalProducts'];?>
+ 
+						<?php if ($_smarty_tpl->tpl_vars['count']->value['totalProducts'] > 1) {?>
+							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Products','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+
+						<?php } else { ?>
+							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Product','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+
+						<?php }?>
 					</p>
 				<?php }?>
 			<?php

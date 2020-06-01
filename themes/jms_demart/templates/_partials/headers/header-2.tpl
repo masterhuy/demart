@@ -56,7 +56,9 @@
                 {include file='_partials/headers/logo.tpl'}
             </div>
             <div class="layout-column col jmsadvsearch">
-                {include 'module:jmsadvsearch/views/templates/hook/jmsadvsearch.tpl'}
+                {widget_block name="jmsadvsearch"}
+                    {include 'module:jmsadvsearch/views/templates/hook/jmsadvsearch.tpl'}
+                {/widget_block}
             </div>
             <div class="layout-column col-auto header-right">
                 <div class="row no-margin">

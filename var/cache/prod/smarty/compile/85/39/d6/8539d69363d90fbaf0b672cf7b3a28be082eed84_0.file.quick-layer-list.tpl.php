@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-20 04:37:37
+/* Smarty version 3.1.33, created on 2020-06-01 04:37:07
   from 'D:\xamppp\htdocs\jms_demart\modules\jmsslider\views\templates\hook\quick-layer-list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec4a6015f53d6_96108351',
+  'unifunc' => 'content_5ed477e3e2d546_84452291',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec4a6015f53d6_96108351 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed477e3e2d546_84452291 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="quick-layer-selector">
     <div class="row">
         <span class="layer-list">

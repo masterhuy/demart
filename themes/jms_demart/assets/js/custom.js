@@ -210,7 +210,8 @@ customCarousel = () => {
             slideSpeed: 200
         });
     }
-    
+
+    $('.h2-top-categories .container > .row').addClass('h2-category-carousel');
     if($(".h2-category-carousel").length) {
         var h2CategoryCarousel = $('.h2-category-carousel');			
         var rtl = false;

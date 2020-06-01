@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-22 04:55:06
+/* Smarty version 3.1.33, created on 2020-06-01 05:06:29
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\checkout\_partials\steps\addresses.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec74d1a0e60b9_91615054',
+  'unifunc' => 'content_5ed47ec53ea934_97657825',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b3a0133be4859dc04b25ffce8cb2468c8db522a8' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\checkout\\_partials\\steps\\addresses.tpl',
-      1 => 1583393895,
+      1 => 1590984214,
       2 => 'file',
     ),
   ),
@@ -21,25 +21,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:checkout/_partials/address-selector-block.tpl' => 2,
   ),
 ),false)) {
-function content_5ec74d1a0e60b9_91615054 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed47ec53ea934_97657825 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14620656335ec74d1a0befb7_18986747', 'step_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_259180435ed47ec53c3837_67303568', 'step_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'checkout/_partials/steps/checkout-step.tpl');
 }
 /* {block 'step_content'} */
-class Block_14620656335ec74d1a0befb7_18986747 extends Smarty_Internal_Block
+class Block_259180435ed47ec53c3837_67303568 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-    0 => 'Block_14620656335ec74d1a0befb7_18986747',
+    0 => 'Block_259180435ed47ec53c3837_67303568',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -145,7 +145,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
       <?php if (!$_smarty_tpl->tpl_vars['form_has_continue_button']->value) {?>
         <div class="clearfix">
-          <button type="submit" class="btn continue btn-fullwidth" name="confirm-addresses" value="1">
+          <button type="submit" class="btn continue btn-default" name="confirm-addresses" value="1">
               <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Continue','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
           </button>

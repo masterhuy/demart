@@ -28,7 +28,7 @@
     document.addEventListener("DOMContentLoaded", function() {
         const $ = jQuery;
         const productId = {$product.id};
-        const productReview = $('#product-list-reviews-{$product.id}');
+        const productReview = $('.product-list-reviews-{$product.id}');
         const productCommentGradeUrl = '{$product_comment_grade_url nofilter}';
 
         $.get(productCommentGradeUrl, { id_product: productId }, function(jsonResponse) {
@@ -50,7 +50,7 @@
   });
 </script>
 
-<div id="product-list-reviews-{$product.id}" class="product-list-reviews empty">
+<div id="product-list-reviews-{$product.id}" class="product-list-reviews-{$product.id} product-list-reviews empty">
     <div class="grade-stars small-stars"></div>
     <div class="comments-nb"></div>
 </div>

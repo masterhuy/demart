@@ -23,7 +23,8 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if $nb_comments != 0}
-  <div class="comments-note">
-    <div class="grade-stars" data-grade="{$grade}"></div> <span class="count">({$nb_comments})<span>
-  </div>
+    <div class="comments-note">
+        <div class="grade-stars" data-grade="{$grade}"></div> 
+        <span class="count">({$nb_comments})<span>
+    </div>
 {/if}

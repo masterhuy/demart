@@ -43,9 +43,15 @@
             {/block}
         {/block}
 
-        {block name='product_additional_info'}
-            {include file='catalog/_partials/product-additional-info.tpl'}
-        {/block}
+        <div class="rating">
+            {block name='product_reviews'}
+                {hook h='displayProductListReviews' product=$product}
+            {/block}
+            
+            {block name='product_additional_info'}
+                {include file='catalog/_partials/product-additional-info.tpl'}
+            {/block}
+        </div>
 
         {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-28 08:32:14
+/* Smarty version 3.1.33, created on 2020-06-01 11:28:10
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\product-flags.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecf68fe7d4c18_65182969',
+  'unifunc' => 'content_5ed4d83a571a90_60299794',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,20 +20,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ecf68fe7d4c18_65182969 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed4d83a571a90_60299794 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9062986845ecf68fe7c9091_53406335', 'product_flags');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9690820375ed4d83a571a96_29001464', 'product_flags');
 ?>
 
 <?php }
 /* {block 'product_flags'} */
-class Block_9062986845ecf68fe7c9091_53406335 extends Smarty_Internal_Block
+class Block_9690820375ed4d83a571a96_29001464 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_flags' => 
   array (
-    0 => 'Block_9062986845ecf68fe7c9091_53406335',
+    0 => 'Block_9690820375ed4d83a571a96_29001464',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

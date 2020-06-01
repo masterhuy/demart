@@ -127,7 +127,7 @@ button:disabled, button[disabled]{
 	letter-spacing: -0.3px;
 }
 .addon-tab{
-	margin-bottom: 8px;
+	margin-bottom: 15px;
 }
 #back-to-top {
 	display: flex;
@@ -1873,6 +1873,13 @@ header .row {
 
 .jms-banner{
 	position: relative;
+	overflow: hidden;
+	&:hover > a > img{
+		transform: scale(1.1);
+	}
+	> a > img{
+		transition: .8s all;
+	}
 }
 
 /********* home 1 ******/
@@ -1927,6 +1934,9 @@ header .row {
 		padding-bottom: 0;
 	}
 	.jms-banner{
+		> a > img{
+			transform: none !important;
+		}
 		.banner-content{
 			text-align: center;
 			position: absolute;
@@ -1976,7 +1986,7 @@ header .row {
 				font-weight: 500;
 				letter-spacing: -0.3px;
 			}
-			.count{
+			.count, .count-2{
 				display: none;
 			}
 		}
@@ -2005,6 +2015,11 @@ header .row {
 		}
 	}
 }
+.h1-lastest-product{
+	.addon-tab{
+		margin-bottom: 14px;
+	}
+}
 .category-box{
 	.btn-bottom a{
 		&.shopping-all{
@@ -2030,7 +2045,7 @@ header .row {
 	}
 	.layout-column.banner{
 		position: absolute;
-		top: 48px;
+		top: 183px;
 		right: 0;
 		max-width: 440px;
 		z-index: 9;
@@ -2059,8 +2074,6 @@ header .row {
 			}
 		}
 	}
-}
-.blocktab-2 .shop-by-brand{
 	.addon-tab{
 		background: transparent;
 		position: relative;
@@ -2068,7 +2081,7 @@ header .row {
 	.addon-tab-title{
 		width: 100%;
 		padding-right: 0;
-		margin-bottom: 30px;
+		margin-bottom: 35px;
 	}
 	.tabs-navigation{
 		float: none;
@@ -2076,7 +2089,7 @@ header .row {
 		padding: 0;
 	}
 	.owl-theme .owl-controls{
-		top: 0;
+		top: -5px;
 	}
 	.addon-tab .nav-tabs .nav-item{
 		width: calc((100% - 10px)/6);
@@ -2092,7 +2105,7 @@ header .row {
 			height: 100px;
 			border: 2px solid #ebebeb;
 			border-radius: 0;
-			background: url("../img/brands/brand.png") no-repeat center;
+			background: url("../img/brands/brand.jpg") no-repeat center;
 			&.active{
 				border-color: $color1;
 			}
@@ -2114,31 +2127,31 @@ header .row {
 				opacity: 0;
 				visibility: hidden;
 			}
-			&.categorytab-11{
-				background: url("../img/brands/samsung.png") no-repeat center;
+			&.categorytab-61{
+				background: url("../img/brands/samsung.jpg") no-repeat center;
 			}
-			&.categorytab-12{
-				background: url("../img/brands/apple.png") no-repeat center;
+			&.categorytab-62{
+				background: url("../img/brands/apple.jpg") no-repeat center;
 			}
-			&.categorytab-13{
-				background: url("../img/brands/sony.png") no-repeat center;
+			&.categorytab-63{
+				background: url("../img/brands/sony.jpg") no-repeat center;
 			}
-			&.categorytab-14{
-				background: url("../img/brands/dell.png") no-repeat center;
+			&.categorytab-64{
+				background: url("../img/brands/dell.jpg") no-repeat center;
 			}
-			&.categorytab-15{
-				background: url("../img/brands/panasonic.png") no-repeat center;
+			&.categorytab-65{
+				background: url("../img/brands/panasonic.jpg") no-repeat center;
 			}
-			&.categorytab-16{
-				background: url("../img/brands/asus.png") no-repeat center;
+			&.categorytab-66{
+				background: url("../img/brands/asus.jpg") no-repeat center;
 			}
 		}
 	}
 }
 .h1-topseller{
-	padding: 69px 0 7px;
+	padding: 74px 0 9px;
 	.addon-title{
-		padding-top: 5px;
+		margin-bottom: 13px;
 	}
 	.container > .row .layout-column{
 		flex: 0 0 68.94%;
@@ -2288,24 +2301,37 @@ header .row {
 	background-color: #fff;
 	padding-bottom: 80px;
 	.col-megatab{
-		.addon-tab{
+		.addon-tab{ 
 			margin-bottom: 2px;
+		}
+	}
+}
+.h2-category-title{
+	padding-top: 74px;
+	background: #222832;
+	.addon-title{
+		margin-bottom: 19px;
+		h3{
+			color: #fff;
 		}
 	}
 }
 .h2-top-categories{
 	background: #222832;
-	padding: 73px 0 80px;
+	padding: 0 0 80px;
 	.container > .row{
 		margin: 0;
 		.layout-column{
 			padding: 0;
-		}
-	}
-	.addon-title{
-		margin-bottom: 19px;
-		h3{
-			color: #fff;
+			&:hover .category-box{
+				background-color: $color2;
+				.parent-category a{
+					color: #fff;
+				}
+				.count-2{
+					color: #fff;
+				}
+			}
 		}
 	}
 	.owl-theme{
@@ -2327,6 +2353,45 @@ header .row {
 			}
 		}
 	}
+	.addon-box:nth-child(2){
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 10px;
+	}
+	.category-box{
+		text-align: center;
+		background-color: #fff;
+		padding: 13px 10px 17px;
+		transition: .4s all;
+		.parent-category{
+			margin-bottom: 0;
+			a{
+				font-size: 22px;
+				font-family: Work Sans;
+				font-weight: 500;
+				color: #000;
+				display: block;
+				letter-spacing: -0.3px;
+				margin-bottom: 7px;
+			}
+		}
+		.child-categories, .btn-bottom{
+			display: none;
+		}
+		.count{
+			display: none;
+		}
+		.count-2{
+			margin-bottom: 0;
+			font-size: 14px;
+			font-family: Work Sans;
+			color: #444;
+			letter-spacing: 0;
+			transition: .4s all;
+		}
+	}
 }
 .h2-category-carousel{
 	&::before{
@@ -2342,34 +2407,6 @@ header .row {
 	.owl-stage-outer{
 		overflow: visible;
 		padding-bottom: 0;
-	}
-	.jms-banner{
-		&:hover{
-			.banner-content p a{
-				background-color: $color2;
-				color: #fff;
-			}
-		}
-		.banner-content{
-			position: absolute;
-			bottom: 10px;
-			width: 100%;
-			padding: 0 10px;
-			p{
-				margin-bottom: 0;
-				a{
-					display: block;
-					color: #000;
-					text-align: center;
-					padding: 4px 10px;
-					letter-spacing: -0.3px;
-					font-size: 22px;
-					font-weight: 500;
-					font-family: Work Sans;
-					background: rgba(255,255,255,0.95);
-				}
-			}
-		}
 	}
 }
 .h2-products{
@@ -2437,16 +2474,6 @@ header .row {
 		flex: 0 0 53.7%;
 		max-width: 53.7%;
 		z-index: 2;
-		.addon-box{
-			margin: 0 -15px;
-			overflow: hidden;
-			.product-carousel{
-				padding: 0 15px;
-			}
-		}
-		.owl-stage-outer{
-			overflow: visible;
-		}
 		.product-miniature{
 			margin-bottom: 1px;
 			padding-bottom: 24px;
@@ -4825,8 +4852,9 @@ footer .row{
 	.nav-tabs{
 		border-bottom: 0;
 		.nav-item{
-		position: relative;
-		margin-right: 0;
+			position: relative;
+			margin-right: 0;
+			margin-left: 0;
 			.nav-link{
 				position: relative;
 				color: #666;
@@ -5963,13 +5991,16 @@ footer .row{
 	.home_1{
 		.jms-row{
 			&.shop-by-brand{
-				margin-top: -17px;
+				margin-top: -13px;
 			}
 			&.flashsale{
-				margin-top: -17px;
+				margin-top: -18px;
 			}
 			&.h1-banner-2{
-				margin-top: -6px;
+				margin-top: -8px;
+			}
+			&.h1-topseller{
+				margin-top: -30px;
 			}
 		}
 	}

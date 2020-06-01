@@ -586,8 +586,11 @@ section.featured-products {
 .product-quantity .add{
     display: flex;
 }
-.product-price.h5.has-discount {
-    display: none;
+.product-price.h5.has-discount{
+    display: flex;
+}
+.product-price.h5.has-discount .product-discount{
+    margin-right: 10px;
 }
 .product-line-info .product-link{
     color: #111;
@@ -602,6 +605,22 @@ section.featured-products {
 }
 .remove-from-cart i {
     font-size: 1.2rem !important;
+}
+.rating{
+    margin-top: 15px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+.rating .product-list-reviews{
+    position: static;
+    width: auto;
+}
+.rating .product-additional-info {
+    margin-left: 21px;
+}
+.rating .product-comments-additional-info{
+    margin: 0;
 }
 #block-reassurance {
     width: 100%;

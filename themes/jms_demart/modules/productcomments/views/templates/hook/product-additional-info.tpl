@@ -35,7 +35,7 @@
                 </div>
             {/if}
         {else}
-            {include file='module:productcomments/views/templates/hook/average-grade-stars.tpl' grade=$average_grade}
+            {* {include file='module:productcomments/views/templates/hook/average-grade-stars.tpl' grade=$average_grade} *}
             <div class="additional-links">
                 <a class="link-comment user-reviews" href="#product-comments-list-header">
                     {l s='Reviews' d='Modules.Productcomments.Shop'} ({$nb_comments})

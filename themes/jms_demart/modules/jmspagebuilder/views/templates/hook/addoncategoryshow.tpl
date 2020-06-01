@@ -42,6 +42,14 @@
 					<p class="count">
 						{l s='Included' d='Modules.JmsPagebuilder'} {$count.totalProducts nofilter} {l s='items for your living room' d='Modules.JmsPagebuilder'}
 					</p>
+					<p class="count-2">
+						{$count.totalProducts nofilter} 
+						{if $count.totalProducts > 1}
+							{l s='Products' d='Modules.JmsPagebuilder'}
+						{else}
+							{l s='Product' d='Modules.JmsPagebuilder'}
+						{/if}
+					</p>
 				{/if}
 			{/foreach}
 		</h3>

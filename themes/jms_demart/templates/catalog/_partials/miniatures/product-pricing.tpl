@@ -48,11 +48,11 @@
   </div>
   <div class="col-action">
       {if $product.add_to_cart_url}
-      <a href="#" class="btn ajax-add-to-cart product-btn cart-button btn-fullwidth" title="{l s='Buy Now' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+      <a href="#" class="btn ajax-add-to-cart product-btn cart-button btn-default" title="{l s='Buy Now' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
           <span class="text-addcart">{l s='Buy Now' d='Shop.Theme.Actions'}</span>
       </a>
       {else}
-      <a href="#" class="btn product-btn disabled btn-fullwidth" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
+      <a href="#" class="btn product-btn disabled btn-default" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
           <span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
       </a>
       {/if}

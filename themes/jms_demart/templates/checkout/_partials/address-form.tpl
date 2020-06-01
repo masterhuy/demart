@@ -35,11 +35,11 @@
     <a class="js-cancel-address cancel-address float-xs-right" href="{url entity='order' params=['cancelAddress' => {$type}]}">{l s='Cancel' d='Shop.Theme.Actions'}</a>
   {else}
     <form>
-      <button type="submit" class="continue btn btn-primary btn-halfwidth" name="confirm-addresses" value="1">
+      <button type="submit" class="btn btn-default" name="confirm-addresses" value="1">
           {l s='Continue' d='Shop.Theme.Actions'}
       </button>
       {if $customer.addresses|count > 0}
-        <a class="js-cancel-address cancel-address btn btn-halfwidth" href="{url entity='order' params=['cancelAddress' => {$type}]}">{l s='Cancel' d='Shop.Theme.Actions'}</a>
+        <a class="js-cancel-address cancel-address btn btn-default" href="{url entity='order' params=['cancelAddress' => {$type}]}">{l s='Cancel' d='Shop.Theme.Actions'}</a>
       {/if}
     </form>
   {/if}

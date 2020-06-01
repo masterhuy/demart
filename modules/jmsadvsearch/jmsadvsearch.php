@@ -326,7 +326,7 @@ class JmsAdvSearch extends Module implements WidgetInterface
         '.((int)$max_depth != 0 ? ' AND `level_depth` <= '.(int)$max_depth : '').'
         AND c.id_category IN (
             SELECT id_category
-            FROM `'._DB_PREFIX_.'category_group`
+            FROM `'._DB_PREFIX_.'category_group` 
             WHERE `id_group` IN ('.pSQL(implode(', ', Customer::getGroupsStatic((int)$this->context->customer->id))).')
         )
         ORDER BY `level_depth` ASC, '.(Configuration::get('JMS_ADVSEARCH_CATEG_SORT') ? 'cl.`name`' : 'cs.`position`').' '.(Configuration::get('JMS_ADVSEARCH_CATEG_SORT_WAY') ? 'DESC' : 'ASC'));

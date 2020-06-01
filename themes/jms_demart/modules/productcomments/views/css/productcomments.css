@@ -375,7 +375,9 @@
 /*
 ** Quickview style
 */
-
+#criterions_list {
+  margin-top: 15px;
+}
 .product-quickview-review {
   margin-top: 13px;
   display: flex;

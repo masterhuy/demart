@@ -35,7 +35,7 @@
     <div class="clearfix">
       <form method="GET" action="{$urls.pages.order}">
         <button
-          class="continue btn btn-fullwidth"
+          class="continue btn btn-default"
           name="controller"
           type="submit"
           value="order"
