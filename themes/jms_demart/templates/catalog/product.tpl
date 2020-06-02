@@ -83,7 +83,7 @@
                     <div class="addon-title">
                         <h3>{l s='Related Products' d='Shop.Theme.Catalog'}</h3>
                     </div>
-                    <div class="products owl-carousel" data-items="4" data-lg="4" data-md="3" data-sm="2" data-xs="1">
+                    <div class="products owl-carousel" data-items="5" data-lg="4" data-md="3" data-sm="2">
                         {foreach from=$accessories item="product_accessory"}
                             <div class="item ajax_block_product">
                                 {block name='product_miniature'}

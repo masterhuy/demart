@@ -32,7 +32,6 @@
         {/block}
 
 	    <div itemprop="price" content="{$product.price_amount}" class="price new">{$product.price}</div>
-
         {block name='product_price'}
             <div
                 class="product-price {if $product.has_discount}has-discount{/if}"
@@ -76,16 +75,22 @@
 
         {block name='product_availability'}
             {if $product.show_availability && $product.availability_message}
-            <span id="product-availability">
-                {if $product.availability == 'available'}
-                    <span>{$product.availability_message}</span>
-                {elseif $product.availability == 'last_remaining_items'}
-                    <span>{l s='last item' d='Shop.Theme.Catalog'}</span>
-                {else}
-                    <span>{$product.availability_message}</span>
-                {/if}
-            </span>
+                <span id="product-availability">
+                    {if $product.availability == 'available'}
+                        <span class="available">{$product.availability_message}</span>
+                    {elseif $product.availability == 'last_remaining_items'}
+                        <span class="last-item">
+                            <i class="lnr lnr-warning"></i>
+                            {l s='last item' d='Shop.Theme.Catalog'}
+                        </span>
+                    {else}
+                        <span class="out-stock">
+                            <i class="lnr lnr-cross-circle"></i>
+                            {$product.availability_message}
+                        </span>
+                    {/if}
+                </span>
             {/if}
         {/block}
-  </div>
+    </div>
 {/if}

@@ -1,4 +1,4 @@
-#product .product-name {
+#product h1.product-name {
     font-size: 30px;
     letter-spacing: 0;
     text-transform: initial;
@@ -194,7 +194,7 @@
 }
 .vertical-thumbs .js-qv-mask .slick-list{
     overflow: hidden;
-    max-height: 616px;
+    /*max-height: 616px;*/
 }
 .horizonal-thumbs .thumb-container {
 	/*margin-right: 20px;*/
@@ -227,9 +227,6 @@
 
 .product-layout-3columns .product-cover{
     display: none;
-}
-.product-layout-3columns .product-images .thumb-container > .thumb {
-    border: 1px solid transparent;
 }
 .product-layout-3columns .horizonal-thumbs .thumb-container {
     margin: 0 0 10px;
@@ -280,10 +277,10 @@ section.featured-products {
     color: #4c4f53;
     position: relative;
 }
-#product-availability span::before {
+#product-availability span.available::before {
     content: "";
-    background: url("../img/icons/checked.png") no-repeat center;
     background-color: #14c2ee;
+    background: url("../img/icons/checked.png") no-repeat center;
     width: 13px;
     height: 13px;
     display: inline-block;
@@ -402,8 +399,8 @@ section.featured-products {
     margin-bottom: 22px;
     display: inline-flex;
 }
-.product-variants .product-variants-item:not(:first-child){
-    margin-left: 87px;
+.product-variants .product-variants-item:not(:last-child){
+    margin-right: 87px;
 }
 .product-variants-item ul {
   display: inline-flex;
@@ -773,11 +770,6 @@ section.featured-products {
 #more_info_block .panel-body{
     
 }
-#more_info_block li {
-    float: none;
-    display: inline-block;
-    margin-right: 0;
-}
 #more_info_block .panel-title{
     margin-bottom: 0;
 }
@@ -913,11 +905,14 @@ section.featured-products {
 .product-features>dl.data-sheet dt.name {
     font-weight: 700;
 }
+
 /* same category */
-.same-category {
+.same-category, 
+.product-accessories {
     margin-top: 58px;
 }
-.same-category .addon-title h3 {
+.same-category .addon-title h3,
+.product-accessories .addon-title h3 {
     text-transform: capitalize;
 }
 /*====================================================
@@ -1004,9 +999,6 @@ section.featured-products {
     display: inline-block;
     list-style-type: none;
 }
-.images-container.grid .product-images > li.thumb-container .thumb{
-    border: 1px solid transparent;
-}
 .images-container.grid .product-images > li.thumb-container .thumb.selected {
     border: 1px solid #14c2ee;
 }
@@ -1085,6 +1077,9 @@ section.featured-products {
     background: #000;
     color: #fff;
 }
+.product-flags .pack{
+    right: 8px;
+}
 .pack-product-container .table td {
 	border-top:none;
 }
@@ -1092,7 +1087,6 @@ section.featured-products {
 	margin-right:10px;
 }
 #product .modal-content {
-	background: #fff;
 	border: none;
 }
 .js-modal-product-cover.product-cover-modal {

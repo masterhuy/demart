@@ -4718,15 +4718,15 @@
                 i = "ondemand",
                 o = [];
             "thumbs-left" != jmsSetting.product_content_layout && "thumbs-right" != jmsSetting.product_content_layout || (e = !0, t = 4, i = "progressive"), "thumbs-left" == jmsSetting.product_content_layout && (o = [{
-                // breakpoint: 769,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 4,
-                    vertical: true,
-                    verticalSwiping: true
+                    vertical: e,
+                    verticalSwiping: e
                 }
             }]), "thumbs-left" != jmsSetting.product_content_layout && "thumbs-right" != jmsSetting.product_content_layout && "thumbs-bottom" != jmsSetting.product_content_layout || (0, n.default)(".js-qv-product-images").slick({
-                slidesToShow: t,
+                slidesToShow: 4,
                 slidesToScroll: t,
                 infinite: !1,
                 dots: !1,

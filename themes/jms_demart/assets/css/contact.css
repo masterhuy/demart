@@ -75,10 +75,10 @@
 
 /***** login ***/
 #login-wrapper h3 {
-    font-size: 1.2rem;
+    font-size: 24px;
     font-weight: 600;
     font-style: normal;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #000;
 }
 #login-wrapper .signup-form{
@@ -98,7 +98,7 @@
 }
 #login-form label{
     margin-bottom: 0;
-    font-size: 0.8667rem;
+    font-size: 13px;
     max-width: max-content;
     flex:0 0 35%;
     max-width: 35%;
@@ -144,9 +144,9 @@
 #login-form .pasword-form{
     align-items: center;
 }
-#login-form .show-pass button{
+#login-form .show-pass button {
     border: 0;
-    font-size: 0.8667rem;
+    font-size: 13px;
     text-transform: capitalize;
     font-weight: 400;
     color: #555;
@@ -157,9 +157,6 @@
 #login-form .form-footer{
     margin-top: 2rem;
     padding-right: 1rem;
-}
-#login-form .form-footer button{
-    min-width: 12.4rem;
 }
 #login-form .authentication-links{
     font-size: 100%;

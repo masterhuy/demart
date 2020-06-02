@@ -29,7 +29,7 @@
             {if $post_allowed}
                 <div class="d-flex align-items-center empty">
                     <div class="empty-stars"></div>
-                    <button class="btn btn-default btn-comment post-product-comment">
+                    <button class="btn-default btn-comment post-product-comment">
                         {l s='Add your review' d='Modules.Productcomments.Shop'}
                     </button>
                 </div>

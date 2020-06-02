@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-01 11:27:40
+/* Smarty version 3.1.33, created on 2020-06-02 10:43:14
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed4d81c062251_54484395',
+  'unifunc' => 'content_5ed61f32bab857_36458644',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5994852a9960d76ab827d262a62165c31e86d3b8' => 
     array (
       0 => 'module:productcommentsviewstempl',
-      1 => 1590466143,
+      1 => 1591072990,
       2 => 'module',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:productcomments/views/templates/hook/confirm-modal.tpl' => 1,
   ),
 ),false)) {
-function content_5ed4d81c062251_54484395 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed61f32bab857_36458644 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
     var productCommentUpdatePostErrorMessage = '<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sorry, your review appreciation cannot be sent.','d'=>'Modules.Productcomments.Shop','js'=>1),$_smarty_tpl ) );?>
@@ -35,24 +35,24 @@ echo '<script'; ?>
 <?php echo '</script'; ?>
 >
 <div id="product-comments">
-    <div class="row">
-        <div class="col-md-8 col-sm-12" id="product-comments-list-header">
-            <div class="comments-nb">
-                <span>Based on <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['nb_comments']->value, ENT_QUOTES, 'UTF-8');?>
+    <?php if ($_smarty_tpl->tpl_vars['post_allowed']->value && $_smarty_tpl->tpl_vars['nb_comments']->value != 0) {?>
+        <div class="row">
+            <div class="col-md-8 col-sm-12" id="product-comments-list-header">
+                <div class="comments-nb">
+                    <span>Based on <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['nb_comments']->value, ENT_QUOTES, 'UTF-8');?>
  reviews</span>
-            </div>
-            <?php $_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/average-grade-stars.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('grade'=>$_smarty_tpl->tpl_vars['average_grade']->value), 0, false);
+                </div>
+                <?php $_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/average-grade-stars.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('grade'=>$_smarty_tpl->tpl_vars['average_grade']->value), 0, false);
 ?>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <?php if ($_smarty_tpl->tpl_vars['post_allowed']->value && $_smarty_tpl->tpl_vars['nb_comments']->value != 0) {?>
-                <button class="btn-default post-product-comment">
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <button class="btn-default post-product-comment write-review">
                     <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Write a review','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );?>
 
                 </button>
-            <?php }?>
+            </div>
         </div>
-    </div>
+    <?php }?>
 
     <?php ob_start();
 $_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/product-comment-item-prototype.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);

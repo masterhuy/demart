@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-26 09:37:19
+/* Smarty version 3.1.33, created on 2020-06-02 10:59:47
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\customer\_partials\login-form.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eccd53f5b0a78_59661297',
+  'unifunc' => 'content_5ed62313497d34_35520851',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6b37597e50903196d6b2c15551e54a876fd177a0' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\customer\\_partials\\login-form.tpl',
-      1 => 1586144814,
+      1 => 1591091837,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/form-errors.tpl' => 1,
   ),
 ),false)) {
-function content_5eccd53f5b0a78_59661297 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed62313497d34_35520851 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 $_smarty_tpl->_subTemplateRender('file:_partials/form-errors.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('errors'=>$_smarty_tpl->tpl_vars['errors']->value['']), 0, false);
@@ -32,7 +32,7 @@ $_smarty_tpl->_subTemplateRender('file:_partials/form-errors.tpl', $_smarty_tpl-
 " method="post">
     <section>
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2889218855eccd53f5a4ef7_32951117', 'form_fields');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14603686365ed62313497d34_98957949', 'form_fields');
 ?>
 
     </section>
@@ -40,7 +40,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2889218855eccd53f5
     <footer class="form-footer clearfix">
         <input type="hidden" name="submitLogin" value="1">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19665339055eccd53f5a8d71_67791234', 'form_buttons');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21041905915ed62313497d39_73539670', 'form_buttons');
 ?>
 
         <div class="authentication-links row">
@@ -61,7 +61,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19665339055eccd53f
 </form>
 <?php }
 /* {block 'form_field'} */
-class Block_19282343455eccd53f5a8d77_47307456 extends Smarty_Internal_Block
+class Block_13755495815ed62313497d38_97802910 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -73,16 +73,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'form_field'} */
 /* {block 'form_fields'} */
-class Block_2889218855eccd53f5a4ef7_32951117 extends Smarty_Internal_Block
+class Block_14603686365ed62313497d34_98957949 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'form_fields' => 
   array (
-    0 => 'Block_2889218855eccd53f5a4ef7_32951117',
+    0 => 'Block_14603686365ed62313497d34_98957949',
   ),
   'form_field' => 
   array (
-    0 => 'Block_19282343455eccd53f5a8d77_47307456',
+    0 => 'Block_13755495815ed62313497d38_97802910',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -94,7 +94,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['field']->value) {
 ?>
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19282343455eccd53f5a8d77_47307456', 'form_field', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13755495815ed62313497d38_97802910', 'form_field', $this->tplIndex);
 ?>
 
             <?php
@@ -106,18 +106,18 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'form_fields'} */
 /* {block 'form_buttons'} */
-class Block_19665339055eccd53f5a8d71_67791234 extends Smarty_Internal_Block
+class Block_21041905915ed62313497d39_73539670 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'form_buttons' => 
   array (
-    0 => 'Block_19665339055eccd53f5a8d71_67791234',
+    0 => 'Block_21041905915ed62313497d39_73539670',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-            <button class="btn-default" data-link-action="sign-in" type="submit" class="form-control-submit">
+            <button class="btn btn-default" data-link-action="sign-in" type="submit" class="form-control-submit">
                 <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Login','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
             </button>

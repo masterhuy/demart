@@ -28,21 +28,21 @@
     var productCommentAbuseReportErrorMessage = '{l s='Sorry, your abuse report cannot be sent.' d='Modules.Productcomments.Shop' js=1}';
 </script>
 <div id="product-comments">
-    <div class="row">
-        <div class="col-md-8 col-sm-12" id="product-comments-list-header">
-            <div class="comments-nb">
-                <span>Based on {$nb_comments} reviews</span>
+    {if $post_allowed && $nb_comments != 0}
+        <div class="row">
+            <div class="col-md-8 col-sm-12" id="product-comments-list-header">
+                <div class="comments-nb">
+                    <span>Based on {$nb_comments} reviews</span>
+                </div>
+                {include file='module:productcomments/views/templates/hook/average-grade-stars.tpl' grade=$average_grade}
             </div>
-            {include file='module:productcomments/views/templates/hook/average-grade-stars.tpl' grade=$average_grade}
-        </div>
-        <div class="col-md-4 col-sm-12">
-            {if $post_allowed && $nb_comments != 0}
-                <button class="btn-default post-product-comment">
+            <div class="col-md-4 col-sm-12">
+                <button class="btn-default post-product-comment write-review">
                     {l s='Write a review' d='Modules.Productcomments.Shop'}
                 </button>
-            {/if}
+            </div>
         </div>
-    </div>
+    {/if}
 
     {include file='module:productcomments/views/templates/hook/product-comment-item-prototype.tpl' assign="comment_prototype"}
     {include file='module:productcomments/views/templates/hook/empty-product-comment.tpl'}

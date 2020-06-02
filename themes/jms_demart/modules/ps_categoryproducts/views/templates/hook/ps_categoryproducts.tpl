@@ -25,7 +25,7 @@
 <div class="same-category">
     <div class="addon-title">
         <h3>
-            {l s='Related Products' d='Shop.Theme.Catalog'}
+            {l s='Products in the same category' d='Shop.Theme.Catalog'}
         </h3>
     </div>
     <div class="product_box">

@@ -23,18 +23,20 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if $listing.pagination.items_shown_from == 1}
-    <div id="js-product-list-header">
-        <div class="block-category">
-            <div class="block-category-inner">
-                {if $category.description && $jmsSetting.shop_cat_desc}
-                    <div id="category-description" class="text-muted">{$category.description nofilter}</div>
-                {/if}
-                {if $category.image.large.url && $jmsSetting.shop_cat_banner}
-                    <div class="category-cover">
-                        <img src="{$category.image.large.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
-                    </div>
-                {/if}
+    {if $category.image || $category.description}
+        <div id="js-product-list-header">
+            <div class="block-category">
+                <div class="block-category-inner">
+                    {if $category.image.large.url && $jmsSetting.shop_cat_banner}
+                        <div class="category-cover">
+                            <img src="{$category.image.large.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
+                        </div>
+                    {/if}
+                    {if $category.description && $jmsSetting.shop_cat_desc}
+                        <div id="category-description" class="text-muted">{$category.description nofilter}</div>
+                    {/if}
+                </div>
             </div>
         </div>
-    </div>
+    {/if}
 {/if}

@@ -911,12 +911,16 @@ header .row {
 					font-size: 14px;
 					padding: 0 18px;
 					position: relative;
+					&.collapsed i{
+						transform: translateY(-50%);
+					}
 					i{
 						position: absolute;
 						top: 50%;
 						right: 20px;
 						font-size: 10px;
-						transform: translateY(-50%);
+						transform: scale(1, -1) translateY(50%);
+						transition: none;
 					}
 				}
 				#our-brand{
@@ -4770,6 +4774,7 @@ footer .row{
 		display: flex;
 		align-items: center;
 		position: absolute;
+		left: 0;
 		width: 100%;
 		box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
 		z-index: 1;

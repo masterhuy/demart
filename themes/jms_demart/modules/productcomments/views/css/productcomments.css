@@ -53,15 +53,6 @@
  * Additional product infos
  */
 
- .product-comments-additional-info .empty-stars{
-  display: inline-block;
-  margin-right: 30px;
-  height: 20px;
-  min-width: 70px;
-  background: url(../img/star-empty-full.png) no-repeat 0 0 transparent;
-  background-position: center;
-}
-
 .product-comments-additional-info .post-product-comment{
   background: transparent !important;
   color: #444;
@@ -312,6 +303,9 @@
   justify-content: space-between;
 }
 .post-product-comment{
+  float: left;
+}
+.post-product-comment.write-review{
   float: right;
 }
 #product-comments-list-header .comments-nb {
@@ -319,24 +313,24 @@
   padding-top: 3px;
 }
 
-#product-comments-list-header .comments-nb  .material-icons {
+#product-comments-list-header .comments-nb .material-icons {
   margin-right: 3px;
 }
 
 #product-comments-list .btn-comment {
-  margin: 0 auto;
   display: block;
 }
 
 .product-comment-list-item {
   padding: 26px 0;
-  margin: 0 ;
+  margin: 0;
   background-color: #FFFFFF;
   text-align: left;
 }
-
-#empty-product-comment {
-  text-align: center;
+#empty-product-comment::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .product-comment-list-item .grade-stars .star-content {

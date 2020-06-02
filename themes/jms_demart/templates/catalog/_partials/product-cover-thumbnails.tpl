@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if isset($smarty.get.product_content_layout) && $smarty.get.product_content_layout !=''}
-     {assign var='product_content_layout' value=$smarty.get.product_content_layout}
+   {assign var='product_content_layout' value=$smarty.get.product_content_layout}
 {else}
    {assign var='product_content_layout' value=$jmsSetting.product_content_layout}
 {/if}

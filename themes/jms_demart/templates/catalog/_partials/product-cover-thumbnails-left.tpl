@@ -35,7 +35,7 @@
                             src="{$image.bySize.large_default.url}"
                             alt="{$image.legend}"
                             title="{$image.legend}"
-                            width="110"
+                            width="100"
                             itemprop="image"
                         >
                     </div>

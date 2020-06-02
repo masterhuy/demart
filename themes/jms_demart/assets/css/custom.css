@@ -824,14 +824,21 @@ header .row {
         font-size: 14px;
         padding: 0 18px;
         position: relative; }
+        .header-1 #header-bottom .header-right .block-our-brand .our-brand.collapsed i {
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
         .header-1 #header-bottom .header-right .block-our-brand .our-brand i {
           position: absolute;
           top: 50%;
           right: 20px;
           font-size: 10px;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
+          -webkit-transform: scale(1, -1) translateY(50%);
+          -ms-transform: scale(1, -1) translateY(50%);
+          transform: scale(1, -1) translateY(50%);
+          -webkit-transition: none;
+          -o-transition: none;
+          transition: none; }
       .header-1 #header-bottom .header-right .block-our-brand #our-brand {
         position: absolute;
         top: 100%;
@@ -4102,6 +4109,7 @@ footer .row {
     -ms-flex-align: center;
     align-items: center;
     position: absolute;
+    left: 0;
     width: 100%;
     -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);

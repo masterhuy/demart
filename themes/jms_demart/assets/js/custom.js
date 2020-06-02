@@ -282,33 +282,65 @@ customCarousel = () => {
         var relatedProductCarousel = $('.customs-carousel-product');			
         var rtl = false;
         if ($("body").hasClass("rtl")) rtl = true;	
+        if($("#product #content-wrapper").hasClass("col-lg-9")){
             relatedProductCarousel.owlCarousel({
-            responsiveClass:true,
-            responsive:{
-                0: {
-                    items: 2
+                responsiveClass:true,
+                responsive:{
+                    0: {
+                        items: 2
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    }
                 },
-                576: {
-                    items: 2
+                rtl: rtl,
+                margin: 0,
+                nav: true,
+                dots: false,
+                loop: true,
+                navigationText: ["", ""],
+                slideSpeed: 200
+            });
+        }
+        else{
+            relatedProductCarousel.owlCarousel({
+                responsiveClass:true,
+                responsive:{
+                    0: {
+                        items: 2
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    }
                 },
-                768: {
-                    items: 3
-                },
-                992: {
-                    items: 4
-                },
-                1200: {
-                    items: 5
-                }
-            },
-            rtl: rtl,
-            margin: 0,
-            nav: true,
-            dots: false,
-            loop: true,
-            navigationText: ["", ""],
-            slideSpeed: 200
-        });
+                rtl: rtl,
+                margin: 0,
+                nav: true,
+                dots: false,
+                loop: true,
+                navigationText: ["", ""],
+                slideSpeed: 200
+            });
+        }
+            
     }
 
     if($(".hotdeal-carousel").length) {
@@ -766,9 +798,13 @@ $(document).ready(function(){
         $('.panel-default .collapse').not(e.target).collapse('hide');
     });
 
-    $('.link-comment.post-product-comment').click(function(){
+    $('.product-comments-additional-info .post-product-comment').click(function(){
         $('#review').collapse('show');
     });
+
+    var x = $(".vertical-thumbs .product-image-zoom").height();
+    var y = $(".vertical-thumbs .js-qv-mask");
+    y.css("max-height",x + 2);
 
     $(window).resize(function(){
         jsPromoBar();

@@ -94,7 +94,7 @@
             {/if}
         </div>
         <div class="product-short-desc">
-    		{$product.description_short|truncate:300:'...' nofilter}
+    		{$product.description_short|truncate:250:'...' nofilter}
     	</div>
         <ul class="product-buttons">
             {if !$configuration.is_catalog && $jmsSetting.productbox_addtocart}
