@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-02 10:11:52
+/* Smarty version 3.1.33, created on 2020-06-03 11:23:07
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonmegatab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed617d819c805_88757393',
+  'unifunc' => 'content_5ed77a0be39e97_88875913',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f250103dd31c7186dd38f8975553e212bae24752' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addonmegatab.tpl',
-      1 => 1591000273,
+      1 => 1591173325,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5ed617d819c805_88757393 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed77a0be39e97_88875913 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-tab">
 	<?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 		<div class="addon-tab-title">
@@ -44,6 +44,27 @@ foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars[
 				<li class="nav-item">
 					<a data-toggle="tab" href="#category-<?php echo $_smarty_tpl->tpl_vars['category']->value['id_category'];?>
 " class="nav-link<?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?> active<?php }?>">
+						<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['name'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+
+					</a>
+				</li>
+			<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+		</ul>
+  	</div>
+	<div class="tabs-navigation-mobile">
+		<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
+		<ul class="dropdown-menu">
+			<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'category', false, 'k');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['category']->value) {
+?>
+				<li class="nav-item">
+					<a data-toggle="tab" href="#category-<?php echo $_smarty_tpl->tpl_vars['category']->value['id_category'];?>
+">
 						<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['name'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 
 					</a>

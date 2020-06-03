@@ -22,18 +22,16 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<a id="mobile-menu-toggle" class="open-button hidden-lg">
-	<i class="fal fa-bars"></i>
-</a>
+<a id="mobile-menu-toggle" class="open-button hidden-lg"></a>
 <div class="mobile-menu-wrap hidden-lg">
-    <button id="mobile-menu-close" class="close-button">
-        <h3>{l s='Menu' d='Shop.Theme'}</h3>
-        <i class="ptw-icon icon-closed_light"></i>
-    </button>
+    <h3 class="title">{l s='Main Menu' d='Shop.Theme'}</h3>
     <nav id="off-canvas-menu">
         {widget name="jmsmegamenu" hook='MobiMenu'}
         <div class="top-column">
             {hook h='displayTopColumn'}
         </div>
     </nav>
+    <button id="mobile-menu-close" class="close-button">
+        {l s='Close' d='Shop.Theme'}
+    </button>
 </div>

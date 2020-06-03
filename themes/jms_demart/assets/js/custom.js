@@ -186,7 +186,7 @@ customCarousel = () => {
             responsiveClass:true,
             responsive:{
                 320: {
-                    items: 2
+                    items: 1
                 },
                 576: {
                     items: 2
@@ -805,6 +805,10 @@ $(document).ready(function(){
     var x = $(".vertical-thumbs .product-image-zoom").height();
     var y = $(".vertical-thumbs .js-qv-mask");
     y.css("max-height",x + 2);
+
+    $(".tabs-navigation-mobile ul li a").click(function() {
+        $("#dlDropDown").dropdown("toggle");
+     });
 
     $(window).resize(function(){
         jsPromoBar();

@@ -44,6 +44,7 @@
 .jms-slider-wrapper .slide {
 	overflow: hidden;
 	position: absolute;
+	background-size: cover !important;
 }
 @media (min-width: 768px){
 	.fs-pager-wrapper{
