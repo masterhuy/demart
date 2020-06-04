@@ -107,31 +107,31 @@ class JmsAddonProductTab extends JmsAddonBase
                 'name' => 'cols',
                 'label' => $this->l('Number of Columns'),
                 'lang' => '0',
-                'desc' => 'Number of Columns (Or Number of Product per Row) ( > 1199px )',
+                'desc' => 'Number of Columns (Or Number of Product per Row) ( >= 1200px )',
                 'default' => 4
+            ),
+            array(
+                'type' => 'text',
+                'name' => 'cols_lg',
+                'label' => $this->l('Number of Columns On Large Device'),
+                'lang' => '0',
+                'desc' => 'Number of Columns (Or Number of Product per Row) On Large Device ( >= 992px )',
+                'default' => 3
             ),
             array(
                 'type' => 'text',
                 'name' => 'cols_md',
                 'label' => $this->l('Number of Columns On Medium Device'),
                 'lang' => '0',
-                'desc' => 'Number of Columns (Or Number of Product per Row) On Medium Device ( > 991px )',
-                'default' => 3
-            ),
-            array(
-                'type' => 'text',
-                'name' => 'cols_sm',
-                'label' => $this->l('Number of Columns On Tablet'),
-                'lang' => '0',
-                'desc' => 'Number of Columns (Or Number of Product per Row) On Tablet( >= 768px )',
+                'desc' => 'Number of Columns (Or Number of Product per Row) On Medium Device ( >= 768px )',
                 'default' => 2
             ),
             array(
                 'type' => 'text',
-                'name' => 'cols_xs',
-                'label' => $this->l('Number of Columns On Mobile'),
+                'name' => 'cols_sm',
+                'label' => $this->l('Number of Columns On Small Device'),
                 'lang' => '0',
-                'desc' => 'Number of Columns (Or Number of Product per Row) On Mobile( >= 320px )',
+                'desc' => 'Number of Columns (Or Number of Product per Row) On Small Device ( >= 576px )',
                 'default' => 2
             ),
             array(
@@ -252,9 +252,9 @@ class JmsAddonProductTab extends JmsAddonBase
                 'addon_title' => $addon_title,
                 'addon_desc' => $addon_desc,
                 'cols'  => $addon->fields[9]->value,
-                'cols_md'   => $addon->fields[10]->value,
-                'cols_sm'   => $addon->fields[11]->value,
-                'cols_xs'   => $addon->fields[12]->value,
+                'cols_lg'   => $addon->fields[10]->value,
+                'cols_md'   => $addon->fields[11]->value,
+                'cols_sm'   => $addon->fields[12]->value,
                 'navigation' => $addon->fields[14]->value,
                 'pagination' => $addon->fields[15]->value,
                 'autoplay' => $addon->fields[16]->value,

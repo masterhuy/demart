@@ -46,6 +46,20 @@
 			{/foreach}
 		</ul>
 	</div>
+	<div class="tabs-navigation-mobile">
+		<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
+		<ul class="dropdown-menu">
+			{foreach from = $categories key = k item = category}
+				<li class="nav-item">
+					<a data-toggle="tab" class="categorytab-{$category.id_category|escape:'html':'UTF-8'}" href="#categorytab-{$category.id_category|escape:'html':'UTF-8'}">
+						<span>
+							{$category.name|escape:'htmlall':'UTF-8'}
+						</span>
+					</a>
+				</li>
+			{/foreach}
+		</ul>
+  	</div>
 </div>
 <div class="tab-content">
 	{foreach from = $categories key = k item = category}

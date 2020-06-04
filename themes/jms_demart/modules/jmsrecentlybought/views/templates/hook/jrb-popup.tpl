@@ -24,20 +24,20 @@
 *}
 <style type="text/css">
     #woorebought-popup {
-            background-color: {$setting.JRB_BACKGROUND};
-            border-radius:{$setting.JRB_BORDER_RADIUS}px;
+        background-color: {$setting.JRB_BACKGROUND};
+        border-radius:{$setting.JRB_BORDER_RADIUS}px;
     }
     #woorebought-popup p {
-            color: {$setting.JRB_TEXT_COLOR} !important;
-            font-size:{$setting.JRB_TEXT_SIZE}px;
+        color: {$setting.JRB_TEXT_COLOR} !important;
+        font-size:{$setting.JRB_TEXT_SIZE}px;
     }
     #woorebought-popup small {
-            color:{$setting.JRB_TIME_COLOR} !important;
-            font-size:{$setting.JRB_TIME_SIZE}px !important;
+        color:{$setting.JRB_TIME_COLOR} !important;
+        font-size:{$setting.JRB_TIME_SIZE}px !important;
     }
      #woorebought-popup a {
-            color:{$setting.JRB_LINK_COLOR} !important;
-            font-size:{$setting.JRB_LINK_SIZE}px !important;
+        color:{$setting.JRB_LINK_COLOR} !important;
+        font-size:{$setting.JRB_LINK_SIZE}px !important;
     }
     {$setting.JRB_CUSTOM_CSS}
 </style>

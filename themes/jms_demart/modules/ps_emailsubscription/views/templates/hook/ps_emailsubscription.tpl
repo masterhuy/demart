@@ -23,12 +23,10 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="email_subscription">
-	<div class="title">
-		<h3 class="block-title">
-			{l s='Follow Us' d='Modules.Emailsubscription.Shop'}
-			<span class="fal fa-plus" aria-hidden="true"></span>
-		</h3>
-	</div>
+	<h3 class="block-title">
+		{l s='Follow Us' d='Modules.Emailsubscription.Shop'}
+		<i class="fal fa-plus" aria-hidden="true"></i>
+	</h3>
 	<div class="block-content">
 		{if $conditions}
 			<p class="newsletter-desc">{$conditions}</p>

@@ -27,13 +27,22 @@
 {if $addon_title}
 	<div class="addon-title title-blog">
 		<h3>{$addon_title nofilter}</h3>
-		<div class="line-custom"></div>
+		<div class="line-custom blog"></div>
 		{if isset($categories) AND $categories}
 			<div class="category-link">
 				{foreach from=$categories item=category}
 					{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}
 					<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title}</a>
 				{/foreach}
+			</div>
+			<div class="category-link-mobile">
+				<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
+				<div class="dropdown-menu">
+					{foreach from=$categories item=category}
+						{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}
+						<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title}</a>
+					{/foreach}
+				</div>
 			</div>
 		{/if}
 	</div>

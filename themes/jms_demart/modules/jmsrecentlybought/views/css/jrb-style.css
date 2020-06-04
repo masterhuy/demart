@@ -14,10 +14,10 @@ body.toplevel_page_woo-notification {
 
 #woorebought-popup {
     border: 0 none;
-    bottom: 15px;
+    bottom: 10px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
     display: none;
-    left: 14px;
+    left: 10px;
     padding: 0;
     position: fixed;
     right: auto !important;
@@ -28,19 +28,19 @@ body.toplevel_page_woo-notification {
 
 #woorebought-popup.bottom_right {
     left: auto !important;
-    right: 20px !important;
+    right: 10px !important;
 }
 
 #woorebought-popup.top_right {
     left: auto !important;
-    right: 20px !important;
-    top: 20px !important;
+    right: 10px !important;
+    top: 10px !important;
     bottom: auto !important;
 }
 
 #woorebought-popup.top_left {
     left: auto !important;
-    top: 20px !important;
+    top: 10px !important;
     bottom: auto !important;
 }
 
@@ -51,12 +51,8 @@ body.toplevel_page_woo-notification {
     width: auto;
 }
 
-#woorebought-popup.img_right img {
-    cursor: pointer;
-    float: right;
-    max-height: 85px;
-    max-width: 120px;
-    width: auto;
+#woorebought-popup.img_right .woorebought-content {
+    flex-direction: row-reverse;
 }
 
 #woorebought-popup p {
@@ -104,8 +100,8 @@ body.toplevel_page_woo-notification {
 }
 #woorebought-popup {
     background-color: #ffffff;
-    color: #0f0f0f;
-    width: calc(100% - 28px);
+    color: #000;
+    width: calc(100% - 20px);
 }
 #woorebought-popup a {
     width: 60px;

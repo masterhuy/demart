@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-03 11:23:35
+/* Smarty version 3.1.33, created on 2020-06-04 10:58:42
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmsrecentlybought\views\templates\hook\jrb-popup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed77a27c44547_70811198',
+  'unifunc' => 'content_5ed8c5d2481867_30909866',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0ed772867c05410459fe4752c18d6442ad458d6f' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmsrecentlybought\\views\\templates\\hook\\jrb-popup.tpl',
-      1 => 1583390714,
+      1 => 1591254512,
       2 => 'file',
     ),
   ),
@@ -20,32 +20,32 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed77a27c44547_70811198 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed8c5d2481867_30909866 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_demart\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 <style type="text/css">
     #woorebought-popup {
-            background-color: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_BACKGROUND'], ENT_QUOTES, 'UTF-8');?>
+        background-color: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_BACKGROUND'], ENT_QUOTES, 'UTF-8');?>
 ;
-            border-radius:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_BORDER_RADIUS'], ENT_QUOTES, 'UTF-8');?>
+        border-radius:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_BORDER_RADIUS'], ENT_QUOTES, 'UTF-8');?>
 px;
     }
     #woorebought-popup p {
-            color: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_TEXT_COLOR'], ENT_QUOTES, 'UTF-8');?>
+        color: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_TEXT_COLOR'], ENT_QUOTES, 'UTF-8');?>
  !important;
-            font-size:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_TEXT_SIZE'], ENT_QUOTES, 'UTF-8');?>
+        font-size:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_TEXT_SIZE'], ENT_QUOTES, 'UTF-8');?>
 px;
     }
     #woorebought-popup small {
-            color:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_TIME_COLOR'], ENT_QUOTES, 'UTF-8');?>
+        color:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_TIME_COLOR'], ENT_QUOTES, 'UTF-8');?>
  !important;
-            font-size:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_TIME_SIZE'], ENT_QUOTES, 'UTF-8');?>
+        font-size:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_TIME_SIZE'], ENT_QUOTES, 'UTF-8');?>
 px !important;
     }
      #woorebought-popup a {
-            color:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_LINK_COLOR'], ENT_QUOTES, 'UTF-8');?>
+        color:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_LINK_COLOR'], ENT_QUOTES, 'UTF-8');?>
  !important;
-            font-size:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_LINK_SIZE'], ENT_QUOTES, 'UTF-8');?>
+        font-size:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_LINK_SIZE'], ENT_QUOTES, 'UTF-8');?>
 px !important;
     }
     <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['setting']->value['JRB_CUSTOM_CSS'], ENT_QUOTES, 'UTF-8');?>

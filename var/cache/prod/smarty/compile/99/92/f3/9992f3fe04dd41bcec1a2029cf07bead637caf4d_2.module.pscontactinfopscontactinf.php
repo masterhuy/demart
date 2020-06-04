@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-03 11:23:35
+/* Smarty version 3.1.33, created on 2020-06-04 10:58:42
   from 'module:pscontactinfopscontactinf' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed77a27994c91_55987979',
+  'unifunc' => 'content_5ed8c5d2339617_91061884',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9992f3fe04dd41bcec1a2029cf07bead637caf4d' => 
     array (
       0 => 'module:pscontactinfopscontactinf',
-      1 => 1590636330,
+      1 => 1591253441,
       2 => 'module',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed77a27994c91_55987979 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed8c5d2339617_91061884 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="block-contact wrapper">
-    <div class="block-content">
+    <div class="content">
         <div class="addon-title">
             <h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Our Store','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </h3>

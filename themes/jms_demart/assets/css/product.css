@@ -1022,7 +1022,6 @@ section.featured-products {
 .product-flags .product-flag {
     position: absolute;
     top: 8px !important;
-	font-size: 13px;
     font-weight: 600;
 	padding: 3px 5px;
     line-height: 1.2;
@@ -1050,7 +1049,7 @@ section.featured-products {
     width: 0;
     height: 0;
     border-right: 6px solid transparent;
-    border-top: 22px solid #f63622;
+    border-top: 18px solid #f63622;
     top: 0;
     right: -6px;
 }

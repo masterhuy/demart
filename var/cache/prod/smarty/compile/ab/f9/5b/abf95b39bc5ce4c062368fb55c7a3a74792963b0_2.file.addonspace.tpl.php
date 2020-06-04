@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-03 11:23:06
+/* Smarty version 3.1.33, created on 2020-06-04 10:58:38
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonspace.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed77a0a8d2cc4_64259970',
+  'unifunc' => 'content_5ed8c5ce8d22a8_24479014',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed77a0a8d2cc4_64259970 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ed8c5ce8d22a8_24479014 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-empty-space clearfix<?php if (isset($_smarty_tpl->tpl_vars['space_class']->value) && $_smarty_tpl->tpl_vars['space_class']->value) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['space_class']->value, ENT_QUOTES, 'UTF-8');
 }?>" style="margin-top:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['spacegap']->value, ENT_QUOTES, 'UTF-8');?>
 rem;"></div>

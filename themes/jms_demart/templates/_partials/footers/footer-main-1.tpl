@@ -25,7 +25,7 @@
 <div id="footer-main" class="footer-main">
     <div class="container">
         <div class="row">
-            <div class="layout-column col-3">
+            <div class="layout-column block">
                 <div class="block-logo">
                     {include file='_partials/headers/logo.tpl'}
                 </div>
@@ -38,7 +38,7 @@
             {block name='hook_footer'}
                 {hook h='displayFooter'}
             {/block}
-            <div class="layout-column col-3 newsletter">
+            <div class="layout-column block newsletter">
                 {block name='footer-newsletter'}
                     <div class="block block-footer block-newsletter">
                         {widget name="ps_emailsubscription" hook='displayFooter'}

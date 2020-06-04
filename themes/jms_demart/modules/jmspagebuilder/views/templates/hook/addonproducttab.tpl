@@ -63,7 +63,18 @@
 	{$cf = 0}
 	{if $config.show_featured eq '1'}
 		 <div role="tabpanel" class="tab-pane active" id="featured">
-			<div class="producttab-carousel owl-carousel" data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" data-xs="{if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}">
+			<div 
+				class="producttab-carousel owl-carousel" 
+				data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+				data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+				data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" 
+				data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}"  
+				data-nav="{if $navigation == '0'}false{else}true{/if}" 
+				data-dots="{if $pagination == '1'}true{else}false{/if}" 
+				data-auto="{if $autoplay == '1'}true{else}false{/if}" 
+				data-rewind="{if $rewind == '1'}true{else}false{/if}" 
+				data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}"
+			>
 				{foreach from = $featured_products item = products_slide}
 					<div class="item">
 						{foreach from = $products_slide item = product}
@@ -77,7 +88,18 @@
 	{/if}
 	{if $config.show_new eq '1'}
 		 <div role="tabpanel" class="tab-pane {if $cf eq 0}active{/if}" id="latest">
-			<div class="producttab-carousel owl-carousel" data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" data-xs="{if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}">
+			<div 
+				class="producttab-carousel owl-carousel" 
+				data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+				data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+				data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" 
+				data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}"  
+				data-nav="{if $navigation == '0'}false{else}true{/if}" 
+				data-dots="{if $pagination == '1'}true{else}false{/if}" 
+				data-auto="{if $autoplay == '1'}true{else}false{/if}" 
+				data-rewind="{if $rewind == '1'}true{else}false{/if}" 
+				data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}"
+			>
 				{foreach from = $new_products item = products_slide}
 					<div class="item">
 						{foreach from = $products_slide item = product}
@@ -91,7 +113,18 @@
 	{/if}
 	{if $config.show_topseller eq '1'}
 		 <div role="tabpanel" class="tab-pane {if $cf eq 0}active{/if}" id="topseller">
-			<div class="producttab-carousel owl-carousel" data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" data-xs="{if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}">
+			<div
+				class="producttab-carousel owl-carousel" 
+				data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+				data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+				data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" 
+				data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}"  
+				data-nav="{if $navigation == '0'}false{else}true{/if}" 
+				data-dots="{if $pagination == '1'}true{else}false{/if}" 
+				data-auto="{if $autoplay == '1'}true{else}false{/if}" 
+				data-rewind="{if $rewind == '1'}true{else}false{/if}" 
+				data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}"
+			>
 				{foreach from = $topseller_products item = products_slide}
 					<div class="item">
 						{foreach from = $products_slide item = product}
@@ -105,7 +138,18 @@
 	{/if}
 	{if $config.show_special eq '1'}
 		 <div role="tabpanel" class="tab-pane {if $cf eq 0}active{/if}" id="special">
-			<div class="producttab-carousel owl-carousel" data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" data-xs="{if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}">
+			<div
+				class="producttab-carousel owl-carousel" 
+				data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+				data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+				data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" 
+				data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}"  
+				data-nav="{if $navigation == '0'}false{else}true{/if}" 
+				data-dots="{if $pagination == '1'}true{else}false{/if}" 
+				data-auto="{if $autoplay == '1'}true{else}false{/if}" 
+				data-rewind="{if $rewind == '1'}true{else}false{/if}" 
+				data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}"
+			>
 				{foreach from = $special_products item = products_slide}
 					<div class="item">
 						{foreach from = $products_slide item = product}
@@ -119,7 +163,18 @@
 	{/if}
 	{if $config.show_onsale eq '1'}
 		 <div role="tabpanel" class="tab-pane {if $cf eq 0}active{/if}" id="onsale">
-			<div class="producttab-carousel owl-carousel" data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" data-xs="{if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}">
+			<div
+				class="producttab-carousel owl-carousel" 
+				data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+				data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+				data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" 
+				data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}"  
+				data-nav="{if $navigation == '0'}false{else}true{/if}" 
+				data-dots="{if $pagination == '1'}true{else}false{/if}" 
+				data-auto="{if $autoplay == '1'}true{else}false{/if}" 
+				data-rewind="{if $rewind == '1'}true{else}false{/if}" 
+				data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}"
+			>
 				{foreach from = $onsale_products item = products_slide}
 					<div class="item">
 						{foreach from = $products_slide item = product}

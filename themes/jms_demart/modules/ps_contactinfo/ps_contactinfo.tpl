@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="block-contact wrapper">
-    <div class="block-content">
+    <div class="content">
         <div class="addon-title">
             <h3>{l s='Our Store' d='Shop.Theme.Global'}</h3>
         </div>

@@ -84,31 +84,31 @@ class JmsAddonProductCarousel extends JmsAddonBase
                 'name' => 'cols',
                 'label' => $this->l('Number of Columns'),
                 'lang' => '0',
-                'desc' => 'Number of Columns (Or Number of Product per Row) ( > 1199px )',
+                'desc' => 'Number of Columns (Or Number of Product per Row) ( >= 1200px )',
                 'default' => 4
+            ),
+            array(
+                'type' => 'text',
+                'name' => 'cols_lg',
+                'label' => $this->l('Number of Columns On Large Device'),
+                'lang' => '0',
+                'desc' => 'Number of Columns (Or Number of Product per Row) On Large Device ( >= 992px )',
+                'default' => 3
             ),
             array(
                 'type' => 'text',
                 'name' => 'cols_md',
                 'label' => $this->l('Number of Columns On Medium Device'),
                 'lang' => '0',
-                'desc' => 'Number of Columns (Or Number of Product per Row) On Medium Device ( > 991px )',
-                'default' => 3
-            ),
-            array(
-                'type' => 'text',
-                'name' => 'cols_sm',
-                'label' => $this->l('Number of Columns On Tablet'),
-                'lang' => '0',
-                'desc' => 'Number of Columns (Or Number of Product per Row) On Tablet( >= 768px )',
+                'desc' => 'Number of Columns (Or Number of Product per Row) On Medium Device ( >= 768px )',
                 'default' => 2
             ),
             array(
                 'type' => 'text',
-                'name' => 'cols_xs',
-                'label' => $this->l('Number of Columns On Mobile'),
+                'name' => 'cols_sm',
+                'label' => $this->l('Number of Columns On Small Device'),
                 'lang' => '0',
-                'desc' => 'Number of Columns (Or Number of Product per Row) On Mobile( >= 320px )',
+                'desc' => 'Number of Columns (Or Number of Product per Row) On Small Device ( >= 576px )',
                 'default' => 2
             ),
             array(
@@ -199,40 +199,39 @@ class JmsAddonProductCarousel extends JmsAddonBase
     {
         $this->context = Context::getContext();
         $id_lang = $this->context->language->id;
-    		$fields = $addon->fields;
-    		$addon_tpl_dir = $this->loadTplDir();
-    		$icon_class = '';
-    		if($addon->fields[0]->name != 'icon_class') {
-    			$icon_class = $addon->fields[0]->value;
-    			$products = $this->getProducts($fields);
-    		} else {
-    			array_shift($fields);
-    			$products = $this->getProducts($fields);
-    		}
+        $fields = $addon->fields;
+        $addon_tpl_dir = $this->loadTplDir();
+        $icon_class = '';
+        if($addon->fields[0]->name != 'icon_class') {
+            $icon_class = $addon->fields[0]->value;
+            $products = $this->getProducts($fields);
+        } else {
+            array_shift($fields);
+            $products = $this->getProducts($fields);
+        }
         $addon_title = empty($fields[0]->value->$id_lang) ? '' : $fields[0]->value->$id_lang;
         $addon_desc = empty($fields[1]->value->$id_lang) ? '' : $fields[1]->value->$id_lang;
         $this->context->smarty->assign(
-      			array(
-      				'link' => $this->context->link,
-      				'products_slides' => $products,
-      				'icon_class' => $icon_class,
-      				'addon_title' => $addon_title,
-      				'addon_desc' => $addon_desc,
-      				'producttype' => $fields[2]->value,
-      				'cols'  => $fields[5]->value,
-      				'cols_md'   => $fields[6]->value,
-      				'cols_sm'   => $fields[7]->value,
-      				'cols_xs'   => $fields[8]->value,
-      				'navigation' => $fields[10]->value,
-      				'pagination' => $fields[11]->value,
-      				'autoplay' => $fields[12]->value,
-      				'rewind' => $fields[13]->value,
-      				'slidebypage' => $fields[14]->value,
-      				'addon_tpl_dir' => $addon_tpl_dir
-      			)
-  		  );
-
-		    $this->overwrite_tpl = $addon->fields[count($addon->fields)-1]->value;
+            array(
+                'link' => $this->context->link,
+                'products_slides' => $products,
+                'icon_class' => $icon_class,
+                'addon_title' => $addon_title,
+                'addon_desc' => $addon_desc,
+                'producttype' => $fields[2]->value,
+                'cols'  => $fields[5]->value,
+                'cols_lg'   => $fields[6]->value,
+                'cols_md'   => $fields[7]->value,
+                'cols_sm'   => $fields[8]->value,
+                'navigation' => $fields[10]->value,
+                'pagination' => $fields[11]->value,
+                'autoplay' => $fields[12]->value,
+                'rewind' => $fields[13]->value,
+                'slidebypage' => $fields[14]->value,
+                'addon_tpl_dir' => $addon_tpl_dir
+            )
+  		);
+		$this->overwrite_tpl = $addon->fields[count($addon->fields)-1]->value;
         $template_path = $this->loadTplPath();
         return $this->context->smarty->fetch($template_path);
     }

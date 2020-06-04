@@ -2038,7 +2038,7 @@
     "use strict";
 
     function n() {
-        jQuery(window).width() < 480 && jmsSetting.footer_block_collapse ? $("#footer-main .block .block-content").addClass("collapse") : $("#footer-main .block .block-content").removeClass("collapse")
+        jQuery(window).width() < 768 && jmsSetting.footer_block_collapse ? $("#footer-main .block .block-content").addClass("collapse") : $("#footer-main .block .block-content").removeClass("collapse")
     }
     jQuery(function(e) {
         var t = e(window),
@@ -2075,7 +2075,7 @@
                     lazyLoad: n,
                     responsive: {
                         0: {
-                            items: e(this).data("xs")
+                            items: 2
                         },
                         576: {
                             items: e(this).data("sm")
