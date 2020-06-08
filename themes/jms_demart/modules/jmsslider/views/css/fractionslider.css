@@ -35,9 +35,9 @@
 }
 .fs_loader{
 	width:100%; 
-	height:500px;
+	height:300px;
 	box-shadow: 0 1px 1px #b5b5b5;
-	background:url(../img/fraction/fs.spinner.gif) center center no-repeat transparent;
+	background: #000 url(../img/fraction/fs.spinner.gif) center center no-repeat;
 }
 
 /** CONTROLS **/
@@ -67,6 +67,16 @@
 .fraction-slider .prev:hover,
 .fraction-slider .next:hover{
 	border-color: #fff;
+}
+@media (min-width: 768px){
+	.fs_loader{
+		height:400px;
+	}
+}
+@media (min-width: 1200px){
+	.fs_loader{
+		height:500px;
+	}
 }
 
 

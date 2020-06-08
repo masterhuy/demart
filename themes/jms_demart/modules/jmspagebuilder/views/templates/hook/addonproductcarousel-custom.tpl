@@ -32,7 +32,18 @@
 	{/if}
 </div>
 {/if}
-<div class="product-carousel" data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" data-xs="{if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}">
+<div 
+	class="product-carousel" 
+	data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+	data-lg="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+	data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" 
+	data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" 
+	data-nav="{if $navigation == '0'}false{else}true{/if}" 
+	data-dots="{if $pagination == '1'}true{else}false{/if}" 
+	data-auto="{if $autoplay == '1'}true{else}false{/if}" 
+	data-rewind="{if $rewind == '1'}true{else}false{/if}" 
+	data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}"
+>
 	{foreach from = $products_slides item = products_slide}
 		<div class="item">
 			{foreach from = $products_slide item = product}

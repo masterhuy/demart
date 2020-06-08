@@ -99,7 +99,10 @@
                 {/if}
             </div>
             <div class="layout-column col-auto header-right">
-                <div class="block-our-brand"><button class="our-brand collapsed" data-toggle="collapse" data-target="#our-brand" aria-expanded="false"> Our brands <i class="lnr lnr-chevron-down"></i> </button>
+                <div class="block-our-brand">
+                    <button class="our-brand collapsed" data-toggle="collapse" data-target="#our-brand" aria-expanded="false"> 
+                        Our brands <img src="{$urls.theme_assets}img/icons/dropdown-brand.png" />
+                    </button>
                     <div id="our-brand" class="collapse">
                         <ul>
                             <li><a href="index.php?id_category=62&controller=category">Apple</a></li>

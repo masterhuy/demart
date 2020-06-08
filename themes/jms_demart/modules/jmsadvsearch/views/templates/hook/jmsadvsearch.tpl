@@ -15,8 +15,8 @@
 			<div class="input-group-addon icon-drop-down">
 				<select name="id_category" id="selector_cat">
 					<option value="0">{l s='All Categories' mod='jmsadvsearch'}</option>
-					{foreach from=$jmsCategTree.children item=child name=jmsCategTree}
-						{if $smarty.foreach.jmsCategTree.last}
+					{foreach from=$jmscategtree.children item=child name=jmscategtree}
+						{if $smarty.foreach.jmscategtree.last}
 							{include file="$branche_tpl_path" node=$child last='true'}
 						{else}
 							{include file="$branche_tpl_path" node=$child}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-01 08:23:56
+/* Smarty version 3.1.33, created on 2020-06-08 11:02:38
   from 'module:jmsadvsearchviewstemplate' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed4ad0c761c92_01335666',
+  'unifunc' => 'content_5ede0cbe7dde56_47772309',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c30b040f223a82f6a7f79089e7315fb9b1db7a5e' => 
     array (
       0 => 'module:jmsadvsearchviewstemplate',
-      1 => 1590995850,
+      1 => 1591584213,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed4ad0c761c92_01335666 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ede0cbe7dde56_47772309 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-advsearch">
 	<form method="get" action="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('search');?>
 " class="input-group" id="searchbox">
@@ -34,17 +34,17 @@ function content_5ed4ad0c761c92_01335666 (Smarty_Internal_Template $_smarty_tpl)
 					<option value="0"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'All Categories','mod'=>'jmsadvsearch'),$_smarty_tpl ) );?>
 </option>
 					<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['jmsCategTree']->value['children'], 'child', false, NULL, 'jmsCategTree', array (
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['jmscategtree']->value['children'], 'child', false, NULL, 'jmscategtree', array (
   'last' => true,
   'iteration' => true,
   'total' => true,
 ));
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['child']->value) {
-$_smarty_tpl->tpl_vars['__smarty_foreach_jmsCategTree']->value['iteration']++;
-$_smarty_tpl->tpl_vars['__smarty_foreach_jmsCategTree']->value['last'] = $_smarty_tpl->tpl_vars['__smarty_foreach_jmsCategTree']->value['iteration'] === $_smarty_tpl->tpl_vars['__smarty_foreach_jmsCategTree']->value['total'];
+$_smarty_tpl->tpl_vars['__smarty_foreach_jmscategtree']->value['iteration']++;
+$_smarty_tpl->tpl_vars['__smarty_foreach_jmscategtree']->value['last'] = $_smarty_tpl->tpl_vars['__smarty_foreach_jmscategtree']->value['iteration'] === $_smarty_tpl->tpl_vars['__smarty_foreach_jmscategtree']->value['total'];
 ?>
-						<?php if ((isset($_smarty_tpl->tpl_vars['__smarty_foreach_jmsCategTree']->value['last']) ? $_smarty_tpl->tpl_vars['__smarty_foreach_jmsCategTree']->value['last'] : null)) {?>
+						<?php if ((isset($_smarty_tpl->tpl_vars['__smarty_foreach_jmscategtree']->value['last']) ? $_smarty_tpl->tpl_vars['__smarty_foreach_jmscategtree']->value['last'] : null)) {?>
 							<?php $_smarty_tpl->_subTemplateRender(((string)$_smarty_tpl->tpl_vars['branche_tpl_path']->value), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('node'=>$_smarty_tpl->tpl_vars['child']->value,'last'=>'true'), 0, true);
 ?>
 						<?php } else { ?>
@@ -67,6 +67,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		</span>
 	</form>
 	<div id="advsearch_result"></div>
-</div>
-<?php }
+</div><?php }
 }

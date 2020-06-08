@@ -408,7 +408,7 @@
 	width: 66px;
 	height: 66px;
 	border-radius: 50%;
-	background-color: #14c2ee;
+	background-color: $color1;
 }
 .single-blog .created .day,
 .cat-post-list .created .day {
@@ -462,7 +462,7 @@
 	text-align-last: left;
 	background: #f7f7f7;
 	padding: 26px 40px 27px;
-	border-left: 3px solid #14c2ee;
+	border-left: 3px solid $color1;
 	margin-top: 42px;
 	margin-bottom: 42px;
 }

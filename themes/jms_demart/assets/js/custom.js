@@ -219,8 +219,8 @@ customCarousel = () => {
             h2CategoryCarousel.owlCarousel({
             responsiveClass:true,
             responsive:{
-                320: {
-                    items: 2
+                0: {
+                    items: 1
                 },
                 576: {
                     items: 2

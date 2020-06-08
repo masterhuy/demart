@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-04 10:58:42
+/* Smarty version 3.1.33, created on 2020-06-08 11:15:41
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\mobile-menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed8c5d208dbf3_77562987',
+  'unifunc' => 'content_5ede0fcde9f381_94966938',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '90887fdd3c33f4ada7bc77aede580b8e19f96fcd' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\headers\\mobile-menu.tpl',
-      1 => 1591158364,
+      1 => 1591599683,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed8c5d208dbf3_77562987 (Smarty_Internal_Template $_smarty_tpl) {
-?><a id="mobile-menu-toggle" class="open-button hidden-lg"></a>
+function content_5ede0fcde9f381_94966938 (Smarty_Internal_Template $_smarty_tpl) {
+?><a id="mobile-menu-toggle" class="open-button hidden-lg">
+    <i class="lnr lnr-menu"></i>
+</a>
 <div class="mobile-menu-wrap hidden-lg">
     <h3 class="title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Main Menu','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 </h3>

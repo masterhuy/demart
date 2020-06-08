@@ -22,7 +22,9 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<a id="mobile-menu-toggle" class="open-button hidden-lg"></a>
+<a id="mobile-menu-toggle" class="open-button hidden-lg">
+    <i class="lnr lnr-menu"></i>
+</a>
 <div class="mobile-menu-wrap hidden-lg">
     <h3 class="title">{l s='Main Menu' d='Shop.Theme'}</h3>
     <nav id="off-canvas-menu">

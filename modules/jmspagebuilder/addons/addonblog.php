@@ -60,31 +60,31 @@ class JmsAddonBlog extends JmsAddonBase
                 'name' => 'items_show',
                 'label' => $this->l('Items Show'),
                 'lang' => '0',
-                'desc' => 'Number of Items Show ( > 1199px )',
+                'desc' => 'Number of Items Show ( >= 1200px )',
                 'default' => 3
+            ),
+            array(
+                'type' => 'text',
+                'name' => 'items_show_lg',
+                'label' => $this->l('Items Show On Large Device'),
+                'lang' => '0',
+                'desc' => 'Number of Items Show On Medium Device ( >= 992px )',
+                'default' => 2
             ),
             array(
                 'type' => 'text',
                 'name' => 'items_show_md',
                 'label' => $this->l('Items Show On Medium Device'),
                 'lang' => '0',
-                'desc' => 'Number of Items Show On Medium Device ( > 991px )',
+                'desc' => 'Number of Items Show On Medium Device( >= 768px )',
                 'default' => 2
             ),
             array(
                 'type' => 'text',
                 'name' => 'items_show_sm',
-                'label' => $this->l('Items Show On Tablet'),
+                'label' => $this->l('Items Show On Small Device'),
                 'lang' => '0',
-                'desc' => 'Number of Items Show On Tablet( >= 768px )',
-                'default' => 2
-            ),
-            array(
-                'type' => 'text',
-                'name' => 'items_show_xs',
-                'label' => $this->l('Items Show On Mobile'),
-                'lang' => '0',
-                'desc' => 'Number of Items Show On Mobile( >= 320px )',
+                'desc' => 'Number of Items Show On Small Device( >= 576px )',
                 'default' => 1
             ),
             array(
@@ -215,14 +215,6 @@ class JmsAddonBlog extends JmsAddonBase
             LIMIT 0,'.$addon->fields[2]->value;
         $posts = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
 
-        $sql = '
-            SELECT * 
-            FROM '._DB_PREFIX_.'jmsblog_categories hss
-            LEFT JOIN '._DB_PREFIX_.'jmsblog_categories_lang hssl ON (hssl.`category_id` = hss.`category_id`)
-            WHERE hss.`active` = 1 AND hss.`parent` = 0 AND hssl.`id_lang` = '.(int)$id_lang.
-            ' GROUP BY hss.`category_id`
-            ORDER BY hss.`ordering` LIMIT 5';
-        $categories =  Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
         if(!isset($posts) || count($posts) == 0) return;
         for ($i = 0; $i < count($posts); $i++) {
             $posts[$i]['introtext'] = JmsBlogHelper::genIntrotext($posts[$i]['introtext'], $addon->fields[9]->value);
@@ -234,13 +226,12 @@ class JmsAddonBlog extends JmsAddonBase
             array(
                 'link' => $this->context->link,
                 'posts' => $posts,
-                'categories' => $categories,
                 'addon_title' => $addon_title,
                 'addon_desc' => $addon_desc,
                 'items_show' => $addon->fields[3]->value,
-                'items_show_md' => $addon->fields[4]->value,
-                'items_show_sm' => $addon->fields[5]->value,
-                'items_show_xs' => $addon->fields[6]->value,
+                'items_show_lg' => $addon->fields[4]->value,
+                'items_show_md' => $addon->fields[5]->value,
+                'items_show_sm' => $addon->fields[6]->value,
                 'show_category' => $addon->fields[7]->value,
                 'show_introtext' => $addon->fields[8]->value,
                 'introtext_limit' => $addon->fields[9]->value,

@@ -15,7 +15,8 @@ $(document).ready(function() {
 	var timer;
 	$( "#ajax_advsearch" ).keyup(function() {
 		var id_cat_search = $('#selector_cat').find(":selected").val();		
-		var search_key = $( "#ajax_advsearch" ).val();		
+		var search_key = $( "#ajax_advsearch" ).val();
+		console.log(search_key);
 		clearTimeout(timer);
 		timer = setTimeout(function() {					
 			$.ajax({

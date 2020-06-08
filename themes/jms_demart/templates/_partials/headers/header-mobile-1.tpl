@@ -25,13 +25,13 @@
  <div id="header-mobile-top" class="header-mobile-top{if $jmsSetting.header_mobile_sticky == 1} header-sticky{/if}{if ($jmsSetting.header_mobile_sticky == 1) && ($jmsSetting.header_sticky_effect != '')} {$jmsSetting.header_sticky_effect}{/if}">
     <div class="container-fluid">
         <div class="row align-items-center no-padding">
-            <div class="layout-column col-4 header-left">
+            <div class="layout-column col-auto header-left">
                 {include file='_partials/headers/mobile-menu.tpl'}
             </div>
-            <div class="layout-column col-4 text-center">
+            <div class="layout-column col-auto col-logo">
                 {include file='_partials/headers/logo.tpl'}
             </div>
-            <div class="layout-column col-4 header-right">
+            <div class="layout-column col header-right">
                 <div class="row justify-content-end">
                     {if $jmsSetting.search}
                         {if $jmsSetting.search_box_type != 'dropdown'}

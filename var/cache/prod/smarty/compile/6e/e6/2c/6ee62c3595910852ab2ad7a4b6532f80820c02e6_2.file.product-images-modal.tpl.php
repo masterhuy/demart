@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-02 10:03:52
+/* Smarty version 3.1.33, created on 2020-06-05 09:59:13
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\product-images-modal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed615f8567705_31474786',
+  'unifunc' => 'content_5eda096128c1e3_92372498',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed615f8567705_31474786 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5eda096128c1e3_92372498 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -41,7 +41,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         </figure>
         <aside id="thumbnails" class="thumbnails js-thumbnails text-xs-center">
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5890903545ed615f855fa09_89472966', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14576753945eda09612844e2_64553170', 'product_images');
 ?>
 
           <?php if ($_smarty_tpl->tpl_vars['imagesCount']->value > 4) {?>
@@ -57,12 +57,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5890903545ed615f85
 </div><!-- /.modal -->
 <?php }
 /* {block 'product_images'} */
-class Block_5890903545ed615f855fa09_89472966 extends Smarty_Internal_Block
+class Block_14576753945eda09612844e2_64553170 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_5890903545ed615f855fa09_89472966',
+    0 => 'Block_14576753945eda09612844e2_64553170',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

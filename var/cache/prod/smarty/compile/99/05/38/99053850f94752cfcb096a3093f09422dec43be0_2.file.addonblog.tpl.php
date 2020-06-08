@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-04 10:58:41
+/* Smarty version 3.1.33, created on 2020-06-08 11:02:38
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonblog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed8c5d1777280_54901243',
+  'unifunc' => 'content_5ede0cbe4b5423_45265870',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '99053850f94752cfcb096a3093f09422dec43be0' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addonblog.tpl',
-      1 => 1591243538,
+      1 => 1591583120,
       2 => 'file',
     ),
   ),
@@ -20,50 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed8c5d1777280_54901243 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ede0cbe4b5423_45265870 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_demart\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),1=>array('file'=>'D:\\xamppp\\htdocs\\jms_demart\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
-?>
-
-<?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
+if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 	<div class="addon-title title-blog">
 		<h3><?php echo $_smarty_tpl->tpl_vars['addon_title']->value;?>
 </h3>
 		<div class="line-custom blog"></div>
-		<?php if (isset($_smarty_tpl->tpl_vars['categories']->value) && $_smarty_tpl->tpl_vars['categories']->value) {?>
-			<div class="category-link">
-				<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'category');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['category']->value) {
-?>
-					<?php $_smarty_tpl->_assignInScope('catparams', array('category_id'=>$_smarty_tpl->tpl_vars['category']->value['category_id'],'slug'=>$_smarty_tpl->tpl_vars['category']->value['alias']));?>
-					<a href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-category',$_smarty_tpl->tpl_vars['catparams']->value), ENT_QUOTES, 'UTF-8');?>
-"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['title'], ENT_QUOTES, 'UTF-8');?>
-</a>
-				<?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-			</div>
-			<div class="category-link-mobile">
-				<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
-				<div class="dropdown-menu">
-					<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'category');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['category']->value) {
-?>
-						<?php $_smarty_tpl->_assignInScope('catparams', array('category_id'=>$_smarty_tpl->tpl_vars['category']->value['category_id'],'slug'=>$_smarty_tpl->tpl_vars['category']->value['alias']));?>
-						<a href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-category',$_smarty_tpl->tpl_vars['catparams']->value), ENT_QUOTES, 'UTF-8');?>
-"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['title'], ENT_QUOTES, 'UTF-8');?>
-</a>
-					<?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-				</div>
-			</div>
-		<?php }?>
 	</div>
 <?php }?>
 
@@ -72,17 +35,26 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </p>
 <?php }
 if (count($_smarty_tpl->tpl_vars['posts']->value) > 0) {?>
-	<div class="blog-carousel" data-items="<?php if ($_smarty_tpl->tpl_vars['items_show']->value) {
+	<div 
+		class="blog-carousel" 
+		data-items="<?php if ($_smarty_tpl->tpl_vars['items_show']->value) {
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['items_show']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
-} else { ?>4<?php }?>" data-lg="<?php if ($_smarty_tpl->tpl_vars['items_show']->value) {
-echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['items_show']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
-} else { ?>4<?php }?>" data-md="<?php if ($_smarty_tpl->tpl_vars['items_show_md']->value) {
+} else { ?>4<?php }?>" 
+		data-lg="<?php if ($_smarty_tpl->tpl_vars['items_show_lg']->value) {
+echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['items_show_lg']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
+} else { ?>4<?php }?>" 
+		data-md="<?php if ($_smarty_tpl->tpl_vars['items_show_md']->value) {
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['items_show_md']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
-} else { ?>3<?php }?>" data-sm="<?php if ($_smarty_tpl->tpl_vars['items_show_sm']->value) {
+} else { ?>3<?php }?>" 
+		data-sm="<?php if ($_smarty_tpl->tpl_vars['items_show_sm']->value) {
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['items_show_sm']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
-} else { ?>2<?php }?>" data-xs="<?php if ($_smarty_tpl->tpl_vars['items_show_xs']->value) {
-echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['items_show_xs']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
-} else { ?>1<?php }?>" data-nav="<?php if ($_smarty_tpl->tpl_vars['navigation']->value == '0') {?>false<?php } else { ?>true<?php }?>" data-dots="<?php if ($_smarty_tpl->tpl_vars['pagination']->value == '1') {?>true<?php } else { ?>false<?php }?>" data-auto="<?php if ($_smarty_tpl->tpl_vars['autoplay']->value == '1') {?>true<?php } else { ?>false<?php }?>" data-rewind="<?php if ($_smarty_tpl->tpl_vars['rewind']->value == '1') {?>true<?php } else { ?>false<?php }?>" data-slidebypage="<?php if ($_smarty_tpl->tpl_vars['slidebypage']->value == '1') {?>page<?php } else { ?>1<?php }?>">
+} else { ?>2<?php }?>" 
+		data-nav="<?php if ($_smarty_tpl->tpl_vars['navigation']->value == '0') {?>false<?php } else { ?>true<?php }?>" 
+		data-dots="<?php if ($_smarty_tpl->tpl_vars['pagination']->value == '1') {?>true<?php } else { ?>false<?php }?>" 
+		data-auto="<?php if ($_smarty_tpl->tpl_vars['autoplay']->value == '1') {?>true<?php } else { ?>false<?php }?>" 
+		data-rewind="<?php if ($_smarty_tpl->tpl_vars['rewind']->value == '1') {?>true<?php } else { ?>false<?php }?>" 
+		data-slidebypage="<?php if ($_smarty_tpl->tpl_vars['slidebypage']->value == '1') {?>page<?php } else { ?>1<?php }?>"
+	>
 		<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['posts']->value, 'post');
 if ($_from !== null) {

@@ -7,29 +7,31 @@
 *}
 <div class="jms-advsearch">
 	<form method="get" action="{$link->getPageLink('search') nofilter}" class="input-group" id="searchbox">
-		<div class="input-group-addon icon-drop-down">
-			<select name="id_category" id="selector_cat">
-			<option value="0">{l s='All Category' mod='jmsadvsearch'}</option>
-				{foreach from=$jmsCategTree.children item=child name=jmsCategTree}
-					{if $smarty.foreach.jmsCategTree.last}
-						{include file="$branche_tpl_path" node=$child last='true'}
-					{else}
-						{include file="$branche_tpl_path" node=$child}
-					{/if}
-				{/foreach}
-			</select>
+		<input type="hidden" name="fc" value="module" />
+		<input type="hidden" name="module" value="jmsadvsearch" />
+		<input type="hidden" name="controller" value="search" />
+		<input type="hidden" name="order" value="product.position.asc" />			
+		<div class="keyword-group">
+			<div class="input-group-addon icon-drop-down">
+				<select name="id_category" id="selector_cat">
+					<option value="0">{l s='All Categories' mod='jmsadvsearch'}</option>
+					{foreach from=$jmscategtree.children item=child name=jmscategtree}
+						{if $smarty.foreach.jmscategtree.last}
+							{include file="$branche_tpl_path" node=$child last='true'}
+						{else}
+							{include file="$branche_tpl_path" node=$child}
+						{/if}
+					{/foreach}
+				</select>
+			</div>
+			<input type="text" id="ajax_advsearch" name="search_query" placeholder="{l s='Search for shopping...' mod='jmsadvsearch'}" class="input-search" />
 		</div>
-			<input type="hidden" name="fc" value="module" />
-			<input type="hidden" name="module" value="jmsadvsearch" />
-			<input type="hidden" name="controller" value="search" />
-			<input type="hidden" name="order" value="product.position.asc" />			
-		<div class="input-group keyword-group">
-			<input type="text" id="ajax_advsearch" name="search_query" placeholder="{l s='Search' mod='jmsadvsearch'}" class="input-search" />
-			<span class="input-group-addon input-group-search">
-				<button class="fa fa-search"></button>
-			</span>
-		</div>
+		<span class="input-group-addon input-group-search">
+			<button>
+				<i class="lnr lnr-magnifier"></i>
+			</button>
+		</span>
 	</form>
-	<div id="advsearch_result">
-	</div>
+	<div id="advsearch_result"></div>
 </div>
+aaa

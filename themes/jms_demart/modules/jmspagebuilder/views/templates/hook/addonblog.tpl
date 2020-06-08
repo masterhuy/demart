@@ -23,28 +23,10 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
 {if $addon_title}
 	<div class="addon-title title-blog">
 		<h3>{$addon_title nofilter}</h3>
 		<div class="line-custom blog"></div>
-		{if isset($categories) AND $categories}
-			<div class="category-link">
-				{foreach from=$categories item=category}
-					{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}
-					<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title}</a>
-				{/foreach}
-			</div>
-			<div class="category-link-mobile">
-				<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
-				<div class="dropdown-menu">
-					{foreach from=$categories item=category}
-						{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}
-						<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title}</a>
-					{/foreach}
-				</div>
-			</div>
-		{/if}
 	</div>
 {/if}
 
@@ -52,7 +34,18 @@
 	<p class="addon-desc">{$addon_desc nofilter}</p>
 {/if}
 {if $posts|@count gt 0}
-	<div class="blog-carousel" data-items="{if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}4{/if}" data-lg="{if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}4{/if}" data-md="{if $items_show_md}{$items_show_md|escape:'htmlall':'UTF-8'}{else}3{/if}" data-sm="{if $items_show_sm}{$items_show_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" data-xs="{if $items_show_xs}{$items_show_xs|escape:'htmlall':'UTF-8'}{else}1{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}">
+	<div 
+		class="blog-carousel" 
+		data-items="{if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+		data-lg="{if $items_show_lg}{$items_show_lg|escape:'htmlall':'UTF-8'}{else}4{/if}" 
+		data-md="{if $items_show_md}{$items_show_md|escape:'htmlall':'UTF-8'}{else}3{/if}" 
+		data-sm="{if $items_show_sm}{$items_show_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" 
+		data-nav="{if $navigation == '0'}false{else}true{/if}" 
+		data-dots="{if $pagination == '1'}true{else}false{/if}" 
+		data-auto="{if $autoplay == '1'}true{else}false{/if}" 
+		data-rewind="{if $rewind == '1'}true{else}false{/if}" 
+		data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}"
+	>
 		{foreach from=$posts item=post}
 			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 			{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}

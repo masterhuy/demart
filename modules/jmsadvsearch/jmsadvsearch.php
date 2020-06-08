@@ -336,13 +336,14 @@ class JmsAdvSearch extends Module implements WidgetInterface
         }
 
         $jms_categ_tree = $this->getTree($result_parents, $result_ids, $max_depth, ($category ? $category->id : null));
-        $this->smarty->assign('jmsCategTree', $jms_categ_tree);
+        $this->smarty->assign('jmscategtree', $jms_categ_tree);
         $this->context->controller->addCSS(($this->_path).'views/css/style.css', 'all');
+        $this->context->controller->addJS(($this->_path).'views/js/ajaxsearch.js', 'all');
 
         return [
             'root_url' => $this->getUrl(),
             'link' => $this->context->link,
-            
+            'jmscategtree' => $jms_categ_tree,
             'branche_tpl_path' => _PS_MODULE_DIR_.'/jmsadvsearch/views/templates/hook/category-tree-branch.tpl',
             'number' => Configuration::get('JMS_ADVSEARCH_NUM_PRODUCT'),
         ];

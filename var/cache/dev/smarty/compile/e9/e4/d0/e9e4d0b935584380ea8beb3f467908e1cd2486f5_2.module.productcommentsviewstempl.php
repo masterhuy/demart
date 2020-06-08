@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-01 07:58:07
+/* Smarty version 3.1.33, created on 2020-06-08 03:48:49
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed4a6ffb207c9_83883520',
+  'unifunc' => 'content_5edda711c123f8_97531601',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9e4d0b935584380ea8beb3f467908e1cd2486f5' => 
     array (
       0 => 'module:productcommentsviewstempl',
-      1 => 1590465383,
+      1 => 1591002361,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed4a6ffb207c9_83883520 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5edda711c123f8_97531601 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_demart/themes/jms_demart/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
 <?php echo '<script'; ?>
  type="text/javascript">
@@ -28,7 +28,7 @@ function content_5ed4a6ffb207c9_83883520 (Smarty_Internal_Template $_smarty_tpl)
         const $ = jQuery;
         const productId = <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
 ;
-        const productReview = $('#product-list-reviews-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
+        const productReview = $('.product-list-reviews-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
 ');
         const productCommentGradeUrl = '<?php echo $_smarty_tpl->tpl_vars['product_comment_grade_url']->value;?>
 ';
@@ -54,7 +54,8 @@ function content_5ed4a6ffb207c9_83883520 (Smarty_Internal_Template $_smarty_tpl)
 >
 
 <div id="product-list-reviews-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
-" class="product-list-reviews empty">
+" class="product-list-reviews-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
+ product-list-reviews empty">
     <div class="grade-stars small-stars"></div>
     <div class="comments-nb"></div>
 </div>
