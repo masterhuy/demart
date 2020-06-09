@@ -2122,7 +2122,7 @@
             duration: 100
         }),
         $("#ver-menu .jms-megamenu").jmsMegaMenu({
-            event: "click",
+            event: "hover",
             duration: 100
         }), n()
     }), jQuery(window).resize(function() {

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-04 04:17:55
+/* Smarty version 3.1.33, created on 2020-06-09 03:42:37
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\header-mobile-1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed867e3582b45_18103800',
+  'unifunc' => 'content_5edef71dda6145_14609841',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2fcf66f2d1fbdf0da21e0f1e07a6762aa7c15ef8' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\headers\\header-mobile-1.tpl',
-      1 => 1586772368,
+      1 => 1591601523,
       2 => 'file',
     ),
   ),
@@ -27,21 +27,21 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5ed867e3582b45_18103800 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5edef71dda6145_14609841 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div id="header-mobile-top" class="header-mobile-top<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_mobile_sticky'] == 1) {?> header-sticky<?php }
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_mobile_sticky'] == 1) && ($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'] != '')) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky_effect'], ENT_QUOTES, 'UTF-8');
 }?>">
     <div class="container-fluid">
         <div class="row align-items-center no-padding">
-            <div class="layout-column col-4 header-left">
+            <div class="layout-column col-auto header-left">
                 <?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/mobile-menu.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
             </div>
-            <div class="layout-column col-4 text-center">
+            <div class="layout-column col-auto col-logo">
                 <?php $_smarty_tpl->_subTemplateRender('file:_partials/headers/logo.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
             </div>
-            <div class="layout-column col-4 header-right">
+            <div class="layout-column col header-right">
                 <div class="row justify-content-end">
                     <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['search']) {?>
                         <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['search_box_type'] != 'dropdown') {?>

@@ -35,7 +35,7 @@
 	<div class="line-custom"></div>
 	<div class="tabs-navigation">
 		<ul class="nav nav-tabs">
-		{$cf = 0}
+			{$cf = 0}
 			{if $config.show_featured eq '1'}
 				<li class="nav-item"><a data-toggle="tab" href="#featured" class="nav-link active">{l s='Featured Products' d='Modules.JmsPagebuilder'}</a></li>
 			{$cf = $cf + 1}
@@ -58,6 +58,32 @@
 			{/if}
 		</ul>
 	</div>
+	<div class="tabs-navigation-mobile">
+		<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
+		<ul class="dropdown-menu">
+			{$cf = 0}
+			{if $config.show_featured eq '1'}
+				<li class="nav-item"><a data-toggle="tab" href="#featured" class="nav-link active">{l s='Featured Products' d='Modules.JmsPagebuilder'}</a></li>
+			{$cf = $cf + 1}
+			{/if}
+			{if $config.show_new eq '1'}
+				<li class="nav-item"><a data-toggle="tab" href="#latest" class="nav-link{if $cf eq 0} active{/if}">{l s='New Arrivals' d='Modules.JmsPagebuilder'}</a></li>
+				{$cf = $cf + 1}
+			{/if}
+			{if $config.show_topseller eq '1'}
+				<li class="nav-item"><a data-toggle="tab" href="#topseller" class="nav-link{if $cf eq 0} active{/if}">{l s='Best Seller' d='Modules.JmsPagebuilder'}</a></li>
+				{$cf = $cf + 1}
+			{/if}
+			{if $config.show_special eq '1'}
+				<li class="nav-item"><a data-toggle="tab" href="#special" class="nav-link{if $cf eq 0} active{/if}">{l s='Special' d='Modules.JmsPagebuilder'}</a></li>
+				{$cf = $cf + 1}
+			{/if}
+			{if $config.show_onsale eq '1'}
+				<li class="nav-item"><a data-toggle="tab" href="#onsale" class="nav-link{if $cf eq 0} active{/if}">{l s='On Sale' d='Modules.JmsPagebuilder'}</a></li>
+				{$cf = $cf + 1}
+			{/if}
+		</ul>
+  	</div>
 </div>
 <div class="tab-content">
 	{$cf = 0}
@@ -87,7 +113,7 @@
 		{$cf = $cf + 1}
 	{/if}
 	{if $config.show_new eq '1'}
-		 <div role="tabpanel" class="tab-pane {if $cf eq 0}active{/if}" id="latest">
+		 <div role="tabpanel" class="tab-pane fade {if $cf eq 0}active{/if}" id="latest">
 			<div 
 				class="producttab-carousel owl-carousel" 
 				data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
@@ -112,7 +138,7 @@
 		{$cf = $cf + 1}
 	{/if}
 	{if $config.show_topseller eq '1'}
-		 <div role="tabpanel" class="tab-pane {if $cf eq 0}active{/if}" id="topseller">
+		 <div role="tabpanel" class="tab-pane fade {if $cf eq 0}active{/if}" id="topseller">
 			<div
 				class="producttab-carousel owl-carousel" 
 				data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
@@ -137,7 +163,7 @@
 		{$cf = $cf + 1}
 	{/if}
 	{if $config.show_special eq '1'}
-		 <div role="tabpanel" class="tab-pane {if $cf eq 0}active{/if}" id="special">
+		 <div role="tabpanel" class="tab-pane fade {if $cf eq 0}active{/if}" id="special">
 			<div
 				class="producttab-carousel owl-carousel" 
 				data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 
@@ -162,7 +188,7 @@
 		{$cf = $cf + 1}
 	{/if}
 	{if $config.show_onsale eq '1'}
-		 <div role="tabpanel" class="tab-pane {if $cf eq 0}active{/if}" id="onsale">
+		 <div role="tabpanel" class="tab-pane fade {if $cf eq 0}active{/if}" id="onsale">
 			<div
 				class="producttab-carousel owl-carousel" 
 				data-items="{if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if}" 

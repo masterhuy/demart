@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-08 11:15:42
+/* Smarty version 3.1.33, created on 2020-06-09 11:15:00
   from 'module:pscurrencyselectorpscurre' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ede0fce1221e2_13843274',
+  'unifunc' => 'content_5edf6124c6d477_09305328',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ede0fce1221e2_13843274 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5edf6124c6d477_09305328 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="_desktop_currency_selector currency-info">
 	<div id="currency-selector-label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Currency:','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </div>

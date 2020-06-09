@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-08 07:42:10
+/* Smarty version 3.1.33, created on 2020-06-09 02:46:28
   from 'D:\xamppp\htdocs\jms_demart\admin041sahknz\themes\default\template\controllers\login\content.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eddddc23dd587_53101252',
+  'unifunc' => 'content_5edee9f4616519_73533788',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eddddc23dd587_53101252 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5edee9f4616519_73533788 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_demart\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 <div id="login-panel">

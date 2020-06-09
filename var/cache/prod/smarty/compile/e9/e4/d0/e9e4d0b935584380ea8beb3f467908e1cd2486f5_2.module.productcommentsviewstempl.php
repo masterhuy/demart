@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-08 11:02:36
+/* Smarty version 3.1.33, created on 2020-06-09 11:14:38
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ede0cbccd6f63_53145530',
+  'unifunc' => 'content_5edf610e725282_07940669',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ede0cbccd6f63_53145530 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5edf610e725282_07940669 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {

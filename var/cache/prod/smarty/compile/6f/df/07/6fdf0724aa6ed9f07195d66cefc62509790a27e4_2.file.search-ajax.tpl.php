@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-08 03:51:09
+/* Smarty version 3.1.33, created on 2020-06-09 04:20:11
   from 'D:\xamppp\htdocs\jms_demart\modules\jmsajaxsearch\views\templates\hook\search-ajax.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5edda79d909f87_62188052',
+  'unifunc' => 'content_5edeffeb157601_39014588',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edda79d909f87_62188052 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5edeffeb157601_39014588 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="search-result-content">
     <?php if ($_smarty_tpl->tpl_vars['products']->value) {?>
         <div class="search_product_list">

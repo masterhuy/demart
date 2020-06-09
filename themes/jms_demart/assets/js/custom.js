@@ -363,7 +363,7 @@ customCarousel = () => {
 					items:h_itemsMobile,
 				},
 				0:{
-					items:1,
+					items: 1,
 				}
 			},
 			rtl: rtl,
@@ -393,7 +393,7 @@ customCarousel = () => {
             autoplay: autoplay,
             responsive: {
                 0: {
-                    items: 2
+                    items: 1
                 },
                 576: {
                     items: productCarouselFlex.attr("data-sm")
@@ -489,7 +489,7 @@ customCarousel = () => {
             autoplay: autoplay,
             responsive: {
                 0: {
-                    items: 2
+                    items: 1
                 },
                 576: {
                     items: contentCarousel.attr("data-sm")
@@ -824,11 +824,6 @@ $(document).ready(function(){
             $("#back-to-top").addClass('show');
 		} else {
 			$("#back-to-top").removeClass('show');
-        }
-        if ($(window).scrollTop()) {
-            $(".alertbox-fixed").css("visibility", "hidden");
-        } else {
-            $(".alertbox-fixed").css("visibility", "visible");
         }
     });
 });
