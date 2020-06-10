@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-20 09:23:09
+/* Smarty version 3.1.33, created on 2020-06-10 09:53:33
   from 'D:\xamppp\htdocs\jms_demart\modules\jmsflashsales\views\templates\hook\path.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec4e8ed1decf5_69807131',
+  'unifunc' => 'content_5ee09f8d76bed7_30287386',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec4e8ed1decf5_69807131 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee09f8d76bed7_30287386 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style>
 .jms-nav{
 	margin-bottom:10px;

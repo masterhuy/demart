@@ -36,10 +36,25 @@
 						<a class="{if $k == 0}active{/if}" href="#category-{$k}" data-toggle="tab">
 							{$category.title|escape:'htmlall':'UTF-8'}
 						</a>
-					</li>	
-				{/if}	
+					</li>
+				{/if}
 			{/foreach}
 		</ul>
+		<div class="tabs-navigation-mobile">
+			<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
+			<ul class="dropdown-menu">
+				{foreach from = $categories item = category key = k}
+					{$cat_products = $products[$k]}
+					{if !empty($cat_products)}
+						<li class="nav-item">
+							<a class="{if $k == 0}active{/if}" href="#category-{$k}" data-toggle="tab">
+								{$category.title|escape:'htmlall':'UTF-8'}
+							</a>
+						</li>
+					{/if}
+				{/foreach}
+			</ul>
+		</div>
 		<div class="flashsales-countdown col-auto">{$expiretime|escape:'htmlall':'UTF-8'}</div>
 	</div>
 	<div class="tab-content">

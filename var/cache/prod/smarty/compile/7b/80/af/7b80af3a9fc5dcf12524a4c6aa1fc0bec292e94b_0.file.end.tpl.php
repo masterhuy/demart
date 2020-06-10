@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-09 11:26:40
+/* Smarty version 3.1.33, created on 2020-06-10 11:32:07
   from 'D:\xamppp\htdocs\jms_demart\modules\welcome\views\contents\end.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5edf63e0488af9_02815008',
+  'unifunc' => 'content_5ee0b6a7a889a4_37300707',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edf63e0488af9_02815008 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee0b6a7a889a4_37300707 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="onboarding-welcome" class="modal-body">
     <div class="col-12">

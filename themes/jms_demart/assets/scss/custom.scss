@@ -1174,6 +1174,7 @@ header .row {
 				text-overflow: ellipsis;
 				overflow: hidden;
 				color: #444;
+				font-size: 13px;
 				&::placeholder{
 					color: #444;
 				}
@@ -2579,7 +2580,7 @@ header .row {
 	.tabs-navigation{
 		display: block;
 		padding: 0;
-		margin: 10px 0 0;
+		margin: 0.7692rem 0 0;
 	}
 	.addon-tab .nav-tabs li{
 		margin: 0;
@@ -2590,8 +2591,8 @@ header .row {
 			display: none;
 		}
 		a{
-			width: 42px;
-			height: 42px;
+			width: 3.231rem;
+			height: 3.231rem;
 			border-radius: 50%;
 			display: flex;
 			justify-content: center;
@@ -2609,7 +2610,7 @@ header .row {
 				display: none;
 			}
 			i{
-				font-size: 20px;
+				font-size: 1.538rem;
 				color: #000;
 			}
 		}
@@ -2772,13 +2773,13 @@ header .row {
 /* flashsale tab*/
 .jmsflashsales-tab{
 	.tabpanel {
-		margin-bottom: 28px;
+		margin-bottom: 2.154rem;
 		margin-left: 0;
 		margin-right: 0;
 		border: 1px solid #ebebeb;
 		border-top-right-radius: 10px;
 		border-top-left-radius: 10px;
-		padding: 0 25px;
+		padding: 0 1.923rem;
 		background-color: #fff;
 		> div{
 			padding: 0;
@@ -2790,15 +2791,15 @@ header .row {
 			display: flex;
 			justify-content: center;
 			li{
-				padding: 0 20px;
+				padding: 0 1.538rem;
 				&:nth-child(5){
 					display: none;
 				}
 				a{
 					display: block;
-					line-height: 60px;
+					line-height: 4.615rem;
 					position: relative;
-					font-size: 14px;
+					font-size: 1.077rem;
 					font-family: $secondary-font;
 					letter-spacing: -0.2px;
 					color: #666;
@@ -2839,20 +2840,20 @@ header .row {
 				color: #f63622;
 				position: relative;
 				&:not(:first-child){
-					margin-left: 30px;
+					margin-left: 2.308rem;
 					&::before{
 						content: ":";
 						position: absolute;
-						left: -17px;
+						left: -1.308rem;
 						color: #f63622;
 						font-weight: 700;
-						top: -5px;
+						top: -0.3846rem;
 					}
 				}
 				.countdown-amount {
 					font-weight: 800;
-					font-size: 17px;
-					margin-right: 3px;
+					font-size: 1.308rem;
+					margin-right: 0.2308rem;
 				}
 			}
 		}
@@ -2869,8 +2870,8 @@ header .row {
 			display: block;
 			position: static;
 			div {
-				width: 19px;
-				height: 35px;
+				width: 1.462rem;
+				height: 2.692rem;
 				border: 0;
 				border-radius: 0;
 				cursor: pointer;
@@ -2880,14 +2881,14 @@ header .row {
 				transform: translateY(-50%);
 				margin: 0;
 				&.owl-prev{
-					left: -60px;
+					left: -4.615rem;
 					background: url("../img/icons/h4-prev.png") no-repeat center;
 					&:hover{
 						background-image: url("../img/icons/h4-prev-hover.png");
 					}
 				}
 				&.owl-next{
-					right: -60px;
+					right: -4.615rem;
 					background: url("../img/icons/h4-next.png") no-repeat center;
 					&:hover{
 						background-image: url("../img/icons/h4-next-hover.png");
@@ -3535,22 +3536,22 @@ header .row {
 				text-align: center;
 				position: relative;
 				.nav-link{
-					font-size: 24px;
+					font-size: 1.846rem;
 					color: #fff !important;
 					font-family: $secondary-font;
 					font-weight: 500;
 					border: 0;
-					padding: 25.5px 20px !important;
+					padding: 1.96rem 1.538rem !important;
 					position: relative;
 					&::after{
 						content: "";
 						position: absolute;
-						width: 10px;
-						height: 10px;
+						width: 0.7692rem;
+						height: 0.7692rem;
 						border: 0;
 						background-color: $color3;
 						transform: translateX(-50%) rotate(45deg);
-						bottom: -5px;
+						bottom: -0.3846rem;
 						left: 50%;
 						opacity: 0;
 						transition: all .4s;
@@ -3613,6 +3614,10 @@ header .row {
 		.category-thumb{
 			position: relative;
 			margin-bottom: 2.538rem;
+			.category_image{
+				display: block;
+				text-align: center;
+			}
 			&::after{
 				content: "";
 				position: absolute;
@@ -3701,7 +3706,7 @@ header .row {
 		}
 	}
 	.h4-service{
-		padding: 67px 0 60px;
+		padding: 5.154rem 0 4.615rem;
 		.container{
 			position: relative;
 			&::before{
@@ -3712,11 +3717,14 @@ header .row {
 	}
 }
 .h4-categorytab{
+	+ .h4-categorytab{
+		margin-top: 30px;
+	}
 	.container{
 		position: relative;
 	}
 	.addon-tab{
-		margin-bottom: 24px;
+		margin-bottom: 1.846rem;
 		.nav-tabs .nav-item{
 			margin-right: 0;
 			.nav-link{
@@ -3728,9 +3736,6 @@ header .row {
 				}
 			}
 		}
-	}
-	.tab-content{
-		margin-left: 360px;
 	}
 	.owl-stage{
 		display: flex;
@@ -3748,20 +3753,12 @@ header .row {
 		border: 1px solid #ebebeb;
 	}
 	.layout-column.banner{
-		margin-top: 12px;
-		max-width: 365px;
-		position: absolute;
-		left: 0;
-		top: 60px;
-		z-index: 9;
 		.jms-banner{
-			> a img{
-				max-width: 335px;
-			}
 			&.banner-2{
 				.banner-content{
 					text-align: center;
 					padding: 26px 40px;
+					width: 100%;
 					.text-1{
 						font-family: $secondary-font;
 						font-weight: 300;
@@ -3807,16 +3804,16 @@ header .row {
 	}
 }
 .h4-featured-product{
-	margin-bottom: -12px;
+	margin-bottom: -0.9231rem;
 	.addon-title{
-		padding-top: 6px;
+		padding-top: 0.4615rem;
 	}
 }
 .h4-megatab-icon{
-	padding: 68px 0 63px;
-	.owl-theme{
+	padding: 5.231rem 0 4.846rem;
+	.megatab-icon .owl-theme{
 		.owl-controls {
-		    top: -55px;
+		    top: -4.231rem;
 		}
 		.owl-stage-outer {
 		    padding: 20px 0;
@@ -3824,7 +3821,7 @@ header .row {
 		}
 	}
 	.addon-tab{
-		margin-bottom: 15px;
+		margin-bottom: 1.154rem;
 	}
 	.addon-tab-title, .tabs-navigation{
 		background-color: transparent !important;
@@ -3834,7 +3831,7 @@ header .row {
 			display: none;
 		}
 		&:not(:last-child){
-			margin-bottom: 20px;
+			margin-bottom: 1.538rem;
 		}
 	}
 	.productbox-flex{
@@ -3851,7 +3848,7 @@ header .row {
 		display: none;
 	}
 	.addon-title{
-		margin-bottom: 19px;
+		margin-bottom: 1.462rem;
 		h3{
 			text-align: center;
 		}
@@ -3863,6 +3860,7 @@ header .row {
 		}
 	}
 	.owl-stage-outer{
+		margin: 0;
 		padding: 15px 0;
 	}
 	.owl-theme{
@@ -3873,8 +3871,8 @@ header .row {
 			display: block;
 			position: static;
 			div {
-				width: 35px;
-				height: 67px;
+				width: 2.692rem;
+				height: 5.154rem;
 				border: 0;
 				border-radius: 0;
 				cursor: pointer;
@@ -3884,14 +3882,14 @@ header .row {
 				transform: translateY(-50%);
 				margin: 0;
 				&.owl-prev{
-					left: -60px;
+					left: -4.615rem;
 					background: url("../img/icons/h4-prev2.png") no-repeat center;
 					&:hover{
 						background-image: url("../img/icons/h4-prev2-hover.png");
 					}
 				}
 				&.owl-next{
-					right: -60px;
+					right: -4.615rem;
 					background: url("../img/icons/h4-next2.png") no-repeat center;
 					&:hover{
 						background-image: url("../img/icons/h4-next2-hover.png");
@@ -3907,18 +3905,18 @@ header .row {
 			top: 0;
 			left: 0;
 			width: 100%;
-			padding: 23px 28px;
+			padding: 1.769rem 2.154rem;
 			line-height: 1.3;
 			p{
 				margin-bottom: 0;
 			}
 			.text-1{
 				font-family: $secondary-font;
-				font-size: 20px;
+				font-size: 1.538rem;
 				font-weight: 500;
 				color: #000;
 				letter-spacing: -0.1px;
-				margin-bottom: 7px;
+				margin-bottom: 0.5385rem;
 			}
 			.text-2{
 				transform: skewX(-5deg);
@@ -3935,16 +3933,16 @@ header .row {
 			margin-right: 0;
 		}
 		.lnr{
-			font-size: 50px;
-			margin-bottom: 18px;
+			font-size: 3.846rem;
+			margin-bottom: 1.385rem;
 		}
 		.include_content_s{
 			.text-1{
-				font-size: 20px;
+				font-size: 1.538rem;
 				color: #000;
 				font-weight: 600;
 				letter-spacing: 0;
-				margin-bottom: 2px;
+				margin-bottom: 0.1538rem;
 			}
 			.text-2{
 				color: #444;
@@ -3954,31 +3952,52 @@ header .row {
 }
 .h4-slider{
 	padding-bottom: 50px;
+	.jmsflashsales-tab{
+		.tabpanel{
+			position: relative;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			.nav{
+				display: none;
+			}
+			.addon-title{
+				width: 100%;
+			}
+		}
+		.tabs-navigation-mobile{
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+	}
 }
 .h4-banner-1{
+	.layout-column{
+		margin-bottom: 10px;
+	}
 	.jms-banner{
 		box-shadow: 0 0 15px rgba(0,0,0,0.15);
 		.banner-content{
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			right: 60px;
+			right: 4.615rem;
 			line-height: 1.3;
 			p{
 				margin-bottom: 0;
 			}
 			.text-1{
-				font-size: 18px;
+				font-size: 1.385rem;
 				font-weight: 600;
 				color: #f63622;
 				text-transform: uppercase;
 				letter-spacing: -0.1px;
-				margin-bottom: 13px;
+				margin-bottom: 1rem;
 			}
 			.text-2{
 				font-family: $secondary-font;
 				font-weight: 300;
-				font-size: 26px;
+				font-size: 1rem;
 				color: #000;
 				letter-spacing: -0.5px;
 			}
@@ -3986,31 +4005,34 @@ header .row {
 	}
 }
 .h4-banner-2{
-	margin-top: 15px;
+	margin-top: 30px;
+	.layout-column{
+		margin-bottom: 10px;
+	}
 	.jms-banner{
 		box-shadow: 0 0 15px rgba(0,0,0,0.15);
 		.banner-content{
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			right: 30px;
+			right: 2.308rem;
 			line-height: 1.4;
 			p{
 				font-family: $secondary-font;
 				margin-bottom: 0;
-				font-size: 20px;
+				font-size: 1.538rem;
 				font-weight: 300;
 				color: #000;
 				letter-spacing: -0.1px;
 				&:first-child{
-					margin-bottom: 20px;
+					margin-bottom: 1.538rem;
 				}
 				strong{
 					font-weight: 600;
 				}
 			}
 			.btn{
-				padding: 5.5px 20px;
+				padding: 0.423rem 1.538rem;
 			}
 		}
 	}
@@ -4081,6 +4103,7 @@ header .row {
 				display: inline-block;
 			}
 			.count{
+				display: block;
 				font-size: 13px;
 				color: #777;
 				margin-bottom: 0;
@@ -4516,7 +4539,7 @@ footer .row{
 		}
 	}
 	#footer-main{
-		margin-bottom: 4.154rem;
+		margin-bottom: 3.077rem;
 		.layout-column{
 			padding-left: 10px;
 			padding-right: 10px;
@@ -4882,15 +4905,15 @@ footer .row{
 	}
 	.product-info{
 		width: 63.5%;
-		padding: 0 20px;
+		padding: 0 1.538rem;
 	}
 	.product-list-reviews{
 		position: static;
 		padding: 0;
-		margin-bottom: -2px;
+		margin-bottom: -0.1538rem;
 	}
 	.product-buttons {
-		margin-top: 26px;
+		margin-top: 2rem;
 	}
 }
 
@@ -4911,7 +4934,11 @@ footer .row{
 }
 .tabs-navigation-mobile{
 	.dropdown-menu{
-		left: -5px !important;
+		left: auto !important;
+		right: 0;
+		transform: none !important;
+		top: 100% !important;
+		min-width: 140px;
 	}
 }
 .line-custom{
@@ -6006,6 +6033,9 @@ footer .row{
 	}
 }
 @media (min-width: 576px){
+	.h4-categorytab .layout-column.banner {
+		display: none;
+	}
 	.h3-banner{
 		.layout-column{
 			margin-bottom: 0;
@@ -6073,6 +6103,11 @@ footer .row{
 		max-width: auto;
 		flex-basis: 0;
 		flex-grow: 1;
+	}
+	.h4-banner-1{
+		.layout-column{
+			margin-bottom: 0;
+		}
 	}
 	#mobile-header #search-form-dropdown{
 		max-width: 400px;
@@ -6176,7 +6211,22 @@ footer .row{
 			margin-top: 0;
 		}
 	}
+	.h4-slider .jmsflashsales-tab .tabs-navigation-mobile{
+		display: block;
+	}
+	.h4-banner-2{
+		.layout-column{
+			margin-bottom: 0;
+		}
+	}
+	.h4-banner-1 .jms-banner .banner-content .text-2{
+		font-size: 2rem;
+	}
 	.h3-product-tab{
+		margin-top: 0;
+		.addon-tab-title{
+			display: none;
+		}
 		.tab-content{
 			padding-top: 30px;
 		}
@@ -6347,6 +6397,43 @@ footer .row{
 		max-width: 25%;
 		&.wrapper{
 			padding-left: 60px;
+		}
+	}
+	.h4-banner-2 {
+		margin-top: 10px;
+	}
+	.h4-categorytab{
+		+ .h4-categorytab {
+			margin-top: 5px;
+		}
+		.tab-content {
+			margin-left: 360px;
+		}
+		.layout-column.banner {
+			display: block;
+			margin-top: 12px;
+			max-width: 355px;
+			position: absolute;
+			left: 0;
+			top: 60px;
+			z-index: 9;
+		}
+	}
+	.h4-slider{
+		.jmsflashsales-tab{
+			.tabs-navigation-mobile{
+				display: none;
+			}
+			.tabpanel{
+				padding-top: 0;
+				padding-bottom: 0;
+				.addon-title{
+					width: auto;
+				}
+				.nav{
+					display: flex;
+				}
+			}
 		}
 	}
 	.h3-productbox-flex .productbox-flex::after{

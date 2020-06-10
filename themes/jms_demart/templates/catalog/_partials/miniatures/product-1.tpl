@@ -144,7 +144,7 @@
                             {l s='Add to cart' d='Shop.Theme.Actions'}
                         </a>
                     {else}
-                        <a href="#" class="btn-default product-btn disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
+                        <a href="#" class="btn btn-default product-btn disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
                             {l s='Sold Out' d='Shop.Theme.Actions'}
                         </a>
                     {/if}

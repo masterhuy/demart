@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-09 10:25:45
+/* Smarty version 3.1.33, created on 2020-06-10 11:23:51
   from 'D:\xamppp\htdocs\jms_demart\modules\jmspagebuilder\views\templates\hook\addonmenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5edf55996b33b3_90742137',
+  'unifunc' => 'content_5ee0b4b721dfe5_56611479',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edf55996b33b3_90742137 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee0b4b721dfe5_56611479 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['menu_html']->value;?>
 
 <?php }
