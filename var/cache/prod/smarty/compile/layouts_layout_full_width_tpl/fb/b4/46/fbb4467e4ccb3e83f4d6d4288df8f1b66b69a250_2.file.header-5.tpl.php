@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-10 10:53:14
+/* Smarty version 3.1.33, created on 2020-06-11 05:27:41
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\header-5.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee0ad8a0e45e6_18002130',
+  'unifunc' => 'content_5ee1b2bd72d019_31328177',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fbb4467e4ccb3e83f4d6d4288df8f1b66b69a250' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\headers\\header-5.tpl',
-      1 => 1590742855,
+      1 => 1591849653,
       2 => 'file',
     ),
   ),
@@ -28,7 +28,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5ee0ad8a0e45e6_18002130 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee1b2bd72d019_31328177 (Smarty_Internal_Template $_smarty_tpl) {
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_topbar'] == 1)) {?>
 <div id="header-topbar" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class'], ENT_QUOTES, 'UTF-8');
 }?>">
@@ -52,8 +52,21 @@ if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) && ($_sm
 ?>
             </div>
  			<div class="layout-column col-6 text-center">
-                <?php $_smarty_tpl->_subTemplateRender('module:jmsadvsearch/views/templates/hook/jmsadvsearch.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+                <?php $_block_plugin1 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
+if (!is_callable(array($_block_plugin1, 'smartyWidgetBlock'))) {
+throw new SmartyException('block tag \'widget_block\' not callable or registered');
+}
+$_smarty_tpl->smarty->_cache['_tag_stack'][] = array('widget_block', array('name'=>"jmsadvsearch"));
+$_block_repeat=true;
+echo $_block_plugin1->smartyWidgetBlock(array('name'=>"jmsadvsearch"), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();?>
+                    <?php $_smarty_tpl->_subTemplateRender('module:jmsadvsearch/views/templates/hook/jmsadvsearch.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
+                <?php $_block_repeat=false;
+echo $_block_plugin1->smartyWidgetBlock(array('name'=>"jmsadvsearch"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
  			</div>
  		    <div class="layout-column col-3 header-right">
                 <div class="row no-margin align-items-center justify-content-end">
@@ -62,36 +75,36 @@ if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_sticky'] == 1) && ($_sm
 ?>
                     <?php }?>
                     <?php if (($_smarty_tpl->tpl_vars['jmsSetting']->value['cart'] == 1)) {?>
-                        <?php $_block_plugin1 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
-if (!is_callable(array($_block_plugin1, 'smartyWidgetBlock'))) {
+                        <?php $_block_plugin2 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
+if (!is_callable(array($_block_plugin2, 'smartyWidgetBlock'))) {
 throw new SmartyException('block tag \'widget_block\' not callable or registered');
 }
 $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('widget_block', array('name'=>"ps_shoppingcart"));
 $_block_repeat=true;
-echo $_block_plugin1->smartyWidgetBlock(array('name'=>"ps_shoppingcart"), null, $_smarty_tpl, $_block_repeat);
+echo $_block_plugin2->smartyWidgetBlock(array('name'=>"ps_shoppingcart"), null, $_smarty_tpl, $_block_repeat);
 while ($_block_repeat) {
 ob_start();?>
                             <?php $_smarty_tpl->_subTemplateRender('module:ps_shoppingcart/ps_shoppingcart-dropdown.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
                         <?php $_block_repeat=false;
-echo $_block_plugin1->smartyWidgetBlock(array('name'=>"ps_shoppingcart"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+echo $_block_plugin2->smartyWidgetBlock(array('name'=>"ps_shoppingcart"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
 }
 array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
                     <?php }?>
                     <?php if (($_smarty_tpl->tpl_vars['jmsSetting']->value['customersignin'] == 1)) {?>
-                        <?php $_block_plugin2 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
-if (!is_callable(array($_block_plugin2, 'smartyWidgetBlock'))) {
+                        <?php $_block_plugin3 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
+if (!is_callable(array($_block_plugin3, 'smartyWidgetBlock'))) {
 throw new SmartyException('block tag \'widget_block\' not callable or registered');
 }
 $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('widget_block', array('name'=>"ps_customersignin"));
 $_block_repeat=true;
-echo $_block_plugin2->smartyWidgetBlock(array('name'=>"ps_customersignin"), null, $_smarty_tpl, $_block_repeat);
+echo $_block_plugin3->smartyWidgetBlock(array('name'=>"ps_customersignin"), null, $_smarty_tpl, $_block_repeat);
 while ($_block_repeat) {
 ob_start();?>
                             <?php $_smarty_tpl->_subTemplateRender('module:ps_customersignin/ps_customersignin-dropdown-3.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
                         <?php $_block_repeat=false;
-echo $_block_plugin2->smartyWidgetBlock(array('name'=>"ps_customersignin"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+echo $_block_plugin3->smartyWidgetBlock(array('name'=>"ps_customersignin"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
 }
 array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
                     <?php }?>
@@ -117,34 +130,34 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
                         <a class="link-cms" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['history'], ENT_QUOTES, 'UTF-8');?>
 ">Track Your Order</a>
                     </div>
-                    <?php $_block_plugin3 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
-if (!is_callable(array($_block_plugin3, 'smartyWidgetBlock'))) {
+                    <?php $_block_plugin4 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
+if (!is_callable(array($_block_plugin4, 'smartyWidgetBlock'))) {
 throw new SmartyException('block tag \'widget_block\' not callable or registered');
 }
 $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('widget_block', array('name'=>"ps_languageselector"));
 $_block_repeat=true;
-echo $_block_plugin3->smartyWidgetBlock(array('name'=>"ps_languageselector"), null, $_smarty_tpl, $_block_repeat);
+echo $_block_plugin4->smartyWidgetBlock(array('name'=>"ps_languageselector"), null, $_smarty_tpl, $_block_repeat);
 while ($_block_repeat) {
 ob_start();?>
                         <?php $_smarty_tpl->_subTemplateRender('module:ps_languageselector/ps_languageselector-dropdown.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
                     <?php $_block_repeat=false;
-echo $_block_plugin3->smartyWidgetBlock(array('name'=>"ps_languageselector"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+echo $_block_plugin4->smartyWidgetBlock(array('name'=>"ps_languageselector"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
 }
 array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
-                    <?php $_block_plugin4 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
-if (!is_callable(array($_block_plugin4, 'smartyWidgetBlock'))) {
+                    <?php $_block_plugin5 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
+if (!is_callable(array($_block_plugin5, 'smartyWidgetBlock'))) {
 throw new SmartyException('block tag \'widget_block\' not callable or registered');
 }
 $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('widget_block', array('name'=>"ps_currencyselector"));
 $_block_repeat=true;
-echo $_block_plugin4->smartyWidgetBlock(array('name'=>"ps_currencyselector"), null, $_smarty_tpl, $_block_repeat);
+echo $_block_plugin5->smartyWidgetBlock(array('name'=>"ps_currencyselector"), null, $_smarty_tpl, $_block_repeat);
 while ($_block_repeat) {
 ob_start();?>
                         <?php $_smarty_tpl->_subTemplateRender('module:ps_currencyselector/ps_currencyselector-dropdown.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
                     <?php $_block_repeat=false;
-echo $_block_plugin4->smartyWidgetBlock(array('name'=>"ps_currencyselector"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+echo $_block_plugin5->smartyWidgetBlock(array('name'=>"ps_currencyselector"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
 }
 array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
                 </div>
@@ -154,19 +167,19 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
 </div>
 
 <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['search'] && $_smarty_tpl->tpl_vars['jmsSetting']->value['search_box_type'] != 'dropdown') {?>
-    <?php $_block_plugin5 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
-if (!is_callable(array($_block_plugin5, 'smartyWidgetBlock'))) {
+    <?php $_block_plugin6 = isset($_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0]) ? $_smarty_tpl->smarty->registered_plugins['block']['widget_block'][0][0] : null;
+if (!is_callable(array($_block_plugin6, 'smartyWidgetBlock'))) {
 throw new SmartyException('block tag \'widget_block\' not callable or registered');
 }
 $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('widget_block', array('name'=>"jmsajaxsearch"));
 $_block_repeat=true;
-echo $_block_plugin5->smartyWidgetBlock(array('name'=>"jmsajaxsearch"), null, $_smarty_tpl, $_block_repeat);
+echo $_block_plugin6->smartyWidgetBlock(array('name'=>"jmsajaxsearch"), null, $_smarty_tpl, $_block_repeat);
 while ($_block_repeat) {
 ob_start();?>
         <?php $_smarty_tpl->_subTemplateRender('module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <?php $_block_repeat=false;
-echo $_block_plugin5->smartyWidgetBlock(array('name'=>"jmsajaxsearch"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+echo $_block_plugin6->smartyWidgetBlock(array('name'=>"jmsajaxsearch"), ob_get_clean(), $_smarty_tpl, $_block_repeat);
 }
 array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);
 }

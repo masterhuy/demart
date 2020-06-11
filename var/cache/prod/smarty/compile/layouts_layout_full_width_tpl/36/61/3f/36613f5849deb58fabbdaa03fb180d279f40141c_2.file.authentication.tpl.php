@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-02 10:59:46
+/* Smarty version 3.1.33, created on 2020-06-11 05:21:27
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\customer\authentication.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed62312b27826_72849402',
+  'unifunc' => 'content_5ee1b1475f5269_68422569',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -24,14 +24,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:customer/_partials/login/layout-4.tpl' => 1,
   ),
 ),false)) {
-function content_5ed62312b27826_72849402 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee1b1475f5269_68422569 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17200794525ed62312b00722_78281734', 'page_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20203527865ee1b1475f5261_13065098', 'page_title');
 ?>
 
 <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['login_page_layout'] == 'layout-1') {?>
@@ -46,12 +46,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17200794525ed62312
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'page_title'} */
-class Block_17200794525ed62312b00722_78281734 extends Smarty_Internal_Block
+class Block_20203527865ee1b1475f5261_13065098 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_title' => 
   array (
-    0 => 'Block_17200794525ed62312b00722_78281734',
+    0 => 'Block_20203527865ee1b1475f5261_13065098',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

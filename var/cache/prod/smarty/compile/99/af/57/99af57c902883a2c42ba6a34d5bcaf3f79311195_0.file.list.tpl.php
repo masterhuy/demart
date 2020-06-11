@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-10 07:37:45
+/* Smarty version 3.1.33, created on 2020-06-11 09:19:15
   from 'D:\xamppp\htdocs\jms_demart\modules\jmsflashsales\views\templates\hook\list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee07fb906f3b8_12671539',
+  'unifunc' => 'content_5ee1e9038ca118_31095616',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee07fb906f3b8_12671539 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee1e9038ca118_31095616 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="panel"><h3><i class="icon-list-ul"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Item list','mod'=>'jmsflashsales'),$_smarty_tpl ) );?>
 
 	<span class="panel-heading-action">

@@ -594,7 +594,7 @@ header .row {
 	width: 260px;
 	padding: 0;
 	box-shadow: 0 0 4px rgba(0,0,0,0.2);
-	z-index: 99;
+	z-index: 999;
 	.dropdown-menu{
 		top: 0;
 		transition: none;
@@ -1834,6 +1834,7 @@ header .row {
 		}
 	}
 	.border-img{
+		display: none !important;
 		z-index: 600;
 	}
 }
@@ -1846,11 +1847,12 @@ header .row {
 		&::before{
 			content: "";
 			position: absolute;
-			width: calc(100% + 41px);
-			height: calc(100% + 14px);
-			top: -5px;
-			left: -19px;
-			background-color: #c3e235;
+			width: calc(100% + 3.154rem);
+			height: calc(100% + 1.077rem);
+			top: 50%;
+			left: 50%;
+			background-color: $color6;
+			transform: translate(-50%, -50%);
 			z-index: -1;
 		}
 	}
@@ -4051,32 +4053,22 @@ header .row {
 		}
 	}
 }
-.home-furniture{
-	margin-top: -34px;
-}
-.h5-banner-top{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	.container-fluid{
-		max-width: 100%;
-		padding: 0;
-	}
-}
 .h5-banner{
 	.addon-title{
-		margin-bottom: 34px;
+		margin-bottom: 2.615rem;
+	}
+	.layout-column{
+		margin-bottom: 10px;
 	}
 }
 .h5-category{
-	padding: 74px 0 81px;
+	padding: 5.692rem 0 6.231rem;
 	background-color: #f2f2f2;
 	.addon-title{
-		margin-bottom: 44px;
+		margin-bottom: 3.385rem;
 	}
 	.layout-column.item{
-		margin-bottom: 30px;
+		margin-bottom: 2.308rem;
 	}
 	p{
 		margin-bottom: 0;
@@ -4086,7 +4078,7 @@ header .row {
 	}
 	.category-box{
 		background-color: #fff;
-		padding: 28px 20px 27px 30px;
+		padding: 2.154rem 1.538rem 2.077rem 2.308rem;
 		border-radius: 0 0 4px 4px;
 		.shop-now{
 			margin-left: auto;
@@ -4095,16 +4087,16 @@ header .row {
 			margin-bottom: 0;
 			a{
 				font-family: $secondary-font;
-				font-size: 16px;
+				font-size: 1.231rem;
 				color: #000;
 				font-weight: 400;
 				letter-spacing: -0.2px;
-				margin-bottom: 10px;
+				margin-bottom: 0.7692rem;
 				display: inline-block;
 			}
 			.count{
 				display: block;
-				font-size: 13px;
+				font-size: 1rem;
 				color: #777;
 				margin-bottom: 0;
 				font-family: $primary-font;
@@ -4118,12 +4110,12 @@ header .row {
 		display: block;
 		text-align: center;
 		background-color: #fff;
-		font-size: 16px;
+		font-size: 1.231rem;
 		font-family: $secondary-font;
 		color: #000;
 		letter-spacing: -0.2px;
-		padding: 14px 20px;
-		margin-top: 20px;
+		padding: 1.077rem 1.538rem;
+		margin-top: 1.538rem;
 		&:hover{
 			background-color: $color5;
 		}
@@ -4131,7 +4123,7 @@ header .row {
 }
 .h5-product-carousel{
 	.addon-title {
-		margin-bottom: 12px;
+		margin-bottom: 0.9231rem;
 	}
 }
 .h5-banner-product{
@@ -4143,13 +4135,10 @@ header .row {
 		}
 	}
 	.col-banner{
-		flex: 0 0 27.44%;
-		max-width: 27.44%;
-		margin-top: 19px;
-	}
-	.col-product{
-		flex: 0 0 72.56%;
-		max-width: 72.56%;
+		.jms-banner{
+			margin: auto;
+			max-width: 335px;
+		}
 	}
 	.owl-stage{
 		display: flex;
@@ -4168,13 +4157,13 @@ header .row {
 	}
 }
 .h5-megatab-product{
-	margin-top: 11px;
-	padding: 75px 0 10px;
+	margin-top: 0.8462rem;
+	padding: 5.769rem 0 0.7692rem;
 	background-color: #f2f2f2;
 	.addon-tab-title{
 		background: transparent !important;
 		padding: 0 !important;
-		margin-bottom: 23px !important;
+		margin-bottom: 1.769rem !important;
 	}
 	.megatab-icon{
 		.tabs-navigation{
@@ -4183,26 +4172,26 @@ header .row {
 			margin: auto !important;
 		}
 		.addon-tab .nav-tabs li{
-			margin: 0 7.5px !important;
+			margin: 0 0.577rem !important;
 			a{
 				&.active i{
 					color: #000;
 				}
 				i{
-					font-size: 24px;
+					font-size: 1.846rem;
 				}
 			}
 		}
 	}
 	.addon-tab{
 		flex-direction: column;
-		margin-bottom: 23px;
+		margin-bottom: 1.769rem;
 		.line-custom{
 			display: none;
 		}
 	}
 	.item .product-miniature:first-child{
-		margin-bottom: 20px;
+		margin-bottom: 1.538rem;
 	}
 	.productbox-flex{
 		.product-preview{
@@ -4229,18 +4218,13 @@ header .row {
 	.container > .row{
 		margin: 0;
 	}
-	.row + .row .col{
-		border-top: 0;
-	}
 	.col{
-		padding: 17px;
+		margin-bottom: 10px;
+		padding:  1.308rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border: 1px solid #ebebeb;
-		&:not(:first-child){
-			border-left: 0;
-		}
 	}
 }
 
@@ -4260,7 +4244,7 @@ header .row {
 }
 .h6-producttab{
 	.addon-producttab{
-		margin-bottom: 12px;
+		margin-bottom: 0.9231rem;
 	}
 	.addon-producttab .nav-tabs .nav-item .nav-link{
 		&::before{
@@ -4274,10 +4258,10 @@ header .row {
 		content: "";
 		position: absolute;
 		width: 1px;
-		height: 343px;
+		height: calc(100% - 1.538rem);
 		background-color: #ebebeb;
-		right: -13px;
-		top: 7px;
+		right: -1rem;
+		top: 0.5385rem;
 	}
 	.owl-item.active + .active + .active + .active + .active + .active + .active .product-miniature::before{
 		display: none;
@@ -4285,75 +4269,22 @@ header .row {
 }
 .h6-banner{
 	margin-top: -12px;
-	.banner-left{
-		.text-1, .text-2{
-			font-family: $secondary-font;
-			font-weight: 300;
-			font-size: 22px;
-			color: #031520;
-			letter-spacing: -0.3px;
-			strong{
-				font-weight: 600;
-				color: #f63622;
-			}
-		}
-		.btn{
-			background-color: #092333;
-			color: $color6;
-			margin-top: 5px;
-		}
-	}
-	.banner-right{
-		.text-1{
-			font-family: $secondary-font;
-			font-weight: 600;
-			font-size: 20px;
-			color: #000;
-		}
-		.text-2{
-			font-family: $secondary-font;
-			font-weight: 300;
-			font-size: 20px;
-			color: #000;
-		}
-		.btn{
-			background-color: #fff;
-			color: #092333;
-			margin-top: 5px;
-		}
-	}
-	.banner-content{
-		position: absolute;
-		top: calc(50% + 13px);
-		transform: translateY(-50%);
-		left: 57px;
-		display: flex;
-		align-items: center;
-		.block{
-			margin-right: 55px;
-		}
-		p{
-			margin-bottom: 0;
-			line-height: 1.35;
-		}
+	.jms-banner > a > img{
+		transform: none;
 	}
 }
 .h6-flashsale{
-	padding: 40px 0 0;
-	.row > .layout-column{
-		flex: 0 0 70.2%;
-		max-width: 70.2%;
-	}
+	padding: 3.077rem 0 0;
 	.jmsflashsales-tab2{
-		margin: 0 -25px;
+		margin: 0 -10px;
 		.addon-title{
-			margin-bottom: 31px;
+			margin-bottom: 2.385rem;
 			h3{
 				line-height: 1.35;
 			}
 		}
 		.discount{
-			font-size: 24px;
+			font-size: 1.846rem;
 			font-family: $secondary-font;
 			font-weight: 300;
 			color: #000;
@@ -4361,30 +4292,25 @@ header .row {
 			line-height: 1.3;
 		}
 		.tabpanel{
-			margin-top: 13px;
-			flex: 0 0 24.5%;
-			max-width: 24.5%;
-			padding: 0 25px;
+			padding: 0 10px;
 			label{
-				font-size: 24px;
+				font-size: 1.846rem;
 				font-family: $secondary-font;
 				font-weight: 300;
 				color: #000;
 				letter-spacing: -0.35px;
-				margin-top: 23px;
+				margin-top: 1.769rem;
 				margin-bottom: 2px;
 			}
 		}
 		.tab-content{
-			flex: 0 0 75.5%;
-			max-width: 75.5%;
-			padding: 0 25px;
+			padding: 0 10px;
 		}
 		.nav li{
 			width: 100%;
 			line-height: 1;
 			a{
-				font-size: 150px;
+				font-size: 11.54rem;
 				font-weight: 200;
 				font-family: $secondary-font;
 				color: #000;
@@ -4396,7 +4322,7 @@ header .row {
 				&::before{
 					content: "";
 					width: 100%;
-					height: 52px;
+					height: 4rem;
 					left: 0;
 					bottom: 2px;
 					position: absolute;
@@ -4404,16 +4330,16 @@ header .row {
 					z-index: -1;
 				}
 				span{
-					font-size: 60px;
+					font-size: 4.615rem;
 					font-weight: 300;
 				}
 			}
 		}
 		.countdown-section {
 			background: #092333;
-			width: 60px;
+			width: 4.615rem;
 			display: inline-flex;
-			height: 60px;
+			height: 4.615rem;
 			border-radius: 50%;
 			color: #fff;
 			align-items: center;
@@ -4421,11 +4347,11 @@ header .row {
 			flex-direction: column;
 			line-height: 1.2;
 			&:not(:last-child){
-				margin-right: 7px;
+				margin-right: 0.5385rem;
 			}
 			.countdown-amount {
 				font-weight: 800;
-				font-size: 17px;
+				font-size: 1.308rem;
 			}
 		}
 		.owl-stage-outer{
@@ -4447,6 +4373,7 @@ header .row {
 		&.product{
 			flex: 0 0 64%;
 			max-width: 64%;
+
 			.content-carousel{
 				.owl-stage-outer{
 					padding: 0 1px;
@@ -4472,11 +4399,18 @@ header .row {
 				border: 1px solid #ebebeb;
 				text-align: center;
 				position: relative;
+				overflow: hidden;
+				&:hover a img{
+					transform: scale(1.1);
+				}
 				p{
 					margin-bottom: 0;
 				}
 				a{
 					display: block;
+					img{
+						transition: .4s all;
+					}
 					span{
 						position: absolute;
 						bottom: 12px;
@@ -6033,6 +5967,9 @@ footer .row{
 	}
 }
 @media (min-width: 576px){
+	.h5-banner .layout-column{
+		margin-bottom: 0;
+	}
 	.h4-categorytab .layout-column.banner {
 		display: none;
 	}
@@ -6103,6 +6040,11 @@ footer .row{
 		max-width: auto;
 		flex-basis: 0;
 		flex-grow: 1;
+	}
+	.h5-banner-product{
+		.col-banner{
+			margin-top: 19px;
+		}
 	}
 	.h4-banner-1{
 		.layout-column{
@@ -6398,6 +6340,55 @@ footer .row{
 		&.wrapper{
 			padding-left: 60px;
 		}
+	}
+	.h6-flashsale{
+		.row > .layout-column {
+			flex: 0 0 70.2%;
+			max-width: 70.2%;
+		}
+		.jmsflashsales-tab2 {
+		    margin: 0 -25px;
+		    .tabpanel {
+			    margin-top: 13px;
+			    flex: 0 0 24.5%;
+			    max-width: 24.5%;
+			    padding: 0 25px;
+			}
+			.tab-content {
+			    flex: 0 0 75.5%;
+			    max-width: 75.5%;
+			    padding: 0 25px;
+			}
+		}
+	}
+	.block-brand{
+		.col{
+			margin-bottom: 0;
+			&:not(:first-child) {
+				border-left: 0;
+			}
+		}
+		.row + .row .col{
+			border-top: 0;
+		}
+	}
+	.h5-banner-product{
+		.col-banner{
+			flex: 0 0 27.44%;
+			max-width: 27.44%;
+		}
+		.col-product{
+			flex: 0 0 72.56%;
+			max-width: 72.56%;
+		}
+	}
+	.home_5{
+		.home-furniture{
+			margin-top: -34px;
+		}
+	}
+	.slider-home-5 .border-img{
+		display: block !important;
 	}
 	.h4-banner-2 {
 		margin-top: 10px;

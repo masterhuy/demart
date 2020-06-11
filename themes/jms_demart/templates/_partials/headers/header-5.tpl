@@ -40,7 +40,9 @@
                 {include file='_partials/headers/logo.tpl'}
             </div>
  			<div class="layout-column col-6 text-center">
-                {include 'module:jmsadvsearch/views/templates/hook/jmsadvsearch.tpl'}
+                {widget_block name="jmsadvsearch"}
+                    {include 'module:jmsadvsearch/views/templates/hook/jmsadvsearch.tpl'}
+                {/widget_block}
  			</div>
  		    <div class="layout-column col-3 header-right">
                 <div class="row no-margin align-items-center justify-content-end">

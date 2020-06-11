@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-09 02:41:47
+/* Smarty version 3.1.33, created on 2020-06-11 10:06:43
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmsflashsales\views\templates\hook\jmsflashsales-tab2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5edee8db1cf0d9_56642750',
+  'unifunc' => 'content_5ee1f423a67c03_43335926',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0cb75ee3786ef293cf478b61aead6d6325fbee7c' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmsflashsales\\views\\templates\\hook\\jmsflashsales-tab2.tpl',
-      1 => 1590026645,
+      1 => 1591864597,
       2 => 'file',
     ),
   ),
@@ -21,9 +21,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5edee8db1cf0d9_56642750 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee1f423a67c03_43335926 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jmsflashsales-tab2 row">
-	<div class="tabpanel col-3">
+	<div class="tabpanel col-12">
 		<div class="addon-title ">
 			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Week Deals Limited, Hurry Up!','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
 </h3>
@@ -56,7 +56,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		<div class="flashsales-countdown"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['expiretime']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </div>
 	</div>
-	<div class="tab-content col-9">
+	<div class="tab-content col-12">
 		<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['products']->value, 'cat_products', false, 'k');
 if ($_from !== null) {

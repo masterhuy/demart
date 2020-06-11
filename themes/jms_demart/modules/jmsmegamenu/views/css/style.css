@@ -10,8 +10,13 @@
     transition: none;
 }
 .jms-megamenu > ul > li {
-  padding:0 12px;
-  margin: 0px;
+    padding:0 12px;
+    margin: 0px;
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
 }
 .jms-megamenu a {
   text-decoration:none;
