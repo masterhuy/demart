@@ -4,7 +4,7 @@
 	.category-title {
 		text-align: center;
 		h3 {
-			font-size: 36px;
+			font-size: 2.769rem;
 			color: #17171f;
 			letter-spacing: 1.5px;
 		}
@@ -24,14 +24,14 @@
 		line-height: 1;
 	}
 	.product-info {
-		padding: 20px 16px 17px;
+		padding: 1.538rem 1.231rem 1.308rem;
 		position: relative;
 		background-color: #fff;
 		z-index: 2;
 	}
 	.product-title {
-		margin-bottom: 8px;
-		margin-top: 2px;
+		margin-bottom: 0.6154rem;
+		margin-top: 0.1538rem;
 		a {
 			font-size: 1rem;
 			text-transform: initial;
@@ -45,7 +45,7 @@
 	}
 	.category-name {
 		font-size: 90%;
-		margin-bottom: 5px;
+		margin-bottom: 0.3846rem;
 	}
 	.product-preview {
 		position: relative;
@@ -72,7 +72,7 @@
 		padding: 0px;
 		list-style: none;
 		li {
-			line-height: 28px;
+			line-height: 2.154rem;
 			position: relative;
 			.navbar-toggler {
 				display: inline-flex;
@@ -80,11 +80,11 @@
 				align-items: center;
 				position: absolute;
 				right: 0;
-				top: 4px;
-				font-size: 12px;
+				top: 0.3077rem;
+				font-size: 0.9231rem;
 				z-index: 99;
 				.lnr {
-					font-size: 10px;
+					font-size: 0.7692rem;
 				}
 				.lnr-chevron-down {
 					display: none;
@@ -101,7 +101,7 @@
 		}
 	}
 	.sub-list {
-		padding-left: 15px;
+		padding-left: 1.154rem;
 	}
 	.title-block {
 		h3.collapsed {
@@ -118,7 +118,7 @@
 	}
 	.facet {
 		margin-right: 0px;
-		margin-bottom: 35px;
+		margin-bottom: 2.692rem;
 		.facet-title.collapsed {
 			>i {
 				transform: unset;
@@ -150,7 +150,7 @@
 		}
 		li {
 			position: relative;
-			line-height: 28px;
+			line-height: 2.154rem;
 		}
 	}
 	.facet.Price {
@@ -160,7 +160,7 @@
 	}
 	.facet.color {
 		.flex-box {
-			margin-bottom: 7px;
+			margin-bottom: 0.5385rem;
 		}
 		.facet-title.collapsed {
 			+ {
@@ -170,23 +170,23 @@
 			}
 		}
 		.custom-checkbox {
-			margin-right: 10px;
-			margin-bottom: 10px;
+			margin-right: 0.7692rem;
+			margin-bottom: 0.7692rem;
 		}
 	}
 	.btn-default.js-search-filters-clear-all {
 		i {
-			font-size: 15px;
-			margin-left: -3px;
-			margin-right: 5px;
+			font-size: 1.154rem;
+			margin-left: -0.2308rem;
+			margin-right: 0.3846rem;
 		}
 	}
 	.facet-title {
-		font-size: 20px;
+		font-size: 1.538rem;
 		color: #000;
 		letter-spacing: 0;
 		cursor: pointer;
-		margin-bottom: 14px;
+		margin-bottom: 1.077rem;
 		text-transform: capitalize;
 		font-weight: 500;
 		font-family: $secondary-font;
@@ -200,12 +200,12 @@
 		}
 	}
 	.custom-checkbox {
-		margin-right: 6px;
+		margin-right: 0.4615rem;
 		display: inline-block;
-		width: 11px;
-		height: 11px;
+		width: 0.8462rem;
+		height: 0.8462rem;
 		position: relative;
-		top: 9px;
+		top: 0.6923rem;
 		>input {
 			opacity: 0;
 			position: absolute;
@@ -213,43 +213,43 @@
 		}
 	}
 	.facet.Color {
-		margin-bottom: 33px;
+		margin-bottom: 2.538rem;
 	}
 }
 .title-block {
 	h3 {
-		font-size: 20px;
+		font-size: 1.538rem;
 		color: #000;
 		letter-spacing: 0;
 		cursor: pointer;
-		margin-bottom: 14px;
+		margin-bottom: 1.077rem;
 		text-transform: capitalize;
 		font-weight: 500;
 		font-family: $secondary-font;
 	}
 }
 #_desktop_search_filters_clear_all {
-	margin-bottom: 42px;
+	margin-bottom: 3.231rem;
 }
 .facet.filter-by {
-	margin-top: 40px;
+	margin-top: 3.077rem;
 }
 .filters-panel {
 	.view-mode {
 		>a {
 			>span {
-				font-size: 18px;
+				font-size: 1.385rem;
 			}
 			>span.fa-list-ul {
-				font-size: 19px;
+				font-size: 1.462rem;
 			}
 		}
 	}
 	.text {
 		color: #111;
-		font-size: 13px;
+		font-size: 1rem;
 		font-weight: 400;
-		margin-right: 10px;
+		margin-right: 0.7692rem;
 	}
 	.right {
 		text-align: right;
@@ -264,7 +264,7 @@
 	border-top: 1px solid #e1e1e1;
 	clear: both;
 	float: left;
-	padding-top: 10px;
+	padding-top: 0.7692rem;
 	width: 100%;
 	ul.pagination {
 		margin: 0;
@@ -273,7 +273,7 @@
 .filters-panel.bottom {
 	border-bottom: medium none;
 	border-top: 1px solid #e1e1e1;
-	padding-top: 20px;
+	padding-top: 1.538rem;
 	float: left;
 	width: 100%;
 }
@@ -289,7 +289,7 @@
 #category {
 	.breadcrumb {
 		ul {
-			padding: 71px 0;
+			padding: 5.462rem 0;
 		}
 		.title-meta {
 			display: block;
@@ -303,8 +303,8 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			height: 11px;
-			width: 11px;
+			height: 0.8462rem;
+			width: 0.8462rem;
 			border: 1px solid #a1a1a1;
 			border-radius: 2px;
 			&:after {
@@ -339,7 +339,7 @@
 		margin-top: 6.154rem;
 	}
 	.block-categories {
-		margin-bottom: 35px;
+		margin-bottom: 2.692rem;
 	}
 	.facet {
 		.facet-label {
@@ -355,7 +355,7 @@
 					height: 1px;
 					background-color: #000;
 					left: 0;
-					bottom: 6px;
+					bottom: 0.4615rem;
 					transition: all 400ms;
 					-webkit-transition: all 400ms;
 					-moz-transition: all 400ms;
@@ -419,7 +419,7 @@
 									&::after {
 										content: "\f17b";
 										font-family: LineAwesome;
-										font-size: 10px;
+										font-size: 0.7692rem;
 										position: absolute;
 										top: 50%;
 										transform: translate(-50%, -50%);
@@ -434,8 +434,8 @@
 					}
 					.color {
 						border-radius: 50%;
-						height: 12px;
-						width: 12px;
+						height: 0.9231rem;
+						width: 0.9231rem;
 						cursor: pointer;
 						position: relative;
 						display: none;
@@ -447,8 +447,8 @@
 	.color-style {
 		.custom-checkbox {
 			.magnitude {
-				margin-left: 5px;
-				font-size: 14px;
+				margin-left: 0.3846rem;
+				font-size: 1.077rem;
 			}
 		}
 	}
@@ -466,13 +466,13 @@
 	}
 }
 #js-product-list-header {
-	margin-bottom: 30px;
+	margin-bottom: 2.308rem;
 	.category-cover {
-		margin-bottom: 15px;
+		margin-bottom: 1.154rem;
 	}
 }
 #products-top {
-	margin-bottom: 64px;
+	margin-bottom: 4.923rem;
 	.pagination {
 		padding: 0;
 		border: 0;
@@ -482,7 +482,7 @@
 			width: 100%;
 			max-width: 100%;
 			display: inline-block;
-			font-size: 13px;
+			font-size: 1rem;
 			letter-spacing: 0.1px;
 			color: #444;
 		}
@@ -493,21 +493,21 @@
 }
 #js-product-list {
 	.pagination {
-		margin-top: 18px;
+		margin-top: 1.385rem;
 	}
 }
 #active-filter {
-	margin-bottom: 30px;
+	margin-bottom: 2.308rem;
 }
 #js-active-search-filters {
 	align-items: center;
 	background: #f3f4f7 none repeat scroll 0 0;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 50px;
-	padding: 15px 15px 5px;
+	margin-top: 3.846rem;
+	padding: 1.154rem 1.154rem 0.3846rem;
 	.active-filter-title {
-		margin: 0 15px 10px 0;
+		margin: 0 1.154rem 0.7692rem 0;
 		padding: 0;
 	}
 	>ul {
@@ -563,10 +563,10 @@
 		display: flex;
 		align-items: center;
 		background: url("../img/icons/down-2.png") no-repeat right;
-		font-size: 13px;
-		padding: 7px 25px 7px 17px;
+		font-size: 1rem;
+		padding: 0.5385rem 1.923rem 0.5385rem 1.308rem;
 		cursor: pointer;
-		margin-right: 13px;
+		margin-right: 1rem;
 		span {
 			cursor: pointer;
 			display: block;
@@ -579,7 +579,7 @@
 	.dropdown-menu {
 		left: auto;
 		min-width: 180px;
-		padding: 15px 17px;
+		padding: 1.154rem 1.308rem;
 		position: absolute;
 		left: -5px !important;
 		background: #fff;
@@ -686,7 +686,7 @@
 }
 .pagination {
 	margin: 0;
-	padding-top: 30px;
+	padding-top: 2.308rem;
 	padding-right: 0px;
 	border-top: 1px solid #ebebeb;
 	justify-content: center;
@@ -724,11 +724,11 @@
 		}
 	}
 	.js-search-link {
-		font-size: 20px;
+		font-size: 1.538rem;
 		color: #010101;
 		font-weight: 800;
-		width: 38px;
-		height: 38px;
+		width: 2.923rem;
+		height: 2.923rem;
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;

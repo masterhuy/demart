@@ -32,7 +32,7 @@
 	</div>
 {/if}
 <div 
-	class="content-carousel{if isset($box_class) && $box_class} {$box_class nofilter}{/if}" 
+	class="content-carousel-2 {if isset($box_class) && $box_class} {$box_class nofilter}{/if}" 
 	data-items="{if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}5{/if}" 
 	data-lg="{if $items_show_lg}{$items_show|escape:'htmlall':'UTF-8'}{else}5{/if}" 
 	data-md="{if $items_show_md}{$items_show_md|escape:'htmlall':'UTF-8'}{else}4{/if}" 

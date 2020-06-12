@@ -24,7 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="jmsflashsales-tab2 row">
-	<div class="tabpanel col-12">
+	<div class="tabpanel col-12 col-sm-12 col-md-4 col-lg-4">
 		<div class="addon-title ">
 			<h3>{l s='Week Deals Limited, Hurry Up!' d='Shop.Theme.Catalog'}</h3>
 		</div>
@@ -44,7 +44,7 @@
 		<label>{l s='End in offers:' d='Shop.Theme.Catalog'}</label>
 		<div class="flashsales-countdown">{$expiretime|escape:'htmlall':'UTF-8'}</div>
 	</div>
-	<div class="tab-content col-12">
+	<div class="tab-content col-12 col-sm-12 col-md-8 col-lg-8">
 		{foreach from=$products item=cat_products key=k}
 			{if !empty($cat_products)}
 				<div class="tab-pane {if $k == 0}active{/if}" id="category-{$k}">	

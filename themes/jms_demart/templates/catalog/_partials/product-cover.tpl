@@ -24,14 +24,22 @@
  *}
  <div class="product-cover">
     {if count($product.flags) > 0}
-    <ul class="product-flags">
-      {foreach from=$product.flags item=flag}
-        <li class="product-flag {$flag.type}">{$flag.label}</li>
-      {/foreach}
-    </ul>
+        <ul class="product-flags">
+        {foreach from=$product.flags item=flag}
+            <li class="product-flag {$flag.type}">{$flag.label}</li>
+        {/foreach}
+        </ul>
     {/if}
-    <img class="js-qv-product-cover{if $jmsSetting.product_image_zoom == 'elevatezoom'} product-image-zoom{/if}" src="{$product.cover.bySize.large_default.url}" data-zoom-image="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
+    <img 
+        class="js-qv-product-cover{if $jmsSetting.product_image_zoom == 'elevatezoom'} product-image-zoom{/if}" 
+        src="{$product.cover.bySize.large_default.url}" 
+        data-zoom-image="{$product.cover.bySize.large_default.url}" 
+        alt="{$product.cover.legend}" 
+        title="{$product.cover.legend}" 
+        style="width:100%;" 
+        itemprop="image"
+    >
     <div class="zoom-icon hidden-xs" data-toggle="modal" data-target="#product-modal">
-    <i class="ptw-icon icon-search-5_medium"></i>
+        <i class="ptw-icon icon-search-5_medium"></i>
     </div>
 </div>

@@ -751,22 +751,7 @@ class JmsGeneralForm
                                     'id_option' => 'product-1',
                                     'name' => $this->module->l('Box 1', 'GeneralForm'),
                                     'img' => 'productbox/box-1.jpg'
-                                ),
-                                array(
-                                    'id_option' => 'product-2',
-                                    'name' => $this->module->l('Box 2', 'GeneralForm'),
-                                    'img' => 'productbox/box-2.jpg'
-                                ),
-                                array(
-                                    'id_option' => 'product-3',
-                                    'name' => $this->module->l('Box 3', 'GeneralForm'),
-                                    'img' => 'productbox/box-3.jpg'
-                                ),
-                                array(
-                                    'id_option' => 'product-4',
-                                    'name' => $this->module->l('Box 4', 'GeneralForm'),
-                                    'img' => 'productbox/box-4.jpg'
-                                ),
+                                )
                             ),
                             'id' => 'id_option',
                             'name' => 'name',

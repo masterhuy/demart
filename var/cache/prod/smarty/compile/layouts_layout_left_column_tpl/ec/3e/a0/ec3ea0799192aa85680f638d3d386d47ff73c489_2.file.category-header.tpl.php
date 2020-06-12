@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-02 10:47:05
+/* Smarty version 3.1.33, created on 2020-06-12 11:21:50
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\category-header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed620199a1002_42250390',
+  'unifunc' => 'content_5ee3573e87ace1_03290590',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed620199a1002_42250390 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee3573e87ace1_03290590 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['listing']->value['pagination']['items_shown_from'] == 1) {?>
     <?php if ($_smarty_tpl->tpl_vars['category']->value['image'] || $_smarty_tpl->tpl_vars['category']->value['description']) {?>
         <div id="js-product-list-header">

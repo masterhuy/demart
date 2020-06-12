@@ -135,20 +135,20 @@ class JmsAddonContentCarousel extends JmsAddonBase
                 'name' => 'items_show',
                 'label' => $this->l('Items Show'),
                 'lang' => '0',
-                'desc' => 'Number of Items Show ( > 1199px )',
+                'desc' => 'Number of Items Show ( >= 1200px )',
+                'default' => 1
+            ),
+            array(
+                'type' => 'text',
+                'name' => 'items_show_lg',
+                'label' => $this->l('Items Show On Medium Device'),
+                'lang' => '0',
+                'desc' => 'Number of Items Show On Medium Device ( >= 992px )',
                 'default' => 1
             ),
             array(
                 'type' => 'text',
                 'name' => 'items_show_md',
-                'label' => $this->l('Items Show On Medium Device'),
-                'lang' => '0',
-                'desc' => 'Number of Items Show On Medium Device ( > 991px )',
-                'default' => 1
-            ),
-            array(
-                'type' => 'text',
-                'name' => 'items_show_sm',
                 'label' => $this->l('Items Show On Tablet'),
                 'lang' => '0',
                 'desc' => 'Number of Items Show On Tablet( >= 768px )',
@@ -156,10 +156,10 @@ class JmsAddonContentCarousel extends JmsAddonBase
             ),
             array(
                 'type' => 'text',
-                'name' => 'items_show_xs',
+                'name' => 'items_show_sm',
                 'label' => $this->l('Items Show On Mobile'),
                 'lang' => '0',
-                'desc' => 'Number of Items Show On Mobile( >= 320px )',
+                'desc' => 'Number of Items Show On Mobile( >= 576px )',
                 'default' => 1
             ),
             array(
@@ -240,9 +240,9 @@ class JmsAddonContentCarousel extends JmsAddonBase
                 'addon_title' => $addon_title,
                 'addon_desc' => $addon_desc,
                 'items_show' => $addon->fields[12]->value,
-                'items_show_md' => $addon->fields[13]->value,
-                'items_show_sm' => $addon->fields[14]->value,
-                'items_show_xs' => $addon->fields[15]->value,
+                'items_show_lg' => $addon->fields[13]->value,
+                'items_show_md' => $addon->fields[14]->value,
+                'items_show_sm' => $addon->fields[15]->value,
                 'navigation' => $addon->fields[16]->value,
                 'pagination' => $addon->fields[17]->value,
                 'autoplay' => $addon->fields[18]->value,

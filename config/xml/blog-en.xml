@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>PrestaShop (e)Commerce Week: an international week of online conferences</title>
+    <link>https://www.prestashop.com/en/blog/prestashop-ecommerce-week-2020</link>
+    <description>As a privileged partner of the digital transition of businesses, PrestaShop is pleased to hold the </description>
+     <pubDate>Wed, 10 Jun 2020 18:23:21 +0200</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-ecommerce-week-2020</guid>
+  </item>
+  <item>
     <title>Top 10 modules to optimize the customer experience on your online store</title>
     <link>https://www.prestashop.com/en/blog/ux-conversion-rate</link>
     <description>An online store is much more than just an online catalogue: it&#039;s a browsing experience for your visitors and a buying ex</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 27 Apr 2020 17:39:39 +0200</pubDate>
  <dc:creator>PrestaShop Team</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/key-ecommerce-figures-coronavirus</guid>
-  </item>
-  <item>
-    <title>How to stand out in a rapidly expanding e-commerce era</title>
-    <link>https://www.prestashop.com/en/blog/stand-out-e-commerce-era</link>
-    <description>With so many shops forced into lockdown, going online is a necessity rather than a pick.</description>
-     <pubDate>Wed, 22 Apr 2020 16:16:31 +0200</pubDate>
- <dc:creator>Vytaure Banyte</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/stand-out-e-commerce-era</guid>
   </item>
   </channel>
 </rss>

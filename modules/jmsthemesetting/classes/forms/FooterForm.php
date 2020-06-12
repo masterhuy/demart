@@ -64,31 +64,6 @@ class JmsFooterForm
                                     'id_option' => 1,
                                     'name' => $this->module->l('Layout 1', 'FooterForm'),
                                     'img' => 'footers/1.jpg'
-                                ),
-                                array(
-                                    'id_option' => 2,
-                                    'name' => $this->module->l('Layout 2', 'FooterForm'),
-                                    'img' => 'footers/2.jpg'
-                                ),
-                                array(
-                                    'id_option' => 3,
-                                    'name' => $this->module->l('Layout 3', 'FooterForm'),
-                                    'img' => 'footers/3.jpg'
-                                ),
-                                array(
-                                    'id_option' => 4,
-                                    'name' => $this->module->l('Layout 4', 'FooterForm'),
-                                    'img' => 'footers/4.jpg'
-                                ),
-                                array(
-                                    'id_option' => 5,
-                                    'name' => $this->module->l('Layout 5', 'FooterForm'),
-                                    'img' => 'footers/5.jpg'
-                                ),
-                                array(
-                                    'id_option' => 6,
-                                    'name' => $this->module->l('Layout 6', 'FooterForm'),
-                                    'img' => 'footers/6.jpg'
                                 )
                             ),
                             'id' => 'id_option',
