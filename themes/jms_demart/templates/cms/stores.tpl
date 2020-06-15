@@ -36,7 +36,7 @@
         <div class="store-item-container row">
           <div class="col-12 col-sm-6 col-md-6">
               <div class="row align-items-center small-gutters">
-                  <div class="col-auto store-picture hidden-sm-down">
+                  <div class="col-auto store-picture">
                     <img src="{$store.image.bySize.stores_default.url}" alt="{$store.image.legend}" title="{$store.image.legend}">
                   </div>
                   <div class="col-auto store-description">

@@ -1,21 +1,24 @@
 /***** login ***/
+#contact-wrapper.contact-layout-1 #contact-form {
+  margin-bottom: 20px; }
+
 #contact-wrapper.contact-layout-1 .contact-row {
-  margin-top: 68px; }
+  margin-top: 5.231rem; }
 
 #contact-wrapper h3 {
   margin-bottom: 0;
   text-align: left;
   letter-spacing: -0.3px;
-  font-size: 24px;
+  font-size: 1.846rem;
   font-weight: 500;
   font-style: normal;
   text-transform: capitalize;
   color: #000;
   border-bottom: 1px solid #ebebeb;
-  padding-bottom: 4px; }
+  padding-bottom: 0.3077rem; }
 
 #contact-info label {
-  font-size: 18px;
+  font-size: 1.385rem;
   display: block;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
@@ -23,7 +26,7 @@
   margin-bottom: 1px; }
 
 #contact-info .section {
-  font-size: 15px;
+  font-size: 1.154rem;
   margin-bottom: 0.6667rem; }
 
 #contact-map .contact-box {
@@ -32,7 +35,14 @@
 #contact-form .desc {
   color: #444;
   letter-spacing: 0;
-  margin-bottom: 35px; }
+  margin-bottom: 2.692rem; }
+
+#contact-form .bootstrap-filestyle .btn-default {
+  border-radius: 0 4px 4px 0; }
+
+#contact-form .send-message {
+  padding: 0;
+  height: 32px; }
 
 #contact-form .bootstrap-filestyle .btn {
   padding: 0px 1.333rem;
@@ -45,7 +55,7 @@
   cursor: pointer; }
 
 #contact-form .addon-title {
-  margin-bottom: 23px; }
+  margin-bottom: 1.769rem; }
 
 #contact-form .alert ul {
   margin-bottom: 0; }
@@ -54,19 +64,16 @@
   background: #f9f9f9;
   border-radius: 5px; }
 
-#contact-form input.form-control {
-  height: 38px; }
-
-#contact-form select.form-control {
-  height: 38px; }
+#contact-form input.form-control, #contact-form select.form-control {
+  height: 2.923rem; }
 
 #contact-form .form-group {
-  margin-bottom: 30px; }
+  margin-bottom: 2.308rem; }
 
 #contact-form .form-footer {
   margin-top: 0.4667rem; }
   #contact-form .form-footer .send-message {
-    min-width: 100px; }
+    min-width: 7.692rem; }
 
 #contact #contact-wrapper .block-contact i {
   display: none; }
@@ -75,7 +82,7 @@
   margin-bottom: 2.667rem; }
 
 #login-wrapper h3 {
-  font-size: 24px;
+  font-size: 1.846rem;
   font-weight: 600;
   font-style: normal;
   text-transform: capitalize;
@@ -99,7 +106,7 @@
   margin-top: 2.333rem; }
   #login-form label {
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: 1rem;
     max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
@@ -140,7 +147,7 @@
     margin-right: 0.5333rem; }
     #login-form .show-pass button {
       border: 0;
-      font-size: 13px;
+      font-size: 1rem;
       text-transform: capitalize;
       font-weight: 400;
       color: #555;
@@ -162,9 +169,7 @@
     margin-top: 2rem; }
   #login-form .return-store {
     text-align: right; }
-  #login-form .forgot-password a {
-    color: #000; }
-  #login-form .return-to-store {
+  #login-form .forgot-password a, #login-form .return-to-store {
     color: #000; }
 
 .login-layout-2 #login-image {
@@ -174,6 +179,8 @@
   margin-top: 2rem; }
 
 @media (min-width: 768px) {
+  .contact-layout-1#contact-wrapper #contact-form {
+    margin-bottom: 0; }
   #login-form label {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-11 10:06:44
+/* Smarty version 3.1.33, created on 2020-06-15 09:24:35
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_body.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee1f424622017_55481253',
+  'unifunc' => 'content_5ee730439414c8_74120291',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '52a67787c07974331ce7bae0e20db7702d6d70d2' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\jmspagebuilder_body.tpl',
-      1 => 1583743782,
+      1 => 1591930459,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee1f424622017_55481253 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee730439414c8_74120291 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {

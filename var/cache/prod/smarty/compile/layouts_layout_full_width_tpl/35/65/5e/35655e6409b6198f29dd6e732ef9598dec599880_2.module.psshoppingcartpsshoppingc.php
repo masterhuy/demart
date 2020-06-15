@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-12 11:23:30
+/* Smarty version 3.1.33, created on 2020-06-15 11:19:24
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee357a24c26f3_95967976',
+  'unifunc' => 'content_5ee74b2c3118c7_44235300',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' => 1,
   ),
 ),false)) {
-function content_5ee357a24c26f3_95967976 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee74b2c3118c7_44235300 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group blockcart cart-preview dropdown col-auto<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['addtocart_type'] != '') {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['addtocart_type'], ENT_QUOTES, 'UTF-8');
 }?>" id="cart_block" data-refresh-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['refresh_url']->value, ENT_QUOTES, 'UTF-8');?>
 ">

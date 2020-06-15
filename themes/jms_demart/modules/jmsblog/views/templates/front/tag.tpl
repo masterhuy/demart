@@ -25,7 +25,7 @@
 {capture name=path}{$tag|escape:'html':'UTF-8'}{/capture}
 <h1 class="page-heading">{l s='Tag' d='Modules.JmsBlog'} : {$tag}</h1>
 {if isset($smarty.get.page_layout) && $smarty.get.page_layout !=''}
-     {assign var='page_layout' value=$smarty.get.page_layout}
+    {assign var='page_layout' value=$smarty.get.page_layout}
 {/if}
 {if $page_layout == 'no'}
 {assign var="layout" value="layouts/layout-full-width.tpl"}
@@ -47,26 +47,22 @@
 						{foreach from=$posts item=post}
 							{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 							{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}
-							<div class="item col-12">
+							<div class="item col-12 col-sm-6 col-md-6 col-lg-6">
 								<div class="blog-post">
-									{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
-										<div class="post-thumb">
+									<div class="post-thumb">
+										{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 											{$post.link_video}
-										</div>
-									{elseif $post.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
-										<div class="post-thumb">
-											<a href="{jmsblog::getPageLink('jmsblog-post', $params)}">
+										{elseif $post.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
+											<a class="link" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
 												<img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt=""/>
 											</a>
+										{/if}
+										<div class="created">
+											<span class="day">{$post.created|escape:'html':'UTF-8'|date_format:'%e'}</span>
+											<span class="month">{$post.created|escape:'html':'UTF-8'|date_format:'%b'}</span>
 										</div>
-									{/if}
+									</div>
 									<div class="post-info">
-										<h4 class="post-title">
-											<a class="blog-list-title" href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
-										</h4>
-										<div class="post-intro">
-											{$post.introtext|truncate:380:'...' nofilter}
-										</div>
 										<ul class="post-meta">
 											{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
 												<li class="category-name">
@@ -74,17 +70,13 @@
 														{l s='In' d='Modules.JmsBlog'}
 													</span>
 													<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
-														{$post.category_name|escape:'html':'UTF-8'}
+														{$post.category_name|escape:'html':'UTF-8'} /
 													</a>
 												</li>
 											{/if}
-											<li class="created">
-												<span class="day">{$post.created|escape:'html':'UTF-8'|date_format:'%e'}</span>
-												<span class="month">{$post.created|escape:'html':'UTF-8'|date_format:'%b'}</span>
-											</li>
 											{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
 												<li>
-													<span>{$post.views|escape:'html':'UTF-8'} {l s='view(s)' d='Modules.JmsBlog'},</span>
+													<span>{$post.views|escape:'html':'UTF-8'} {l s='View(s)' d='Modules.JmsBlog'} -</span>
 												</li>
 											{/if}
 											{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
@@ -92,14 +84,23 @@
 													<span>
 														{$post.comment_count|escape:'html':'UTF-8'}
 														{if $post.comment_count > 0}
-															{l s='comments' d='Modules.JmsPagebuilder'}
+															{l s='Comments' d='Modules.JmsPagebuilder'}
 														{else}
-															{l s='comment' d='Modules.JmsPagebuilder'}
+															{l s='Comment' d='Modules.JmsPagebuilder'}
 														{/if}
 													</span>
 												</li>
 											{/if}
 										</ul>
+										<h4 class="post-title">
+											<a class="blog-list-title" href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
+										</h4>
+										<div class="post-intro">
+											{$post.introtext|truncate:120:'...' nofilter}
+										</div>
+										<a class="btn-default readmore" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
+											{l s='Read more' d='Modules.JmsBlog'}
+										</a>
 									</div>
 								</div>
 							</div>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-12 11:21:50
+/* Smarty version 3.1.33, created on 2020-06-15 11:19:30
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\socials.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee3573ebaf1f8_90801577',
+  'unifunc' => 'content_5ee74b323da1e1_50515085',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,23 +20,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee3573ebaf1f8_90801577 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee74b323da1e1_50515085 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14641011445ee3573eb880f6_42262609', 'footer-social');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17063440015ee74b323c2ae4_63869175', 'footer-social');
 ?>
 
 <?php }
 /* {block 'footer-social'} */
-class Block_14641011445ee3573eb880f6_42262609 extends Smarty_Internal_Block
+class Block_17063440015ee74b323c2ae4_63869175 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer-social' => 
   array (
-    0 => 'Block_14641011445ee3573eb880f6_42262609',
+    0 => 'Block_17063440015ee74b323c2ae4_63869175',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

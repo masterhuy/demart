@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-12 11:23:30
+/* Smarty version 3.1.33, created on 2020-06-15 11:19:24
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\errors\page-not-found.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee357a25108f6_56486818',
+  'unifunc' => 'content_5ee74b2c3500d7_89712213',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee357a25108f6_56486818 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee74b2c3500d7_89712213 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -39,7 +39,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 </a>
         
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_57218425ee357a25108f8_94888988', 'hook_not_found');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18934175575ee74b2c3500d3_50288862', 'hook_not_found');
 ?>
 
         </div>
@@ -47,12 +47,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_57218425ee357a2510
 </section>
 <?php }
 /* {block 'hook_not_found'} */
-class Block_57218425ee357a25108f8_94888988 extends Smarty_Internal_Block
+class Block_18934175575ee74b2c3500d3_50288862 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_not_found' => 
   array (
-    0 => 'Block_57218425ee357a25108f8_94888988',
+    0 => 'Block_18934175575ee74b2c3500d3_50288862',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

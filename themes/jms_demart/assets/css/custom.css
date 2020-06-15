@@ -513,7 +513,8 @@ header .row {
   font-weight: 600;
   font-family: "Work Sans", sans-serif;
   letter-spacing: -0.1px;
-  min-width: 310px; }
+  min-width: 310px;
+  z-index: 998; }
   #header-bottom .vermenu-btn img {
     margin-right: 16px; }
 
@@ -539,6 +540,19 @@ header .row {
   position: relative;
   z-index: 1000; }
 
+.open-dropdown-menu .header-1 #header-bottom {
+  position: relative;
+  z-index: 1; }
+  .open-dropdown-menu .header-1 #header-bottom::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% + 20px);
+    z-index: 999; }
+
 .vermenu-btn {
   cursor: pointer; }
 
@@ -548,7 +562,7 @@ header .row {
   padding: 0;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  z-index: 999; }
+  z-index: 998; }
   #ver-menu .dropdown-menu {
     top: 0;
     -webkit-transition: none;
@@ -762,6 +776,10 @@ header .row {
         margin-left: 25px; }
     .header-1 #header-topbar .desktop-currency-selector {
       position: relative; }
+  .header-1 #header-top.header-sticky.sticky #hor-menu .dropdown-menu {
+    top: 100%; }
+  .header-1 #header-top.header-sticky.sticky #hor-menu .level0 > li > a::before {
+    bottom: -6px; }
   .header-1 #header-top #hor-menu .dropdown-menu {
     top: calc(100% - 20px); }
   .header-1 #header-top #hor-menu .level0 > li > a {
@@ -1078,6 +1096,8 @@ header .row {
 
 .header-5 {
   background-color: #15669a; }
+  .header-5 .header-sticky.sticky {
+    background-color: #15669a; }
   .header-5 #header-topbar {
     padding: 0; }
     .header-5 #header-topbar .container-fluid {
@@ -1205,7 +1225,10 @@ header .row {
       position: absolute;
       top: -5px;
       background: #fff;
-      left: 20px; }
+      left: 20px;
+      -webkit-transition: .4s all;
+      -o-transition: .4s all;
+      transition: .4s all; }
   .header-6 #header-top .vermenu-btn {
     width: 50px;
     height: 50px;
@@ -2621,7 +2644,7 @@ header .row {
   padding: 0; }
 
 .post-fulltext .col-xs-12:not(:last-child) {
-  margin-bottom: 14px; }
+  margin-bottom: 1.077rem; }
 
 #module-jmsblog-categories #left-column,
 #module-jmsblog-post #left-column,
@@ -2666,9 +2689,9 @@ header .row {
   .addon-title.title-blog h3 {
     display: inline-block;
     background: #fff;
-    padding-right: 16px; }
+    padding-right: 1.231rem; }
   .addon-title.title-blog .category-link {
-    margin-left: 14px;
+    margin-left: 1.077rem;
     display: none; }
     .addon-title.title-blog .category-link a {
       display: inline-block;
@@ -2798,7 +2821,8 @@ header .row {
   margin-bottom: 1.308rem;
   line-height: 2.154rem;
   letter-spacing: 0;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #444; }
 
 .email_subscription .newsletter-input-group {
   display: -webkit-box;
@@ -3810,6 +3834,10 @@ footer .row {
   padding-top: 6.077rem; }
   #footer ul {
     margin-bottom: 0; }
+    #footer ul li a {
+      color: #444; }
+      #footer ul li a:hover {
+        color: #000; }
   #footer .newsletter #social-links li {
     margin-left: 0; }
   #footer #footer-main {
@@ -3850,6 +3878,8 @@ footer .row {
       #footer #footer-main .block-contact .phone::before {
         position: relative;
         top: 0.6923rem; }
+    #footer #footer-main .block-contact .email.section {
+      color: #444; }
     #footer #footer-main .block-contact .address .info-address {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4627,16 +4657,20 @@ footer .row {
 
 /***** site map ******/
 #sitemap .sitemap h5 {
-  font-size: 24px;
+  font-size: 1.846rem;
   letter-spacing: -0.3px; }
 
 #sitemap .sitemap ul.nested > li {
-  margin: 0 0 0 21px;
-  padding: 5px 0 0 33px;
+  margin: 0 0 0 1.615rem;
+  padding: 0.3846rem 0 0 2.538rem;
   border-left: 1px solid #d6d4d4;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAIAAABR8BlyAAAADklEQVQI12O4duUK2QgA8Owx2QWUkx4AAAAASUVORK5CYII=) no-repeat left 15px transparent; }
 
 /***** other page ******/
+#left-column + #content-wrapper,
+#content-wrapper + #right-column {
+  margin-top: 30px; }
+
 .form-control-label {
   font-weight: 500;
   color: #000;
@@ -4978,6 +5012,13 @@ footer .row {
   #mobile-header #jms_ajax_search .search-box input {
     min-width: auto;
     width: 100%; }
+  #mobile-header .search-form .button-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   #mobile-header #cart_block .product-link {
     display: block;
     line-height: 1.2;
@@ -5106,8 +5147,6 @@ footer .row {
     margin-bottom: 0; }
   #order-confirmation .order-confirmation-table .details {
     margin-top: 0; }
-  .cat-post-list.more-columns .post-intro {
-    padding: 0 40px; }
   .vertical-thumbs .js-qv-mask {
     width: 35px; }
   .vertical-thumbs .product-cover {
@@ -5138,6 +5177,19 @@ footer .row {
 @media (min-width: 768px) {
   html {
     font-size: 11px; }
+  #left-column + #content-wrapper,
+  #content-wrapper + #right-column {
+    margin-top: 0; }
+  #module-jmsblog-categories #left-column,
+  #module-jmsblog-post #left-column,
+  #module-jmsblog-archive #left-column,
+  #module-jmsblog-tag #left-column {
+    margin-bottom: 0; }
+  #module-jmsblog-categories #right-column,
+  #module-jmsblog-post #right-column,
+  #module-jmsblog-archive #right-column,
+  #module-jmsblog-tag #right-column {
+    margin-top: 0; }
   #footer #footer-main .block .block-title i {
     display: none; }
   #footer #footer-main .layout-column {
@@ -5213,16 +5265,6 @@ footer .row {
     margin-top: 0; } }
 
 @media (min-width: 992px) {
-  #module-jmsblog-categories #left-column,
-  #module-jmsblog-post #left-column,
-  #module-jmsblog-archive #left-column,
-  #module-jmsblog-tag #left-column {
-    margin-bottom: 0; }
-  #module-jmsblog-categories #right-column,
-  #module-jmsblog-post #right-column,
-  #module-jmsblog-archive #right-column,
-  #module-jmsblog-tag #right-column {
-    margin-top: 0; }
   .h4-slider .jmsflashsales-tab .tabs-navigation-mobile {
     display: block; }
   .h4-banner-2 .layout-column {
@@ -5349,6 +5391,9 @@ footer .row {
     max-width: 25%; }
     #footer #footer-main .layout-column.wrapper {
       padding-left: 60px; }
+  .product-desc li {
+    width: 50%;
+    float: left; }
   .h6-banner-product .layout-column.banner {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 36%;

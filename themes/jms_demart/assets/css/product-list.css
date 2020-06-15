@@ -719,6 +719,9 @@
   .grid-4 .productbox-3 .product-preview .addToWishlist i {
     font-size: 16px; }
 
+.same-category .owl-theme .owl-controls {
+  display: none; }
+
 .same-category .productbox-3 .product-preview .addToWishlist {
   width: 35px;
   height: 35px; }
@@ -1126,7 +1129,8 @@
   display: block;
   margin-top: 41px;
   margin-bottom: 44px;
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 310px; }
   .customs-html-left:hover img {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -1211,6 +1215,10 @@
     margin-right: 0 !important; } }
 
 @media (min-width: 768px) {
+  .same-category .owl-theme .owl-controls {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
   .products-grid .js-product-miniature {
     width: calc((100%)/3); }
     .products-grid .js-product-miniature:nth-child(3n) {

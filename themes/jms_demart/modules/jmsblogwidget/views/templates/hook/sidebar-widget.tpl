@@ -105,7 +105,7 @@
 	<h3 class="widget-title"><span>{l s='Recent Comments' d='Modules.JmsBlogwidget'}</span></h3>
 	{foreach from=$latestcomment key=k item=comment}
 		<article class="comment-item">
-			<p>{$comment.customer_name nofilter} on {$comment.comment|truncate:30:'...' nofilter}</p>
+			<p>{$comment.customer_name nofilter} on {$comment.comment|truncate:25:'...' nofilter}</p>
 		</article>
 	{/foreach}	
 </aside>

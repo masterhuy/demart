@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-09 03:42:38
+/* Smarty version 3.1.33, created on 2020-06-15 05:28:48
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5edef71e282847_27060152',
+  'unifunc' => 'content_5ee6f900623940_06352207',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edef71e282847_27060152 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee6f900623940_06352207 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_demart\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
  <div class="product-variants">

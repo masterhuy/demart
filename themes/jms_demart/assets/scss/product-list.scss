@@ -887,6 +887,9 @@
 	}
 }
 .same-category {
+	.owl-theme .owl-controls{
+		display: none;
+	}
 	.productbox-3 {
 		.product-preview {
 			.addToWishlist {
@@ -1376,6 +1379,7 @@
 	margin-top: 41px;
 	margin-bottom: 44px;
 	overflow: hidden;
+	max-width: 310px;
 	&:hover {
 		img {
 			transform: scale(1.1);
@@ -1506,6 +1510,9 @@
 	}
 }
 @media (min-width: 768px) {
+	.same-category .owl-theme .owl-controls{
+		display: inline-flex;
+	}
 	.products-grid {
 		.js-product-miniature {
 			width: calc((100%)/3);

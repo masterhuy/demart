@@ -81,6 +81,10 @@
     top: 100%;
     visibility: visible;
 }
+.jms-megamenu .menu-item:hover > .dropdown-menu{
+    animation: fadeIn; 
+    animation-duration: .4s;
+}
 .jms-megamenu .mega-nav,
 .jms-megamenu .dropdown-menu .mega-nav {
     list-style: outside none none;

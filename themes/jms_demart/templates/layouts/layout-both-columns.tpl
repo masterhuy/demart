@@ -62,7 +62,7 @@
                     <div class="row">
                 {/if}
                     {block name="left_column"}
-                        <div id="left-column" class="sidebar-column col-lg-3 col-md-12 col-sm-12 col-12">
+                        <div id="left-column" class="sidebar-column col-lg-3 col-md-3 col-sm-12 col-12">
                             <div class="sidebar-inner">
                                 {if $page.page_name == 'product'}
                                     {hook h='displayLeftColumnProduct'}
@@ -82,7 +82,7 @@
                     {/block}
 
                     {block name="right_column"}
-                        <div id="right-column" class="sidebar-column col-lg-3 col-md-12 col-sm-12 col-12">
+                        <div id="right-column" class="sidebar-column col-lg-3 col-md-3 col-sm-12 col-12">
                             <div class="sidebar-inner">
                                 {if $page.page_name == 'product'}
                                     {hook h='displayRightColumnProduct'}

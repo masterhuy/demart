@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-12 11:21:49
+/* Smarty version 3.1.33, created on 2020-06-15 11:19:29
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\product-activation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee3573dcb8ba5_72135656',
+  'unifunc' => 'content_5ee74b3143b8e0_40412486',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee3573dcb8ba5_72135656 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee74b3143b8e0_40412486 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['page']->value['admin_notifications']) {?>
   <div class="alert alert-warning row" role="alert">
     <div class="container">

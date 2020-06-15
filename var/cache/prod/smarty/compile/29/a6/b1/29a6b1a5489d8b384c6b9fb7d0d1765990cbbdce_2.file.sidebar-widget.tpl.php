@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-08 03:50:21
+/* Smarty version 3.1.33, created on 2020-06-15 09:59:59
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmsblogwidget\views\templates\hook\sidebar-widget.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5edda76d67b5e9_96586311',
+  'unifunc' => 'content_5ee7388ff138f6_64828691',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '29a6b1a5489d8b384c6b9fb7d0d1765990cbbdce' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmsblogwidget\\views\\templates\\hook\\sidebar-widget.tpl',
-      1 => 1590566775,
+      1 => 1592205782,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edda76d67b5e9_96586311 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee7388ff138f6_64828691 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_demart\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_CATEGORYMENU']) {?>
 <aside class="blog-widget widget-categories">
@@ -149,7 +149,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars[
 ?>
 		<article class="comment-item">
 			<p><?php echo $_smarty_tpl->tpl_vars['comment']->value['customer_name'];?>
- on <?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['comment']->value['comment'],30,'...' ));?>
+ on <?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['comment']->value['comment'],25,'...' ));?>
 </p>
 		</article>
 	<?php
