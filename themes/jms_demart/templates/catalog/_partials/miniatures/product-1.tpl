@@ -52,8 +52,14 @@
             </ul>
         {/block}
 	</div>
-
 	<div class="product-info">
+        {if $jmsSetting.productbox_category}
+		    <div class="category-name">
+				<a href="{url entity='category' id=$product.id_category_default}">
+                    {$product.category|escape:'html':'UTF-8'}
+                </a>
+            </div>
+	    {/if}
         {block name='product_reviews'}
             {hook h='displayProductListReviews' product=$product}
         {/block}

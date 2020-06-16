@@ -25,7 +25,7 @@
 {function name="categories" nodes=[] depth=0}
     {strip}
         {if $nodes|count}
-            <ul class="category-sub-menu collapse show" id="category-sub-menu">
+            <ul class="category-sub-menu" id="category-sub-menu">
                 {foreach from=$nodes item=node}
                 <li data-depth="{$depth}" class="cat-item">
                     {if $depth===0}
@@ -34,8 +34,8 @@
                         </a>
                         {if $node.children}
                             <span class="navbar-toggler collapse-icons collapsed" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
+                                <i class="lnr lnr-chevron-right" aria-hidden="true"></i>
                                 <i class="lnr lnr-chevron-down" aria-hidden="true"></i>
-                                <i class="lnr lnr-chevron-up" aria-hidden="true"></i>
                             </span>
                         {/if}
                         {if $node.children}
@@ -47,8 +47,8 @@
                         <a class="category-sub-link" href="{$node.link}">{$node.name}
                             {if $node.children}
                                 <span class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
+                                    <i class="lnr lnr-chevron-right" aria-hidden="true"></i>
                                     <i class="lnr lnr-chevron-down" aria-hidden="true"></i>
-                                    <i class="lnr lnr-chevron-up" aria-hidden="true"></i>
                                 </span>
                             {/if}
                         </a>
@@ -68,7 +68,7 @@
 <div class="block-categories">
 	{if $page.page_name != 'index'}
 		<div class="title-block">
-			<h3 class="d-flex cursor-pointer" data-toggle="collapse" data-target="#category-sub-menu">
+			<h3 class="d-flex cursor-pointer">
                 {l s='Category tree links' d='Shop.Theme.CategoryTree'}
             </h3>
 		</div>

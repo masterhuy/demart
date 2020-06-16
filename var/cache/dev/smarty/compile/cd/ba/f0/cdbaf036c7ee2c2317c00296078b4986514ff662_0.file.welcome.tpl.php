@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-08 02:56:28
+/* Smarty version 3.1.33, created on 2020-06-16 04:08:39
   from 'D:\xamppp\htdocs\jms_demart\modules\welcome\views\contents\welcome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5edd9accf31d55_43191914',
+  'unifunc' => 'content_5ee837b706d207_35691095',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edd9accf31d55_43191914 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee837b706d207_35691095 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="onboarding-welcome">
   <i class="material-icons onboarding-button-shut-down">close</i>

@@ -1,10 +1,6 @@
-7818bf,127.0.0.1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=WgKdujjE4unrH39mIEpO9M1y5lTmFYhj6WxUV8zqZKY&rand=1591580851393,1591580858,,200
-6654b9,127.0.0.1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=WgKdujjE4unrH39mIEpO9M1y5lTmFYhj6WxUV8zqZKY&rand=1591580979141,1591580979,,200
-39918c,127.0.0.1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=WgKdujjE4unrH39mIEpO9M1y5lTmFYhj6WxUV8zqZKY&rand=1591581100095,1591581100,,200
-9a937f,127.0.0.1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=WgKdujjE4unrH39mIEpO9M1y5lTmFYhj6WxUV8zqZKY&rand=1591581220910,1591581221,,200
-785000,127.0.0.1,GET,http://localhost/jms_demart/admin041sahknz/index.php/configure/advanced/system-information/?_token=WgKdujjE4unrH39mIEpO9M1y5lTmFYhj6WxUV8zqZKY,1591581346,,200
-a3632e,127.0.0.1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=WgKdujjE4unrH39mIEpO9M1y5lTmFYhj6WxUV8zqZKY&rand=1591581341726,1591581346,,200
-71f91c,127.0.0.1,GET,http://localhost/jms_demart/admin041sahknz/index.php/configure/advanced/performance/?_token=WgKdujjE4unrH39mIEpO9M1y5lTmFYhj6WxUV8zqZKY,1591581367,,200
-8d2a77,127.0.0.1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=WgKdujjE4unrH39mIEpO9M1y5lTmFYhj6WxUV8zqZKY&rand=1591581347029,1591581368,,200
-8b81a6,127.0.0.1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=WgKdujjE4unrH39mIEpO9M1y5lTmFYhj6WxUV8zqZKY&rand=1591584214776,1591584228,,200
-cf0bc3,127.0.0.1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=WgKdujjE4unrH39mIEpO9M1y5lTmFYhj6WxUV8zqZKY&rand=1591584244382,1591584245,,200
+abea61,::1,GET,http://localhost/jms_demart/admin041sahknz/index.php/configure/advanced/performance/?_token=6cg7qSr9qJ3AD124EahPxinvSpqLWq2yiMPOOcfgGAY,1592276911,,200
+43255e,::1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=6cg7qSr9qJ3AD124EahPxinvSpqLWq2yiMPOOcfgGAY&rand=1592276912501,1592276914,,200
+589caa,::1,POST,http://localhost/jms_demart/admin041sahknz/index.php/configure/advanced/performance/?_token=6cg7qSr9qJ3AD124EahPxinvSpqLWq2yiMPOOcfgGAY,1592276920,,302
+b586c9,::1,GET,http://localhost/jms_demart/admin041sahknz/index.php/configure/advanced/performance/?_token=6cg7qSr9qJ3AD124EahPxinvSpqLWq2yiMPOOcfgGAY,1592276921,,200
+9a6133,::1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=6cg7qSr9qJ3AD124EahPxinvSpqLWq2yiMPOOcfgGAY&rand=1592276922793,1592276924,,200
+dee68d,::1,POST,http://localhost/jms_demart/admin041sahknz/index.php/common/notifications?_token=6cg7qSr9qJ3AD124EahPxinvSpqLWq2yiMPOOcfgGAY&rand=1592276926432,1592276927,,200

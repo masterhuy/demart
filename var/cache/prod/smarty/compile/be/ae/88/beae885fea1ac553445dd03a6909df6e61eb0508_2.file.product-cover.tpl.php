@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-15 04:24:08
+/* Smarty version 3.1.33, created on 2020-06-16 07:44:34
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\product-cover.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee6e9d8e93697_74573015',
+  'unifunc' => 'content_5ee86a527f0909_06945262',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'beae885fea1ac553445dd03a6909df6e61eb0508' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\catalog\\_partials\\product-cover.tpl',
-      1 => 1591934036,
+      1 => 1592197385,
       2 => 'file',
     ),
   ),
@@ -20,19 +20,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee6e9d8e93697_74573015 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee86a527f0909_06945262 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="product-cover">
     <?php if (count($_smarty_tpl->tpl_vars['product']->value['flags']) > 0) {?>
         <ul class="product-flags">
-        <?php
+            <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['flags'], 'flag');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['flag']->value) {
 ?>
-            <li class="product-flag <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['flag']->value['type'], ENT_QUOTES, 'UTF-8');?>
+                <li class="product-flag <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['flag']->value['type'], ENT_QUOTES, 'UTF-8');?>
 "><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['flag']->value['label'], ENT_QUOTES, 'UTF-8');?>
 </li>
-        <?php
+            <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
@@ -51,7 +51,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         style="width:100%;" 
         itemprop="image"
     >
-    <div class="zoom-icon hidden-xs" data-toggle="modal" data-target="#product-modal">
+    <div class="zoom-icon d-none d-md-block" data-toggle="modal" data-target="#product-modal">
         <i class="ptw-icon icon-search-5_medium"></i>
     </div>
 </div>

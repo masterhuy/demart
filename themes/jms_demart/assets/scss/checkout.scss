@@ -44,7 +44,7 @@
 		>button {
 			line-height: 1;
 			height: 100%;
-			padding: 0px 10px;
+			padding: 0px 0.7692rem;
 		}
 	}
 	#customer-form {
@@ -84,7 +84,7 @@
 	}
 	#checkout-login-form {
 		.forgot-password {
-			margin-bottom: 15px;
+			margin-bottom: 1.154rem;
 		}
 	}
 	#checkout-personal-information-step {
@@ -94,9 +94,9 @@
 	.address-footer {
 		a {
 			i {
-				margin-right: 5px;
+				margin-right: 0.3846rem;
 			}
-			margin-right: 6px;
+			margin-right: 0.4615rem;
 			display: inline-block;
 			&:last-child {
 				margin-right: 0px;
@@ -105,9 +105,9 @@
 	}
 	#delivery-address {
 		.form-footer {
-			margin-bottom: 20px;
+			margin-bottom: 1.538rem;
 			button {
-				margin-right: 6px;
+				margin-right: 0.4615rem;
 			}
 			.js-cancel-address {
 				display: inline-block;
@@ -115,7 +115,7 @@
 		}
 	}
 	#footer {
-		margin-top: 80px;
+		margin-top: 6.154rem;
 	}
 	section#content {
 		#js-checkout-summary {
@@ -137,7 +137,7 @@
 					}
 				}
 				.media {
-					margin-bottom: 15px;
+					margin-bottom: 1.154rem;
 				}
 			}
 		}
@@ -147,7 +147,7 @@
 			li {
 				display: flex;
 				.condition-label {
-					margin-left: 10px;
+					margin-left: 0.7692rem;
 				}
 			}
 		}
@@ -181,16 +181,16 @@
 }
 .custom-checkbox {
 	input[type=checkbox] {
-		margin-right: 3px;
+		margin-right: 0.2308rem;
 		display: inline-block;
-		width: 16px;
-		height: 16px;
+		width: 1.231rem;
+		height: 1.231rem;
 		vertical-align: middle;
 		cursor: pointer;
 		position: relative;
 		box-shadow: inset 0 1px 1px rgba(0,0,0,.09);
 		text-align: center;
-		margin-top: 5px;
+		margin-top: 0.3846rem;
 	}
 	label {
 		text-align: left;
@@ -206,19 +206,19 @@
 			bottom: 0;
 			right: 0;
 			margin: auto;
-			font-size: 10px;
+			font-size: 0.7692rem;
 		}
 	}
 }
 .pasword-form {
 	input {
-		width: calc(100% - 100px);
+		width: calc(100% - 7.692rem);
 	}
 }
 #checkout-addresses-step {
 	.address-item {
 		label {
-			line-height: 30px;
+			line-height: 2.308rem;
 			font-weight: 300;
 		}
 	}
@@ -230,11 +230,11 @@
 .custom-radio {
 	display: inline-block;
 	position: relative;
-	width: 16px;
-	height: 16px;
+	width: 1.231rem;
+	height: 1.231rem;
 	cursor: pointer;
 	border-radius: 50%;
-	margin-right: 3px;
+	margin-right: 0.2308rem;
 	vertical-align: top;
 }
 body#checkout {
@@ -247,26 +247,26 @@ body#checkout {
 		.step-title {
 			cursor: pointer;
 			margin: 0;
-			padding: 15px;
+			padding: 1.154rem;
 			color: #000;
-			font-size: 15px;
+			font-size: 1.154rem;
 		}
 		h2 {
 			font-size: 1.1rem;
 		}
 		.content {
-			margin-top: 10px;
+			margin-top: 0.7692rem;
 			display: none;
 			display: none;
-			padding: 0 15px 15px;
+			padding: 0 1.154rem 1.154rem;
 		}
 		.step-edit {
 			text-transform: lowercase;
 			font-weight: normal;
 			display: none;
 			.edit {
-				font-size: 15px;
-				margin-right: 5px;
+				font-size: 1.154rem;
+				margin-right: 0.3846rem;
 			}
 		}
 		.not-allowed {
@@ -320,30 +320,30 @@ body#checkout {
 	section.checkout-step.-current {
 		.content {
 			.address {
-				font-size: 14px;
+				font-size: 1.077rem;
 				font-weight: 400;
-				padding: 0 20px;
+				padding: 0 1.538rem;
 			}
 			.address-alias.h4 {
-				font-size: 14px;
+				font-size: 1.077rem;
 			}
 			.address-footer {
 				border-bottom: 1px solid #ebebeb;
 				border-top: 1px solid #ebebeb;
-				padding: 10px 0;
+				padding: 0.7692rem 0;
 				text-align: right;
 			}
 			.add-address {
-				margin: 20px 0;
+				margin: 1.538rem 0;
 				i {
-					margin-right: 3px;
+					margin-right: 0.2308rem;
 				}
 			}
 			.form-control-select {
 				-moz-appearance: none;
 				-webkit-appearance: none;
 				background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQVR4Ae3TwREAEBQD0V/6do4SXPZg7EsBhsQ8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=") no-repeat scroll right 0.5rem center / 2.25rem 2.25rem !important;
-				height: 40px;
+				height: 3.077rem;
 				padding-right: 2rem;
 				width: 100%;
 			}
@@ -352,7 +352,7 @@ body#checkout {
 	.content {
 		#modal {
 			.modal-content {
-				padding: 30px;
+				padding: 2.308rem;
 			}
 		}
 	}
@@ -361,11 +361,11 @@ body#checkout {
 	textarea {
 		width: 100%;
 	}
-	margin-bottom: 15px;
+	margin-bottom: 1.154rem;
 }
 .done {
 	display: inline-block;
-	margin-right: 5px;
+	margin-right: 0.3846rem;
 }
 #order-confirmation {
 	.mail-sent-info {
@@ -409,7 +409,7 @@ body#checkout {
 }
 .order-confirmation-table {
 	.order-line {
-		margin-bottom: 15px;
+		margin-bottom: 1.154rem;
 		.image {
 			img {
 				width: 100%;
@@ -455,7 +455,7 @@ body#checkout {
 			font-weight: 700;
 		}
 		.label {
-			font-size: 14px;
+			font-size: 1.077rem;
 		}
 	}
 }

@@ -42,10 +42,10 @@
     top: 50%;
     transform: translate(-50%, -50%); }
   .faceted-overlay .spinner {
-    width: 75px;
-    height: 75px;
+    width: 5.769rem;
+    height: 5.769rem;
     display: inline-block;
-    border-width: 2px;
+    border-width: 0.1538rem;
     border-color: rgba(255, 255, 255, 0.05);
     border-top-color: #fff;
     animation: spin 1s infinite linear;
@@ -58,27 +58,27 @@
 
 
 #search_filters .ui-slider-horizontal .ui-slider-handle {
-  margin-left: -3.5px;
+  margin-left: -0.2692rem;
   cursor: pointer; }
 
 #search_filters .ui-widget-header {
   background: transparent; }
 
 #search_filters .ui-slider .ui-slider-handle {
-  top: -7px;
+  top: -0.5385rem;
   background: #14c2ee;
-  width: 17px;
-  height: 17px;
+  width: 1.308rem;
+  height: 1.308rem;
   border-radius: 50%;
   border: 0;
 }
 #search_filters .ui-slider-horizontal {
-  height: 9px;
-  border-radius: 10px;
-  border: 3px solid #e1e1e1;
+  height: 0.6923rem;
+  border-radius: 0.7692rem;
+  border: 0.2308rem solid #e1e1e1;
   background: #fff;
-  margin-top: 10px;
-  width: calc(100% - 15px);
+  margin-top: 0.7692rem;
+  width: calc(100% - 1.154rem);
 }
 
 #search_filters .facet .facet-label {
@@ -87,7 +87,7 @@
   #search_filters .facet .facet-label .color {
     margin-left: 0; }
   #search_filters .facet .facet-label a {
-    width: calc(100% - 30px);
+    width: calc(100% - 2.308rem);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }

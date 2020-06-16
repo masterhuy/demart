@@ -46,6 +46,7 @@
 	.category-name {
 		font-size: 90%;
 		margin-bottom: 0.3846rem;
+		text-transform: capitalize;
 	}
 	.product-preview {
 		position: relative;
@@ -71,6 +72,7 @@
 	ul {
 		padding: 0px;
 		list-style: none;
+		margin-bottom: 10px;
 		li {
 			line-height: 2.154rem;
 			position: relative;
@@ -86,15 +88,15 @@
 				.lnr {
 					font-size: 0.7692rem;
 				}
-				.lnr-chevron-down {
+				.lnr-chevron-right {
 					display: none;
 				}
 			}
 			.navbar-toggler.collapsed {
-				.lnr-chevron-down {
+				.lnr-chevron-right {
 					display: block;
 				}
-				.lnr-chevron-up {
+				.lnr-chevron-down {
 					display: none;
 				}
 			}
@@ -411,9 +413,7 @@
 						&:checked {
 							~ {
 								span {
-									display: flex;
-									justify-content: center;
-									align-items: center;
+									background-color: transparent !important;
 								}
 								.color {
 									&::after {
@@ -466,7 +466,6 @@
 	}
 }
 #js-product-list-header {
-	margin-bottom: 2.308rem;
 	.category-cover {
 		margin-bottom: 1.154rem;
 	}
@@ -608,7 +607,8 @@
 		float: left;
 		margin-left: 0;
 		padding: 0;
-		margin-bottom: 38px;
+		margin-bottom: 2.923rem;
+		width: 50%;
 	}
 }
 .grid-5 {
@@ -1315,20 +1315,20 @@
 	}
 }
 .variant-links {
-	margin-top: 20px;
-	margin-bottom: 12px;
+	margin-top: 0.3846rem;
+	margin-bottom: 0.3846rem;
 	a {
 		position: relative;
 		display: inline-block !important;
-		width: 14px;
-		height: 14px;
+		width: 1.077rem;
+		height: 1.077rem;
 		border-radius: 50%;
-		margin: 0px 3px 0px 0px;
+		margin: 0px 0.2308rem 0px 0px;
 		z-index: 20;
 		&::after {
 			content: "";
-			width: calc(100% + 6px);
-			height: calc(100% + 6px);
+			width: calc(100% + 0.4615rem);
+			height: calc(100% + 0.4615rem);
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -1343,7 +1343,7 @@
 			z-index: 9;
 		}
 		&:first-child {
-			margin-left: 3px;
+			margin-left: 0.2308rem;
 			&::after {
 				border: 1px solid #bababa;
 			}
@@ -1376,8 +1376,8 @@
 }
 .customs-html-left {
 	display: block;
-	margin-top: 41px;
-	margin-bottom: 44px;
+	margin-top: 3.154rem;
+	margin-bottom: 3.385rem;
 	overflow: hidden;
 	max-width: 310px;
 	&:hover {
@@ -1395,7 +1395,7 @@
 	}
 	.productbox-flex {
 		.product-info {
-			padding-bottom: 5px;
+			padding-bottom: 0.3846rem;
 		}
 	}
 }

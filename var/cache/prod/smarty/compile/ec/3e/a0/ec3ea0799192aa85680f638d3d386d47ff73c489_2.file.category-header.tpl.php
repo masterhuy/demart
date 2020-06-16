@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-22 09:16:27
+/* Smarty version 3.1.33, created on 2020-06-16 10:22:25
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\category-header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec78a5bb5f907_48181275',
+  'unifunc' => 'content_5ee88f512abb37_81095205',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ec3ea0799192aa85680f638d3d386d47ff73c489' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\catalog\\_partials\\category-header.tpl',
-      1 => 1582533527,
+      1 => 1592290588,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec78a5bb5f907_48181275 (Smarty_Internal_Template $_smarty_tpl) {
-if ($_smarty_tpl->tpl_vars['listing']->value['pagination']['items_shown_from'] == 1) {?>
-    <div id="js-product-list-header">
+function content_5ee88f512abb37_81095205 (Smarty_Internal_Template $_smarty_tpl) {
+?><div id="js-product-list-header">
+    <?php if ($_smarty_tpl->tpl_vars['listing']->value['pagination']['items_shown_from'] == 1) {?>
         <div class="block-category">
+            <?php if ($_smarty_tpl->tpl_vars['category']->value['description'] && $_smarty_tpl->tpl_vars['jmsSetting']->value['shop_cat_desc']) {?>
+                <h2 class="h2"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['name'], ENT_QUOTES, 'UTF-8');?>
+</h1>
+            <?php }?>
             <div class="block-category-inner">
                 <?php if ($_smarty_tpl->tpl_vars['category']->value['description'] && $_smarty_tpl->tpl_vars['jmsSetting']->value['shop_cat_desc']) {?>
                     <div id="category-description" class="text-muted"><?php echo $_smarty_tpl->tpl_vars['category']->value['description'];?>
@@ -41,7 +45,7 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['name'], ENT_QUO
                 <?php }?>
             </div>
         </div>
-    </div>
+    <?php }?>
+</div>
 <?php }
-}
 }

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-15 11:19:30
+/* Smarty version 3.1.33, created on 2020-06-16 04:06:57
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmsrecentlybought\views\templates\hook\jrb-popup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee74b32433f76_16923776',
+  'unifunc' => 'content_5ee83751a1c124_12368047',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee74b32433f76_16923776 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee83751a1c124_12368047 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_demart\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 <style type="text/css">

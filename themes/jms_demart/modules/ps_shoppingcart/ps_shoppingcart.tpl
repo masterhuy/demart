@@ -1,4 +1,4 @@
-<div class="btn-group blockcart cart-preview dropdown col-auto{if $jmsSetting.addtocart_type !=''} {$jmsSetting.addtocart_type}{/if}" id="cart_block" data-refresh-url="{$refresh_url}">
+<div class="btn-group blockcart cart-preview dropdown {if $jmsSetting.addtocart_type !=''} {$jmsSetting.addtocart_type}{/if}" id="cart_block" data-refresh-url="{$refresh_url}">
 	<a href="#" class="cart-icon" data-toggle="dropdown" data-display="static" aria-expanded="false">
 		{if $jmsSetting.addtocart_type == 'circle-filled'}
 			{if $cart.products_count > 0}<span class="circle-notify"></span>{/if}
@@ -46,10 +46,10 @@
 			</div>
 			<div class="cart-button">
 				{if $jmsSetting.cart_links && 'checkout'|in_array:$jmsSetting.cart_links}
-					<a href="{url entity=order}" class="btn-default checkout-btn w-100 text-center">{l s='Checkout' d='Shop.Theme.Actions'}</a>
+					<a href="{url entity=order}" class="btn btn-default checkout-btn w-100 text-center">{l s='Checkout' d='Shop.Theme.Actions'}</a>
 				{/if}
 				{if $jmsSetting.cart_links && 'cart'|in_array:$jmsSetting.cart_links}
-					<a class="btn cart-btn" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
+					<a class="btn btn-default cart-btn" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
 						{l s='Cart' d='Shop.Theme.Actions'}
 					</a>
 				{/if}

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-01 05:06:29
+/* Smarty version 3.1.33, created on 2020-06-16 02:58:20
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\checkout\checkout-process.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed47ec5375622_37002680',
+  'unifunc' => 'content_5ee8273c5d35d3_66585991',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed47ec5375622_37002680 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee8273c5d35d3_66585991 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['steps']->value, 'step', false, 'index');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['index']->value => $_smarty_tpl->tpl_vars['step']->value) {

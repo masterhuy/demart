@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-08 03:48:51
+/* Smarty version 3.1.33, created on 2020-06-16 04:08:05
   from 'module:pslanguageselectorpslangu' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5edda71341b7c9_60265998',
+  'unifunc' => 'content_5ee83795613b29_64558317',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edda71341b7c9_60265998 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee83795613b29_64558317 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_demart/themes/jms_demart/modules/ps_languageselector/ps_languageselector-dropdown.tpl --><?php if (count($_smarty_tpl->tpl_vars['languages']->value) > 1) {?>
 	<div class="btn-group languages-info">
 		<a href="#" class="btn-xs" data-toggle="dropdown">

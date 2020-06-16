@@ -4623,11 +4623,7 @@
             })
         };
         (0, r.default)("body").on("click", "#search_filter_toggler", function() {
-            (0, r.default)("#search_filters_wrapper").removeClass("hidden-md-down"), (0, r.default)("#content-wrapper").addClass("hidden-md-down"), (0, r.default)("#footer").addClass("hidden-md-down")
-        }), (0, r.default)("#search_filter_controls .clear").on("click", function() {
-            (0, r.default)("#search_filters_wrapper").addClass("hidden-md-down"), (0, r.default)("#content-wrapper").removeClass("hidden-md-down"), (0, r.default)("#footer").removeClass("hidden-md-down")
-        }), (0, r.default)("#search_filter_controls .ok").on("click", function() {
-            (0, r.default)("#search_filters_wrapper").addClass("hidden-md-down"), (0, r.default)("#content-wrapper").removeClass("hidden-md-down"), (0, r.default)("#footer").removeClass("hidden-md-down")
+            
         }), (0, r.default)("body").on("change", "#search_filters input[data-search-url]", function(e) {
             l.default.emit("updateFacets", e.target.dataset.searchUrl)
         }), (0, r.default)("body").on("click", ".js-search-filters-clear-all", function(e) {

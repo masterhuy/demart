@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-18 08:48:25
+/* Smarty version 3.1.33, created on 2020-06-16 04:08:39
   from 'D:\xamppp\htdocs\jms_demart\modules\psaddonsconnect\views\templates\hook\dashboard_zone_one.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec23dc9881262_34361956',
+  'unifunc' => 'content_5ee837b7328621_13902612',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec23dc9881262_34361956 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee837b7328621_13902612 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section id="psaddonsconnect" class="panel widget">
 	<div class="panel-heading">

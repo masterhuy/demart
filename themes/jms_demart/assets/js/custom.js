@@ -830,6 +830,10 @@ $(document).ready(function(){
         $('.panel-default .collapse').not(e.target).collapse('hide');
     });
 
+    $('.cat-item').on('show.bs.collapse', function (e) {
+        $('.cat-item .collapse').not(e.target).collapse('hide');
+    });
+
     $('.product-comments-additional-info .post-product-comment').click(function(){
         $('#review').collapse('show');
     });
@@ -840,6 +844,13 @@ $(document).ready(function(){
         y.css("max-height",x + 2);
     }
     
+    $("#search_filter_toggler").click(function(){
+        $("body").addClass("open-filter");
+    });
+
+    $("#search_filter_controls button").click(function(){
+        $("body").removeClass("open-filter");
+    });
 
     $(".tabs-navigation-mobile ul li a").click(function() {
         $("#dlDropDown").dropdown("toggle");
