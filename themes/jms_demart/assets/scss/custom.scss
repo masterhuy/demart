@@ -450,6 +450,9 @@ header .row {
 #header-top{
 	padding: 0;
 	position: relative;
+	&.sticky .header-right .dropdown-menu{
+		top: calc(100% + 16px);
+	}
 	.container{
 		position: relative;
 	}
@@ -662,7 +665,7 @@ header .row {
 #hor-menu{
 	.dropdown-menu{
 		padding: 20px 0;
-		min-width: 140px;
+		min-width: 150px;
 		box-shadow: 0 0 10px rgba(0,0,0,0.25);
 		
 	}
@@ -933,6 +936,7 @@ header .row {
 					font-size: 14px;
 					padding: 0 18px;
 					position: relative;
+					letter-spacing: 0.2px;
 					&.collapsed img{
 						transform: translateY(-50%);
 					}
@@ -1033,7 +1037,7 @@ header .row {
 				font-size: 16px;
 				color: #000;
 				font-weight: 800;
-				letter-spacing: 0;
+				letter-spacing: -0.2px;
 			}
 		}
 	}
@@ -1165,6 +1169,9 @@ header .row {
 			select{
 				color: #fff;
 				background: url("../img/icons/advsearch-down-white.png") no-repeat 166px;
+				option{
+					background: #999;
+				}
 			}
 			#searchbox{
 				border: 2px solid #fff;
@@ -1581,6 +1588,7 @@ header .row {
 	}
 	#ajax_advsearch{
 		border: 0;
+		outline: none;
 		border-left: 1px solid #e1e1e1;
 		height: 40px;
 		width: 100%;
@@ -1788,7 +1796,7 @@ header .row {
 .jms-slider-wrapper .slider{
 	.btn{
 		font-size: 1.231rem;
-		padding: 0.34375rem 2.154rem;
+		padding: 0.5rem 2.154rem;
 	}
 }
 .h1-slider{
@@ -2443,6 +2451,7 @@ header .row {
 			display: none;
 		}
 		.count-2{
+			display: block;
 			margin-bottom: 0;
 			font-size: 1.077rem;
 			font-family: $secondary-font;
@@ -4267,6 +4276,15 @@ header .row {
 		justify-content: center;
 		align-items: center;
 		border: 1px solid #ebebeb;
+		img{
+			transition: .4s all;
+		}
+		&.change-color{
+			img{
+				filter: grayscale(100%);
+				opacity: 0.5;
+			}
+		}
 	}
 }
 
@@ -4439,8 +4457,12 @@ header .row {
 				text-align: center;
 				position: relative;
 				overflow: hidden;
-				&:hover a img{
-					transform: scale(1.1);
+				transition: .4s all;
+				&:hover{
+					border-color: $color6;
+					a img{
+						transform: scale(1.1);
+					}
 				}
 				p{
 					margin-bottom: 0;
@@ -4568,6 +4590,7 @@ footer .row{
 			.address{
 				.info-address{
 					display: flex;
+					color: #444;
 					label{
 						color: #444;
 						margin-bottom: 0;
@@ -4997,46 +5020,45 @@ footer .row{
 
 /****** popup advertising ******/
 .jms-popup{
-	min-width: 899px;
 	.main-content{
-		padding: 53px 30px;
+		padding: 4.077rem 2.308rem;
 	}
 	#social-links{
-		margin-bottom: 14px;
+		margin-bottom: 1.077rem;
 		li{
 			margin: 0;
-			margin: 0 9px !important;
+			margin: 0 0.6923rem !important;
 			line-height: 1.2;
 			a{
-				font-size: 22px;
+				font-size: 1.692rem;
 			}
 		}
 	}
 	.text-top {
 		background: $color1;
 		color: #fff;
-		font-size: 16px;
+		font-size: 1.231rem;
 		font-family: $secondary-font;
 		width: 100%;
 		text-align: center;
-		padding: 7px 20px;
-		letter-spacing: 0;
+		padding: 0.5385rem 1.538rem;
+		letter-spacing: 0.1px;
 	}
 	div.logo{
-		margin-bottom: 17px;
+		margin-bottom: 1.308rem;
 	}
 	.text-1{
 		font-family: $secondary-font;
-		font-size: 30px;
+		font-size: 2.308rem;
 		font-weight: 600;
 		color: #f63622;
 		line-height: 1.2;
-		letter-spacing: -0.5px;
-		margin-bottom: 6px;
+		letter-spacing: -0.3px;
+		margin-bottom: 0.4615rem;
 	}
 	.text-2{
 		font-family: $secondary-font;
-		font-size: 16px;
+		font-size: 1.231rem;
 		font-weight: 400;
 		color: #000;
 		line-height: 1.2;
@@ -5047,10 +5069,10 @@ footer .row{
 	}
 
 	.newsletter-input-group{
-		width: 595px;
+		width: 100%;
 		margin: auto;
 		input{
-			border: 2px solid $color1;
+			border: 0.1538rem solid $color1;
 			color: #666;
 			margin-bottom: 0;
 			&::placeholder{
@@ -5063,12 +5085,11 @@ footer .row{
 				position: absolute;
 				right: 0;
 				border-radius: 0;
-				height: 46px;
-				font-size: 16px;
-				padding-right: 21px;
-				padding-left: 21px;
+				height: 3.538rem;
+				font-size: 1.231rem;
+				padding-right: 1.615rem;
+				padding-left: 1.615rem;
 				letter-spacing: 0;
-				margin-top: -1px;
 			}
 			&.btn-icon{
 				display: none;
@@ -5108,6 +5129,12 @@ footer .row{
 
 /***** home color *******/
 .home_1{
+	.jms-popup .newsletter-input-group input{
+		border-color: $color1;
+	}
+	.jms-popup .text-top{
+		background-color: $color1;
+	}
 	.btn, .btn-default,
 	.blog-carousel .post-created{
 		background-color: $color1;
@@ -5148,6 +5175,12 @@ footer .row{
 	}
 }
 .home_2{
+	.jms-popup .newsletter-input-group input{
+		border-color: $color2;
+	}
+	.jms-popup .text-top{
+		background-color: $color2;
+	}
 	.btn, .btn-default,
 	.blog-carousel .post-created{
 		background-color: $color2;
@@ -5191,6 +5224,12 @@ footer .row{
 	}
 }
 .home_3{
+	.jms-popup .newsletter-input-group input{
+		border-color: $color3;
+	}
+	.jms-popup .text-top{
+		background-color: $color3;
+	}
 	.btn, .btn-default,
 	.blog-carousel .post-created{
 		background-color: $color3;
@@ -5234,6 +5273,12 @@ footer .row{
 	}
 }
 .home_4{
+	.jms-popup .newsletter-input-group input{
+		border-color: $color4;
+	}
+	.jms-popup .text-top{
+		background-color: $color4;
+	}
 	.btn, .btn-default,
 	.blog-carousel .post-created{
 		background-color: $color4;
@@ -5277,6 +5322,13 @@ footer .row{
 	}
 }
 .home_5{
+	.jms-popup .newsletter-input-group input{
+		border-color: $color5;
+	}
+	.jms-popup .text-top{
+		background-color: $color5;
+		color: #000;
+	}
 	.btn, .btn-default,
 	.blog-carousel .post-created{
 		background-color: $color5;
@@ -5320,6 +5372,13 @@ footer .row{
 	}
 }
 .home_6{
+	.jms-popup .newsletter-input-group input{
+		border-color: $color6;
+	}
+	.jms-popup .text-top{
+		background-color: $color6;
+		color: #000;
+	}
 	.btn, .btn-default,
 	.blog-carousel .post-created{
 		background-color: $color6;
@@ -6063,12 +6122,6 @@ footer .row{
 	.product-detail .pb-right-column {
 		margin-top: 0;
 	}
-	#more_info_block.tab-left .nav-tabs .nav-item {
-		width: auto;
-		margin-right: 6px;
-		margin-bottom: 0;
-		text-align: center;
-	}
 	#products-top .pagination{
 		margin-right: 10px;
 		margin-bottom: 0;
@@ -6092,6 +6145,9 @@ footer .row{
 @media (min-width: 768px){
 	html{
 		font-size: 11px;
+	}
+	.jms-popup .newsletter-input-group{
+		width: 595px;
 	}
 	#search_filter_controls{
 		display: none;

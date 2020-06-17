@@ -831,6 +831,10 @@ section.featured-products {
   margin-top: 4.462rem;
   margin-bottom: 1.5rem;
   width: 100%; }
+  #more_info_block li {
+    float: none;
+    display: inline-block;
+    margin: 0 3px; }
   #more_info_block .same-category {
     display: none; }
   #more_info_block .panel-heading a {
@@ -885,14 +889,20 @@ section.featured-products {
 #more_info_block.tab-center .nav.nav-tabs {
   text-align: center; }
 
+#more_info_block.tab-right .nav-item {
+  margin-right: 0;
+  margin-left: 6px;
+  margin-bottom: 0.7692rem; }
+
 #more_info_block.tab-right .nav.nav-tabs {
   text-align: right; }
 
 #more_info_block.tab-left .nav-tabs .nav-item {
-  width: 100%;
-  margin-right: 0;
+  margin-left: 0;
+  margin-right: 6px;
   margin-bottom: 0.7692rem;
-  text-align: center; }
+  text-align: center;
+  display: inline-block; }
 
 .product-information {
   border-top: 1px solid #ebebeb;

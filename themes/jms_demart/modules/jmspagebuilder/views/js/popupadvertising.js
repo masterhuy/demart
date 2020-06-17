@@ -15,26 +15,31 @@ function resize_box() {
 	var height_default  = $('#height-default').val();	
 	if(window_w > width_default) {
 		$('.jms-popup').css('width', width_default);
-		$('.jms-popup').css('left',(window_w - width_default)/2);		
+		$('.jms-popup').css('left',(window_w - width_default)/2);
+		$('.jms-popup').removeClass('hidden');
 	} else {
 		$('.jms-popup').css('width', window_w - 40);
-		$('.jms-popup').css('left',20);		
+		$('.jms-popup').css('left',20);	
+		$('.jms-popup').removeClass('hidden');
 	}
 	if(window_h > height_default) {
 		$('.jms-popup').css('height', height_default);		
 		$('.jms-popup').css('top',(window_h - height_default)/2);
+		$('.jms-popup').removeClass('hidden');
 	} else {
 		$('.jms-popup').css('height', window_h - 40);		
 		$('.jms-popup').css('top',20);
-	}	
-	
+		$('.jms-popup').removeClass('hidden');
+	}
 }
+
 function setCookie(cname, cvalue, exdays) {
 	var d = new Date();
 	d.setTime(d.getTime() + (exdays*24*60*60*1000));
 	var expires = "expires="+d.toUTCString();
 	document.cookie = cname + "=" + cvalue + "; " + expires;
 };
+
 function getCookie(cname) {
 	var name = cname + "=";
 	var ca = document.cookie.split(';');
@@ -47,7 +52,7 @@ function getCookie(cname) {
 	}
 	return "";
 };
-	
+
 jQuery(function ($) {
     "use strict";
     $(window).resize(function () {    		

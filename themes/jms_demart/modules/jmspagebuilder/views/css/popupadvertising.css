@@ -12,9 +12,6 @@
 .jms-popup {
   text-align: center;
   position: absolute;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%);
   background: #fff;
 }
 .jms-popup .desc {

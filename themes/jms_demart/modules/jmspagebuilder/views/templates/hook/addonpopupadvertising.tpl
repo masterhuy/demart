@@ -24,7 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="jms-popup-overlay" style="display:none;">
-	<div class="jms-popup">
+	<div class="jms-popup animated zoomIn hidden">
 		<div class="text-top">{l s="Hello! Welcome to Demart - Wish you happy shopping " d='Shop.Theme.Global'}</div>
 		<div class="main-content">
 			<div class="logo">

@@ -937,6 +937,11 @@ section.featured-products {
     margin-top: 4.462rem;
     margin-bottom: 1.5rem;
     width: 100%;
+    li{
+        float: none;
+        display: inline-block;
+        margin: 0 3px; 
+    }
     .same-category {
         display: none;
     }
@@ -1013,6 +1018,11 @@ section.featured-products {
     }
 }
 #more_info_block.tab-right {
+    .nav-item{
+        margin-right: 0;
+        margin-left: 6px;
+        margin-bottom: 0.7692rem;
+    }
     .nav.nav-tabs {
         text-align: right;
     }
@@ -1020,10 +1030,11 @@ section.featured-products {
 #more_info_block.tab-left {
     .nav-tabs {
         .nav-item {
-            width: 100%;
-            margin-right: 0;
+            margin-left: 0;
+            margin-right: 6px;
             margin-bottom: 0.7692rem;
             text-align: center;
+            display: inline-block;
         }
     }
 }

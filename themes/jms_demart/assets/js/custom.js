@@ -815,6 +815,14 @@ $(document).ready(function(){
             $(this).addClass("fa-minus");
         }  
     });
+    
+    $(".block-brand .col").hover(function(){
+        $(".block-brand .col").addClass("change-color");
+        $(this).removeClass("change-color");
+        }, function(){
+            $(".block-brand .col").removeClass("change-color");
+    });
+
     $(".owl-theme .owl-item").hover(function(){
         $(this).css("z-index", "9");
         }, function(){

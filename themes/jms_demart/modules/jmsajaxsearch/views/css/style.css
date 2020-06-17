@@ -1,6 +1,9 @@
 #search-form{
   margin: 0;
 }
+#search-form .jms-search-input{
+  border: 0;
+}
 #search-form .search-result-area .row{
   padding: 0;
 }
@@ -10,20 +13,20 @@
   display: flex;
   align-items: center;
 }
-#search-form .search-result-area .search-product-image {
+.search-result-area .search-product-image {
   margin-right: 15px;
   border: 1px solid #ebebeb;
 }
-#search-form .search-result-area .product-link{
+.search-result-area .product-link{
   display: block;
   margin-bottom: 5px;
 }
-#search-form .search-result-area .price.new {
+.search-result-area .price.new {
   font-size: 15px;
   font-weight: 700;
   color: #000;
 }
-#search-form .search-box input {
+.search-box input {
   font-size: 14px;
   padding: 13px 23px;
   padding-left: 8px;
@@ -36,6 +39,7 @@
 #jms_ajax_search .search-box input{
   min-width: 400px;
   border: 1px solid #ebebeb;
+  padding: 0 15px;
 }
 .search-form .button-search {
     border: 0;
@@ -97,13 +101,27 @@
 .search-overlay.open .search-box {
   transform: translateZ(0);
 }
+#search-form-full.fullwidth .jms-search-input{
+  border: 1px solid #ebebeb;
+  padding: 0 15px;
+}
+#search-form-full.fullwidth 
 #search-form-full .search-box{
   width: calc(100% - 28px);
   margin: 14px auto;
   padding: 50px 14px;
 }
+#search-form-full .search-box{
+  flex-direction: column;
+}
+#search-form-full .search-result-area .search-product-image{
+  margin-right: 0;
+}
 #search-form-full .search-box form {
   width:100%;
+}
+#search-form-full .search-result-area{
+  width: 100%;
 }
 #search-form-full .search-box .search-box-close {
     cursor: pointer;
