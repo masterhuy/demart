@@ -5555,6 +5555,64 @@ footer .row{
 	}
 }
 
+/***** addon alertbox *****/
+.addon-alertbox{
+	#alert-box{
+		position: relative;
+	}
+	.close{
+		position: absolute;
+		top: 14px;
+		right: 10px;
+	}
+	p{
+		margin-bottom: 0;
+	}
+}
+
+/***** addon video *****/
+.addon-video{
+	.video-image{
+		display: inline-block;
+		i{
+			font-size: 30px;
+		}
+	}
+}
+
+/***** countdown box *****/
+.countdown-box{
+	.countdown-row{
+		display: flex;
+		margin-bottom: 1.154rem;
+	}
+	.countdown-section {
+		text-align: center;
+		background: $color1;
+		color: #fff;
+		padding: 0.07692rem 0.3846rem;
+		border-radius: 3px;
+		display: inline-block;
+		margin: 0 0.2308rem;
+		.countdown-amount {
+			font-size: 1.308rem;
+			font-weight: 800;
+			margin-right: 0.2308rem;
+		}
+	}
+}
+
+/***** testimonial *****/
+.testimonial-box{
+	.testimonial-img{
+		width: 86px;
+		margin: 0 auto 10px;
+		img{
+			border-radius: 50%;
+		}
+	}
+}
+
 /***** other page ******/
 #left-column + #content-wrapper,
 #content-wrapper + #right-column{
@@ -5938,9 +5996,12 @@ footer .row{
 		align-items: center;
 		justify-content: center;
 	}
-	#jms_ajax_search .search-box input{
-		min-width: auto;
-		width: 100%;
+	#jms_ajax_search{
+		padding: 0 10px;
+		.search-box input{
+			min-width: auto;
+			width: 100%;
+		}
 	}
 	.search-form .button-search{
 		display: flex;

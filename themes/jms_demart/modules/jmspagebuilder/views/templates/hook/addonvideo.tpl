@@ -34,9 +34,8 @@
     {/if}
     <div class="jms-video">
         <div class="video-image" data-toggle="modal" data-target="#video">
-            <img class="w-100" src="{$urls.theme_assets}img/video-bg.jpg" />
+            <i class="lnr lnr-film-play"></i>
         </div>
-
         <div class="modal" id="video">
             <div class="modal-dialog">
                 <div class="modal-content">

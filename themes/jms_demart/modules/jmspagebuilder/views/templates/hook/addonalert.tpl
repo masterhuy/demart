@@ -29,7 +29,9 @@
 			{$alert_message nofilter}
 		</div>
 		{if $show_close_btn}
-			<a href="#" class="close" data-toggle="collapse" data-target="#alert-box"></a>
+			<a href="#" class="close" data-toggle="collapse" data-target="#alert-box">
+				<i class="lnr lnr-cross"></i>
+			</a>
 		{/if}
 	</div>
 </div>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-16 04:06:54
+/* Smarty version 3.1.33, created on 2020-06-18 02:49:10
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonpopupadvertising.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee8374e837054_48311524',
+  'unifunc' => 'content_5eeac816c08c57_31762770',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '065966ca50391aafa8135d1f117a759928674308' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addonpopupadvertising.tpl',
-      1 => 1590726390,
+      1 => 1592380748,
       2 => 'file',
     ),
   ),
@@ -22,9 +22,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/socials.tpl' => 1,
   ),
 ),false)) {
-function content_5ee8374e837054_48311524 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5eeac816c08c57_31762770 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-popup-overlay" style="display:none;">
-	<div class="jms-popup">
+	<div class="jms-popup animated zoomIn hidden">
 		<div class="text-top"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>"Hello! Welcome to Demart - Wish you happy shopping ",'d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </div>
 		<div class="main-content">

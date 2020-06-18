@@ -2118,11 +2118,11 @@
         e.stopPropagation()
     }), jQuery(document).ready(function() {
         $("#hor-menu .jms-megamenu").jmsMegaMenu({
-            event: "hover",
+            event: "click",
             duration: 100
         }),
         $("#ver-menu .jms-megamenu").jmsMegaMenu({
-            event: "hover",
+            event: "click",
             duration: 100
         }), n()
     }), jQuery(window).resize(function() {
