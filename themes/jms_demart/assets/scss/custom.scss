@@ -131,6 +131,9 @@ button:disabled, button[disabled]{
 	font-size: 1.846rem;
 	letter-spacing: -0.3px;
 }
+.tabs-navigation-mobile{
+	position: relative;
+}
 .addon-tab{
 	justify-content: space-between;
 	margin-bottom: 1.154rem;
@@ -159,7 +162,7 @@ button:disabled, button[disabled]{
 	height: 2.667rem;
 	font-size: 1.667rem;
 	position: fixed;
-	right: -40px;
+	right: -3.077rem;
 	background: #333;
 	color: #fff;
 	z-index: 9999;
@@ -230,7 +233,7 @@ button:disabled, button[disabled]{
 	color: #555;
 	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 	ul{
-		line-height: 28px;
+		line-height: 2.154rem;
 	}
 }
 .work-sans{
@@ -314,7 +317,7 @@ button:disabled, button[disabled]{
 }
 .owl-theme{
 	.owl-stage-outer{
-		padding: 20px 20px 70px;
+		padding: 20px 20px 85px;
 		margin: 0 -20px;
 	}
 	.owl-item{
@@ -522,9 +525,6 @@ header .row {
 			color: #000;
 			letter-spacing: -0.3px;
 		}
-		.cart-button .btn{
-			margin: 5px 0;
-		}
 		.label{
 			padding: 0;
 		}
@@ -546,13 +546,13 @@ header .row {
 			font-weight: 800;
 			color: #000;
 		}
-		.checkout-btn, .cart-btn{
-			
-		}
 	}
 	._desktop_user_info .user-info-content a{
 		position: relative;
 	}
+}
+.cart-button .btn{
+	margin: 0.3846rem 0;
 }
 #header-bottom{
 	.container{
@@ -844,7 +844,6 @@ header .row {
 }
 .header-1{
 	background: #fff;
-
 	#header-topbar{
 		background: #efefef;
 		.header-right{
@@ -905,6 +904,9 @@ header .row {
 			margin-left: 10px;
 			width: 100%;
 			max-width: 100%;
+			#search-form .jms-search-input{
+				color: #fff;
+			}
 			.search-box{
 				.lnr-magnifier{
 					color: #fff;
@@ -1989,11 +1991,11 @@ header .row {
 		.banner-content{
 			text-align: center;
 			position: absolute;
-			bottom: 20px;
-			left: 20px;
+			bottom: 1.538rem;
+			left: 1.538rem;
 			background: rgba(255,255,255,0.95);
-			width: calc(100% - 40px);
-			padding: 3px 30px;
+			width: calc(100% - 3.077rem);
+			padding: 0.2308rem 2.308rem;
 			transition: all .4s;
 			p{
 				margin-bottom: 0;
@@ -2019,12 +2021,12 @@ header .row {
 		opacity: 0;
 		visibility: hidden;
 		position: absolute;
-		top: 20px;
-		left: 20px;
+		top: 1.538rem;
+		left: 1.538rem;
 		background: rgba(255,255,255,0.95);
-		width: calc(100% - 40px);
-		height: calc(100% - 40px);
-		padding: 30px;
+		width: calc(100% - 3.077rem);
+		height: calc(100% - 3.077rem);
+		padding: 2.308rem;
 		text-align: center;
 		transition: all .4s;
 		.parent-category{
@@ -2059,7 +2061,7 @@ header .row {
 				left: 50%;
 				transform: translateX(-50%);
 				white-space: nowrap;
-				padding: 5.5px 24px;
+				padding: 0.423rem 1.846rem;
 			}
 		}
 	}
@@ -2758,6 +2760,7 @@ header .row {
 	.product-list-reviews{
 		justify-content: center;
 		left: 0;
+		right: 0;
 	}
 	.js-product-miniature .product-info{
 		text-align: center;
@@ -4868,7 +4871,7 @@ footer .row{
 		position: absolute;
 		left: 0;
 		width: 100%;
-		box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0px 1.538rem rgba(0, 0, 0, 0.2);
 		z-index: 1;
 		&::before{
 			content: "";
@@ -6153,6 +6156,9 @@ footer .row{
 	}
 }
 @media (min-width: 576px){
+	.owl-theme .owl-stage-outer{
+		padding: 20px 20px 70px;
+	}
 	.h5-banner .layout-column{
 		margin-bottom: 0;
 	}
@@ -6343,6 +6349,11 @@ footer .row{
 	}
 	.quickview-modal .product-name {
 		margin-top: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.h1-our-category .category-box .child-categories{
+		max-height: 85px;
 	}
 }
 @media (min-width: 992px){

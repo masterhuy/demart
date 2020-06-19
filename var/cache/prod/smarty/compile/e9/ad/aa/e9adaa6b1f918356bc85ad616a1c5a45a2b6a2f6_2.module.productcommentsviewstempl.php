@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-15 05:28:48
+/* Smarty version 3.1.33, created on 2020-06-19 04:59:23
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee6f9005ae649_38395738',
+  'unifunc' => 'content_5eec381b629a23_31192423',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee6f9005ae649_38395738 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5eec381b629a23_31192423 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['nb_comments']->value != 0 || $_smarty_tpl->tpl_vars['post_allowed']->value) {?>
     <div class="product-comments-additional-info">
         <?php if ($_smarty_tpl->tpl_vars['nb_comments']->value == 0) {?>

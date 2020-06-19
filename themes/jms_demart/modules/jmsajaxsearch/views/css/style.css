@@ -4,6 +4,7 @@
 #search-form .jms-search-input{
   border: 0;
   text-transform: initial;
+  background: transparent;
 }
 #search-form .search-result-area .row{
   padding: 0;

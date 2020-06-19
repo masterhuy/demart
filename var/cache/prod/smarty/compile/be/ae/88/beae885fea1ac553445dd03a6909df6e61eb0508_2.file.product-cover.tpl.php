@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-16 07:44:34
+/* Smarty version 3.1.33, created on 2020-06-19 03:50:25
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\product-cover.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee86a527f0909_06945262',
+  'unifunc' => 'content_5eec27f1252693_75721554',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee86a527f0909_06945262 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5eec27f1252693_75721554 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="product-cover">
     <?php if (count($_smarty_tpl->tpl_vars['product']->value['flags']) > 0) {?>
         <ul class="product-flags">

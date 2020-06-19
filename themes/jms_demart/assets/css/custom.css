@@ -131,6 +131,9 @@ button:disabled, button[disabled] {
   font-size: 1.846rem;
   letter-spacing: -0.3px; }
 
+.tabs-navigation-mobile {
+  position: relative; }
+
 .addon-tab {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -166,7 +169,7 @@ button:disabled, button[disabled] {
   height: 2.667rem;
   font-size: 1.667rem;
   position: fixed;
-  right: -40px;
+  right: -3.077rem;
   background: #333;
   color: #fff;
   z-index: 9999; }
@@ -235,7 +238,7 @@ button:disabled, button[disabled] {
   -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
   .dropdown-menu ul {
-    line-height: 28px; }
+    line-height: 2.154rem; }
 
 .work-sans {
   font-family: "Work Sans", sans-serif; }
@@ -323,7 +326,7 @@ button:disabled, button[disabled] {
     right: 0; }
 
 .owl-theme .owl-stage-outer {
-  padding: 20px 20px 70px;
+  padding: 20px 20px 85px;
   margin: 0 -20px; }
 
 .owl-theme .owl-item {
@@ -490,8 +493,6 @@ header .row {
       font-weight: 700;
       color: #000;
       letter-spacing: -0.3px; }
-    #header-top .dropdown-menu.shoppingcart-box .cart-button .btn {
-      margin: 5px 0; }
     #header-top .dropdown-menu.shoppingcart-box .label {
       padding: 0; }
     #header-top .dropdown-menu.shoppingcart-box .product-link {
@@ -508,6 +509,9 @@ header .row {
       color: #000; }
   #header-top ._desktop_user_info .user-info-content a {
     position: relative; }
+
+.cart-button .btn {
+  margin: 0.3846rem 0; }
 
 #header-bottom .container {
   padding: 0 10px;
@@ -814,6 +818,8 @@ header .row {
       margin-left: 10px;
       width: 100%;
       max-width: 100%; }
+      .header-1 #header-bottom #search-form #search-form .jms-search-input {
+        color: #fff; }
       .header-1 #header-bottom #search-form .search-box .lnr-magnifier {
         color: #fff; }
       .header-1 #header-bottom #search-form .search-box .jms-search-input::-webkit-input-placeholder {
@@ -1684,11 +1690,11 @@ header .row {
 .h1-our-category .jms-banner .banner-content {
   text-align: center;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 1.538rem;
+  left: 1.538rem;
   background: rgba(255, 255, 255, 0.95);
-  width: calc(100% - 40px);
-  padding: 3px 30px;
+  width: calc(100% - 3.077rem);
+  padding: 0.2308rem 2.308rem;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s; }
@@ -1712,12 +1718,12 @@ header .row {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 1.538rem;
+  left: 1.538rem;
   background: rgba(255, 255, 255, 0.95);
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-  padding: 30px;
+  width: calc(100% - 3.077rem);
+  height: calc(100% - 3.077rem);
+  padding: 2.308rem;
   text-align: center;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -1748,7 +1754,7 @@ header .row {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     white-space: nowrap;
-    padding: 5.5px 24px; }
+    padding: 0.423rem 1.846rem; }
 
 .h1-lastest-product .addon-tab {
   margin-bottom: 14px; }
@@ -2328,7 +2334,8 @@ header .row {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    left: 0; }
+    left: 0;
+    right: 0; }
   .jms-hotdeal .js-product-miniature .product-info {
     text-align: center;
     padding-left: 0.2308rem;
@@ -4157,8 +4164,8 @@ footer .row {
     position: absolute;
     left: 0;
     width: 100%;
-    -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0px 1.538rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 1.538rem rgba(0, 0, 0, 0.2);
     z-index: 1; }
     .product-miniature ul.product-buttons::before {
       content: "";
@@ -5265,6 +5272,8 @@ footer .row {
     width: calc(100% - 75px); } }
 
 @media (min-width: 576px) {
+  .owl-theme .owl-stage-outer {
+    padding: 20px 20px 70px; }
   .h5-banner .layout-column {
     margin-bottom: 0; }
   .h4-categorytab .layout-column.banner {
@@ -5394,6 +5403,10 @@ footer .row {
     font-size: 20px; }
   .quickview-modal .product-name {
     margin-top: 0; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .h1-our-category .category-box .child-categories {
+    max-height: 85px; } }
 
 @media (min-width: 992px) {
   html {

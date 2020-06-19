@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-15 11:19:30
+/* Smarty version 3.1.33, created on 2020-06-19 04:59:22
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\logo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee74b321af663_46821401',
+  'unifunc' => 'content_5eec381ab07b98_14340267',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee74b321af663_46821401 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5eec381ab07b98_14340267 (Smarty_Internal_Template $_smarty_tpl) {
 ?><a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
 ">
     <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['logo_source'] == 'default') {?>
