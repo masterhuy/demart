@@ -38,7 +38,7 @@
             <span class="value">{$value}</span>
         </div>
     {/foreach}
-    <span class="pull-right">
+    <span class="pull-left">
       <span class="price">{$product.price}</span>
       <span class="product-quantity text-small">x {$product.quantity}</span>
     </span>

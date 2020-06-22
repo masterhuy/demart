@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-22 04:55:14
+/* Smarty version 3.1.33, created on 2020-06-22 07:43:29
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\checkout\order-confirmation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec74d22e7e9e2_32726037',
+  'unifunc' => 'content_5ef053111cf022_54980026',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:checkout/_partials/order-confirmation-table.tpl' => 1,
   ),
 ),false)) {
-function content_5ec74d22e7e9e2_32726037 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef053111cf022_54980026 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
@@ -31,13 +31,13 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1469465265ec74d22e578e0_15317060', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6352362525ef0531118c997_88721390', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'hook_order_confirmation'} */
-class Block_3793468755ec74d22e578e3_79253842 extends Smarty_Internal_Block
+class Block_18775699455ef0531119c3a9_07513565 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -49,7 +49,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'hook_order_confirmation'} */
 /* {block 'hook_payment_return'} */
-class Block_15207037425ec74d22e578e1_42776990 extends Smarty_Internal_Block
+class Block_19001155045ef053111a40a3_15654490 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -69,7 +69,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'hook_payment_return'} */
 /* {block 'hook_order_confirmation_1'} */
-class Block_4013235305ec74d22e578e1_03279994 extends Smarty_Internal_Block
+class Block_8814320805ef053111a7f22_36786530 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -81,7 +81,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'hook_order_confirmation_1'} */
 /* {block 'order_details'} */
-class Block_16201103755ec74d22e578e2_17149475 extends Smarty_Internal_Block
+class Block_7562434705ef053111abda2_68340375 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -109,7 +109,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'order_details'} */
 /* {block 'order_confirmation_table'} */
-class Block_9923019765ec74d22e578e5_28752088 extends Smarty_Internal_Block
+class Block_11935986345ef053111bf629_21481875 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -121,7 +121,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'order_confirmation_table'} */
 /* {block 'customer_registration_form'} */
-class Block_1304591415ec74d22e7e9e4_26451686 extends Smarty_Internal_Block
+class Block_1058887705ef053111c34a4_77300075 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -141,7 +141,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'customer_registration_form'} */
 /* {block 'hook_order_confirmation_2'} */
-class Block_21218835815ec74d22e7e9e8_08138633 extends Smarty_Internal_Block
+class Block_15106565615ef053111cb1a2_80442125 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -155,40 +155,40 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'hook_order_confirmation_2'} */
 /* {block 'content'} */
-class Block_1469465265ec74d22e578e0_15317060 extends Smarty_Internal_Block
+class Block_6352362525ef0531118c997_88721390 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1469465265ec74d22e578e0_15317060',
+    0 => 'Block_6352362525ef0531118c997_88721390',
   ),
   'hook_order_confirmation' => 
   array (
-    0 => 'Block_3793468755ec74d22e578e3_79253842',
+    0 => 'Block_18775699455ef0531119c3a9_07513565',
   ),
   'hook_payment_return' => 
   array (
-    0 => 'Block_15207037425ec74d22e578e1_42776990',
+    0 => 'Block_19001155045ef053111a40a3_15654490',
   ),
   'hook_order_confirmation_1' => 
   array (
-    0 => 'Block_4013235305ec74d22e578e1_03279994',
+    0 => 'Block_8814320805ef053111a7f22_36786530',
   ),
   'order_details' => 
   array (
-    0 => 'Block_16201103755ec74d22e578e2_17149475',
+    0 => 'Block_7562434705ef053111abda2_68340375',
   ),
   'order_confirmation_table' => 
   array (
-    0 => 'Block_9923019765ec74d22e578e5_28752088',
+    0 => 'Block_11935986345ef053111bf629_21481875',
   ),
   'customer_registration_form' => 
   array (
-    0 => 'Block_1304591415ec74d22e7e9e4_26451686',
+    0 => 'Block_1058887705ef053111c34a4_77300075',
   ),
   'hook_order_confirmation_2' => 
   array (
-    0 => 'Block_21218835815ec74d22e7e9e8_08138633',
+    0 => 'Block_15106565615ef053111cb1a2_80442125',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -213,17 +213,17 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
           </div>
 
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3793468755ec74d22e578e3_79253842', 'hook_order_confirmation', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18775699455ef0531119c3a9_07513565', 'hook_order_confirmation', $this->tplIndex);
 ?>
 
 
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15207037425ec74d22e578e1_42776990', 'hook_payment_return', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19001155045ef053111a40a3_15654490', 'hook_payment_return', $this->tplIndex);
 ?>
 
 
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4013235305ec74d22e578e1_03279994', 'hook_order_confirmation_1', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8814320805ef053111a7f22_36786530', 'hook_order_confirmation_1', $this->tplIndex);
 ?>
 
 
@@ -232,12 +232,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4013235305ec74d22e
         <div class="col-sm-12 col-md-5 order-confirmation-details">
 
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16201103755ec74d22e578e2_17149475', 'order_details', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7562434705ef053111abda2_68340375', 'order_details', $this->tplIndex);
 ?>
 
 
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9923019765ec74d22e578e5_28752088', 'order_confirmation_table', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11935986345ef053111bf629_21481875', 'order_confirmation_table', $this->tplIndex);
 ?>
 
 
@@ -248,12 +248,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9923019765ec74d22e
 
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1304591415ec74d22e7e9e4_26451686', 'customer_registration_form', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1058887705ef053111c34a4_77300075', 'customer_registration_form', $this->tplIndex);
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21218835815ec74d22e7e9e8_08138633', 'hook_order_confirmation_2', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15106565615ef053111cb1a2_80442125', 'hook_order_confirmation_2', $this->tplIndex);
 ?>
 
 

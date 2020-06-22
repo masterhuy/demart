@@ -98,6 +98,7 @@
 			}
 			margin-right: 0.4615rem;
 			display: inline-block;
+			color: #000 !important;
 			&:last-child {
 				margin-right: 0px;
 			}
@@ -344,7 +345,6 @@ body#checkout {
 				-webkit-appearance: none;
 				background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQVR4Ae3TwREAEBQD0V/6do4SXPZg7EsBhsQ8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=") no-repeat scroll right 0.5rem center / 2.25rem 2.25rem !important;
 				height: 3.077rem;
-				padding-right: 2rem;
 				width: 100%;
 			}
 		}

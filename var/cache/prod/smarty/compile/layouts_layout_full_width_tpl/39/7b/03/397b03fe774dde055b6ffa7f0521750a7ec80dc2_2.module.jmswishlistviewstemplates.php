@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-29 08:23:52
+/* Smarty version 3.1.33, created on 2020-06-22 08:07:25
   from 'module:jmswishlistviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed0b8884c9df2_81902523',
+  'unifunc' => 'content_5ef058ad59b5a1_36311828',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '397b03fe774dde055b6ffa7f0521750a7ec80dc2' => 
     array (
       0 => 'module:jmswishlistviewstemplates',
-      1 => 1583397048,
+      1 => 1590737076,
       2 => 'module',
     ),
   ),
@@ -21,24 +21,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/form-errors.tpl' => 1,
   ),
 ),false)) {
-function content_5ed0b8884c9df2_81902523 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef058ad59b5a1_36311828 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8388429745ed0b88846c1e2_60170498', 'page_content_container');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20411119575ef058ad53d987_24732802', 'page_content_container');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'page_content_container'} */
-class Block_8388429745ed0b88846c1e2_60170498 extends Smarty_Internal_Block
+class Block_20411119575ef058ad53d987_24732802 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content_container' => 
   array (
-    0 => 'Block_8388429745ed0b88846c1e2_60170498',
+    0 => 'Block_20411119575ef058ad53d987_24732802',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -78,7 +78,7 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_dema
 					<div class="col-8"><input type="text" id="name" name="name" class="inputTxt form-control" value="<?php if (isset($_POST['name']) && count($_smarty_tpl->tpl_vars['errors']->value) > 0) {
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_POST['name'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');
 }?>" /></div>
-					<div class="col text-right"><button type="submit" name="submitWishlist" id="submitWishlist" class="btn btn-default form-control" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Save','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+					<div class="col text-right"><button type="submit" name="submitWishlist" id="submitWishlist" class="btn btn-default" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Save','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 " class="exclusive" /><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Add','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 </button></div>
 				</div>

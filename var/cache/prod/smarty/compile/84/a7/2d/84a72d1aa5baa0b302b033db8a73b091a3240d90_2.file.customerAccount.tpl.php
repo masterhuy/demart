@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-29 08:55:11
+/* Smarty version 3.1.33, created on 2020-06-22 08:35:30
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\psgdpr\views\templates\front\customerAccount.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ed0bfdf2fad99_91210807',
+  'unifunc' => 'content_5ef05f42d94004_20633075',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed0bfdf2fad99_91210807 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef05f42d94004_20633075 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <a id="identity-link" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getModuleLink('psgdpr','gdpr'), ENT_QUOTES, 'UTF-8');?>
 ">

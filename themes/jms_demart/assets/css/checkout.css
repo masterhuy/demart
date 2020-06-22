@@ -68,7 +68,8 @@
 
 #checkout .address-footer a {
   margin-right: 0.4615rem;
-  display: inline-block; }
+  display: inline-block;
+  color: #000 !important; }
   #checkout .address-footer a i {
     margin-right: 0.3846rem; }
   #checkout .address-footer a:last-child {
@@ -267,7 +268,6 @@ body#checkout section.checkout-step.-current .content .form-control-select {
   -webkit-appearance: none;
   background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQVR4Ae3TwREAEBQD0V/6do4SXPZg7EsBhsQ8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=") no-repeat scroll right 0.5rem center/2.25rem 2.25rem !important;
   height: 3.077rem;
-  padding-right: 2rem;
   width: 100%; }
 
 body#checkout .content #modal .modal-content {

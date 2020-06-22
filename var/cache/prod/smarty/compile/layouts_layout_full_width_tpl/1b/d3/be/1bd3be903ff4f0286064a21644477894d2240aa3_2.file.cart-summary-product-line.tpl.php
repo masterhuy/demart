@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-16 02:58:20
+/* Smarty version 3.1.33, created on 2020-06-22 05:41:28
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\checkout\_partials\cart-summary-product-line.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee8273cb519d4_17227422',
+  'unifunc' => 'content_5ef0367805dce5_52635832',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1bd3be903ff4f0286064a21644477894d2240aa3' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\checkout\\_partials\\cart-summary-product-line.tpl',
-      1 => 1586312781,
+      1 => 1592800882,
       2 => 'file',
     ),
   ),
@@ -20,20 +20,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee8273cb519d4_17227422 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef0367805dce5_52635832 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15869512695ee8273cb519d0_19087366', 'cart_summary_product_line');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6089135115ef03678036be3_58047102', 'cart_summary_product_line');
 ?>
 
 <?php }
 /* {block 'cart_summary_product_line'} */
-class Block_15869512695ee8273cb519d0_19087366 extends Smarty_Internal_Block
+class Block_6089135115ef03678036be3_58047102 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'cart_summary_product_line' => 
   array (
-    0 => 'Block_15869512695ee8273cb519d0_19087366',
+    0 => 'Block_6089135115ef03678036be3_58047102',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -69,7 +69,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['attribute']->value => $_smarty_tpl->t
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-    <span class="pull-right">
+    <span class="pull-left">
       <span class="price"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['price'], ENT_QUOTES, 'UTF-8');?>
 </span>
       <span class="product-quantity text-small">x <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity'], ENT_QUOTES, 'UTF-8');?>

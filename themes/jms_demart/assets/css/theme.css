@@ -1108,7 +1108,6 @@ header .row .col-auto {
 .input-group-btn button,
 .input-group-btn .btn {
     height: 100%;
-    background:none;
     padding: 0px;
 }
 .input-group-btn .btn .buttonText {

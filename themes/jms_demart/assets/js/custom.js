@@ -769,14 +769,6 @@ customCarousel = () => {
     }
 }
 
-hoverShowSublink = () => {
-    $(".h1-our-category .layout-column").hover(function(){
-        $(this).addClass("open-sublink");
-        }, function(){
-        $(this).removeClass("open-sublink");
-    });
-}
-
 $(document).ready(function(){
     collapsePanel();
     jsPromoBar();
@@ -785,7 +777,6 @@ $(document).ready(function(){
     changeShopGrid();
     closeSidebar();
     showMoreCategory();
-    hoverShowSublink();
     backToTop();
 
     setTimeout(() => {
@@ -823,15 +814,16 @@ $(document).ready(function(){
             $(".block-brand .col").removeClass("change-color");
     });
 
-    $(".owl-theme .owl-item").hover(function(){
-        $(this).css("z-index", "9");
+    $("#ver-menu").hover(function(){
+        $('body').addClass("hover-vermenu");
         }, function(){
-        $(this).css("z-index", "1");
+        $('body').removeClass("hover-vermenu");
     });
-    $(".megatab-carousel .product-miniature").hover(function(){
-        $(".megatab-carousel").css("z-index", "9");
+
+    $(".h1-our-category .layout-column").hover(function(){
+        $(this).addClass("open-sublink");
         }, function(){
-        $(".megatab-carousel").css("z-index", "1");
+        $(this).removeClass("open-sublink");
     });
 
     $('.panel-default').on('show.bs.collapse', function (e) {
