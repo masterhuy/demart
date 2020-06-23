@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-18 02:50:30
+/* Smarty version 3.1.33, created on 2020-06-23 11:22:52
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\header-6.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eeac866f30a25_01742848',
+  'unifunc' => 'content_5ef1d7fcc0b048_39301356',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ce3ee627826287cdb7fbf9fc6ad7a1104d82dd97' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\headers\\header-6.tpl',
-      1 => 1590742975,
+      1 => 1592907768,
       2 => 'file',
     ),
   ),
@@ -25,11 +25,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-button.tpl' => 1,
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-dropdown.tpl' => 1,
     'file:_partials/headers/wishlist.tpl' => 1,
-    'module:ps_shoppingcart/ps_shoppingcart-dropdown-2.tpl' => 1,
+    'module:ps_shoppingcart/ps_shoppingcart.tpl' => 1,
     'module:jmsajaxsearch/views/templates/hook/jmsajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5eeac866f30a25_01742848 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef1d7fcc0b048_39301356 (Smarty_Internal_Template $_smarty_tpl) {
 if (($_smarty_tpl->tpl_vars['jmsSetting']->value['header_topbar'] == 1)) {?>
     <div id="header-topbar" class="<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['topbar_class'], ENT_QUOTES, 'UTF-8');
 }?>">
@@ -185,7 +185,7 @@ $_block_repeat=true;
 echo $_block_plugin6->smartyWidgetBlock(array('name'=>"ps_shoppingcart"), null, $_smarty_tpl, $_block_repeat);
 while ($_block_repeat) {
 ob_start();?>
-                            <?php $_smarty_tpl->_subTemplateRender('module:ps_shoppingcart/ps_shoppingcart-dropdown-2.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+                            <?php $_smarty_tpl->_subTemplateRender('module:ps_shoppingcart/ps_shoppingcart.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
                         <?php $_block_repeat=false;
 echo $_block_plugin6->smartyWidgetBlock(array('name'=>"ps_shoppingcart"), ob_get_clean(), $_smarty_tpl, $_block_repeat);

@@ -89,6 +89,7 @@
 }
 .blog-widget ~ .customs-html-left{
 	margin-bottom: 0;
+	display: none;
 }
 .blog-widget .post-thumb a:hover img{
 	transform: none;

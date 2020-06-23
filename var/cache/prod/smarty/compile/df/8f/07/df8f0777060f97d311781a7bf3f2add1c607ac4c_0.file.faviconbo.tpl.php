@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-17 11:29:26
+/* Smarty version 3.1.33, created on 2020-06-23 11:29:39
   from 'D:\xamppp\htdocs\jms_demart\modules\ps_faviconnotificationbo\views\templates\hook\faviconbo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ee9f086153187_27555259',
+  'unifunc' => 'content_5ef1d9935b6f17_95870470',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee9f086153187_27555259 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef1d9935b6f17_95870470 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 /*

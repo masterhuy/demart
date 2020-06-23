@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-22 02:41:08
+/* Smarty version 3.1.33, created on 2020-06-23 11:25:27
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonmegatab-icon-2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef00c34850759_11010073',
+  'unifunc' => 'content_5ef1d897bec454_60061052',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product-flex.tpl' => 1,
   ),
 ),false)) {
-function content_5ef00c34850759_11010073 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef1d897bec454_60061052 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="megatab-icon product-flexbox">
 	<div class="addon-tab">
 		<?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>

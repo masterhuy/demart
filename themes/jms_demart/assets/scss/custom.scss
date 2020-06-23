@@ -251,13 +251,11 @@ button:disabled, button[disabled]{
 	border-bottom: 1px solid #ebebeb;
 }
 #cart_block{
-	&.type-2{
-		.cart-icon{
-			color: #fff;
-			display: flex;
-			align-items: center;
-			font-weight: 500;
-		}
+	.cart-icon.type-2{
+		color: #fff;
+		display: none;
+		align-items: center;
+		font-weight: 500;
 		.ajax_cart_quantity{
 			position: static;
 			background: transparent;
@@ -1294,6 +1292,14 @@ header .row {
 				}
 			}
 			#cart_block{
+				.cart-icon{
+					&.type-1{
+						display: none;
+					}
+					&.type-2{
+						display: flex;
+					}
+				}
 				i{
 					position: relative;
 					bottom: 1px;
@@ -1583,6 +1589,12 @@ header .row {
 				}
 				.cart-icon{
 					color: #031520;
+					&.type-1{
+						display: none;
+					}
+					&.type-2{
+						display: flex;
+					}
 				}
 				.ajax_cart_quantity{
 					color: #031520;
@@ -3232,7 +3244,7 @@ header .row {
 	}
 }
 .blog-carousel{
-	.owl-stage-outer{
+	&.owl-theme .owl-stage-outer{
 		padding-bottom: 0;
 	}
 	.post-category{
@@ -4898,6 +4910,7 @@ footer .row{
 	background-color: #fff;
 	&:hover{
 		box-shadow: 0 2px 20px rgba(0,0,0,0.2) ;
+		z-index: 9;
 		ul.product-buttons{
 			opacity: 1;
 			visibility: visible;
@@ -4940,6 +4953,9 @@ footer .row{
 		}
 		.ajax-add-to-cart{
 			white-space: nowrap;
+			max-width: 111px;
+			text-overflow: ellipsis;
+			overflow: hidden;
 		}
 		li{
 			opacity: 0;
@@ -5178,6 +5194,9 @@ footer .row{
 		}
 		a{
 			font-size: 1.308rem;
+			&::before{
+				display: none;
+			}
 		}
 		&.facebook a{
 			color: #4867aa;

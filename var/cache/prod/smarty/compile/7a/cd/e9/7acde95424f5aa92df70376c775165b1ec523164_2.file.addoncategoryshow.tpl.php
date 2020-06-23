@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-18 02:49:10
+/* Smarty version 3.1.33, created on 2020-06-23 11:20:40
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addoncategoryshow.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eeac816ec7e52_10155508',
+  'unifunc' => 'content_5ef1d778732406_94150775',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eeac816ec7e52_10155508 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef1d778732406_94150775 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['category']->value)) {?>
 	<?php $_smarty_tpl->_assignInScope('categoryLink', $_smarty_tpl->tpl_vars['link']->value->getcategoryLink($_smarty_tpl->tpl_vars['category']->value['id_category'],$_smarty_tpl->tpl_vars['category']->value['link_rewrite']));?>
 	<?php $_smarty_tpl->_assignInScope('categoryname', $_smarty_tpl->tpl_vars['category']->value['name'][$_smarty_tpl->tpl_vars['language']->value['id']]);?>

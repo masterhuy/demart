@@ -74,7 +74,7 @@
                     {/if}
                     {if ($jmsSetting.cart == 1)}
                         {widget_block name="ps_shoppingcart"}
-                            {include 'module:ps_shoppingcart/ps_shoppingcart-dropdown-2.tpl'}
+                            {include 'module:ps_shoppingcart/ps_shoppingcart.tpl'}
                         {/widget_block}
                     {/if}
                 </div>

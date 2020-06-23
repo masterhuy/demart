@@ -1,5 +1,5 @@
 <div class="btn-group blockcart cart-preview dropdown {if $jmsSetting.addtocart_type !=''} {$jmsSetting.addtocart_type}{/if}" id="cart_block" data-refresh-url="{$refresh_url}">
-	<a href="#" class="cart-icon" data-toggle="dropdown" data-display="static" aria-expanded="false">
+	<a href="#" class="cart-icon type-1" data-toggle="dropdown" data-display="static" aria-expanded="false">
 		{if $jmsSetting.addtocart_type == 'circle-filled'}
 			{if $cart.products_count > 0}<span class="circle-notify"></span>{/if}
 		{else}
@@ -13,6 +13,22 @@
 			{assign var="cart_icon" value=$jmsSetting.cart_icon}
 		{/if}
 		<i class="lnr lnr-cart"></i>
+	</a>
+	<a href="#" class="cart-icon type-2" data-toggle="dropdown" data-display="static" aria-expanded="false">
+		{assign var="str_at" value=$jmsSetting.cart_icon|strpos:"_"}
+		{if $str_at && $jmsSetting.cart_icon_thickness}
+			{assign var="cart_icon" value=$jmsSetting.cart_icon|substr:0:($str_at)}
+			{assign var="cart_icon" value=$cart_icon|cat:$jmsSetting.cart_icon_thickness}
+		{else}
+			{assign var="cart_icon" value=$jmsSetting.cart_icon}
+		{/if}
+		<i class="lnr lnr-cart"></i>
+		{if $jmsSetting.addtocart_type == 'circle-filled'}
+			{if $cart.products_count > 0}<span class="circle-notify"></span>{/if}
+		{else}
+			<span class="ajax_cart_quantity">({$cart.products_count})</span>
+		{/if}
+		<span class="cart_block_total ajax_block_cart_total">{$cart.totals.total.value}</span>
 	</a>
 	<div class="dropdown-menu shoppingcart-box{if $jmsSetting.cart_type =='sidebar'} shoppingcart-sidebar{/if}">
 		<div class="cart-title">{l s='Shopping Cart' d='Shop.Theme.Actions'} ({$cart.products_count})</div>
@@ -46,7 +62,7 @@
 			</div>
 			<div class="cart-button">
 				{if $jmsSetting.cart_links && 'checkout'|in_array:$jmsSetting.cart_links}
-					<a href="{url entity=order}" class="btn btn-default checkout-btn w-100 text-center">{l s='Checkout' d='Shop.Theme.Actions'}</a>
+					<a href="{url entity=order}" class="btn btn-default checkout-btn text-center">{l s='Checkout' d='Shop.Theme.Actions'}</a>
 				{/if}
 				{if $jmsSetting.cart_links && 'cart'|in_array:$jmsSetting.cart_links}
 					<a class="btn btn-default cart-btn" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">

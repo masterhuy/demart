@@ -1,4 +1,4 @@
-<div class="btn-group blockcart type-1 cart-preview dropdown{if $jmsSetting.addtocart_type !=''} {$jmsSetting.addtocart_type}{/if}" id="cart_block" data-refresh-url="{$refresh_url}">
+<div class="btn-group blockcart cart-preview dropdown{if $jmsSetting.addtocart_type !=''} {$jmsSetting.addtocart_type}{/if}" id="cart_block" data-refresh-url="{$refresh_url}">
 	<a href="#" class="cart-icon" data-toggle="dropdown" data-display="static" aria-expanded="false">
 		{if $jmsSetting.addtocart_type == 'circle-filled'}
 			{if $cart.products_count > 0}<span class="circle-notify"></span>{/if}

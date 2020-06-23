@@ -24,24 +24,24 @@
 			function megaOver(){
 				var subNav = $('.dropdown-menu',this);
 				$(this).addClass('open');
-				$("#index").addClass('open-dropdown-menu');
+				$("body").addClass('open-dropdown-menu');
 			}
 			function megaAction(obj){
 				var subNav = $('.dropdown-menu',obj);
 				$(obj).addClass('open');
-				$("#index").addClass('open-dropdown-menu');
+				$("body").addClass('open-dropdown-menu');
 			}
 			function megaOut(){
 				$(this).removeClass('open');
-				$("#index").removeClass('open-dropdown-menu');
+				$("body").removeClass('open-dropdown-menu');
 			}
 			function megaActionClose(obj){
 				$(obj).removeClass('open');
-				$("#index").removeClass('open-dropdown-menu');
+				$("body").removeClass('open-dropdown-menu');
 			}
 			function megaReset(){
 				$('li',$MegaMenuObj).removeClass('open');
-				$("#index").removeClass('open-dropdown-menu');
+				$("body").removeClass('open-dropdown-menu');
 			}
 
 			function _Init(){

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-18 02:43:28
+/* Smarty version 3.1.33, created on 2020-06-23 11:25:36
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eeac6c090d078_58097985',
+  'unifunc' => 'content_5ef1d8a084c261_07320936',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4cdfb4ec01c7f108b4781d3aa4b0a15e221a8ad0' => 
     array (
       0 => 'module:psshoppingcartpsshoppingc',
-      1 => 1590738050,
+      1 => 1592901203,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eeac6c090d078_58097985 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef1d8a084c261_07320936 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="d-flex align-items-center">
 	<?php if ($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['cart_default']['url']) {?>
 		<a class="cart-product-image layout-column" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['url'], ENT_QUOTES, 'UTF-8');?>
@@ -33,7 +33,8 @@ function content_5eeac6c090d078_58097985 (Smarty_Internal_Template $_smarty_tpl)
 		</a>
 	<?php }?>
 	<div class="product-info layout-column">
-		<a class="product-link" href="" title="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+		<a class="product-link" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['url'], ENT_QUOTES, 'UTF-8');?>
+" title="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 ">
 			<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['name'], ENT_QUOTES, 'UTF-8');?>
 
@@ -46,9 +47,15 @@ function content_5eeac6c090d078_58097985 (Smarty_Internal_Template $_smarty_tpl)
 			<span>x</span>
 			<span class="quantity"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity'], ENT_QUOTES, 'UTF-8');?>
 </span>
-			<a class="remove-from-cart remove_link" rel="nofollow" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['remove_from_cart_url'], ENT_QUOTES, 'UTF-8');?>
-" data-link-action="remove-from-cart" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Remove from cart','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
-" >
+			<a 
+				class="remove-from-cart remove_link" 
+				rel="nofollow" 
+				href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['remove_from_cart_url'], ENT_QUOTES, 'UTF-8');?>
+" 
+				data-link-action="remove-from-cart" 
+				title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Remove from cart','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+" 
+			>
 				<i class="lnr lnr-trash"></i>
 			</a>
 		</div>
