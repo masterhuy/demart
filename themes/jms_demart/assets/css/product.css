@@ -709,12 +709,15 @@ section.featured-products {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .rating .product-list-reviews {
     position: static;
     width: auto; }
   .rating .product-additional-info {
     margin-left: 1.615rem; }
+    .rating .product-additional-info .block-social {
+      display: none; }
   .rating .product-comments-additional-info {
     margin: 0; }
 
@@ -1225,24 +1228,9 @@ section.featured-products {
   transform: translate3d(0, 0, 0);
   will-change: position, transform; }
 
-@media (max-width: 767px) {
-  .open-filter #search_filters_wrapper {
-    left: 0; }
-  #search_filters_wrapper {
-    display: block;
-    position: fixed;
-    background: #fff;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    height: 100%;
-    padding: 20px;
-    -webkit-transition: .4s all;
-    -o-transition: .4s all;
-    transition: .4s all;
-    -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
-    z-index: 99; } }
+#_mobile_search_filters_clear_all {
+  display: block;
+  margin-bottom: 10px; }
 
 @media (max-width: 991px) {
   .sidebar-column {

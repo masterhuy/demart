@@ -22,6 +22,25 @@
   * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
   * International Registered Trademark & Property of PrestaShop SA
   *}
+<section id="js-active-search-filters" class="{if $activeFilters|count}active_filters{else}hide{/if}">
+    {block name='active_filters_title'}
+        <h1 class="h6 {if $activeFilters|count}active-filter-title{else}hidden-xs-up{/if}">{l s='Active filters' d='Shop.Theme.Global'}</h1>
+    {/block}
+
+    {if $activeFilters|count}
+        <ul>
+        {foreach from=$activeFilters item="filter"}
+            {block name='active_filters_item'}
+            <li class="filter-block">
+                {l s='%1$s: ' d='Shop.Theme.Catalog' sprintf=[$filter.facetLabel]}
+                {$filter.label}
+                <a class="js-search-link" href="{$filter.nextEncodedFacetsURL}"><i class="ptw-icon icon-closed_light close"></i></a>
+            </li>
+            {/block}
+        {/foreach}
+        </ul>
+    {/if}
+</section>
 {if $displayedFacets|count}
     <div id="search_filters">
         {block name='facets_clearall_button'}

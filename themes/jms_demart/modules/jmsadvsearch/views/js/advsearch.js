@@ -42,5 +42,4 @@ $(document).ready(function() {
 	$('#advsearch_result').click(function(event){
 		event.stopPropagation();
 	});
-
 });

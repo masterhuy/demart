@@ -32,7 +32,7 @@
             </div>
             <div class="modal-body" id="main">
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12 left zzz">
+                    <div class="col-lg-5 col-md-5 col-sm-12 left">
                         {block name='product_cover_thumbnails'}
                             {include file='catalog/_partials/product-cover-thumbnails.tpl'}
                         {/block}
@@ -43,6 +43,13 @@
                                 <h2 itemprop="name" class="product-name">{block name='page_title'}{$product.name}{/block}</h2>
                             {/block}
                         {/block}
+
+                        <div class="rating">
+                            {block name='product_additional_info'}
+                                {include file='catalog/_partials/product-additional-info.tpl'}
+                            {/block}
+                        </div>
+
                         {block name='product_prices'}
                             {include file='catalog/_partials/product-prices.tpl'}
                         {/block}
@@ -80,41 +87,12 @@
                                     </form>
                                 {/block}
                             </div>
-
-                            <ul class="other-info">
-                                {if $product.reference}
-                                    <!-- number of item in stock -->
-                                    <li id="product_reference">
-                                        <label>{l s='Product Code:' d='Shop.Theme.Catalog'}</label>
-                                        <span class="editable">{$product.reference}</span>
-                                    </li>
-                                {/if}
-                                <!-- availability or doesntExist -->
-                                <li id="availability_statut">
-                                    <label id="availability_label">
-                                        {l s='Availability:' d='Shop.Theme.Catalog'}
-                                    </label>
-                                    <span id="availability_value" class="label-availability">
-                                        {if $product.quantity|intval <= 0}
-                                            {l s='Out stock' d='Shop.Theme.Catalog'}
-                                        {else}
-                                            {l s='In stock' d='Shop.Theme.Catalog'}
-                                        {/if}
-                                    </span>
-                                </li>
-                                <li>
-                                    {if $product.additional_shipping_cost > 0}
-                                        <label>{l s='Shipping tax: '}</label>
-                                        <span class="shipping_cost">{$product.additional_shipping_cost}</span>
-                                    {else}
-                                        <label>{l s='Shipping tax:'}</label>
-                                        <span class="shipping_cost">{l s=' Free'}</span>
-                                    {/if}
-                                </li>
-                            </ul>
                         </div>
+
                         {if $jmsSetting.quickview_sharing}
-                            {hook h='displayProductButtons' product=$product}
+                            <div class="share-button">
+                                {hook h='displayProductButtons' product=$product}
+                            </div>
                         {/if}
                     </div>
                 </div>

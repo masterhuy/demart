@@ -38,7 +38,7 @@
     <link href="https://fonts.googleapis.com/css?family={$jmsSetting.heading_font_google}:{$jmsSetting.heading_font_google_weightstyle}&display=swap" rel="stylesheet">
 {elseif $jmsSetting.heading_font == 'fontface' && isset($jmsSetting.heading_fontface_css)}
     <link href="{$urls.base_url}/modules/jmsthemesetting/views/fonts/{$jmsSetting.heading_fontface_css}" rel="stylesheet">
-{/if}
+{/if} 
 
 {if $jmsSetting.body_icon_font != ''}
 <link href="{$urls.base_url}/modules/jmsthemesetting/views/fonts/{$jmsSetting.body_icon_font}" rel="stylesheet">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-23 11:25:34
+/* Smarty version 3.1.33, created on 2020-06-24 11:25:23
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef1d89eb74575_89946681',
+  'unifunc' => 'content_5ef32a136d44d3_35891012',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c94ad3bb5fef394f58fa41e69ecfa63b501cd2d0' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\javascript.tpl',
-      1 => 1590399942,
+      1 => 1592974284,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef1d89eb74575_89946681 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef32a136d44d3_35891012 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['js']->value) {
@@ -70,6 +70,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
   <?php echo '</script'; ?>
 >
 <?php }?>
+
 
 <!-- Go to www.addthis.com/dashboard to customize your tools --> 
 <?php echo '<script'; ?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-23 10:47:59
+/* Smarty version 3.1.33, created on 2020-06-24 08:52:17
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\catalog\_partials\product-cover-thumbnails.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef1cfcf7dad20_58019964',
+  'unifunc' => 'content_5ef30631688cd3_35500378',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5048aa1a3ee42096ce2575c1d4b17235a112f424' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\catalog\\_partials\\product-cover-thumbnails.tpl',
-      1 => 1591067561,
+      1 => 1592983532,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/product-cover-thumbnails-bottom.tpl' => 1,
   ),
 ),false)) {
-function content_5ef1cfcf7dad20_58019964 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef30631688cd3_35500378 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_GET['product_content_layout']) && $_GET['product_content_layout'] != '') {?>
    <?php $_smarty_tpl->_assignInScope('product_content_layout', $_GET['product_content_layout']);
 } else { ?>

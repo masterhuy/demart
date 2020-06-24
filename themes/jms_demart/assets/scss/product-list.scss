@@ -289,6 +289,9 @@
 	}
 }
 #category {
+	#left-column + #content-wrapper, #content-wrapper + #right-column {
+		margin-top: 0;
+	}
 	.breadcrumb {
 		ul {
 			padding: 5.462rem 0;
@@ -341,6 +344,7 @@
 		margin-top: 6.154rem;
 	}
 	.block-categories {
+		display: none;
 		margin-bottom: 2.692rem;
 	}
 	.facet {
@@ -1375,7 +1379,7 @@
 	}
 }
 .customs-html-left {
-	display: block;
+	display: none;
 	margin-top: 3.154rem;
 	margin-bottom: 3.385rem;
 	overflow: hidden;
@@ -1510,6 +1514,10 @@
 	}
 }
 @media (min-width: 768px) {
+	#category .block-categories,
+	.customs-html-left {
+		display: block;
+	}
 	.same-category .owl-theme .owl-controls{
 		display: inline-flex;
 	}

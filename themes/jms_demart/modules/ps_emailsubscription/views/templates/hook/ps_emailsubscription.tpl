@@ -32,7 +32,7 @@
 			<p class="newsletter-desc">{$conditions}</p>
 		{/if}
 		{if $msg}
-			<p class="alert {if $nw_error}alert-error{else}alert-success{/if}">{$msg}</p>
+			<p class="alert {if $nw_error}alert-danger{else}alert-success{/if}">{$msg}</p>
 		{/if}
 		<form action="{$urls.pages.index}" method="post">	
 			<div class="newsletter-input-group">

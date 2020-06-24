@@ -226,6 +226,9 @@
   .facet ul li {
     list-style: none; }
 
+#category #left-column + #content-wrapper, #category #content-wrapper + #right-column {
+  margin-top: 0; }
+
 #category .breadcrumb ul {
   padding: 5.462rem 0; }
 
@@ -267,6 +270,7 @@
   margin-top: 6.154rem; }
 
 #category .block-categories {
+  display: none;
   margin-bottom: 2.692rem; }
 
 #category .facet .facet-label {
@@ -1119,7 +1123,7 @@
   top: 0; }
 
 .customs-html-left {
-  display: block;
+  display: none;
   margin-top: 3.154rem;
   margin-bottom: 3.385rem;
   overflow: hidden;
@@ -1208,6 +1212,9 @@
     margin-right: 0 !important; } }
 
 @media (min-width: 768px) {
+  #category .block-categories,
+  .customs-html-left {
+    display: block; }
   .same-category .owl-theme .owl-controls {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;

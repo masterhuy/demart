@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-23 11:25:37
+/* Smarty version 3.1.33, created on 2020-06-24 11:25:24
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef1d8a1631470_00683437',
+  'unifunc' => 'content_5ef32a142a2253_19387872',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1591253578,
+      1 => 1592980305,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef1d8a1631470_00683437 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef32a142a2253_19387872 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="email_subscription">
 	<h3 class="block-title">
 		<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Follow Us','d'=>'Modules.Emailsubscription.Shop'),$_smarty_tpl ) );?>
@@ -33,7 +33,7 @@ function content_5ef1d8a1631470_00683437 (Smarty_Internal_Template $_smarty_tpl)
 </p>
 		<?php }?>
 		<?php if ($_smarty_tpl->tpl_vars['msg']->value) {?>
-			<p class="alert <?php if ($_smarty_tpl->tpl_vars['nw_error']->value) {?>alert-error<?php } else { ?>alert-success<?php }?>"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['msg']->value, ENT_QUOTES, 'UTF-8');?>
+			<p class="alert <?php if ($_smarty_tpl->tpl_vars['nw_error']->value) {?>alert-danger<?php } else { ?>alert-success<?php }?>"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['msg']->value, ENT_QUOTES, 'UTF-8');?>
 </p>
 		<?php }?>
 		<form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['index'], ENT_QUOTES, 'UTF-8');?>

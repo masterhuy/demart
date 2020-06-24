@@ -60,7 +60,7 @@ showMoreCategory = () => {
        (showMore.text() == "+ More categories") ? showMore.text("- Less categories") : showMore.text("+ More categories");
     });
     
-    $('.vermegamenu .jms-megamenu > ul li.js-more-category a').click(function(e){
+    $('.h2-slider .vermegamenu .jms-megamenu > ul li.js-more-category a').click(function(e){
         e.preventDefault();
         $(".vermegamenu ").toggleClass("limit-sub");
         $("#ver-menu").toggleClass("limit-sub");
@@ -82,7 +82,8 @@ customCarousel = () => {
     if($(".flashsales-carousel").length) {
         var flashsaleCarousel = $('.flashsales-carousel');			
         var rtl = false;
-        if ($("body").hasClass("rtl")) rtl = true;	flashsaleCarousel.owlCarousel({
+        if ($("body").hasClass("rtl")) rtl = true;	
+        flashsaleCarousel.owlCarousel({
             responsiveClass:true,
             responsive:{
                 0: {
@@ -873,3 +874,4 @@ $(document).ready(function(){
         }
     });
 });
+

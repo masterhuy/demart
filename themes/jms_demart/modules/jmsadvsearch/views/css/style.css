@@ -31,7 +31,6 @@
     position: relative;
     width: 100%;
 }
-#advsearch_result .result_div .results{}
 #advsearch_result .result_div .item {
     float: left;
     padding: 2%;
@@ -60,7 +59,6 @@
     text-transform: uppercase;
     width: 100%;
 }
-#advsearch_result .result_div h3.title a{}
 #advsearch_result .result_div .price {
     float: left;
     font-size: 14px;
@@ -73,7 +71,6 @@
     margin: 0 5px 0 0;
     padding: 0;
 }
-#advsearch_result .result_div .price .value{}
 #advsearch_result .result_div .desc {
     color: #999;
     float: left;

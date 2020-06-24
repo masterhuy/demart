@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-19 04:59:23
+/* Smarty version 3.1.33, created on 2020-06-24 08:42:20
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eec381b4ca120_27708301',
+  'unifunc' => 'content_5ef303dcb04715_82263799',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '35655e6409b6198f29dd6e732ef9598dec599880' => 
     array (
       0 => 'module:psshoppingcartpsshoppingc',
-      1 => 1592280936,
+      1 => 1592907534,
       2 => 'module',
     ),
   ),
@@ -21,11 +21,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' => 1,
   ),
 ),false)) {
-function content_5eec381b4ca120_27708301 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef303dcb04715_82263799 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group blockcart cart-preview dropdown <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['addtocart_type'] != '') {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['addtocart_type'], ENT_QUOTES, 'UTF-8');
 }?>" id="cart_block" data-refresh-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['refresh_url']->value, ENT_QUOTES, 'UTF-8');?>
 ">
-	<a href="#" class="cart-icon" data-toggle="dropdown" data-display="static" aria-expanded="false">
+	<a href="#" class="cart-icon type-1" data-toggle="dropdown" data-display="static" aria-expanded="false">
 		<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['addtocart_type'] == 'circle-filled') {?>
 			<?php if ($_smarty_tpl->tpl_vars['cart']->value['products_count'] > 0) {?><span class="circle-notify"></span><?php }?>
 		<?php } else { ?>
@@ -40,6 +40,24 @@ function content_5eec381b4ca120_27708301 (Smarty_Internal_Template $_smarty_tpl)
 			<?php $_smarty_tpl->_assignInScope('cart_icon', $_smarty_tpl->tpl_vars['jmsSetting']->value['cart_icon']);?>
 		<?php }?>
 		<i class="lnr lnr-cart"></i>
+	</a>
+	<a href="#" class="cart-icon type-2" data-toggle="dropdown" data-display="static" aria-expanded="false">
+		<?php $_smarty_tpl->_assignInScope('str_at', strpos($_smarty_tpl->tpl_vars['jmsSetting']->value['cart_icon'],"_"));?>
+		<?php if ($_smarty_tpl->tpl_vars['str_at']->value && $_smarty_tpl->tpl_vars['jmsSetting']->value['cart_icon_thickness']) {?>
+			<?php $_smarty_tpl->_assignInScope('cart_icon', substr($_smarty_tpl->tpl_vars['jmsSetting']->value['cart_icon'],0,($_smarty_tpl->tpl_vars['str_at']->value)));?>
+			<?php $_smarty_tpl->_assignInScope('cart_icon', ($_smarty_tpl->tpl_vars['cart_icon']->value).($_smarty_tpl->tpl_vars['jmsSetting']->value['cart_icon_thickness']));?>
+		<?php } else { ?>
+			<?php $_smarty_tpl->_assignInScope('cart_icon', $_smarty_tpl->tpl_vars['jmsSetting']->value['cart_icon']);?>
+		<?php }?>
+		<i class="lnr lnr-cart"></i>
+		<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['addtocart_type'] == 'circle-filled') {?>
+			<?php if ($_smarty_tpl->tpl_vars['cart']->value['products_count'] > 0) {?><span class="circle-notify"></span><?php }?>
+		<?php } else { ?>
+			<span class="ajax_cart_quantity">(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['products_count'], ENT_QUOTES, 'UTF-8');?>
+)</span>
+		<?php }?>
+		<span class="cart_block_total ajax_block_cart_total"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['totals']['total']['value'], ENT_QUOTES, 'UTF-8');?>
+</span>
 	</a>
 	<div class="dropdown-menu shoppingcart-box<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['cart_type'] == 'sidebar') {?> shoppingcart-sidebar<?php }?>">
 		<div class="cart-title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Shopping Cart','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
@@ -97,7 +115,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			<div class="cart-button">
 				<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['cart_links'] && in_array('checkout',$_smarty_tpl->tpl_vars['jmsSetting']->value['cart_links'])) {?>
 					<a href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array('entity'=>'order'),$_smarty_tpl ) );?>
-" class="btn btn-default checkout-btn w-100 text-center"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Checkout','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+" class="btn btn-default checkout-btn text-center"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Checkout','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 </a>
 				<?php }?>
 				<?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['cart_links'] && in_array('cart',$_smarty_tpl->tpl_vars['jmsSetting']->value['cart_links'])) {?>

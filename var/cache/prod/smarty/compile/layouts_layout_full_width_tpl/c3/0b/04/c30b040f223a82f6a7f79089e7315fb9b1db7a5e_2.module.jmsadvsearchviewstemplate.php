@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-23 10:34:18
+/* Smarty version 3.1.33, created on 2020-06-24 10:50:44
   from 'module:jmsadvsearchviewstemplate' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef1cc9a496cb1_55798730',
+  'unifunc' => 'content_5ef321f47093d5_62669061',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c30b040f223a82f6a7f79089e7315fb9b1db7a5e' => 
     array (
       0 => 'module:jmsadvsearchviewstemplate',
-      1 => 1592381692,
+      1 => 1592980687,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef1cc9a496cb1_55798730 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef321f47093d5_62669061 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-advsearch">
 	<form method="get" action="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('search');?>
 " class="input-group" id="searchbox">
@@ -67,5 +67,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		</span>
 	</form>
 	<div id="advsearch_result"></div>
-</div><?php }
+</div>
+<?php }
 }
