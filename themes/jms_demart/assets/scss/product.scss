@@ -1437,11 +1437,13 @@ section.featured-products {
     margin-bottom: 10px;
 }
 @media (max-width: 991px) {
-    .sidebar-column {
+    .sidebar-column,
+    .product-layout-3columns .pb-right-column {
         position: relative !important;
         height: auto !important;
     }
-    .sidebar-inner {
+    .sidebar-inner,
+    .product-layout-3columns .pb-right-column .pb-right-content {
         position: static !important;
         transform: none !important;
         width: 100% !important;

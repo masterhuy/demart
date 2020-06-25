@@ -22,36 +22,35 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
 <div class="result_div">
-{if $products}
-<div class="results">
-	{foreach from=$products item=product name=i}
-		<div class="item">
-		{if $show_image}
-			<div class="left-img">
-				<a href="{$product.link nofilter}" title="{$product.name nofilter}" class="product_image">
-				<img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" />
-				</a>
-			</div>
-		{/if}
-			<div class="right-info">
-				<a class="product-link" href="{$product.link nofilter}" title="{$product.name|truncate:50:'...' nofilter}">
-					{$product.name|truncate:35:'...' nofilter}
-				</a>
-				{if $description}
-				<p class="product-description">{$product.desc|truncate:$count_description:'...' nofilter}</p>
+	{if $products}
+		<div class="results">
+			{foreach from=$products item=product name=i}
+				<div class="item">
+				{if $show_image}
+					<div class="left-img">
+						<a href="{$product.link nofilter}" title="{$product.name nofilter}" class="product_image">
+							<img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'small_default') nofilter}" alt="{$product.name nofilter}" />
+						</a>
+					</div>
 				{/if}
-				{if $show_price}
-				<div class="content_price">
-					<span class="price new">{$product.price nofilter}</span>
+					<div class="right-info">
+						<a class="product-link" href="{$product.link nofilter}" title="{$product.name|truncate:50:'...' nofilter}">
+							{$product.name|truncate:35:'...' nofilter}
+						</a>
+						{if $description}
+							<p class="product-description">{$product.desc|truncate:$count_description:'...' nofilter}</p>
+						{/if}
+						{if $show_price}
+							<div class="content_price">
+								<span class="price new">{$product.price nofilter}</span>
+							</div>
+						{/if}
+					</div>
 				</div>
-				{/if}
-			</div>
+			{/foreach}
 		</div>
-	{/foreach}
-</div>
-{else}
-{$no_text nofilter}
-{/if}
+	{else}
+		{$no_text nofilter}
+	{/if}
 </div>

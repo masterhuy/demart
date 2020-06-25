@@ -21,12 +21,22 @@ changeShopGrid = () => {
 }
 
 stickySidebar = () => {
-    if($('#wrapper #content-wrapper.col-lg-9').length){
-        let sidebar = new StickySidebar('#wrapper .sidebar-column', {
-            containerSelector: '#wrapper > .row',
-            innerWrapperSelector: '#wrapper .sidebar-column .sidebar-inner',
-            topSpacing: 20
-        });
+    if ($(window).width() > 1200){
+        if($('#wrapper #content-wrapper.col-lg-9').length){
+            let sidebar = new StickySidebar('#wrapper .sidebar-column', {
+                containerSelector: '#wrapper > .row',
+                innerWrapperSelector: '#wrapper .sidebar-column .sidebar-inner',
+                topSpacing: 20
+            });
+        }
+    
+        if($('.product-layout-3columns .pb-right-column').length){
+            let sidebar = new StickySidebar('.product-layout-3columns .pb-right-column', {
+                containerSelector: '.product-layout-3columns',
+                innerWrapperSelector: '.product-layout-3columns .pb-right-column .pb-right-content',
+                topSpacing: 100
+            });
+        }    
     }
 }
 
@@ -40,16 +50,10 @@ jsPromoBar = () => {
     });
 }
 
-collapsePanel = () => {
-    $('.h7-col-sidebar .level-1').on('show.bs.collapse', function (e) {
-        $('.h7-col-sidebar .level-1 .collapse').not(e.target).collapse('hide');
-    });
-}
-
 showMoreCategory = () => {
     var txt = "<li class='js-more-category'><a href='#'>+ More categories</a></li>";
     $(".header-3 #ver-menu .jms-megamenu > ul").append(txt); 
-    $(".vermegamenu  .jms-megamenu > ul").append(txt); 
+    $(".h2-slider .vermegamenu  .jms-megamenu > ul").append(txt); 
 
     $('.header-3 #ver-menu .jms-megamenu > ul li.js-more-category a').click(function(e){
         e.preventDefault();
@@ -65,7 +69,7 @@ showMoreCategory = () => {
         $(".vermegamenu ").toggleClass("limit-sub");
         $("#ver-menu").toggleClass("limit-sub");
 
-        var showMore = $('.vermegamenu .jms-megamenu > ul li.js-more-category a');
+        var showMore = $('.h2-slider .vermegamenu .jms-megamenu > ul li.js-more-category a');
        (showMore.text() == "+ More categories") ? showMore.text("- Less categories") : showMore.text("+ More categories");
     })
 }
@@ -771,7 +775,6 @@ customCarousel = () => {
 }
 
 $(document).ready(function(){
-    collapsePanel();
     jsPromoBar();
     customCarousel();
     stickySidebar();
@@ -813,6 +816,12 @@ $(document).ready(function(){
         $(this).removeClass("change-color");
         }, function(){
             $(".block-brand .col").removeClass("change-color");
+    });
+
+    $(".feature-box").hover(function(){
+        $(this).children().children(".lnr").addClass("animated tada");
+        }, function(){
+            $(this).children().children(".lnr").removeClass("animated tada");
     });
 
     $("#ver-menu").hover(function(){
@@ -860,6 +869,7 @@ $(document).ready(function(){
     $(window).resize(function(){
         jsPromoBar();
         changeShopGrid();
+        stickySidebar();
     });
 
     $(window).load(function () {     
@@ -875,3 +885,44 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function() {
+	$('#selector_cat').on('change', function(){
+		var id_cat_search = $(this).val();		
+		var search_key = $( "#ajax_advsearch" ).val();
+		get_search_ajax(search_key, id_cat_search);
+	});
+	var timer;
+	$( "#ajax_advsearch" ).keyup(function() {
+		var id_cat_search = $('#selector_cat').val();		
+		//alert(id_cat_search);
+		var search_key = $( "#ajax_advsearch" ).val();		
+		clearTimeout(timer);
+		timer = setTimeout(function() {					
+			get_search_ajax(search_key, id_cat_search);
+		}, 1000);
+	})	
+	$('html').click(function() {
+		$( "#advsearch_result" ).html('');
+	});
+
+	$('#advsearch_result').click(function(event){
+		event.stopPropagation();
+	});
+
+});
+
+function get_search_ajax (key_word, cat_id) {
+	$.ajax({
+		type: 'GET',
+		url: prestashop.urls.base_url + 'modules/jmsadvsearch/ajax_search.php',
+		headers: { "cache-control": "no-cache" },
+		async: true,
+		data: 'search_key=' + key_word + '&id_category=' + cat_id,
+		success: function(data)
+		{		
+			$('#advsearch_result').html(data);
+		}
+	}) .done(function( msg ) {
+		$( "#advsearch_result" ).html(msg);
+	});
+}

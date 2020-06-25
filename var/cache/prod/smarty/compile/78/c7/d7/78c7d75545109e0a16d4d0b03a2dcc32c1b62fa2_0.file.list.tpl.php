@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-24 09:33:21
+/* Smarty version 3.1.33, created on 2020-06-25 09:07:17
   from 'D:\xamppp\htdocs\jms_demart\modules\hotdeals\views\templates\hook\list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef30fd182fd33_51724259',
+  'unifunc' => 'content_5ef45b35a28ca9_37384427',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef30fd182fd33_51724259 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef45b35a28ca9_37384427 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="panel"><h3><i class="icon-list-ul"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Hotdeals list','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 
 	<span class="panel-heading-action">

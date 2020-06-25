@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-24 08:42:20
+/* Smarty version 3.1.33, created on 2020-06-25 11:09:35
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\headers\mobile-menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef303dc782016_21805067',
+  'unifunc' => 'content_5ef477dfc75882_81795572',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef303dc782016_21805067 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef477dfc75882_81795572 (Smarty_Internal_Template $_smarty_tpl) {
 ?><a id="mobile-menu-toggle" class="open-button hidden-lg">
     <i class="lnr lnr-menu"></i>
 </a>

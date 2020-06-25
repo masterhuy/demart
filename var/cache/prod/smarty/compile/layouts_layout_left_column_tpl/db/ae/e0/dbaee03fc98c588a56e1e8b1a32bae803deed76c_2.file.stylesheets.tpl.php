@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-24 08:42:19
+/* Smarty version 3.1.33, created on 2020-06-25 11:09:35
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef303dbb4e8a8_69749400',
+  'unifunc' => 'content_5ef477df5ddef3_06700358',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dbaee03fc98c588a56e1e8b1a32bae803deed76c' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\templates\\_partials\\stylesheets.tpl',
-      1 => 1587613612,
+      1 => 1592987368,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef303dbb4e8a8_69749400 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef477df5ddef3_06700358 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
@@ -49,7 +49,7 @@ modules/jmsthemesetting/views/fonts/font-icon.css" rel="stylesheet">
     <link href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
 /modules/jmsthemesetting/views/fonts/<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['jmsSetting']->value['heading_fontface_css'], ENT_QUOTES, 'UTF-8');?>
 " rel="stylesheet">
-<?php }?>
+<?php }?> 
 
 <?php if ($_smarty_tpl->tpl_vars['jmsSetting']->value['body_icon_font'] != '') {?>
 <link href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>

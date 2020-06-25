@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-22 07:43:29
+/* Smarty version 3.1.33, created on 2020-06-25 09:16:18
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\checkout\_partials\order-confirmation-table.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef05311d40d62_90809547',
+  'unifunc' => 'content_5ef45d52677333_38742673',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,33 +20,33 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef05311d40d62_90809547 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef45d52677333_38742673 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div id="order-items">
     <div class="row">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12551088155ef05311d0a265_91917864', 'order_items_table_head');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15413708995ef45d52640825_86775607', 'order_items_table_head');
 ?>
 
     </div>
 
     <div class="order-confirmation-table">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13747459505ef05311d0a269_73882591', 'order_confirmation_table');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2607544685ef45d526446a3_88520537', 'order_confirmation_table');
 ?>
 
     </div>
 </div>
 <?php }
 /* {block 'order_items_table_head'} */
-class Block_12551088155ef05311d0a265_91917864 extends Smarty_Internal_Block
+class Block_15413708995ef45d52640825_86775607 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'order_items_table_head' => 
   array (
-    0 => 'Block_12551088155ef05311d0a265_91917864',
+    0 => 'Block_15413708995ef45d52640825_86775607',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -59,12 +59,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'order_items_table_head'} */
 /* {block 'order_confirmation_table'} */
-class Block_13747459505ef05311d0a269_73882591 extends Smarty_Internal_Block
+class Block_2607544685ef45d526446a3_88520537 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'order_confirmation_table' => 
   array (
-    0 => 'Block_13747459505ef05311d0a269_73882591',
+    0 => 'Block_2607544685ef45d526446a3_88520537',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-22 04:55:48
+/* Smarty version 3.1.33, created on 2020-06-25 09:16:53
   from 'D:\xamppp\htdocs\jms_demart\pdf\invoice.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec74d446e07e7_81657600',
+  'unifunc' => 'content_5ef45d75ac8bd3_65459821',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec74d446e07e7_81657600 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef45d75ac8bd3_65459821 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['style_tab']->value;?>
 
 

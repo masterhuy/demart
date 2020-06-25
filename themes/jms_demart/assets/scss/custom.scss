@@ -379,7 +379,6 @@ button:disabled, button[disabled]{
   opacity: 1;
 }
 a,
-i,
 #back-to-top,
 .btn, 
 .btn-default{
@@ -1977,15 +1976,21 @@ header .row {
 
 /********* home 1 ******/
 .h1-slider{
+	.row{
+		margin-left: 0;
+		margin-right: 0;
+		> .layout-column{
+			padding: 0;
+		}
+	}
 	.vermegamenu{
+		display: none;
 		.addon-box{
 			position: relative;
 		}
 		.jms-megamenu{
+			padding: 12px 0;
 			background: #222832;
-			ul{
-				padding-bottom: 10px;
-			}
 			.nav > li{
 				display: block;
 				width: 100%;
@@ -2007,10 +2012,13 @@ header .row {
 	}
 }
 .h1-banner-1{
-	.container > .row{
-		margin: 0;
-		.layout-column{
-			padding: 0;
+	.container{
+		padding: 0;
+		> .row{
+			margin: 0;
+			.layout-column{
+				padding: 0;
+			}
 		}
 	}
 	.jms-banner > a{
@@ -2126,6 +2134,22 @@ header .row {
 				line-height: 2.462rem;
 				a{
 					font-size: 1.077rem;
+					position: relative;
+					&:hover::before{
+						transform: scale(1);
+					}
+					&::before{
+						content: "";
+						position: absolute;
+						bottom: -1px;
+						left: 0;
+						width: 100%;
+						height: 1px;
+						background: #000;
+						transform: scale(0);
+						transition: .4s all;
+						z-index: 10;
+					}
 				}
 			}
 		}
@@ -4198,8 +4222,11 @@ header .row {
 
 /******** home 5 ********/
 .home_5{
-	.btn-default{
+	.btn, .btn-default{
 		color: #000;
+		&:hover{
+			color: #000;
+		}
 	}
 	.addon-title{
 		h3{
@@ -4371,6 +4398,11 @@ header .row {
 			width: 100%;
 		}
 	}
+	.blog-carousel .post-created{
+		.day, .month{
+			color: #000;
+		}
+	}
 }
 .block-brand{
 	.container > .row{
@@ -4399,6 +4431,9 @@ header .row {
 .home_6{
 	.btn, .btn-default{
 		color: #092333;
+		&:hover{
+			color: #092333;
+		}
 	}
 	.addon-title{
 		h3{
@@ -4608,6 +4643,13 @@ header .row {
 					margin-top: 2.308rem;
 				}
 			}
+		}
+	}
+}
+.h6-blog{
+	.blog-carousel .post-created{
+		.day, .month{
+			color: #092333;
 		}
 	}
 }
@@ -6625,6 +6667,9 @@ footer .row{
 			padding-left: 17px;
 		}
 	}
+	.h1-slider .vermegamenu{
+		display: block;
+	}
 	.h1-shop-by-brand{
 		.addon-tab-title{
 			width: 100%;
@@ -6708,11 +6753,26 @@ footer .row{
 	.container {
 		max-width: 1320px;
 	}
+	.is-affixed .pb-right-content{
+	    padding: 0 10px;
+	}
 	#footer #footer-main .layout-column {
 		flex: 0 0 25%;
 		max-width: 25%;
 		&.wrapper{
 			padding-left: 60px;
+		}
+	}
+	.h1-slider{
+		.layout-column{
+			&.vermegamenu{
+				width: 310px;
+				max-width: 310px;
+			}
+			&.sliders{
+				width: calc(100% - 310px);
+				min-width: calc(100% - 310px);
+			}
 		}
 	}
 	.productbox-flex{

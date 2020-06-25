@@ -2118,7 +2118,7 @@
         e.stopPropagation()
     }), jQuery(document).ready(function() {
         $("#hor-menu .jms-megamenu").jmsMegaMenu({
-            event: "click",
+            event: "hover",
             duration: 100
         }),
         $("#ver-menu .jms-megamenu").jmsMegaMenu({

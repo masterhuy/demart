@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-22 04:55:50
+/* Smarty version 3.1.33, created on 2020-06-25 09:16:55
   from 'D:\xamppp\htdocs\jms_demart\admin041sahknz\themes\default\template\controllers\orders\_documents.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec74d46755b14_41146668',
+  'unifunc' => 'content_5ef45d778c9702_33725768',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec74d46755b14_41146668 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef45d778c9702_33725768 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive">
 	<table class="table" id="documents_table">
 		<thead>

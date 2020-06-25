@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-22 04:55:50
+/* Smarty version 3.1.33, created on 2020-06-25 09:16:55
   from 'D:\xamppp\htdocs\jms_demart\admin041sahknz\themes\default\template\controllers\orders\helpers\view\view.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec74d46692610_90614795',
+  'unifunc' => 'content_5ef45d777fa651_32479304',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -26,7 +26,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:controllers/orders/_discount_form.tpl' => 1,
   ),
 ),false)) {
-function content_5ec74d46692610_90614795 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef45d777fa651_32479304 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
@@ -34,18 +34,18 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_63417005ec74d4635e116_29019659', "override_tpl");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8981747965ef45d7748f581_35963347', "override_tpl");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "helpers/view/view.tpl");
 }
 /* {block "override_tpl"} */
-class Block_63417005ec74d4635e116_29019659 extends Smarty_Internal_Block
+class Block_8981747965ef45d7748f581_35963347 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'override_tpl' => 
   array (
-    0 => 'Block_63417005ec74d4635e116_29019659',
+    0 => 'Block_8981747965ef45d7748f581_35963347',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
