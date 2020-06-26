@@ -69,7 +69,7 @@
 	{if $page.page_name != 'index'}
 		<div class="title-block">
 			<h3 class="d-flex cursor-pointer">
-                {l s='Category tree links' d='Shop.Theme.CategoryTree'}
+                {l s='Categories' d='Shop.Theme.CategoryTree'}
             </h3>
 		</div>
 	{/if}

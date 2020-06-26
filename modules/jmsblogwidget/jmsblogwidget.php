@@ -112,8 +112,8 @@ class JmsBlogWidget extends Module
             $this->menu .= '<a class="collapsed" href="'.$_link.'" data-toggle="collapse" data-target="#child">';
             $this->menu .=  $category['title'];
             if ($category['level'] == 0 && isset($this->child[$category['category_id']])) {
+                $this->menu .= '<i class="fal fa-chevron-right"></i>';
                 $this->menu .= '<i class="fal fa-chevron-down"></i>';
-                $this->menu .= '<i class="fal fa-chevron-up"></i>';
             }
             $this->menu .= '</a>';
             if (isset($this->child[$category['category_id']])) {

@@ -348,6 +348,7 @@ button:disabled, button[disabled]{
 			border: 1px solid #e2e2e2;
 			border-radius: 50%;
 			cursor: pointer;
+			transition: .2s all;
 			&.owl-prev{
 				background: #fff url("../img/icons/prev.png") no-repeat center;
 			}
@@ -986,6 +987,9 @@ header .row {
 								color: #fff;
 								display: block;
 								padding: 0 20px;
+								&:hover{
+									background-color: #494d55;
+								}
 							}
 						}
 					}
@@ -1995,6 +1999,9 @@ header .row {
 				display: block;
 				width: 100%;
 				padding: 4.4px 0;
+				&:hover{
+					background-color: #333942;
+				}
 				> a{
 					color: #fff;
 					padding: 0 30px;
@@ -2622,6 +2629,22 @@ header .row {
 					line-height: 2.462rem;
 					a{
 						font-size: 1.077rem;
+						position: relative;
+						&:hover::before{
+							transform: scale(1);
+						}
+						&::before{
+							content: "";
+							position: absolute;
+							bottom: -1px;
+							left: 0;
+							width: 100%;
+							height: 1px;
+							background: #000;
+							transform: scale(0);
+							transition: .4s all;
+							z-index: 10;
+						}
 					}
 				}
 			}
@@ -3037,16 +3060,16 @@ header .row {
 				margin: 0;
 				&.owl-prev{
 					left: -4.615rem;
-					background: url("../img/icons/h4-prev.png") no-repeat center;
+					background: url("../img/icons/h4-prev.png") no-repeat center !important;
 					&:hover{
-						background-image: url("../img/icons/h4-prev-hover.png");
+						background-image: url("../img/icons/h4-prev-hover.png") !important;
 					}
 				}
 				&.owl-next{
 					right: -4.615rem;
-					background: url("../img/icons/h4-next.png") no-repeat center;
+					background: url("../img/icons/h4-next.png") no-repeat center !important;
 					&:hover{
-						background-image: url("../img/icons/h4-next-hover.png");
+						background-image: url("../img/icons/h4-next-hover.png") !important;
 					}
 				}
 			}
@@ -4064,16 +4087,16 @@ header .row {
 				margin: 0;
 				&.owl-prev{
 					left: -4.615rem;
-					background: url("../img/icons/h4-prev2.png") no-repeat center;
+					background: url("../img/icons/h4-prev2.png") no-repeat center !important;
 					&:hover{
-						background-image: url("../img/icons/h4-prev2-hover.png");
+						background-image: url("../img/icons/h4-prev2-hover.png") !important;
 					}
 				}
 				&.owl-next{
 					right: -4.615rem;
-					background: url("../img/icons/h4-next2.png") no-repeat center;
+					background: url("../img/icons/h4-next2.png") no-repeat center !important;
 					&:hover{
-						background-image: url("../img/icons/h4-next2-hover.png");
+						background-image: url("../img/icons/h4-next2-hover.png") !important;
 					}
 				}
 			}
@@ -4223,16 +4246,16 @@ header .row {
 /******** home 5 ********/
 .home_5{
 	.btn, .btn-default{
-		color: #000;
-		&:hover{
-			color: #000;
-		}
+		color: #000 !important;
 	}
 	.addon-title{
 		h3{
 			text-transform: capitalize;
 			text-align: center;
 		}
+	}
+	.jms-popup .text-top{
+		color: #000;
 	}
 }
 .h5-banner{
@@ -4430,10 +4453,7 @@ header .row {
 /******** home 6 ********/
 .home_6{
 	.btn, .btn-default{
-		color: #092333;
-		&:hover{
-			color: #092333;
-		}
+		color: #092333 !important;
 	}
 	.addon-title{
 		h3{
@@ -4442,6 +4462,9 @@ header .row {
 	}
 	.jms-row.line{
 		margin-top: -5px;
+	}
+	.jms-popup .text-top{
+		color: #000;
 	}
 }
 .h6-producttab{
@@ -4471,9 +4494,6 @@ header .row {
 }
 .h6-banner{
 	margin-top: -12px;
-	.jms-banner > a > img{
-		transform: none;
-	}
 }
 .h6-flashsale{
 	padding: 3.077rem 0 0;
@@ -5206,7 +5226,15 @@ footer .row{
 
 /****** popup advertising ******/
 .jms-popup{
+	display: flex;
+	flex-direction: column;
 	.main-content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+	}
+	.content{
 		padding: 4.077rem 2.308rem;
 	}
 	#social-links{
@@ -5316,300 +5344,17 @@ footer .row{
 	}
 }
 
+
+
 /***** home color *******/
-.home_1{
-	.jms-popup .newsletter-input-group input{
-		border-color: $color1;
-	}
-	.jms-popup .text-top{
-		background-color: $color1;
-	}
-	.btn, .btn-default,
-	.blog-carousel .post-created{
-		background-color: $color1;
-	}
-	#product-availability span::before {
-	    background-color: $color1;
-	}
-	#footer #footer-main .block-contact .phone::before{
-		content: url("../img/icons/phone-1.png");
-	}
-	.email_subscription .newsletter-input-group button.btn-icon i{
-		color: $color1;
-	}
-	.h3-service-box{
-		background-color: $color1;
-	}
-	.h4-service .feature-box .lnr{
-		color: $color1;
-	}
-	&.blocktab-2{
-		.addon-tab, .addon-producttab{
-			.nav-tabs .nav-item .nav-link{
-				&::after{
-					border-top-color: $color1;
-				}
-			}
-		}
-	}
-	#search_filters .ui-slider .ui-slider-handle{
-		background-color: $color1;
-	}
-	.view-mode .switch-view.active {
-		background-color: $color1 !important;
-		border-color: $color1;
-	}
-	.pagination li.current a {
-		background-color: $color1;
-	}
-}
-.home_2{
-	.jms-popup .newsletter-input-group input{
-		border-color: $color2;
-	}
-	.jms-popup .text-top{
-		background-color: $color2;
-	}
-	.btn, .btn-default,
-	.blog-carousel .post-created{
-		background-color: $color2;
-	}
-	#product-availability span::before {
-	    background-color: $color2;
-	}
-	#footer #footer-main .block-contact .phone::before{
-		content: url("../img/icons/phone-2.png");
-	}
-	.email_subscription .newsletter-input-group button.btn-icon i{
-		color: $color2;
-	}
-	.h3-service-box{
-		background-color: $color2;
-	}
-	.h4-service .feature-box .lnr{
-		color: $color2;
-	}
-	&.blocktab-2{
-		.addon-tab, .addon-producttab{
-			.nav-tabs .nav-item .nav-link{
-				&::before{
-					background-color: $color2;
-				}
-				&::after{
-					border-top-color: $color2;
-				}
-			}
-		}
-	}
-	#search_filters .ui-slider .ui-slider-handle{
-		background-color: $color2;
-	}
-	.view-mode .switch-view.active {
-		background-color: $color2 !important;
-		border-color: $color2;
-	}
-	.pagination li.current a {
-		background-color: $color2;
-	}
-}
-.home_3{
-	.jms-popup .newsletter-input-group input{
-		border-color: $color3;
-	}
-	.jms-popup .text-top{
-		background-color: $color3;
-	}
-	.btn, .btn-default,
-	.blog-carousel .post-created{
-		background-color: $color3;
-	}
-	#product-availability span::before {
-	    background-color: $color3;
-	}
-	#footer #footer-main .block-contact .phone::before{
-		content: url("../img/icons/phone-3.png");
-	}
-	.email_subscription .newsletter-input-group button.btn-icon i{
-		color: $color3;
-	}
-	.h3-service-box{
-		background-color: $color3;
-	}
-	.h4-service .feature-box .lnr{
-		color: $color3;
-	}
-	&.blocktab-2{
-		.addon-tab, .addon-producttab{
-			.nav-tabs .nav-item .nav-link{
-				&::before{
-					background-color: $color3;
-				}
-				&::after{
-					border-top-color: $color3;
-				}
-			}
-		}
-	}
-	#search_filters .ui-slider .ui-slider-handle{
-		background-color: $color3;
-	}
-	.view-mode .switch-view.active {
-		background-color: $color3 !important;
-		border-color: $color3;
-	}
-	.pagination li.current a {
-		background-color: $color3;
-	}
-}
-.home_4{
-	.jms-popup .newsletter-input-group input{
-		border-color: $color4;
-	}
-	.jms-popup .text-top{
-		background-color: $color4;
-	}
-	.btn, .btn-default,
-	.blog-carousel .post-created{
-		background-color: $color4;
-	}
-	#product-availability span::before {
-	    background-color: $color4;
-	}
-	#footer #footer-main .block-contact .phone::before{
-		content: url("../img/icons/phone-4.png");
-	}
-	.email_subscription .newsletter-input-group button.btn-icon i{
-		color: $color4;
-	}
-	.h3-service-box{
-		background-color: $color4;
-	}
-	.h4-service .feature-box .lnr{
-		color: $color4;
-	}
-	&.blocktab-2{
-		.addon-tab, .addon-producttab{
-			.nav-tabs .nav-item .nav-link{
-				&::before{
-					background-color: $color4;
-				}
-				&::after{
-					border-top-color: $color4;
-				}
-			}
-		}
-	}
-	#search_filters .ui-slider .ui-slider-handle{
-		background-color: $color4;
-	}
-	.view-mode .switch-view.active {
-		background-color: $color4 !important;
-		border-color: $color4;
-	}
-	.pagination li.current a {
-		background-color: $color4;
-	}
-}
-.home_5{
-	.jms-popup .newsletter-input-group input{
-		border-color: $color5;
-	}
-	.jms-popup .text-top{
-		background-color: $color5;
-		color: #000;
-	}
-	.btn, .btn-default,
-	.blog-carousel .post-created{
-		background-color: $color5;
-	}
-	#product-availability span::before {
-	    background-color: $color5;
-	}
-	#footer #footer-main .block-contact .phone::before{
-		content: url("../img/icons/phone-5.png");
-	}
-	.email_subscription .newsletter-input-group button.btn-icon i{
-		color: $color5;
-	}
-	.h3-service-box{
-		background-color: $color5;
-	}
-	.h4-service .feature-box .lnr{
-		color: $color5;
-	}
-	&.blocktab-2{
-		.addon-tab, .addon-producttab{
-			.nav-tabs .nav-item .nav-link{
-				&::before{
-					background-color: $color5;
-				}
-				&::after{
-					border-top-color: $color5;
-				}
-			}
-		}
-	}
-	#search_filters .ui-slider .ui-slider-handle{
-		background-color: $color5;
-	}
-	.view-mode .switch-view.active {
-		background-color: $color5 !important;
-		border-color: $color5;
-	}
-	.pagination li.current a {
-		background-color: $color5;
-	}
-}
-.home_6{
-	.jms-popup .newsletter-input-group input{
-		border-color: $color6;
-	}
-	.jms-popup .text-top{
-		background-color: $color6;
-		color: #000;
-	}
-	.btn, .btn-default,
-	.blog-carousel .post-created{
-		background-color: $color6;
-	}
-	#product-availability span::before {
-	    background-color: $color6;
-	}
-	#footer #footer-main .block-contact .phone::before{
-		content: url("../img/icons/phone-6.png");
-	}
-	.email_subscription .newsletter-input-group button.btn-icon i{
-		color: $color6;
-	}
-	.h3-service-box{
-		background-color: $color6;
-	}
-	.h4-service .feature-box .lnr{
-		color: $color6;
-	}
-	&.blocktab-2{
-		.addon-tab, .addon-producttab{
-			.nav-tabs .nav-item .nav-link{
-				&::before{
-					background-color: $color6;
-				}
-				&::after{
-					border-top-color: $color6;
-				}
-			}
-		}
-	}
-	#search_filters .ui-slider .ui-slider-handle{
-		background-color: $color6;
-	}
-	.view-mode .switch-view.active {
-		background-color: $color6 !important;
-		border-color: $color6;
-	}
-	.pagination li.current a {
-		background-color: $color6;
-	}
-}
+
+@include homeColor(1, $color1);
+@include homeColor(2, $color2);
+@include homeColor(3, $color3);
+@include homeColor(4, $color4);
+@include homeColor(5, $color5);
+@include homeColor(6, $color6);
+
 
 /******** line *******/
 .jms-row.line{

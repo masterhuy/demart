@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-25 09:34:04
+/* Smarty version 3.1.33, created on 2020-06-26 09:47:09
   from 'module:pscategorytreeviewstempla' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef4617c260288_04434441',
+  'unifunc' => 'content_5ef5b60d9ca991_03177629',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8921007f54626fc7fe42cbff53f1d70828d3393d' => 
     array (
       0 => 'module:pscategorytreeviewstempla',
-      1 => 1592292949,
+      1 => 1593160626,
       2 => 'module',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef4617c260288_04434441 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef5b60d9ca991_03177629 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'categories' => 
   array (
     'compiled_filepath' => 'D:\\xamppp\\htdocs\\jms_demart\\var\\cache\\prod\\smarty\\compile\\89\\21\\00\\8921007f54626fc7fe42cbff53f1d70828d3393d_2.module.pscategorytreeviewstempla.php',
     'uid' => '8921007f54626fc7fe42cbff53f1d70828d3393d',
-    'call_name' => 'smarty_template_function_categories_7759862435ef4617c239171_70279235',
+    'call_name' => 'smarty_template_function_categories_4229101935ef5b60d9a3893_42259666',
   ),
 ));
 ?>
@@ -35,7 +35,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
 	<?php if ($_smarty_tpl->tpl_vars['page']->value['page_name'] != 'index') {?>
 		<div class="title-block">
 			<h3 class="d-flex cursor-pointer">
-                <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Category tree links','d'=>'Shop.Theme.CategoryTree'),$_smarty_tpl ) );?>
+                <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Categories','d'=>'Shop.Theme.CategoryTree'),$_smarty_tpl ) );?>
 
             </h3>
 		</div>
@@ -44,9 +44,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
 
 </div>
 <?php }
-/* smarty_template_function_categories_7759862435ef4617c239171_70279235 */
-if (!function_exists('smarty_template_function_categories_7759862435ef4617c239171_70279235')) {
-function smarty_template_function_categories_7759862435ef4617c239171_70279235(Smarty_Internal_Template $_smarty_tpl,$params) {
+/* smarty_template_function_categories_4229101935ef5b60d9a3893_42259666 */
+if (!function_exists('smarty_template_function_categories_4229101935ef5b60d9a3893_42259666')) {
+function smarty_template_function_categories_4229101935ef5b60d9a3893_42259666(Smarty_Internal_Template $_smarty_tpl,$params) {
 $params = array_merge(array('nodes'=>array(),'depth'=>0), $params);
 foreach ($params as $key => $value) {
 $_smarty_tpl->tpl_vars[$key] = new Smarty_Variable($value, $_smarty_tpl->isRenderingCache);
@@ -76,5 +76,5 @@ if ($_smarty_tpl->tpl_vars['node']->value['children']) {?><span class="navbar-to
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></ul><?php }
 }}
-/*/ smarty_template_function_categories_7759862435ef4617c239171_70279235 */
+/*/ smarty_template_function_categories_4229101935ef5b60d9a3893_42259666 */
 }

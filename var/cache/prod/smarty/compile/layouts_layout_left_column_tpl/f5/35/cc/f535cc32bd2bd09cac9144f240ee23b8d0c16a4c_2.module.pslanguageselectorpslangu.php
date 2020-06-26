@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-25 11:09:35
+/* Smarty version 3.1.33, created on 2020-06-26 09:35:06
   from 'module:pslanguageselectorpslangu' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef477df6acfa2_63673653',
+  'unifunc' => 'content_5ef5b33a762b51_97945312',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef477df6acfa2_63673653 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef5b33a762b51_97945312 (Smarty_Internal_Template $_smarty_tpl) {
 if (count($_smarty_tpl->tpl_vars['languages']->value) > 1) {?>
 	<div class="btn-group languages-info">
 		<a href="#" class="btn-xs" data-toggle="dropdown">

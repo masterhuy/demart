@@ -27,30 +27,29 @@
 	<div class="jms-popup animated zoomIn hidden">
 		<div class="text-top">{l s="Hello! Welcome to Demart - Wish you happy shopping " d='Shop.Theme.Global'}</div>
 		<div class="main-content">
-			<div class="logo">
-				{include file='_partials/headers/logo.tpl'}
-			</div>
-			{if $popup_title}
-				<h2>
-					{$popup_title|escape:'htmlall':'UTF-8'}
-				</h2>
-			{/if}
-			<p class="text-1 text-uppercase">{l s="Sign up & get 15% off" d='Shop.Theme.Global'}</p>
-			<p class="text-2">{l s="For Your Next Purchase!" d='Shop.Theme.Global'}</p>
-			<a class="popup-close">
-				<img src="{$urls.theme_assets}img/icons/close.png" />
-			</a>
-			<input type="hidden" name="width_default" id="width-default" value="{$popup_width|escape:'htmlall':'UTF-8'}" />
-			<input type="hidden" name="height_default" id="height-default" value="{$popup_height|escape:'htmlall':'UTF-8'}" />
-			<input type="hidden" name="loadtime" id="loadtime" value="{$loadtime|escape:'htmlall':'UTF-8'}" />
-			<div class="jms-popup-content">
-				{$popup_content nofilter}
-			</div>
-			{include file='_partials/socials.tpl'}
-			<div class="dontshow">
-				<input type="checkbox" name="dontshowagain" value="1" id="dontshowagain" />
-				<label>{l s="Don’t show this popup again" d='Shop.Theme.Global'}</label>
-				<span class="checkmark"></span>
+			<div class="content">
+				{if $popup_title}
+					<h2>
+						{$popup_title|escape:'htmlall':'UTF-8'}
+					</h2>
+				{/if}
+				<p class="text-1 text-uppercase">{l s="Sign up & get 15% off" d='Shop.Theme.Global'}</p>
+				<p class="text-2">{l s="For Your Next Purchase!" d='Shop.Theme.Global'}</p>
+				<a class="popup-close">
+					<img src="{$urls.theme_assets}img/icons/close.png" />
+				</a>
+				<input type="hidden" name="width_default" id="width-default" value="{$popup_width|escape:'htmlall':'UTF-8'}" />
+				<input type="hidden" name="height_default" id="height-default" value="{$popup_height|escape:'htmlall':'UTF-8'}" />
+				<input type="hidden" name="loadtime" id="loadtime" value="{$loadtime|escape:'htmlall':'UTF-8'}" />
+				<div class="jms-popup-content">
+					{$popup_content nofilter}
+				</div>
+				{include file='_partials/socials.tpl'}
+				<div class="dontshow">
+					<input type="checkbox" name="dontshowagain" value="1" id="dontshowagain" />
+					<label>{l s="Don’t show this popup again" d='Shop.Theme.Global'}</label>
+					<span class="checkmark"></span>
+				</div>
 			</div>
 		</div>
 	</div>

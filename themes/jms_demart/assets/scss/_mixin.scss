@@ -1,14 +1,67 @@
-@mixin hoverBannerEffect($x1, $x2){
-	.jms-banner{
-		> a{
-			display: block;
-			overflow: hidden;
-			&:hover img{
-				transform: scale(#{$x1});
+@mixin homeColor($home, $color){
+	.home_#{$home}{
+		.megatab-icon .addon-tab .nav-tabs li a.active {
+			background: $color;
+		}
+		.owl-theme .owl-controls div{
+			&:hover{
+				background-color: #{$color};
+				border-color: #{$color};
 			}
-			img{
-				transition: #{$x2}ms all;
+			&.owl-next{
+				&:hover{
+					background-image: url("../img/icons/next-hover.png");
+				}
 			}
+			&.owl-prev{
+				&:hover{
+					background-image: url("../img/icons/prev-hover.png");
+				}
+			}
+		}
+		#footer #footer-main .block-contact .phone::before{
+			content: url("../img/icons/phone-#{$home}.png");
+		}
+		.jms-popup .newsletter-input-group input{
+			border-color: #{$color};
+		}
+		.jms-popup .text-top{
+			background-color: #{$color};
+		}
+		.btn, .btn-default,
+		.blog-carousel .post-created{
+			background-color: #{$color};
+		}
+		#product-availability span::before {
+		    background-color: #{$color};
+		}
+		.email_subscription .newsletter-input-group button.btn-icon i{
+			color: #{$color};
+		}
+		.h3-service-box{
+			background-color: #{$color};
+		}
+		.h4-service .feature-box .lnr{
+			color: #{$color};
+		}
+		&.blocktab-2{
+			.addon-tab, .addon-producttab{
+				.nav-tabs .nav-item .nav-link{
+					&::after{
+						border-top-color: #{$color};
+					}
+				}
+			}
+		}
+		#search_filters .ui-slider .ui-slider-handle{
+			background-color: #{$color};
+		}
+		.view-mode .switch-view.active {
+			background-color: #{$color} !important;
+			border-color: #{$color};
+		}
+		.pagination li.current a {
+			background-color: #{$color};
 		}
 	}
 }

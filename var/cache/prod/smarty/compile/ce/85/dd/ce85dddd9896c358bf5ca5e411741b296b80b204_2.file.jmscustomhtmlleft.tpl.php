@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-25 09:34:04
+/* Smarty version 3.1.33, created on 2020-06-26 09:47:09
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmscustomhtmlleft\views\templates\hook\jmscustomhtmlleft.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef4617c2a2915_72890482',
+  'unifunc' => 'content_5ef5b60da8de90_41152526',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef4617c2a2915_72890482 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef5b60da8de90_41152526 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="customs-html-left">
 	<?php echo $_smarty_tpl->tpl_vars['html_left']->value;?>
 
