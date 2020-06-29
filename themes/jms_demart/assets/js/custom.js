@@ -21,23 +21,21 @@ changeShopGrid = () => {
 }
 
 stickySidebar = () => {
-    if ($(window).width() > 1200){
-        if($('#wrapper #content-wrapper.col-lg-9').length){
-            let sidebar = new StickySidebar('#wrapper .sidebar-column', {
-                containerSelector: '#wrapper > .row',
-                innerWrapperSelector: '#wrapper .sidebar-column .sidebar-inner',
-                topSpacing: 100
-            });
-        }
-    
-        if($('.product-layout-3columns .pb-right-column').length){
-            let sidebar = new StickySidebar('.product-layout-3columns .pb-right-column', {
-                containerSelector: '.product-layout-3columns',
-                innerWrapperSelector: '.product-layout-3columns .pb-right-column .pb-right-content',
-                topSpacing: 100
-            });
-        }    
+    if($('#wrapper #content-wrapper.col-lg-9').length){
+        let sidebar = new StickySidebar('#wrapper .sidebar-column', {
+            containerSelector: '#wrapper > .row',
+            innerWrapperSelector: '#wrapper .sidebar-column .sidebar-inner',
+            topSpacing: 100
+        });
     }
+
+    if($('.product-layout-3columns .pb-right-column').length){
+        let sidebar = new StickySidebar('.product-layout-3columns .pb-right-column', {
+            containerSelector: '.product-layout-3columns',
+            innerWrapperSelector: '.product-layout-3columns .pb-right-column .pb-right-content',
+            topSpacing: 100
+        });
+    }    
 }
 
 jsPromoBar = () => {
@@ -774,8 +772,15 @@ customCarousel = () => {
     }
 }
 
-$(document).on("click", ".switch-view", function(e) {
-
+$(document).on("click", ".switch-view", function() {
+    if($('#wrapper #content-wrapper.col-lg-9').length){
+        let sidebar = new StickySidebar('#wrapper .sidebar-column', {
+            containerSelector: '#wrapper > .row',
+            innerWrapperSelector: '#wrapper .sidebar-column .sidebar-inner',
+            topSpacing: 100
+        });
+    }
+    stickySidebar();
 });
 
 $(document).ready(function(){
@@ -787,10 +792,9 @@ $(document).ready(function(){
     showMoreCategory();
     backToTop();
 
-
     setTimeout(() => {
         $('.preloader').fadeOut();
-    }, 3000);	
+    }, 3000);
 
     if ($("body").hasClass("page-index")){
         $('.header-1 #ver-menu').addClass('show');

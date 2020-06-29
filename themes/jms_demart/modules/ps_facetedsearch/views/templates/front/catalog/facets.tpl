@@ -41,15 +41,13 @@
         </ul>
     {/if}
 </section>
+
+
+
 {if $displayedFacets|count}
     <div id="search_filters">
         {block name='facets_clearall_button'}
             {if $activeFilters|count}
-                {block name='facets_title'}
-                    <div class="facet filter-by">
-                        <p class="facet-title hidden-sm-down">{l s='Filter By' d='Shop.Theme.Actions'}</p>
-                    </div>
-                {/block}
                 <div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
                     <button data-search-url="{$clear_all_link}" class="btn btn-default js-search-filters-clear-all">
                         {l s='Clear all' d='Shop.Theme.Actions'}

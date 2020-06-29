@@ -450,7 +450,7 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100%;
+  width: calc(100% - 32px);
   padding: 4px 0;
   position: absolute;
   top: -6px;

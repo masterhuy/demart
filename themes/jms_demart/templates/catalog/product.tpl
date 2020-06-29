@@ -81,7 +81,7 @@
             {if $accessories && $jmsSetting.product_page_accessories}
                 <section class="product-accessories clearfix">
                     <div class="addon-title">
-                        <h3>{l s='Related Products' d='Shop.Theme.Catalog'}</h3>
+                        <h3>{l s='Products accessories' d='Shop.Theme.Catalog'}</h3>
                     </div>
                     <div class="products owl-carousel" data-items="5" data-lg="4" data-md="3" data-sm="2">
                         {foreach from=$accessories item="product_accessory"}

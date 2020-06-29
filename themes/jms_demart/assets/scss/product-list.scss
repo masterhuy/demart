@@ -357,11 +357,12 @@
 				&::before {
 					content: "";
 					position: absolute;
-					width: 0;
+					width: 100%;
 					height: 1px;
 					background-color: #000;
 					left: 0;
 					bottom: 0.4615rem;
+					transform: scale(0);
 					transition: all 400ms;
 					-webkit-transition: all 400ms;
 					-moz-transition: all 400ms;
@@ -370,7 +371,7 @@
 				}
 				&:hover {
 					&::before {
-						width: 100%;
+						transform: scale(1);
 					}
 				}
 			}
@@ -379,7 +380,7 @@
 			.search-link {
 				color: #000;
 				&::before {
-					width: 100%;
+					transform: scale(1);
 				}
 			}
 		}
@@ -507,7 +508,8 @@
 	background: #f3f4f7 none repeat scroll 0 0;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 3.846rem;
+	margin-bottom: 2.308rem;
+	margin-top: 0;
 	padding: 1.154rem 1.154rem 0.3846rem;
 	.active-filter-title {
 		margin: 0 1.154rem 0.7692rem 0;

@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Preparing for the summer sales: the 8 essential modules</title>
+    <link>https://www.prestashop.com/en/blog/essential-modules-sales</link>
+    <description>Summer is already upon us, and as you know, with the nice weather comes the </description>
+     <pubDate>Fri, 26 Jun 2020 16:31:21 +0200</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/essential-modules-sales</guid>
+  </item>
+  <item>
     <title>PrestaShop (e)Commerce Week: an international week of online conferences</title>
     <link>https://www.prestashop.com/en/blog/prestashop-ecommerce-week-2020</link>
     <description>As a privileged partner of the digital transition of businesses, PrestaShop is pleased to hold the </description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 29 Apr 2020 16:13:18 +0200</pubDate>
  <dc:creator>Aurélien Bellanger</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-lockdown-tips</guid>
-  </item>
-  <item>
-    <title>COVID-19: Key Ecommerce Figures</title>
-    <link>https://www.prestashop.com/en/blog/key-ecommerce-figures-coronavirus</link>
-    <description>After the &quot;panic buying&quot; phases focusing on basic necessities, distribution business remains significantly impacted by the Coronavirus crisis throughout the world.</description>
-     <pubDate>Mon, 27 Apr 2020 17:39:39 +0200</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/key-ecommerce-figures-coronavirus</guid>
   </item>
   </channel>
 </rss>

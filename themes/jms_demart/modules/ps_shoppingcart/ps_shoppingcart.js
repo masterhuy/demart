@@ -15,24 +15,31 @@
  * The safest way to do so is to place your "override" inside the theme's main JS file.
  *
  */
+$('body').on('click', '.ajax-add-to-cart', function (event) {	
+  event.preventDefault();
+  var query = 'id_product=' + $(this).attr('data-id-product') + '&qty='+ $(this).attr('data-minimal-quantity') + '&token=' + $(this).attr('data-token') + '&add=1&action=update';
+  var actionURL = prestashop['urls']['base_url'] +  'index.php?controller=cart';		
+  $('.ajax-add-to-cart').removeClass('addtocart-selected');
+  $(this).addClass('addtocart-selected');
+  $(this).removeClass('checked');
+  $(this).addClass('checking');
+  var callerElement = $(this);
 
-$('body').on('click', '.ajax-add-to-cart', function (event) {
- 	event.preventDefault();
- 	var query = 'id_product=' + $(this).attr('data-id-product') + '&qty='+ $(this).attr('data-minimal-quantity') + '&token=' + $(this).attr('data-token') + '&add=1&action=update';
- 	var actionURL = prestashop['urls']['base_url'] +  'index.php?controller=cart';
- 	var callerElement = $(this);
   if($('#cart_block').hasClass('no-ajax')) document.location = actionURL;
- 	$.post(actionURL, query, null, 'json').then(function (resp) {
- 	    prestashop.emit('updateCart', {
- 	        reason: {
- 	          idProduct: resp.id_product,
- 	          idProductAttribute: resp.id_product_attribute,
- 	          linkAction: 'add-to-cart'
- 	        }
- 	    });
- 	}).fail(function (resp) {
- 	    prestashop.emit('handleError', { eventType: 'addProductToCart', resp: resp });
- 	});
+  $.post(actionURL, query, null, 'json').then(function (resp) {
+      prestashop.emit('updateCart', {
+          reason: {
+          idProduct: resp.id_product,
+          idProductAttribute: resp.id_product_attribute,
+          linkAction: 'add-to-cart'
+          }
+      });
+      $(callerElement).removeClass('checking');
+      $(callerElement).addClass('checked');
+      window.setTimeout( function() {$(callerElement).removeClass('checked');}, 3000 );
+  }).fail(function (resp) {
+      prestashop.emit('handleError', { eventType: 'addProductToCart', resp: resp });
+  });
 });
 
 $(document).ready(function () {

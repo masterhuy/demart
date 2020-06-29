@@ -44,17 +44,17 @@
 .fraction-slider .prev, .fraction-slider .next {
 	opacity: 0;
 	visibility: hidden;
-	font-size: 30px;
+	font-size: 2.5vw;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	z-index: 999;
+	z-index: 997;
 }
 .fraction-slider .prev{
-	left: 50px;
+	left: 2vw;
 }
 .fraction-slider .next{
-	right: 50px;
+	right: 2vw;
 }
 .fraction-slider:hover .prev{
 	visibility: visible;

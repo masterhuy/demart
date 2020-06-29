@@ -284,23 +284,30 @@
     #category .facet .facet-label .search-link::before {
       content: "";
       position: absolute;
-      width: 0;
+      width: 100%;
       height: 1px;
       background-color: #000;
       left: 0;
       bottom: 0.4615rem;
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
       transition: all 400ms;
       -webkit-transition: all 400ms;
       -moz-transition: all 400ms;
       -ms-transition: all 400ms;
       -o-transition: all 400ms; }
     #category .facet .facet-label .search-link:hover::before {
-      width: 100%; }
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
 
 #category .facet .facet-label.active .search-link {
   color: #000; }
   #category .facet .facet-label.active .search-link::before {
-    width: 100%; }
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
 
 #category .facet > .flex-box {
   width: 100%; }
@@ -396,7 +403,8 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 3.846rem;
+  margin-bottom: 2.308rem;
+  margin-top: 0;
   padding: 1.154rem 1.154rem 0.3846rem; }
   #js-active-search-filters .active-filter-title {
     margin: 0 1.154rem 0.7692rem 0;

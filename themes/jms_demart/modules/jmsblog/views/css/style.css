@@ -240,11 +240,12 @@
 .blog-widget li a::before{
 	content: "";
 	position: absolute;
-	width: 0;
+	width: 100%;
 	height: 1px;
 	background-color: #000;
 	left: 0;
 	bottom: 0.4615rem;
+	transform: scale(0);
 	transition: all 400ms;
 	-webkit-transition: all 400ms;
 	-moz-transition: all 400ms;
@@ -252,7 +253,7 @@
 	-o-transition: all 400ms;
 }
 .blog-widget li a:hover::before{
-	width: 100%;
+	transform: scale(1);
 }
 .blog-widget .post-list li:last-child {
 	margin-bottom: 0;
