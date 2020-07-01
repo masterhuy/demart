@@ -25,7 +25,8 @@ stickySidebar = () => {
         let sidebar = new StickySidebar('#wrapper .sidebar-column', {
             containerSelector: '#wrapper > .row',
             innerWrapperSelector: '#wrapper .sidebar-column .sidebar-inner',
-            topSpacing: 100
+            topSpacing: 100,
+            resizeSensor: true
         });
     }
 
@@ -780,7 +781,6 @@ $(document).on("click", ".switch-view", function() {
             topSpacing: 100
         });
     }
-    stickySidebar();
 });
 
 $(document).ready(function(){
@@ -893,3 +893,4 @@ $(document).ready(function(){
         }
     });
 });
+

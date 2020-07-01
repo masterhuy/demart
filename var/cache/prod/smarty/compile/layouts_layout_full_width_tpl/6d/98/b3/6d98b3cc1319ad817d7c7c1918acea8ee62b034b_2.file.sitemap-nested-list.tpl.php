@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-22 08:01:10
+/* Smarty version 3.1.33, created on 2020-07-01 03:32:33
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\templates\cms\_partials\sitemap-nested-list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef0573669b6d8_24713764',
+  'unifunc' => 'content_5efbf5c1bdbc74_05540980',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,20 +21,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:cms/_partials/sitemap-nested-list.tpl' => 2,
   ),
 ),false)) {
-function content_5ef0573669b6d8_24713764 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efbf5c1bdbc74_05540980 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20346729945ef05736683fc2_45619497', 'sitemap_item');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12881298505efbf5c1bcc268_55243674', 'sitemap_item');
 ?>
 
 <?php }
 /* {block 'sitemap_item'} */
-class Block_20346729945ef05736683fc2_45619497 extends Smarty_Internal_Block
+class Block_12881298505efbf5c1bcc268_55243674 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'sitemap_item' => 
   array (
-    0 => 'Block_20346729945ef05736683fc2_45619497',
+    0 => 'Block_12881298505efbf5c1bcc268_55243674',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

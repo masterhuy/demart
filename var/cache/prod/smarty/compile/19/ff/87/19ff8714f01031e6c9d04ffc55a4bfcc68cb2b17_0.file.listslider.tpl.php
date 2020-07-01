@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-29 08:24:26
+/* Smarty version 3.1.33, created on 2020-06-30 03:14:40
   from 'D:\xamppp\htdocs\jms_demart\modules\jmsslider\views\templates\hook\listslider.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef9972ad1bb21_38092951',
+  'unifunc' => 'content_5efaa010657e42_57502738',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef9972ad1bb21_38092951 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efaa010657e42_57502738 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
             $(function() {

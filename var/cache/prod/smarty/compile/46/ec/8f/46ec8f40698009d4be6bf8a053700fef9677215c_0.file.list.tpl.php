@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-25 09:16:40
+/* Smarty version 3.1.33, created on 2020-07-01 04:50:03
   from 'D:\xamppp\htdocs\jms_demart\admin041sahknz\themes\default\template\helpers\list\list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef45d680ee298_30731009',
+  'unifunc' => 'content_5efc07eba9c6e5_84135926',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef45d680ee298_30731009 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efc07eba9c6e5_84135926 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['header']->value;?>
 
 <?php echo $_smarty_tpl->tpl_vars['content']->value;?>

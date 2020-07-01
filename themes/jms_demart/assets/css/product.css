@@ -284,7 +284,10 @@
   .product-images .thumb-container > .thumb {
     cursor: pointer;
     width: 100%;
-    border: 1px solid #ebebeb; }
+    border: 1px solid #ebebeb;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    transition: .4s all; }
   .product-images .thumb-container > .thumb.selected {
     border: 1px solid #14c2ee !important; }
 
@@ -836,7 +839,6 @@ section.featured-products {
   width: 100%; }
   #more_info_block li {
     float: none;
-    display: inline-block;
     margin: 0 3px; }
   #more_info_block .same-category {
     display: none; }

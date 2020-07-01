@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-29 03:56:37
+/* Smarty version 3.1.33, created on 2020-07-01 08:53:19
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmsflashsales\views\templates\hook\jmsflashsales-tab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef95865534f82_66450979',
+  'unifunc' => 'content_5efc40ef19f8e7_92494820',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product-flex.tpl' => 1,
   ),
 ),false)) {
-function content_5ef95865534f82_66450979 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efc40ef19f8e7_92494820 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jmsflashsales-tab">
 	<div class="tabpanel row align-items-center">
 		<div class="addon-title col-auto">

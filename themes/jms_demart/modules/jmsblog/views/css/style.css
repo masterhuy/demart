@@ -280,6 +280,9 @@
 .cat-post-list .post-thumb a:hover img{
 	transform: none;
 }
+.cat-post-list .cat-intro{
+	color: #444;
+}
 .cat-post-list .readmore{
 	display: inline-block;
 	width: auto;

@@ -68,6 +68,15 @@
 		cursor: not-allowed;
 	}
 }
+.filter-by{
+	.filter-block .js-search-link{
+		position: absolute;
+		right: 0;
+	}
+	#_desktop_search_filters_clear_all{
+		margin-top: 20px;
+	}
+}
 .block-categories {
 	ul {
 		padding: 0px;
@@ -81,6 +90,7 @@
 				cursor: pointer;
 				align-items: center;
 				position: absolute;
+				padding: 0;
 				right: 0;
 				top: 0.3077rem;
 				font-size: 0.9231rem;

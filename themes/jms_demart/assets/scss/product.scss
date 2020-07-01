@@ -346,6 +346,7 @@
             cursor: pointer;
             width: 100%;
             border: 1px solid #ebebeb;
+            transition: .4s all;
         }
         >.thumb.selected {
             border: 1px solid $color1 !important;
@@ -946,7 +947,6 @@ section.featured-products {
     width: 100%;
     li{
         float: none;
-        display: inline-block;
         margin: 0 3px; 
     }
     .same-category {

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-29 03:25:14
+/* Smarty version 3.1.33, created on 2020-07-01 04:33:30
   from 'D:\xamppp\htdocs\jms_demart\modules\jmsproducttab\views\templates\hook\jmsproducttab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ef9510a44be35_84133586',
+  'unifunc' => 'content_5efc040ad44f40_70348908',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef9510a44be35_84133586 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efc040ad44f40_70348908 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Custom Tab','mod'=>'jmsproducttab'),$_smarty_tpl ) );?>
 </h3>
 <div class="form-group">				

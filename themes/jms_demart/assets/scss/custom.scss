@@ -606,6 +606,13 @@ header .row {
 		}
 	}
 }
+#header{
+	position: relative;
+	z-index: 1000;
+}
+.bg-overlay{
+	transition: .4s all;
+}
 .open-dropdown-menu{
 	&.hover-vermenu{
 		> .bg-overlay{
@@ -619,10 +626,6 @@ header .row {
 		opacity: 1;
 		visibility: visible;
 	}
-	#header{
-		position: relative;
-		z-index: 1000;
-	}
 	.header-1 #header-bottom{
 		position: relative;
 		z-index: 1;
@@ -633,7 +636,7 @@ header .row {
 			left: 0;
 			bottom: 0;
 			width: 100%;
-			height: calc(100% + 20px);
+			height: calc(100% + 0px);
 			transition: .4s all;
 			z-index: 999;
 		}
@@ -3347,6 +3350,9 @@ header .row {
 	}
 }
 .blog-carousel{
+	&.owl-theme .owl-item{
+		opacity: 1;
+	}
 	&.owl-theme .owl-stage-outer{
 		padding-bottom: 0;
 	}
@@ -4286,6 +4292,9 @@ header .row {
 	.btn, .btn-default{
 		color: #000 !important;
 	}
+	.product-miniature .product-buttons .ajax-add-to-cart i{
+		color: #000
+	}
 	.addon-title{
 		h3{
 			text-transform: capitalize;
@@ -4495,6 +4504,9 @@ header .row {
 	}
 	.slider-home-6 .btn-default{
 		color: #c3e235 !important;
+	}
+	.product-miniature .product-buttons .ajax-add-to-cart i{
+		color: #092333
 	}
 	.addon-title{
 		h3{
@@ -5113,6 +5125,27 @@ footer .row{
 			}
 		}
 	}
+	.product-buttons{
+		.fa-spinner-third{
+			animation: spinner 0.4s infinite linear;
+		}
+		.ajax-add-to-cart{
+			i{
+				color: #fff;
+				display: none;
+			}
+			&.checking{
+				.fa-spinner-third{
+					display: inline-block;
+				}
+			}
+			&.checked{
+				.fa-check{
+					display: inline-block;
+				}
+			}
+		}
+	}
 	ul.product-buttons{
 		opacity: 0;
 		visibility: hidden;
@@ -5127,9 +5160,6 @@ footer .row{
 		width: 100%;
 		box-shadow: 0 0px 1.538rem rgba(0, 0, 0, 0.2);
 		z-index: 1;
-		.fa-spinner-third{
-			animation: spinner 0.4s infinite linear;
-		}
 		&::before{
 			content: "";
 			width: 100%;
@@ -5146,20 +5176,6 @@ footer .row{
 			max-width: 112px;
 			text-overflow: ellipsis;
 			overflow: hidden;
-			i{
-				color: #fff;
-				display: none;
-			}
-			&.checking{
-				.fa-spinner-third{
-					display: inline-block;
-				}
-			}
-			&.checked{
-				.fa-check{
-					display: inline-block;
-				}
-			}
 		}
 		li{
 			opacity: 0;
@@ -5205,6 +5221,7 @@ footer .row{
 	}
 	.product-buttons {
 		margin-top: 2rem;
+
 	}
 }
 
@@ -5544,6 +5561,7 @@ footer .row{
 				font-size: 25px;
 				margin-right: 0;
 				margin-bottom: 10px;
+				transition: .4s all;
 			}
 		}
 	}
@@ -5934,9 +5952,6 @@ footer .row{
 			opacity: 1;
 		}
 	}
-}
-.modal-open .zoomContainer {
-	z-index: 1051;
 }
 #submitWishlist{
 	padding: 0.423rem 1.308rem;

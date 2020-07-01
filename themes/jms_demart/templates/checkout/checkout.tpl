@@ -29,7 +29,7 @@
             {include file='_partials/head.tpl'}
         {/block}
     </head>
-    <body id="{$page.page_name}" class="{$page.body_classes|classnames} {if isset($jpb_homeclass) && $jpb_homeclass}{$jpb_homeclass}{/if}">
+    <body id="{$page.page_name}" class="{$page.body_classes|classnames} {if isset($jpb_homeclass) && $jpb_homeclass}{$jpb_homeclass}{/if} {$jpb_pageclass}">
         {hook h='displayAfterBodyOpeningTag'}
         <div class="main-site">
             <header id="header">

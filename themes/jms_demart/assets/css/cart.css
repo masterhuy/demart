@@ -254,6 +254,8 @@ body#checkout #cart-summary-product-list .media-left {
       width: 100%;
       border-radius: 0;
       border: 0; }
+      .cart-grid-right .right-box .cart-summary + .block-promo {
+        padding: 1.5rem; }
   .cart-grid-right #block-reassurance {
     padding: 1.5rem;
     clear: both; }

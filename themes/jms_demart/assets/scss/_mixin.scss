@@ -1,7 +1,23 @@
 @mixin homeColor($home, $color){
 	.home_#{$home}{
+		&#my-account .links a:hover i{
+			color: #{$color};
+		}
+		.product-images .thumb-container > .thumb.selected,
+		.product-images .thumb-container > .thumb:hover {
+			border-color: #{$color} !important;
+		}
+		.product-desc li::before {
+			background-color: #{$color};
+		}
+		.product-variants-item input:checked ~ .radio-label {
+			border-color: #{$color};
+		}
+		.product-variants-item input:checked + .color::after {
+			background-color: #{$color};
+		}
 		.megatab-icon .addon-tab .nav-tabs li a.active {
-			background: $color;
+			background: #{$color};
 		}
 		.owl-theme .owl-controls div{
 			&:hover{
