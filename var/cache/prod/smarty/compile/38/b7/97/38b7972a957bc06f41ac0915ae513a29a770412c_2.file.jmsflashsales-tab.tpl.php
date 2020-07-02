@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-01 08:53:19
+/* Smarty version 3.1.33, created on 2020-07-02 09:41:29
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmsflashsales\views\templates\hook\jmsflashsales-tab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5efc40ef19f8e7_92494820',
+  'unifunc' => 'content_5efd9db9d7a2e5_55125149',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '38b7972a957bc06f41ac0915ae513a29a770412c' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmsflashsales\\views\\templates\\hook\\jmsflashsales-tab.tpl',
-      1 => 1591770918,
+      1 => 1593679166,
       2 => 'file',
     ),
   ),
@@ -21,37 +21,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product-flex.tpl' => 1,
   ),
 ),false)) {
-function content_5efc40ef19f8e7_92494820 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efd9db9d7a2e5_55125149 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jmsflashsales-tab">
 	<div class="tabpanel row align-items-center">
 		<div class="addon-title col-auto">
 			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Flash Sale','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
 </h3>
 		</div>
-		<ul class="nav col">
-			<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'category', false, 'k');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['category']->value) {
-?>
-				<?php $_smarty_tpl->_assignInScope('cat_products', $_smarty_tpl->tpl_vars['products']->value[$_smarty_tpl->tpl_vars['k']->value]);?>
-				<?php if (!empty($_smarty_tpl->tpl_vars['cat_products']->value)) {?>
-					<li class="nav-item">
-						<a class="<?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?>active<?php }?>" href="#category-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['k']->value, ENT_QUOTES, 'UTF-8');?>
-" data-toggle="tab">
-							<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['title'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-
-						</a>
-					</li>
-				<?php }?>
-			<?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-		</ul>
-		<div class="tabs-navigation-mobile">
-			<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
-			<ul class="dropdown-menu">
+		<div class="tabs-navigation col">
+			<ul class="nav">
 				<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'category', false, 'k');
 if ($_from !== null) {
@@ -61,6 +39,30 @@ foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars[
 					<?php if (!empty($_smarty_tpl->tpl_vars['cat_products']->value)) {?>
 						<li class="nav-item">
 							<a class="<?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?>active<?php }?>" href="#category-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['k']->value, ENT_QUOTES, 'UTF-8');?>
+" data-toggle="tab">
+								<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['title'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+
+							</a>
+						</li>
+					<?php }?>
+				<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+			</ul>
+		</div>
+		<div class="tabs-navigation-mobile">
+			<button type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
+			<ul class="dropdown-menu nav">
+				<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'category', false, 'k');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['category']->value) {
+?>
+					<?php $_smarty_tpl->_assignInScope('cat_products', $_smarty_tpl->tpl_vars['products']->value[$_smarty_tpl->tpl_vars['k']->value]);?>
+					<?php if (!empty($_smarty_tpl->tpl_vars['cat_products']->value)) {?>
+						<li class="nav-item">
+							<a class="nav-link <?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?>active<?php }?>" href="#category-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['k']->value, ENT_QUOTES, 'UTF-8');?>
 " data-toggle="tab">
 								<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['title'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-01 11:23:55
+/* Smarty version 3.1.33, created on 2020-07-02 11:22:14
   from 'D:\xamppp\htdocs\jms_demart\admin041sahknz\themes\default\template\helpers\modules_list\modal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5efc643babca11_46198961',
+  'unifunc' => 'content_5efdb556d02272_05534806',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5efc643babca11_46198961 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efdb556d02272_05534806 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="modal fade" id="modules_list_container">
 	<div class="modal-dialog">
 		<div class="modal-content">

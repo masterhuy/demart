@@ -47,11 +47,11 @@
 		</ul>
 	</div>
 	<div class="tabs-navigation-mobile">
-		<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
-		<ul class="dropdown-menu">
+		<button type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
+		<ul class="dropdown-menu nav nav-tabs">
 			{foreach from = $categories key = k item = category}
 				<li class="nav-item">
-					<a data-toggle="tab" class="categorytab-{$category.id_category|escape:'html':'UTF-8'}" href="#categorytab-{$category.id_category|escape:'html':'UTF-8'}">
+					<a data-toggle="tab" class="categorytab-{$category.id_category|escape:'html':'UTF-8'} nav-link{if $k == 0} active{/if}" href="#categorytab-{$category.id_category|escape:'html':'UTF-8'}">
 						<span>
 							{$category.name|escape:'htmlall':'UTF-8'}
 						</span>

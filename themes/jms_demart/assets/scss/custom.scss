@@ -136,9 +136,6 @@ button:disabled, button[disabled]{
 	font-size: 1.846rem;
 	letter-spacing: -0.3px;
 }
-.tabs-navigation-mobile{
-	position: relative;
-}
 .addon-tab{
 	justify-content: space-between;
 	margin-bottom: 1.154rem;
@@ -2277,59 +2274,74 @@ header .row {
 		top: -5px;
 		display: none;
 	}
-	.addon-tab .nav-tabs .nav-item{
-		width: calc((100% - 10px)/6);
-		margin-left: 0 !important;
-		margin-right: 0;
-		&::before{
-			display: none;
-		}
-		&:not(:last-child){
-			margin-right: 2px;
-		}
-		a{
-			border: 2px solid #ebebeb;
-			border-radius: 0;
-			background: url("../img/brands/brand.jpg") no-repeat center;
-			background-size: cover !important;
-			&.active{
-				border-color: $color1;
+	.addon-tab{
+		.tabs-navigation-mobile{
+			.nav-tabs .nav-item{
+				width: 100%;
+				a{
+					border: 0 !important;
+					background: transparent !important; 
+					span{
+						opacity: 1;
+						visibility: visible;
+					}
+				}
 			}
+		}
+		.nav-tabs .nav-item{
+			width: calc((100% - 10px)/6);
+			margin-left: 0 !important;
+			margin-right: 0;
 			&::before{
-				bottom: -7px;
-				left: 50%;
-				width: 10px;
-				height: 10px;
-				border: 2px solid $color1;
-				background: #fff;
-				transform: translateX(-50%) rotate(45deg);
-				border-left: 0;
-				border-top: 0;
-			}
-			&::after{
 				display: none;
 			}
-			span{
-				opacity: 0;
-				visibility: hidden;
+			&:not(:last-child){
+				margin-right: 2px;
 			}
-			&.categorytab-61{
-				background: url("../img/brands/samsung.jpg") no-repeat center;
-			}
-			&.categorytab-62{
-				background: url("../img/brands/apple.jpg") no-repeat center;
-			}
-			&.categorytab-63{
-				background: url("../img/brands/sony.jpg") no-repeat center;
-			}
-			&.categorytab-64{
-				background: url("../img/brands/dell.jpg") no-repeat center;
-			}
-			&.categorytab-65{
-				background: url("../img/brands/panasonic.jpg") no-repeat center;
-			}
-			&.categorytab-66{
-				background: url("../img/brands/asus.jpg") no-repeat center;
+			a{
+				border: 2px solid #ebebeb;
+				border-radius: 0;
+				background: url("../img/brands/brand.jpg") no-repeat center;
+				background-size: cover !important;
+				&.active{
+					border-color: $color1;
+				}
+				&::before{
+					bottom: -7px;
+					left: 50%;
+					width: 10px;
+					height: 10px;
+					border: 2px solid $color1;
+					background: #fff;
+					transform: translateX(-50%) rotate(45deg);
+					border-left: 0;
+					border-top: 0;
+				}
+				&::after{
+					display: none;
+				}
+				span{
+					opacity: 0;
+					visibility: hidden;
+				}
+				&.categorytab-61{
+					background: url("../img/brands/samsung.jpg") no-repeat center;
+				}
+				&.categorytab-62{
+					background: url("../img/brands/apple.jpg") no-repeat center;
+				}
+				&.categorytab-63{
+					background: url("../img/brands/sony.jpg") no-repeat center;
+				}
+				&.categorytab-64{
+					background: url("../img/brands/dell.jpg") no-repeat center;
+				}
+				&.categorytab-65{
+					background: url("../img/brands/panasonic.jpg") no-repeat center;
+				}
+				&.categorytab-66{
+					background: url("../img/brands/asus.jpg") no-repeat center;
+				}
 			}
 		}
 	}
@@ -2991,50 +3003,52 @@ header .row {
 		.addon-title{
 			margin-bottom: 0;
 		}
-		.nav{
-			display: flex;
-			justify-content: center;
-			li{
-				padding: 0 1.538rem;
-				&:nth-child(5){
-					display: none;
-				}
-				a{
-					display: block;
-					line-height: 4.615rem;
-					position: relative;
-					font-size: 1.077rem;
-					font-family: $secondary-font;
-					letter-spacing: -0.2px;
-					color: #666;
-					&.active{
-						color: #000;
-						&::before, &::after{
-							opacity: 1;
+		.tabs-navigation{
+			.nav{
+				display: flex;
+				justify-content: center;
+				li{
+					padding: 0 1.538rem;
+					&:nth-child(5){
+						display: none;
+					}
+					a{
+						display: block;
+						line-height: 4.615rem;
+						position: relative;
+						font-size: 1.077rem;
+						font-family: $secondary-font;
+						letter-spacing: -0.2px;
+						color: #666;
+						&.active{
+							color: #000;
+							&::before, &::after{
+								opacity: 1;
+							}
 						}
-					}
-					&::before{
-						content: "";
-						position: absolute;
-						bottom: 0;
-						left: 0;
-						width: 100%;
-						height: 2px;
-						background: $color4;
-						opacity: 0;
-					}
-					&::after{
-						content: "";
-						position: absolute;
-						bottom: -5px;
-						left: 50%;
-						transform: translateX(-50%);
-						opacity: 0;
-						width: 0;
-						height: 0;
-						border-left: 5px solid transparent;
-						border-right: 5px solid transparent;
-						border-top: 5px solid $color4;
+						&::before{
+							content: "";
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							height: 2px;
+							background: $color4;
+							opacity: 0;
+						}
+						&::after{
+							content: "";
+							position: absolute;
+							bottom: -5px;
+							left: 50%;
+							transform: translateX(-50%);
+							opacity: 0;
+							width: 0;
+							height: 0;
+							border-left: 5px solid transparent;
+							border-right: 5px solid transparent;
+							border-top: 5px solid $color4;
+						}
 					}
 				}
 			}
@@ -3734,59 +3748,59 @@ header .row {
 			width: 100%;
 			padding: 0;
 			background-color: transparent !important;
-		}
-		.nav-tabs{
-			border-bottom: 0;
-			.nav-item{
-				margin-bottom: 0;
-				margin-left: 0 !important;
-				width: 25%;
-				text-align: center;
-				position: relative;
-				.nav-link{
-					font-size: 1.846rem;
-					color: #fff !important;
-					font-family: $secondary-font;
-					font-weight: 500;
-					border: 0;
-					padding: 1.96rem 1.538rem !important;
+			.nav-tabs{
+				border-bottom: 0;
+				.nav-item{
+					margin-bottom: 0;
+					margin-left: 0 !important;
+					width: 25%;
+					text-align: center;
 					position: relative;
-					&::after{
-						content: "";
-						position: absolute;
-						width: 0.7692rem;
-						height: 0.7692rem;
+					.nav-link{
+						font-size: 1.846rem;
+						color: #fff !important;
+						font-family: $secondary-font;
+						font-weight: 500;
 						border: 0;
-						background-color: $color3;
-						transform: translateX(-50%) rotate(45deg);
-						bottom: -0.3846rem;
-						left: 50%;
-						opacity: 0;
-						transition: all .4s;
-					}
-					&.active{
-						background-color: #01c57b;
-						border: 0;
-						border-radius: 0;
-						&::before{
-							opacity: 0;
-						}
+						padding: 1.96rem 1.538rem !important;
+						position: relative;
 						&::after{
-							opacity: 1;
+							content: "";
+							position: absolute;
+							width: 0.7692rem;
+							height: 0.7692rem;
+							border: 0;
+							background-color: $color3;
+							transform: translateX(-50%) rotate(45deg);
+							bottom: -0.3846rem;
+							left: 50%;
+							opacity: 0;
+							transition: all .4s;
+						}
+						&.active{
+							background-color: #01c57b;
+							border: 0;
+							border-radius: 0;
+							&::before{
+								opacity: 0;
+							}
+							&::after{
+								opacity: 1;
+							}
 						}
 					}
-				}
-				&:not(:last-child)::after{
-					content: "";
-					height: 100%;
-					width: 1px;
-					position: absolute;
-					right: 0;
-					top: 0;
-					background-color: #01c57b;
-				}
-				&::before{
-					display: none;
+					&:not(:last-child)::after{
+						content: "";
+						height: 100%;
+						width: 1px;
+						position: absolute;
+						right: 0;
+						top: 0;
+						background-color: #01c57b;
+					}
+					&::before{
+						display: none;
+					}
 				}
 			}
 		}
@@ -4190,9 +4204,6 @@ header .row {
 			position: relative;
 			padding-top: 10px;
 			padding-bottom: 10px;
-			.nav{
-				display: none;
-			}
 			.addon-title{
 				width: 100%;
 			}
@@ -5241,6 +5252,22 @@ footer .row{
 	background: #fff;
 }
 .tabs-navigation-mobile{
+	position: relative;
+	.nav-item{
+		margin: 0 !important;
+		&::before{
+			display: none !important;
+		}
+		.nav-link{
+			padding: 0;
+			&::before, &::after{
+				display: none !important;
+			}
+			&.active{
+				text-decoration: underline;
+			}
+		}
+	}
 	.dropdown-menu{
 		left: auto !important;
 		right: 0;
@@ -6074,7 +6101,7 @@ footer .row{
 			color: #000;
 		}
 		.cart_block_list {
-			max-height: 12rem;
+			max-height: 160px;
 		}
 	}
 	.row .col-auto{

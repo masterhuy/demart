@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-01 04:47:50
+/* Smarty version 3.1.33, created on 2020-07-02 09:54:47
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\ps_facetedsearch\views\templates\front\catalog\active-filters.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5efc0766f22483_77773156',
+  'unifunc' => 'content_5efda0d70f53c8_77431678',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,6 +20,6 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5efc0766f22483_77773156 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efda0d70f53c8_77431678 (Smarty_Internal_Template $_smarty_tpl) {
 }
 }

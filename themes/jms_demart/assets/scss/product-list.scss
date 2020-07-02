@@ -314,6 +314,9 @@
 		overflow: visible;
 	}
 	.facet-label {
+		&:hover .checkmark {
+		    border-color: #141414;
+		}
 		.checkmark {
 			position: absolute;
 			top: 0;
@@ -322,6 +325,7 @@
 			width: 0.8462rem;
 			border: 1px solid #a1a1a1;
 			border-radius: 2px;
+			transition: .4s all;
 			&:after {
 				content: "";
 				position: absolute;

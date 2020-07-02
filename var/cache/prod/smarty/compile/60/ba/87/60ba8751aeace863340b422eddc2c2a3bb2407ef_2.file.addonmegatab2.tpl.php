@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-01 08:00:21
+/* Smarty version 3.1.33, created on 2020-07-02 10:21:20
   from 'D:\xamppp\htdocs\jms_demart\themes\jms_demart\modules\jmspagebuilder\views\templates\hook\addonmegatab2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5efc3485b96df1_56084217',
+  'unifunc' => 'content_5efda7106c0134_85037824',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '60ba8751aeace863340b422eddc2c2a3bb2407ef' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_demart\\themes\\jms_demart\\modules\\jmspagebuilder\\views\\templates\\hook\\addonmegatab2.tpl',
-      1 => 1591262946,
+      1 => 1593676743,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5efc3485b96df1_56084217 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efda7106c0134_85037824 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-tab">
 	<?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 		<div class="addon-tab-title">
@@ -55,16 +55,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		</ul>
   	</div>
 	<div class="tabs-navigation-mobile">
-		<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
-		<ul class="dropdown-menu">
+		<button type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
+		<ul class="dropdown-menu nav nav-tabs" role="tablist">
 			<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'category', false, 'k');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['category']->value) {
 ?>
 				<li class="nav-item">
-					<a data-toggle="tab" href="#category-<?php echo $_smarty_tpl->tpl_vars['category']->value['id_category'];?>
-">
+					<a data-toggle="tab" href="#category2-<?php echo $_smarty_tpl->tpl_vars['category']->value['id_category'];?>
+" class="nav-link<?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?> active<?php }?>">
 						<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['name'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 
 					</a>

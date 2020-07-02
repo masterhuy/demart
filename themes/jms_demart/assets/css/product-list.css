@@ -246,6 +246,9 @@
 #category #content-wrapper {
   overflow: visible; }
 
+#category .facet-label:hover .checkmark {
+  border-color: #141414; }
+
 #category .facet-label .checkmark {
   position: absolute;
   top: 0;
@@ -253,7 +256,10 @@
   height: 0.8462rem;
   width: 0.8462rem;
   border: 1px solid #a1a1a1;
-  border-radius: 2px; }
+  border-radius: 2px;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all; }
   #category .facet-label .checkmark:after {
     content: "";
     position: absolute;

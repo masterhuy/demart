@@ -28,26 +28,28 @@
 		<div class="addon-title col-auto">
 			<h3>{l s='Flash Sale' d='Shop.Theme.Catalog'}</h3>
 		</div>
-		<ul class="nav col">
-			{foreach from = $categories item = category key = k}
-				{$cat_products = $products[$k]}
-				{if !empty($cat_products)}
-					<li class="nav-item">
-						<a class="{if $k == 0}active{/if}" href="#category-{$k}" data-toggle="tab">
-							{$category.title|escape:'htmlall':'UTF-8'}
-						</a>
-					</li>
-				{/if}
-			{/foreach}
-		</ul>
-		<div class="tabs-navigation-mobile">
-			<button id="dlDropDown" type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
-			<ul class="dropdown-menu">
+		<div class="tabs-navigation col">
+			<ul class="nav">
 				{foreach from = $categories item = category key = k}
 					{$cat_products = $products[$k]}
 					{if !empty($cat_products)}
 						<li class="nav-item">
 							<a class="{if $k == 0}active{/if}" href="#category-{$k}" data-toggle="tab">
+								{$category.title|escape:'htmlall':'UTF-8'}
+							</a>
+						</li>
+					{/if}
+				{/foreach}
+			</ul>
+		</div>
+		<div class="tabs-navigation-mobile">
+			<button type="button" class="btn-tab dropdown-toggle" data-toggle="dropdown"></button>
+			<ul class="dropdown-menu nav">
+				{foreach from = $categories item = category key = k}
+					{$cat_products = $products[$k]}
+					{if !empty($cat_products)}
+						<li class="nav-item">
+							<a class="nav-link {if $k == 0}active{/if}" href="#category-{$k}" data-toggle="tab">
 								{$category.title|escape:'htmlall':'UTF-8'}
 							</a>
 						</li>
